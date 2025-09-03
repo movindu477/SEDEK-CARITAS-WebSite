@@ -2,13 +2,24 @@
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
   const navMenu = document.getElementById("navMenu");
   const closeMenu = document.getElementById("closeMenu");
+  const dropdown = document.querySelector(".dropdown");
 
+  // Open menu
   mobileMenuBtn.addEventListener("click", () => {
     navMenu.classList.add("active");
   });
 
+  // Close menu
   closeMenu.addEventListener("click", () => {
     navMenu.classList.remove("active");
+  });
+
+  // Mobile dropdown toggle
+  dropdown.addEventListener("click", (e) => {
+    if (window.innerWidth <= 640) {
+      e.preventDefault();
+      dropdown.classList.toggle("active");
+    }
   });
   
   

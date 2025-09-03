@@ -1,0 +1,178 @@
+/* Dropdown Container */
+.navbar ul li.dropdown {
+  position: relative;
+}
+
+/* Dropdown button with arrow */
+.navbar ul li.dropdown .dropbtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* Downward arrow */
+.navbar ul li.dropdown .dropbtn .arrow {
+  font-size: 20px;
+}
+
+/* Dropdown content */
+.navbar ul li.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  z-index: 1000;
+}
+
+/* Dropdown links */
+.navbar ul li.dropdown .dropdown-content li a {
+  display: block;
+  padding: 10px 15px;
+  color: #222;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar ul li.dropdown .dropdown-content li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.navbar ul li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+/* HERO SECTION/MAINIMG */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 500px; /* fixed hero height */
+  overflow: hidden;
+}
+
+.hero .mainimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 150px;  /* push text lower */
+  left: 150px;  /* keep it left-aligned */
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+
+
+
+
+/* HISTORY DESCRIPTION BOX OVERLAPPING HERO AND BODY */
+.history-description {
+  position: relative;          /* normal flow */
+  margin: -120px auto 60px;    /* pulls box up to overlap hero */
+  width: 80%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+.topic-heading{
+text-align: center;
+}
+
+.history-description .topic-heading {
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.history-description p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.history-description::after {
+  content: none; /* remove the extra space */
+  display: block;
+  height: 300px; /* space to see white page */
+}
+
+
+
+/* DIRECTOR/ ADMINISTRATIVE*/
+.directors-heading {
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-underline-offset: 4px;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.directors-text {
+  color: black;
+}
+
+.administrators-text {
+  color: red;
+}
+
+.directors-list {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Directors / Administrators Section Box */
+.directors-heading {
+  text-align: left;
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.directors-text {
+  color: black;
+}
+
+.administrators-text {
+  color: red;
+}
+
+.directors-list {
+  list-style-type: none;
+  padding: 20px;
+  max-width: 700px;   /* control width */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;  /* spacing from next section */
+}
+
+.directors-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.directors-list li:last-child {
+  border-bottom: none;
+}

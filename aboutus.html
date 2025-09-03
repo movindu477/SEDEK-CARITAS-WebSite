@@ -7,53 +7,61 @@
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
+
+
+
+    <div class="navbar">
+  <div class="topsection">
+    <div class="item">
+      <img src="images/phone-call.png" alt="Call Icon" />
+      <p>0094 11 2691885</p>
+    </div>
+    <div class="item">
+      <img src="images/mail.png" alt="Email Icon" />
+      <p>sedec@caritaslk.org</p>
+    </div>
+    <div class="language-selector">
+      <button class="lang">FR</button>
+      <button class="lang">ES</button>
+      <button class="lang active">EN</button>
+    </div>
+  </div>
+  <div class="downsection">
+    <div class="logos">
+      <img src="images/logo2.png" alt="Logo" width="40" />
+      <img src="images/logo3.png" alt="Logo" width="120" />
+    </div>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="navMenu">
+      <button class="close-menu" id="closeMenu" aria-label="Close Menu">✕</button>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="aboutus.html">Who We Are</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Our Policies</a></li>
+          <li><a href="#">Our Constitution</a></li>
+          <li><a href="ourhistory.html">Our History</a></li>
+          <li><a href="#">Org Structure</a></li>
+          <li><a href="#">Facilities & Services</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">What We Do</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li class="highlight"><a href="#">DONATE</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
   </head>
   <body>
-    <div class="navbar">
-      <!-- Top section -->
-      <div class="topsection">
-        <div class="item">
-          <img src="images/phone-call.png" alt="Call Icon" />
-          <p>0094 11 2691885</p>
-        </div>
-        <div class="item">
-          <img src="images/mail.png" alt="Email Icon" />
-          <p>sedec@caritaslk.org</p>
-        </div>
-        <div class="language-selector">
-          <button class="lang">FR</button>
-          <button class="lang">ES</button>
-          <button class="lang active">EN</button>
-        </div>
-      </div>
-      <div class="downsection">
-        <div class="logos">
-          <img src="images/logo2.png" alt="Logo" width="40" />
-          <img src="images/logo3.png" alt="Logo" width="120" />
-        </div>
-        <button
-          class="mobile-menu-btn"
-          id="mobileMenuBtn"
-          aria-label="Open Menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul id="navMenu">
-          <button class="close-menu" id="closeMenu" aria-label="Close Menu">
-            ✕
-          </button>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutus.html">Who We Are</a></li>
-          <li><a href="#">What We Do</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li class="highlight"><a href="#">DONATE</a></li>
-        </ul>
-      </div>
-    </div>
-
     <!-- Banner Section -->
     <section class="banner">
       <div class="overlay"></div>
