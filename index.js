@@ -1,28 +1,68 @@
-  /* navbar function */
+/* navbar function */
+
+document.addEventListener('DOMContentLoaded', function () {
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
   const navMenu = document.getElementById("navMenu");
   const closeMenu = document.getElementById("closeMenu");
-  const dropdown = document.querySelector(".dropdown");
-
-  // Open menu
-  mobileMenuBtn.addEventListener("click", () => {
+  const dropdownItems = document.querySelectorAll("#navMenu .dropdown");
+  const isMobile = () => window.matchMedia("(max-width: 640px)").matches;
+  function openMenu() {
     navMenu.classList.add("active");
-  });
-
-  // Close menu
-  closeMenu.addEventListener("click", () => {
+    mobileMenuBtn.setAttribute("aria-expanded", "true");
+    document.body.style.overflow = "hidden";
+  }
+  function closeMenuFn() {
     navMenu.classList.remove("active");
+    mobileMenuBtn.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+    dropdownItems.forEach(d => d.classList.remove("active"));
+  }
+  mobileMenuBtn.addEventListener("click", openMenu);
+  closeMenu.addEventListener("click", closeMenuFn);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && navMenu.classList.contains("active")) closeMenuFn();
   });
-
-  // Mobile dropdown toggle
-  dropdown.addEventListener("click", (e) => {
-    if (window.innerWidth <= 640) {
-      e.preventDefault();
-      dropdown.classList.toggle("active");
+  dropdownItems.forEach(item => {
+    const toggleLink = item.querySelector("a.dropdown-toggle");
+    let tappedOnce = false; // Track double tap on mobile
+    toggleLink.addEventListener("click", (e) => {
+      if (isMobile()) {
+        if (!item.classList.contains("active") && !tappedOnce) {
+          e.preventDefault(); // stop navigat
+          item.classList.add("active");
+          tappedOnce = true; 
+          setTimeout(() => tappedOnce = false, 1000);
+        } else {
+          window.location.href = toggleLink.getAttribute("href");
+        }
+      }
+    });
+    item.querySelectorAll(".dropdown-menu a").forEach(subLink => {
+      subLink.addEventListener("click", () => {
+        if (isMobile()) closeMenuFn();
+      });
+    });
+  });
+  document.addEventListener("click", (e) => {
+    if (isMobile() && navMenu.classList.contains("active")) {
+      const inside = e.target.closest("#navMenu") || e.target.closest("#mobileMenuBtn");
+      if (!inside) closeMenuFn();
     }
   });
+  window.addEventListener("resize", () => {
+    if (!isMobile()) {
+      document.body.style.overflow = "";
+      navMenu.classList.remove("active");
+      dropdownItems.forEach(d => d.classList.remove("active"));
+    }
+  });
+});
   
   
+
+
+
+
   // Simple script to highlight active dot
         document.addEventListener('DOMContentLoaded', function() {
             const dots = document.querySelectorAll('.carousel-dot');

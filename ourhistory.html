@@ -10,7 +10,9 @@
 
 
 
-    <div class="navbar">
+<!-- NAVBAR -->
+<div class="navbar">
+  <!-- Top section -->
   <div class="topsection">
     <div class="item">
       <img src="images/phone-call.png" alt="Call Icon" />
@@ -31,25 +33,22 @@
       <img src="images/logo2.png" alt="Logo" width="40" />
       <img src="images/logo3.png" alt="Logo" width="120" />
     </div>
-    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
-      <span></span>
-      <span></span>
-      <span></span>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu" aria-controls="navMenu" aria-expanded="false">
+      <span></span><span></span><span></span>
     </button>
-    <ul id="navMenu">
+    <ul id="navMenu" role="menubar">
       <button class="close-menu" id="closeMenu" aria-label="Close Menu">✕</button>
       <li><a href="index.html">Home</a></li>
       <li class="dropdown">
-        <a href="aboutus.html">Who We Are</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Our Policies</a></li>
-          <li><a href="#">Our Constitution</a></li>
+        <a href="aboutus.html" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Who We Are</a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="policies.html">Our Policies</a></li>
+          <li><a href="constitution.html">Our Constitution</a></li>
           <li><a href="ourhistory.html">Our History</a></li>
-          <li><a href="#">Org Structure</a></li>
-          <li><a href="#">Facilities & Services</a></li>
+          <li><a href="org-structure.html">Org Structure</a></li>
+          <li><a href="facilities-services.html">Facilities &amp; Services</a></li>
         </ul>
       </li>
-
       <li><a href="#">What We Do</a></li>
       <li><a href="#">News</a></li>
       <li><a href="#">Contact Us</a></li>
