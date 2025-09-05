@@ -205,6 +205,27 @@
     </div>
   </div>
 </div>
+<script>
+  // Animate cards when they enter viewport
+document.addEventListener("DOMContentLoaded", () => {
+  const boxes = document.querySelectorAll(".imageboxes .box");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // animate once
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  boxes.forEach((box) => observer.observe(box));
+});
+
+</script>
 
 
 
