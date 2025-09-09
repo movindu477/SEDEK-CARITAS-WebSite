@@ -169,63 +169,97 @@
 
 
 
-<div class="mainimage4">
-  <!-- Heading Section -->
-  <div class="headingsmainimage4">
-    <h1>Latest News</h1>
-    <h2>Latest happenings from Caritas network around the country</h2>
+<div class="map-section">
+  <!-- Map Left -->
+  <div class="map-container">
+    <img src="images/lankamap.png" alt="Sri Lanka Map" class="srilanka-map">
+
+    <!-- Diocese Dots -->
+    <div class="diocese-dot" style="top: 5%; left: -12%;" 
+         data-name="Jaffna" 
+         data-info="The Diocese of Jaffna serves the northern region with a rich cultural and spiritual heritage."
+         data-link="dioceses/jaffna.html"></div>
+
+    <div class="diocese-dot" style="top: 22%; left: -18%;" 
+         data-name="Mannar" 
+         data-info="Mannar Diocese is known for its strong faith communities and service initiatives."
+         data-link="dioceses/mannar.html"></div>
+
+    <div class="diocese-dot" style="top: 31%; left: 40%;" 
+         data-name="Trincomalee" 
+         data-info="Trincomalee Diocese has deep roots in education and interfaith dialogue."
+         data-link="dioceses/trincomalee.html"></div>
+
+    <div class="diocese-dot" style="top: 57%; left: -22%;" 
+         data-name="Chilaw" 
+         data-info="Chilaw Diocese is vibrant with youth and parish-centered missions."
+         data-link="dioceses/chilaw.html"></div>
+
+    <div class="diocese-dot" style="top: 37%; left: 4%;" 
+         data-name="Anuradhapura" 
+         data-info="Anuradhapura Diocese is home to a mix of ancient history and faith."
+         data-link="dioceses/anuradhapura.html"></div>
+
+    <div class="diocese-dot" style="top: 58%; left: 1%;" 
+         data-name="Kurunegala" 
+         data-info="Kurunegala Diocese emphasizes community outreach and pastoral care."
+         data-link="dioceses/kurunegala.html"></div>
+
+    <div class="diocese-dot" style="top: 48%; left: 31%;" 
+         data-name="Polonnaruwa" 
+         data-info="Polonnaruwa Diocese has a strong presence in social development."
+         data-link="dioceses/polonnaruwa.html"></div>
+
+    <div class="diocese-dot" style="top: 62%; left: 15%;" 
+         data-name="Kandy" 
+         data-info="Kandy Diocese blends cultural diversity with a strong faith tradition."
+         data-link="dioceses/kandy.html"></div>
+
+    <div class="diocese-dot" style="top: 72%; left: 30%;" 
+         data-name="Badulla" 
+         data-info="Badulla Diocese is known for its mountainous beauty and pastoral care."
+         data-link="dioceses/badulla.html"></div>
+
+    <div class="diocese-dot" style="top: 78%; left: 5%;" 
+         data-name="Ratnapura" 
+         data-info="Ratnapura Diocese serves communities in the gem-rich region."
+         data-link="dioceses/ratnapura.html"></div>
+
+    <div class="diocese-dot" style="top: 94%; left: -4%;" 
+         data-name="Galle" 
+         data-info="Galle Diocese has a strong coastal presence with active parishes."
+         data-link="dioceses/galle.html"></div>
+
+    <div class="diocese-dot" style="top: 96%; left: 9%;" 
+         data-name="Matara" 
+         data-info="Matara Diocese emphasizes education and parish development."
+         data-link="dioceses/matara.html"></div>
+
+    <div class="diocese-dot" style="top: 72%; left: -21%;" 
+         data-name="Colombo" 
+         data-info="Colombo Archdiocese is the heart of Catholicism in Sri Lanka."
+         data-link="dioceses/colombo.html"></div>
+
+    <!-- Popup Box -->
+    <div id="popup" class="popup-box">
+      <h3 id="popup-title"></h3>
+      <p id="popup-text"></p>
+      <a id="popup-btn" href="#" target="_blank">
+        <button>Find Out More</button>
+      </a>
+    </div>
   </div>
-  <div class="imageboxes">
-    <div class="box">
-      <img src="images/news1.avif" alt="Event image 1">
-      <h2>A Grateful Farewell and a Warm Welcome</h2>
-      <p>On the 27th of June 2025, the Caritas Sri Lanka-SEDEC organized a ceremonial event...</p>
-      <a href="#"><button>Read More</button></a>
-    </div>
 
-    <div class="box">
-      <img src="images/news2.avif" alt="Event image 2">
-      <h2>New Leadership Takes Over</h2>
-      <p>The Caritas family welcomed its new Bishop Chairman with a message of hope and unity...</p>
-      <a href="#"><button>Read More</button></a>
-    </div>
-
-    <div class="box">
-      <img src="images/news3.avif" alt="Event image 3">
-      <h2>Farewell Ceremony Highlights</h2>
-      <p>A memorable farewell was organized to appreciate the tireless work and vision...</p>
-      <a href="#"><button>Read More</button></a>
-    </div>
-
-    <div class="box">
-      <img src="images/news4.avif" alt="Event image 4">
-      <h2>Caritas Reaffirms Its Mission</h2>
-      <p>The ceremony renewed the vision of Caritas Sri Lanka to reach out and serve communities...</p>
-      <a href="#"><button>Read More</button></a>
-    </div>
+  <!-- Text Right -->
+  <div class="map-text">
+    <h1>13 Sri Lanka Dioceses</h1>
+    <p>
+      Discover the 13 Catholic dioceses of Sri Lanka, each with its own unique history, traditions, and contributions to the faithful communities across the island. Click on the red dots to learn more about each diocese.
+    </p>
   </div>
 </div>
-<script>
-  // Animate cards when they enter viewport
-document.addEventListener("DOMContentLoaded", () => {
-  const boxes = document.querySelectorAll(".imageboxes .box");
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target); // animate once
-        }
-      });
-    },
-    { threshold: 0.2 }
-  );
 
-  boxes.forEach((box) => observer.observe(box));
-});
-
-</script>
 
 
 

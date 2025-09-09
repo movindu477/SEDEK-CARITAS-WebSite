@@ -186,3 +186,38 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+
+
+/* map function */
+const dots = document.querySelectorAll('.diocese-dot');
+const popup = document.getElementById('popup');
+const popupTitle = document.getElementById('popup-title');
+const popupText = document.getElementById('popup-text');
+const popupBtn = document.getElementById('popup-btn');
+
+dots.forEach(dot => {
+  dot.addEventListener('click', (e) => {
+    const name = dot.getAttribute('data-name');
+    const info = dot.getAttribute('data-info');
+
+    popupTitle.textContent = name;
+    popupText.textContent = info;
+
+    // Position popup near the clicked dot
+    const rect = dot.getBoundingClientRect();
+    const containerRect = dot.closest('.map-container').getBoundingClientRect();
+
+    popup.style.top = (dot.offsetTop - 10) + "px";
+    popup.style.left = (dot.offsetLeft + 30) + "px";
+
+    popup.style.display = 'block';
+  });
+});
+
+// Hide popup when clicking outside
+document.addEventListener('click', (e) => {
+  if (!popup.contains(e.target) && !e.target.classList.contains('diocese-dot')) {
+    popup.style.display = 'none';
+  }
+});
