@@ -15,8 +15,14 @@ body {
 .navbar {
   width: 100%;
   background-color: #ffffff;
-  position: relative;
+  position: fixed;              /* 👈 changed from relative to fixed */
+  top: 0;                       /* stick to top */
+  left: 0;
+  z-index: 10000;               /* ensure it's above everything */
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+body {
+  margin-top: 120px;  /* adjust depending on navbar height */
 }
 .topsection {
   background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%);
@@ -48,6 +54,7 @@ body {
 }
 .language-selector .lang:hover { color: #e63946; }
 .language-selector .lang.active { color: #000000; }
+
 .downsection {
   display: flex; align-items: center; justify-content: space-between;
   padding: 15px 40px; background: #ffebeb;
@@ -110,6 +117,7 @@ body {
 }
 .mobile-menu-btn span { width: 25px; height: 2px; background: #2d3748; transition: all 0.3s ease; }
 .close-menu { display: none; }
+
 @media (max-width: 1024px) {
   .downsection ul { gap: 30px; }
   .downsection { padding: 15px 30px; }
@@ -1295,22 +1303,52 @@ body {
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 .mainimage5 .content a button {
-  padding: 14px 34px;
-  background: linear-gradient(135deg, #ce4141, #ce4141);
+  padding: 14px 36px;
+  background: linear-gradient(135deg, #e63946, #ff4f81);
   color: #fff;
   border: none;
-  border-radius: 30px;
+  border-radius: 50px;
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: 600;
+  letter-spacing: 0.5px;
   transition: all 0.35s ease;
-  box-shadow: 0 6px 18px rgba(230, 57, 70, 0.3);
+  box-shadow: 0 6px 18px rgba(230, 57, 70, 0.35), 
+              inset 0 0 8px rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
 }
+
+/* Shiny effect overlay */
+.mainimage5 .content a button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  transition: all 0.5s ease;
+}
+
+/* Hover effect */
 .mainimage5 .content a button:hover {
-  background: #000000;
-  transform: scale(1.08) translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #111, #333);
+  transform: scale(1.1) translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55),
+              inset 0 0 12px rgba(255, 255, 255, 0.15);
 }
+
+/* Move shine on hover */
+.mainimage5 .content a button:hover::before {
+  left: 100%;
+}
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -1836,27 +1874,55 @@ body {
         }
 
         .read-more-btn {
-            padding: 14px 32px;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 500;
-            letter-spacing: 0.02em;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.4s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
+  padding: 14px 34px;
+  background: linear-gradient(135deg, rgba(230, 57, 70, 0.85), rgba(255, 79, 129, 0.85));
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 6px 18px rgba(230, 57, 70, 0.35), 
+              inset 0 0 8px rgba(255, 255, 255, 0.25);
+  position: relative;
+  overflow: hidden;
+}
 
-        .read-more-btn:hover {
-            background: rgba(255, 255, 255, 0.25);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-        }
+/* Shiny sweep overlay */
+.read-more-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  transition: all 0.6s ease;
+}
+
+/* Hover effect */
+.read-more-btn:hover {
+  background: linear-gradient(135deg, #111, #333);
+  transform: scale(1.08) translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55),
+              inset 0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+/* Shine moves on hover */
+.read-more-btn:hover::before {
+  left: 120%;
+}
+
 
         /* Subtle red shine effect on hover */
         .sector1::after {

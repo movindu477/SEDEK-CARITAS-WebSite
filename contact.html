@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ContactUs.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Main nav -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- DROPDOWN: Who We Are -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="constitution.html">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="Organization.html">Org Structure</a></li>
+            <li>
+              <a href="facilities-services.html">Facilities &amp; Services</a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="#">What We Do</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- MAIN HERO IMAGE -->
+    <section class="hero">
+      <img
+        src="images/contactUss.avif"
+        alt="Contact Us Image"
+        class="mainimg"
+      />
+      <div class="hero-text">
+        <h1>CONTACT US</h1>
+        <h5>We’d love to hear from you</h5>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+      <!-- WRAPPER FOR SHADOW -->
+      <div class="contact-wrapper">
+        <div class="contact-container">
+          <!-- Left Side: Contact Form -->
+          <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <textarea placeholder="Message" rows="4" required></textarea>
+              <button type="submit">SEND</button>
+            </form>
+          </div>
+
+          <!-- Right Side: Info -->
+          <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <ul>
+              <li>
+                <img src="images/mail.png" alt="Email Icon" />
+                info@companyname.com
+              </li>
+              <li>
+                <img src="images/phone-call.png" alt="Phone Icon" />
+                +26 45 89 235
+              </li>
+              <li>
+                <img src="images/location.webp" alt="Location Icon" />
+                133 Kynsey Rd, Colombo, Western Province
+              </li>
+              <li>
+                <img src="images/OIP.jpg" alt="Clock Icon" />
+                09:00 - 18:00
+              </li>
+            </ul>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+              <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+              <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+              <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAP SECTION WRAPPER -->
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps?q=133+Kynsey+Rd,+Colombo,+Western+Province&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </section>
+  </body>
+  <!-- Scroll to Top Button -->
+  <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Solution by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>
