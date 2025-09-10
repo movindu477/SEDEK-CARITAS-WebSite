@@ -562,7 +562,7 @@ body {
 .mainimage2 .box {
   flex: 0 1 300px;
   min-width: 260px;
-  height: auto;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1277,16 +1277,18 @@ body {
   align-items: center;
   overflow: hidden;
   clip-path: ellipse(100% 90% at 50% 0%); /* curved bottom */
+  background: #000; /* fallback */
 }
 .mainimage5 img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.9;
+  opacity: 0.85;
   top: 0;
   left: 0;
   z-index: -1;
+  filter: brightness(0.85);
 }
 .mainimage5 .content {
   text-align: center;
@@ -1296,59 +1298,36 @@ body {
   animation: fadeInUp 1.2s ease-in-out;
 }
 .mainimage5 .content h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
   line-height: 1.3;
-  margin-bottom: 20px;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  margin-bottom: 24px;
+  text-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.5px;
 }
 .mainimage5 .content a button {
-  padding: 14px 36px;
-  background: linear-gradient(135deg, #e63946, #ff4f81);
+  padding: 14px 38px;
+  background: linear-gradient(135deg, #e63946, #ff6f61);
   color: #fff;
   border: none;
-  border-radius: 50px;
+  border-radius: 40px;
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.5px;
-  transition: all 0.35s ease;
-  box-shadow: 0 6px 18px rgba(230, 57, 70, 0.35), 
-              inset 0 0 8px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
   position: relative;
-  overflow: hidden;
 }
-
-/* Shiny effect overlay */
-.mainimage5 .content a button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0.6) 50%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
-  transition: all 0.5s ease;
-}
-
-/* Hover effect */
 .mainimage5 .content a button:hover {
-  background: linear-gradient(135deg, #111, #333);
-  transform: scale(1.1) translateY(-4px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55),
-              inset 0 0 12px rgba(255, 255, 255, 0.15);
+  background: linear-gradient(135deg, #d62828, #e63946);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
 }
-
-/* Move shine on hover */
-.mainimage5 .content a button:hover::before {
-  left: 100%;
+.mainimage5 .content a button:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.4);
+  outline-offset: 3px;
 }
-
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -1361,7 +1340,7 @@ body {
 }
 @media (max-width: 768px) {
   .mainimage5 .content h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .mainimage5 .content a button {
     font-size: 1rem;
@@ -1376,25 +1355,29 @@ body {
 /* Modern & Minimal Logo Slider */
 .mainimage6 {
   text-align: center;
-  padding: 70px 20px;
-  background: #f9f9f9;
+  padding: 80px 20px;
+  background: #fafafa;
   overflow: hidden;
   position: relative;
 }
 
 .mainimage6 h1 {
-  font-size: 2.6rem;
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 16px;
-  color: #111;
+  color: #222;
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .mainimage6 p {
   font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 50px;
+  color: #666;
+  margin-bottom: 45px;
   line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Logo Slider Container */
@@ -1402,7 +1385,7 @@ body {
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .logo-slider::before,
@@ -1410,7 +1393,7 @@ body {
   content: '';
   position: absolute;
   top: 0;
-  width: 100px;
+  width: 120px;
   height: 100%;
   z-index: 5;
   pointer-events: none;
@@ -1418,42 +1401,54 @@ body {
 
 .logo-slider::before {
   left: 0;
-  background: linear-gradient(90deg, #f9f9f9 0%, transparent 100%);
+  background: linear-gradient(90deg, #fafafa 0%, transparent 100%);
 }
 
 .logo-slider::after {
   right: 0;
-  background: linear-gradient(270deg, #f9f9f9 0%, transparent 100%);
+  background: linear-gradient(270deg, #fafafa 0%, transparent 100%);
 }
 
 /* Scrolling track */
 .logo-track {
   display: flex;
-  gap: 50px;
+  gap: 40px;
   width: max-content;
-  animation: scroll 60s linear infinite; /* slower and smoother */
+  animation: scroll 55s linear infinite; /* smooth slow scroll */
   will-change: transform;
 }
 
-/* Logo Item Style */
+/* Logo Item Tile Style */
 .logo-item {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px 25px;
+  padding: 18px 28px;
   background: #fff;
-  border-radius: 14px;
+  border-radius: 16px;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.logo-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Image */
+.logo-item img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(10%) brightness(97%);
   transition: all 0.3s ease;
 }
 
-.logo-item img {
-  height: 65px;
-  width: auto;
-  object-fit: contain;
-  filter: grayscale(20%) brightness(98%);
+.logo-item:hover img {
+  filter: grayscale(0%) brightness(100%);
 }
 
 /* Smooth infinite scroll */
@@ -1471,17 +1466,21 @@ body {
   .mainimage6 h1 {
     font-size: 2.2rem;
   }
+  .logo-item {
+    padding: 15px 24px;
+    min-width: 120px;
+  }
   .logo-item img {
-    height: 60px;
+    height: 55px;
   }
   .logo-track {
-    gap: 40px;
+    gap: 35px;
   }
 }
 
 @media (max-width: 768px) {
   .mainimage6 {
-    padding: 50px 20px;
+    padding: 60px 20px;
   }
   .mainimage6 h1 {
     font-size: 1.9rem;
@@ -1492,16 +1491,16 @@ body {
   }
   .logo-item {
     padding: 12px 20px;
+    min-width: 100px;
   }
   .logo-item img {
-    height: 55px;
+    height: 50px;
   }
   .logo-track {
-    gap: 30px;
-    animation-duration: 50s;
+    gap: 28px;
+    animation-duration: 45s;
   }
 }
-
 @media (max-width: 480px) {
   .mainimage6 h1 {
     font-size: 1.6rem;
@@ -1509,17 +1508,18 @@ body {
   .logo-item {
     padding: 10px 16px;
     border-radius: 12px;
+    min-width: 90px;
   }
   .logo-item img {
-    height: 45px;
+    height: 42px;
   }
   .logo-slider::before,
   .logo-slider::after {
-    width: 50px;
+    width: 60px;
   }
   .logo-track {
-    gap: 20px;
-    animation-duration: 40s;
+    gap: 22px;
+    animation-duration: 35s;
   }
 }
 
