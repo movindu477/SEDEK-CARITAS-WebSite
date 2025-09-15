@@ -57,7 +57,7 @@ body {
 
 .downsection {
   display: flex; align-items: center; justify-content: space-between;
-  padding: 15px 40px; background: #ffebeb;
+  padding: 4px 40px; background: #e8baba;
 }
 .downsection .logos { display: flex; align-items: center; gap: 15px; }
 .downsection .logos img { transition: transform 0.3s ease; }
@@ -158,6 +158,10 @@ body {
 }
 .downsection ul li a:focus,
 .topsection .item:focus {
+  outline: none;
+}
+.downsection ul li a:focus-visible,
+.topsection .item:focus-visible {
   outline: 2px solid #e63946; outline-offset: 2px;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -185,6 +189,7 @@ body {
 .mainimage1 {
     position: relative;
     width: 100%;
+    margin-top: -3%;
     height: 650px; /* Match section height to image height */
     overflow: hidden;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
