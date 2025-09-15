@@ -221,3 +221,39 @@ document.addEventListener('click', (e) => {
     popup.style.display = 'none';
   }
 });
+
+// Reveal-on-scroll for mainimage2 boxes
+document.addEventListener('DOMContentLoaded', () => {
+  const revealBoxes = document.querySelectorAll('.mainimage2 .box');
+  if (!revealBoxes.length) return;
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.35 });
+
+  revealBoxes.forEach(box => observer.observe(box));
+});
+
+
+
+
+// mainimage2 section function
+// Reveal boxes on scroll
+document.addEventListener("DOMContentLoaded", () => {
+  const boxes = document.querySelectorAll(".mainimage2 .box");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  boxes.forEach(box => observer.observe(box));
+});
