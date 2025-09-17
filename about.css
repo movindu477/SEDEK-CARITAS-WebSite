@@ -75,8 +75,11 @@ body {
 .banner {
   position: relative;
   width: 100%;
-  height: 95vh; /* full screen height */
-  background: url("images/jesus.jpg") no-repeat center top / cover;
+  margin-top: -10%;
+  height: 110vh; /* full screen height */
+  max-height: 100%;
+  background: url("images/jesus.jpg") no-repeat top center;
+  background-size: cover; /* keeps image full-width, crops bottom if needed */
   background-attachment: fixed; /* parallax effect on desktop */
   display: flex;
   align-items: center;
@@ -84,12 +87,14 @@ body {
   overflow: hidden;
   font-family: "Poppins", "Segoe UI", Arial, sans-serif; /* modern clean font */
 }
+
 .banner .overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.45); /* soft dark overlay for readability */
   z-index: 1;
 }
+
 .banner-text {
   position: relative;
   z-index: 2;
