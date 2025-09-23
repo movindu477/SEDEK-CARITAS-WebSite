@@ -1,0 +1,123 @@
+/* hero must be relative so we can overlap onto next section */
+.hero {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+.hero img.mainimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,.5);
+  /*font-size: 2rem;*/
+}
+
+/* contact cards overlap hero bottom */
+.contact-grid {
+  position: relative;
+  z-index: 5;
+  max-width: 1200px;
+  margin: 0 auto;         /* center horizontally */
+  padding: 0 20px;
+  /* pull upward so it sits on hero & next section */
+  transform: translateY(-80px);   /* adjust value as needed */
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+}
+
+.contact-cards .card {
+  background: #ffebeb;          /* 🌸 light red / soft pink fill */
+  border: 1px solid #c77f7f;
+  border-radius: 10px;
+  text-align: center;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.contact-cards .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+}
+.contact-cards img {
+  width: 40px;
+  margin-bottom: 12px;
+}
+.contact-cards h4 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+.contact-cards p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* form + map section */
+.contact-form-box{
+display:grid;
+grid-template-columns:1fr 1fr;gap:30px;
+background:#fff;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,.12)
+}
+
+.contact-form-box .left h2{
+margin:0 0 15px
+}
+
+.contact-form-box .left p{
+margin-bottom:20px;
+color:#000000
+}
+
+.contact-form-box input, 
+.contact-form-box textarea{
+width:100%;
+margin-bottom:15px;
+padding:12px 15px;
+border:1px solid #ddd;
+border-radius:6px;
+font-size:15px
+}
+
+.contact-form-box input:focus, 
+.contact-form-box textarea:focus{
+border-color:#222;
+outline:none
+}
+
+.contact-form-box button{
+background:#c91c1c;
+color:#fff;
+border:none;
+padding:14px;
+border-radius:6px;
+font-size:16px;
+font-weight:600;
+cursor:pointer
+}
+
+.contact-form-box button:hover{
+background:#b15f5f
+}
+
+.contact-form-box .map iframe{
+width:100%;
+height:100%;
+min-height:400px;
+border:none;
+border-radius:10px
+}

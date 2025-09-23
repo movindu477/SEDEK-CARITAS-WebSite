@@ -1616,7 +1616,7 @@ body {
   --text-main: #ffffff;   /* ✅ All text white */
 
   --bg-dark: #e01a1a;
-  --bg-card: #5a180f;
+  --bg-card: #ff00006c;
   --bg-hover: #ebe4e4;
 
   --border-radius: 15px;

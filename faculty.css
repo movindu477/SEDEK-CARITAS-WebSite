@@ -1,0 +1,267 @@
+/* ---------- BODY & GLOBAL ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #fff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+}
+
+.hero img.mainimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85); /* subtle dark overlay effect */
+  transition: transform 0.5s ease;
+}
+
+.hero:hover img.mainimg {
+  /*transform: scale(1.05);*/ /* subtle zoom on hover */
+  transform: none;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* white text for contrast */
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* subtle shadow for readability */
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-text h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Venue Container ---------- */
+.venue-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.venue-container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.12);
+}
+
+
+
+
+/* ---------- VENUE SECTION ---------- */
+.venue-section {
+  padding: 80px 20px;
+  background: #f8f8f8;
+}
+
+.venue-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.venue-header h2 {
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #0a0a0a;
+}
+
+.venue-header .tagline {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 720px;
+  margin: 0 auto 50px;
+  line-height: 1.7;
+}
+
+/* ---------- Intro ---------- */
+.venue-intro p {
+  font-size: 1.15rem;
+  background: #fff;
+  display: inline-block;
+  padding: 16px 28px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06); /* slightly stronger shadow */
+  margin-bottom: 60px;
+  font-weight: 500;
+}
+
+/* Remove hover animation */
+.venue-intro p:hover {
+  transform: none;
+}
+
+/* ---------- Content Cards ---------- */
+.venue-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.venue-card {
+  background: linear-gradient(135deg, #ffffff, #fdfdfd);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  overflow: hidden;
+  padding: 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column; /* stack content vertically */
+  height: 100%;           /* stretch to match tallest card */
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  }
+
+.venue-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+
+
+/* ---------- Image Card ---------- */
+.image-card {
+  padding: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;        /* fills the card height */
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+
+.image-card img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Details Card ---------- */
+.details-card h3 {
+  color: #0a0a0a;
+  margin-top: 0;
+  margin-bottom: 24px; 
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 2px;
+  display: inline-block;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.65;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature-list li:hover {
+  transform: translateX(4px);
+  color: #000;
+}
+
+.feature-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #000;
+  font-weight: bold;
+  transform: scale(1.1);
+  transition: color 0.3s ease;
+}
+
+.feature-list li:hover::before {
+  color: #00eb3b;
+}
+
+
+
+/* ---------- Amenities Card Heading ---------- */
+.amenities-card h3 {
+  color: #0a0a0a;
+  margin-top: 0;
+  margin-bottom: 24px;   /* breathing room */
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: inline-block;  /* ensures underline only spans text */
+  padding-bottom: 2px;    /* optional: adjust spacing between text and underline */
+}
+
+
+
+.amenities-row {
+  display: flex;
+  justify-content: left;
+  margin-top: 40px; /* increased gap from previous 10px to 40px */
+  gap: 50px; /* optional: spacing between multiple amenities cards if any */
+}
+
+.amenities-card {
+  max-width: 2000px;
+  width: 100%;
+  background: linear-gradient(135deg, #ffffff, #fdfdfd);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+.amenities-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .venue-content {
+    grid-template-columns: 1fr;
+  }
+  .venue-card {
+    text-align: center;
+  }
+  .details-card h3 {
+    display: block;
+    text-align: center;
+  }
+}
