@@ -539,140 +539,141 @@ body {
 
 
 /* mainimage2 style sheet */
-        :root {
-          --border-radius: 12px;
-          --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.08);
-          --shadow-lg: 0 10px 22px rgba(0, 0, 0, 0.12);
-          --transition: 0.35s ease;
-        }
-        .mainimage2 {
-          display: flex;
-          justify-content: center;
-          align-items: stretch;
-          gap: 24px;
-          padding: 80px 30px;
-          max-width: 1200px;
-          margin: 0 auto;
-          flex-wrap: wrap;
-          position: relative;
-          background: #fff;
-        }
-        
-        .mainimage2 .box {
-          flex: 0 1 300px;
-          min-width: 260px;
-          height: 500px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          background: #0f0f10;
-          border-radius: var(--border-radius);
-          padding: 30px 20px;
-          text-align: center;
-          cursor: pointer;
-          box-shadow: var(--shadow-sm);
-          position: relative;
-          overflow: hidden;
-          transform: translateY(16px) scale(0.98);
-          opacity: 0;
-          transition: transform var(--transition), opacity var(--transition), box-shadow var(--transition);
-        }
-        .mainimage2 .box.visible {
-          transform: translateY(0) scale(1);
-          opacity: 1;
-        }
-        .mainimage2 .box:hover {
-          transform: translateY(-6px);
-          box-shadow: var(--shadow-lg);
-        }
-        .mainimage2 .box .cursorimg {
-          position: absolute;
-          inset: 0;
-          z-index: 0;
-        }
-        .mainimage2 .box .cursorimg img {
-          position: absolute;
-          inset: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover; /* ensures image fits perfectly */
-          transition: transform 0.9s ease;
-          transform: scale(1.02);
-          filter: brightness(0.78) contrast(1.05);
-        }
-        .mainimage2 .box:hover .cursorimg img {
-          transform: scale(1.03);
-        }
-        .mainimage2 .box::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          z-index: 1;
-          background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.45) 100%);
-        }
-        .mainimage2 .box > img,
-        .mainimage2 .box h1,
-        .mainimage2 .box p { 
-          position: relative; 
-          z-index: 2;
-        }
-        .mainimage2 .box > img { 
-          width: 48px; height: 48px; margin-bottom: 12px;
-        }
-        .mainimage2 .box h1 { 
-          font-size: 1.25rem;
-          font-weight: 700;
-          margin-bottom: 8px;
-          color: #fff;
-        }
-        .mainimage2 .box p { 
-          font-size: 0.98rem;
-          line-height: 1.6;
-          color: #e5e7eb;
-        }
-        @media (max-width: 992px) {
-          .mainimage2 {
-            gap: 18px;
-            padding: 60px 20px;
-          }
-          .mainimage2 .box {
-            flex: 0 1 45%;
-            padding: 25px 18px;
-          }
-        }
-        @media (max-width: 768px) {
-          .mainimage2 {
-            flex-direction: column;
-            align-items: center;
-            padding: 50px 15px;
-          }
-          .mainimage2 .box {
-            width: 100%;
-            max-width: 420px;
-          }
-        }
-        @media (max-width: 576px) {
-          .mainimage2 {
-            padding: 40px 10px;
-          }
-          .mainimage2 .box {
-            min-height: 240px;
-            padding: 20px 15px;
-          }
-          .mainimage2 .box > img {
-            width: 40px;
-            height: 40px;
-          }
-          .mainimage2 .box h1 {
-            font-size: 1.1rem;
-          }
-          .mainimage2 .box p {
-            font-size: 0.9rem;
-          }
-        }
-        
+:root {
+  --border-radius: 12px;
+  --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 22px rgba(0, 0, 0, 0.12);
+  --transition: 0.35s ease;
+}
+.mainimage2 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  padding: 80px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  position: relative;
+  background: #fff;
+}
 
+.mainimage2 .box {
+  flex: 0 1 300px;
+  min-width: 260px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0f0f10;
+  border-radius: var(--border-radius);
+  padding: 30px 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  transform: translateY(16px) scale(0.98);
+  opacity: 0;
+  transition: transform var(--transition), opacity var(--transition), box-shadow var(--transition);
+}
+.mainimage2 .box.visible {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+.mainimage2 .box:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+.mainimage2 .box .cursorimg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.mainimage2 .box .cursorimg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures image fits perfectly */
+  transition: transform 0.9s ease;
+  transform: scale(1.02);
+  filter: brightness(0.78) contrast(1.05);
+}
+.mainimage2 .box:hover .cursorimg img {
+  transform: scale(1.03);
+}
+.mainimage2 .box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.45) 100%);
+}
+.mainimage2 .box > img,
+.mainimage2 .box h1,
+.mainimage2 .box p {
+  position: relative;
+  z-index: 2;
+}
+.mainimage2 .box > img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+  filter: invert(1) grayscale(100%) brightness(200%); /* 👈 Added to change icon color to white */
+}
+.mainimage2 .box h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.mainimage2 .box p {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+@media (max-width: 992px) {
+  .mainimage2 {
+    gap: 18px;
+    padding: 60px 20px;
+  }
+  .mainimage2 .box {
+    flex: 0 1 45%;
+    padding: 25px 18px;
+  }
+}
+@media (max-width: 768px) {
+  .mainimage2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15px;
+  }
+  .mainimage2 .box {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+@media (max-width: 576px) {
+  .mainimage2 {
+    padding: 40px 10px;
+  }
+  .mainimage2 .box {
+    min-height: 240px;
+    padding: 20px 15px;
+  }
+  .mainimage2 .box > img {
+    width: 40px;
+    height: 40px;
+  }
+  .mainimage2 .box h1 {
+    font-size: 1.1rem;
+  }
+  .mainimage2 .box p {
+    font-size: 0.9rem;
+  }
+}
 
 
 

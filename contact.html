@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="ContactUs.css" />
+    <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
   </head>
@@ -63,11 +63,13 @@
           >
           <ul class="dropdown-menu" role="menu">
             <li><a href="policies.html">Our Policies</a></li>
-            <li><a href="constitution.html">Our Constitution</a></li>
+            <li>
+              <a href="CONSTITUION.pdf" target="_blank">Our Constitution</a>
+            </li>
             <li><a href="ourhistory.html">Our History</a></li>
             <li><a href="Organization.html">Org Structure</a></li>
             <li>
-              <a href="facilities-services.html">Facilities &amp; Services</a>
+              <a href="Fac_Ser.html">Facilities &amp; Services</a>
             </li>
           </ul>
         </li>
@@ -81,79 +83,71 @@
   </div>
 
   <body>
-    <!-- MAIN HERO IMAGE -->
+    <!-- ===== HERO IMAGE ===== -->
     <section class="hero">
-      <img
-        src="images/contactUss.avif"
-        alt="Contact Us Image"
-        class="mainimg"
-      />
+      <img src="images/contactUss.avif" alt="Contact" class="mainimg" />
       <div class="hero-text">
-        <h1>CONTACT US</h1>
-        <h5>We’d love to hear from you</h5>
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you</p>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="contact-section">
-      <!-- WRAPPER FOR SHADOW -->
-      <div class="contact-wrapper">
-        <div class="contact-container">
-          <!-- Left Side: Contact Form -->
-          <div class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form>
-              <input type="text" placeholder="Name" required />
-              <input type="email" placeholder="Email" required />
-              <textarea placeholder="Message" rows="4" required></textarea>
-              <button type="submit">SEND</button>
-            </form>
-          </div>
-
-          <!-- Right Side: Info -->
-          <div class="contact-info">
-            <h2>Get In Touch</h2>
-            <ul>
-              <li>
-                <img src="images/mail.png" alt="Email Icon" />
-                info@companyname.com
-              </li>
-              <li>
-                <img src="images/phone-call.png" alt="Phone Icon" />
-                +26 45 89 235
-              </li>
-              <li>
-                <img src="images/location.webp" alt="Location Icon" />
-                133 Kynsey Rd, Colombo, Western Province
-              </li>
-              <li>
-                <img src="images/OIP.jpg" alt="Clock Icon" />
-                09:00 - 18:00
-              </li>
-            </ul>
-
-            <!-- Social Icons -->
-            <div class="social-icons">
-              <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
-              <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
-              <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
-            </div>
-          </div>
+    <!-- ===== CONTACT CONTENT ===== -->
+    <section class="contact-grid">
+      <!-- contact cards -->
+      <div class="contact-cards">
+        <div class="card">
+          <img src="images/phone-call.png" alt="" />
+          <h4>Phone</h4>
+          <p>+26 45 89 235</p>
+        </div>
+        <div class="card">
+          <img src="images/R.png" alt="" />
+          <h4>Whatsapp</h4>
+          <p>+26 45 89 235</p>
+        </div>
+        <div class="card">
+          <img src="images/mail.png" alt="" />
+          <h4>Email</h4>
+          <p>info@companyname.com</p>
+        </div>
+        <div class="card">
+          <img src="images/location.webp" alt="" />
+          <h4>Our Shop</h4>
+          <p>133 Kynsey Rd, Colombo, Western Province</p>
         </div>
       </div>
 
-      <!-- MAP SECTION WRAPPER -->
-      <div class="map-wrapper">
-        <iframe
-          src="https://www.google.com/maps?q=133+Kynsey+Rd,+Colombo,+Western+Province&output=embed"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+      <br />
+      <br />
+
+      <!-- form + text -->
+      <div class="contact-form-box">
+        <div class="left">
+          <h2>Get In Touch</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis.
+          </p>
+          <form>
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="text" placeholder="Subject" />
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send Now</button>
+          </form>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps?q=133+Kynsey+Rd,+Colombo,+Western+Province&output=embed"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
     </section>
   </body>
+
   <!-- Scroll to Top Button -->
   <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
 
