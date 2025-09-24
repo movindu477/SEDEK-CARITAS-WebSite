@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="RM1.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Empowered in Christ: Ecumenical Youth Programme Unites Christian Youth
+          Across Sri Lanka
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Tuesday</span>
+            <span class="date"> 08 July 2025</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            From June 20th to 21st, 2025, the peaceful surroundings of Arunodaya
+            Retreat Centre in Athurugiriya came alive with the vibrant spirit of
+            youth, faith, and unity as 68 young participants from across Sri
+            Lanka gathered for the <i>Ecumenical Youth Programme</i>. This
+            transformative two-day initiative was jointly organized by Caritas
+            Sri Lanka – SEDEC, the National Christian Council (NCC), and the
+            National Commission on Interreligious and Ecumenism, with the
+            generous support of Caritas Norge. <br /><br />
+            Participants arrived from multiple locations including Colombo,
+            Ratnapura, Anuradhapura, Kurunegala, Chilaw, Kandy, Jaffna, and
+            Batticaloa bringing with them a rich diversity of Christian
+            traditions and cultures. The programme was designed to create unity,
+            understanding, and collaboration among youth from different
+            denominations by promoting dialogue, shared spiritual experiences,
+            leadership development, and faith-based social action. It was held
+            under the inspiring theme:<b>
+              “Empowered in Christ, United to Shine in Joy and Faith.”</b
+            >
+            <br /><br />
+            The event also brought together several other key stakeholders,
+            including Rev. Fr. Emil Denis (Director, Caritas Ratnapura), Rev.
+            Fr. Priyal Janaka (National Communication Director – Ecumenism and
+            Interreligious Affairs), Rev. Sujithar Sevanayagam (NCC), Rev. Fr.
+            Dileepa Eranda (Bishop Secretary – Anuradhapura ) and the staff of
+            Caritas Sri Lanka as well as NCCSL
+            <br /><br />
+            The programme featured a series of thought-provoking and engaging
+            sessions facilitated by experienced facilitators. Rev. Fr. Jeevantha
+            Peries opened with a powerful session titled
+            <i>“Jesus Challenges the Youth”</i>, encouraging participants to
+            live boldly and faithfully with purpose and inner peace, guided by
+            the Holy Spirit. Through personal reflections, emotional engagement,
+            and Scripture readings, the youth were invited to deepen their
+            spiritual understanding and find meaning in their faith journeys.
+            <br /><br />
+            Mr. Ralston Weinman led the second session on
+            <i>“Ecumenism and Youth Formation”</i>, emphasizing the significance
+            of Christian unity in cultivating strong, compassionate, and
+            spiritually grounded youth leaders. His session provided practical
+            insights into integrating ecumenical values into youth ministry
+            while honoring diverse Christian traditions. <br /><br />
+            To encourage interaction and break down social barriers, a series of
+            lively group games such as <i>Balloon Tower</i> and
+            <i>Newspaper King</i> and <i>Queen</i> were organized. These
+            activities not only brought joy and laughter but also conveyed
+            Christian values like teamwork, humility, creativity, and unity.
+            Rev. Fr. Priyal Janake later reflected on how these simple
+            activities echoed deeper spiritual teachings and Christian life
+            principles. <br /><br />
+            A highlight of the first day was the
+            <i>“Life with Music”</i> session led by Rev. Fr. Shiran Chamaka.
+            Through a meditative blend of Sinhala and Tamil spiritual songs, the
+            session created a space for emotional reflection and cultural
+            appreciation. The day concluded with a dynamic cultural evening
+            where seven youth groups showcased their talents through song,
+            dance, and performance—celebrating creativity, diversity, and unity
+            in Christ. <br /><br />
+            On the second day, Rev. Sr. Rasika Peiris guided participants
+            through two meaningful sessions:
+            <i>“Joyful Witnesses of Christ”</i>, which inspired the youth to
+            reflect Christ’s joy in their lives, and
+            <i>“Youth as Peacemakers”</i>, focusing on their role in
+            reconciliation and peacebuilding. These sessions included practical
+            activities and open discussions that encouraged active engagement
+            and leadership. <br /><br />
+            The final session brought everyone together in group discussions to
+            plan future ecumenical initiatives. Participants shared ideas on
+            expanding outreach, strengthening inter-church collaboration, and
+            using social media to promote unity and faith among young people.
+            <br /><br />
+            The programme concluded with a heartfelt closing ceremony, where
+            certificates of participation and tokens of appreciation were
+            awarded. Throughout the two days, young participants demonstrated
+            deep respect for one another’s faith traditions, a genuine desire
+            for spiritual growth, and a strong commitment to unity in diversity.
+            The Ecumenical Youth Programme not only created a space for shared
+            faith and friendship but also empowered a new generation of
+            Christian youth to lead with love, compassion, and conviction in
+            today’s world.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/DSC00010.jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/DSC00045.jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/DSC00046.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/DSC00052.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/DSC00054.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/DSC00057.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_42281.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0037.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0039.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0043.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0047.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0053.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0061.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0063.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0064.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0065.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0068.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0069.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0070.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0073.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0081.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0084.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0087.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0088.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0092.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0103.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0107.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0113.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0124.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0137.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250624-WA0145.jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20250625-WA0044.jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2025-06-25-at-11.58.15_1d8131d1.jpg"
+              alt="Caritas Event 3"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

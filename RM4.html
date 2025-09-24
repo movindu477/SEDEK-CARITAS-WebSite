@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="RM1.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Strengthening Bonds for Sustainable Development: Partner Visit by
+          Irasil Foundation to Caritas Sri Lanka Diocesan Centres
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Tuesday</span>
+            <span class="date"> 08 July 2025</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            From the 27th of May to the 9th of June 2025, Caritas Sri Lanka had
+            the privilege of hosting Mr. Gerard Chitty and Mrs. Shivanthi Chitty
+            from the Irasil Foundation on a partner visit across several
+            diocesan centres and affiliated institutions. This important visit
+            was aimed at assessing the progress, impact, and sustainability of
+            projects supported by the Irasil Foundation, promoting direct
+            engagement with diocesan leadership and beneficiaries, and exploring
+            future opportunities for collaboration and development.
+            <br /><br />
+            The visit covered a wide range of locations, including Caritas
+            Anuradhapura, Badulla, Colombo, Kurunegala, Mannar, Rathnapura,
+            Trincomalee, the SMI Child Care and Development Centre in Kelaniya,
+            and the Don Bosco Technical Centre in Murunkan. At each site,
+            meaningful discussions were held with Directors, project staff,
+            Bishops, and local communities, providing the Irasil Foundation
+            representatives with a first-hand understanding of the challenges
+            and successes at the grassroots level. The visit further
+            strengthened the longstanding partnership between Caritas Sri Lanka
+            and the Irasil Foundation, reinforcing their shared commitment to
+            integral human development.
+          </p>
+          <br /><br />
+          <h4 style="margin-top: 20px">Key Highlights from the Visit</h4>
+          <ul style="text-align: justify; margin-left: 20px">
+            <li>
+              <strong>Caritas Rathnapura:</strong> The delegation held fruitful
+              discussions with the Caritas Ratnapura Diocesan Director, Rev.Fr.
+              Emil Denis, and staff; visited poultry project beneficiaries in
+              Gurugalla parish. Rt. Rev. Dr. Anton Wyman Croos encouraged
+              income-generating projects and praised the impact of current
+              initiatives.
+            </li>
+
+            <li>
+              <strong>Caritas Badulla:</strong> A visit to the Diyathalawa
+              parish included a discussion with Rev. Fr. Priyalal on launching a
+              new tailoring initiative. Bishop Rt. Rev. Dr. Jude Nishantha
+              extended full support for sustainable livelihoods, marketing, and
+              future collaborations.
+            </li>
+
+            <li>
+              <strong>Caritas Trincomalee:</strong> Mr. and Mrs. Chitty reviewed
+              completed projects and engaged in discussions on upcoming training
+              sessions focused on small business management. They also visited
+              the Caritas Food City and met with Bishop Rt. Rev. Dr. Noel
+              Emmanuel, who underscored the importance of sustainability in
+              community development.
+            </li>
+
+            <li>
+              <strong>Don Bosco Technical Centre, Murunkan:</strong> Discussions
+              with Rev. Fr. William and his team highlighted the progress of
+              technical and vocational training programs aimed at empowering
+              youth in Mannar.
+            </li>
+
+            <li>
+              <strong>Caritas Mannar:</strong> The team visited highland crop
+              projects in Veddayamurippu, paddy fields in Umanakari, and met
+              with youth from the Revolving Loan Fund (RLF) in Atchankulam,
+              showcasing the long-term impact of agricultural and youth
+              empowerment projects.
+            </li>
+
+            <li>
+              <strong>Caritas Anuradhapura:</strong> Focused on reviewing past
+              interventions and exploring the possibility of restarting the
+              piggery project while identifying new areas for development.
+            </li>
+
+            <li>
+              <strong>Caritas Kurunegala:</strong> Mr. and Mrs. Chitty visited
+              families involved in poultry and goat-rearing initiatives and held
+              discussions with staff on strengthening these income sources.
+            </li>
+
+            <li>
+              <strong>Caritas Colombo:</strong> Met with Rev. Fr. Nilantha
+              Heshan, Director of Caritas Colombo, to reflect on the outcomes of
+              past projects and discuss future development opportunities within
+              the region.
+            </li>
+
+            <li>
+              <strong>SMI Child Care and Development Centre, Kelaniya:</strong>
+              A generous donation of seven laptops was made to support children
+              from underprivileged backgrounds. Operated by the Sisters of Mary
+              Immaculate, the centre expressed deep gratitude for the
+              technological support that will significantly enhance children’s
+              learning experiences.
+            </li>
+
+            <li>
+              <strong>Thanamalvila Parish:</strong> Additionally, three laptops
+              were handed over to university students to support their higher
+              education, symbolising Irasil Foundation’s commitment to youth
+              development and education.
+            </li>
+          </ul>
+          <br /><br />
+          <p class="caritas-text">
+            The overall feedback from the visit was overwhelmingly positive.
+            Stakeholders across all locations expressed deep appreciation for
+            the continuous support of the Irasil Foundation. The emphasis on
+            sustainability and forward-looking partnerships was a recurring
+            theme throughout the visit. Bishops and diocesan teams conveyed
+            their gratitude and highlighted the critical role such partnerships
+            play in uplifting marginalized communities. The visit not only
+            reaffirmed shared values but also identified new opportunities for
+            growth and collaboration, aligning closely with Caritas Sri Lanka’s
+            vision for integral human development and sustainable
+            transformation.
+            <br /><br />
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/261f1e2e-b54c-4cca-8177-1579ac00b131.jpg"
+              alt="Caritas Event 1"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2025-07-01-at-14.51.46.jpeg"
+              alt="Caritas Event 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2025-07-01-at-15.04.54.jpeg"
+              alt="Caritas Event 3"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2025-07-03-at-09.55.38.jpeg"
+              alt="Caritas Event 4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>
