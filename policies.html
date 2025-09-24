@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="policies.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== Policies Section ===== -->
+    <section class="policies">
+      <h1 class="page-title">Policies & Documents</h1>
+
+      <div class="policy-grid">
+        <div class="policy-card">
+          <h2>1. Advocacy Policy – CSL</h2>
+          <a href="pdf/1.-Advocacy-Policy-CSL.pdf" download class="small-link">
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>2. Anti Money Laundering Policy – CSL</h2>
+          <a
+            href="pdf/2.-Anti-Money-Laundering-Policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>3. Anti Terrorism Policy – CSL</h2>
+          <a
+            href="pdf/3.-Anti-Terrorsm-Policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>4. Child protection policy CSL</h2>
+          <a
+            href="pdf/4.-Child-protection-policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>5. Communications Policy - CSL</h2>
+          <a
+            href="pdf/5.-Communications-Policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>6. Compaint Handling Policy – CSL</h2>
+          <a
+            href="pdf/6.-Compaint-Handling-Policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>Edit 7. Data Prtection Policy CSL</h2>
+          <a
+            href="pdf/7.-Data-Prtection-Policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>9. Fund Raising Policy – CSL</h2>
+          <a
+            href="pdf/9.-Fund-Raising-Policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>10. Humanitarian Policy – CSL</h2>
+          <a
+            href="pdf/10.-Humanitarian-Policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>11. Information Disclosure Policy - CSL</h2>
+          <a
+            href="pdf/11.-Information-Disclosure-Policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>12. Procument Policy – CSL</h2>
+          <a
+            href="pdf/12.-Procument-Policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>13. Safeguarding policy – CSL</h2>
+          <a
+            href="pdf/13.-Safeguarding-policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>14. Transparency And Accountability Policy -CSL</h2>
+          <a
+            href="pdf/14.-Transparency-And-Accountability-Policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>15. Value for Money Policy- CSL</h2>
+          <a
+            href="pdf/15.-Value-for-Money-Policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="policy-card">
+          <h2>16. Whistleblowing Policy – CSL</h2>
+          <a
+            href="pdf/16.-Whistleblowing-Policy-CSL.pdf"
+            download
+            class="small-link"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <div class="single-policy">
+          <h2>17. Anti-corruption Policy – CSL</h2>
+          <a
+            href="pdf/17.-Anti-corruption-Policy-CSL.pdf"
+            download
+            class="single-download"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Click here to download
+          </a>
+        </div>
+
+        <!-- Repeat for all policies -->
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

@@ -1,179 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Organization Structre</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="org.css">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="org.css" />
     <script src="index.js" defer></script>
-        <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <!-- Top section -->
+      <div class="topsection">
+        <div class="item">
+          <img src="images/phone-call.png" alt="Call Icon" />
+          <p>0094 11 2691885</p>
+        </div>
+        <div class="item">
+          <img src="images/mail.png" alt="Email Icon" />
+          <p>sedec@caritaslk.org</p>
+        </div>
+        <div class="language-selector">
+          <button class="lang">FR</button>
+          <button class="lang">ES</button>
+          <button class="lang active">EN</button>
+        </div>
+      </div>
 
-<!-- NAVBAR -->
-<div class="navbar">
-  <!-- Top section -->
-  <div class="topsection">
-    <div class="item">
-      <img src="images/phone-call.png" alt="Call Icon" />
-      <p>0094 11 2691885</p>
-    </div>
-    <div class="item">
-      <img src="images/mail.png" alt="Email Icon" />
-      <p>sedec@caritaslk.org</p>
-    </div>
-    <div class="language-selector">
-      <button class="lang">FR</button>
-      <button class="lang">ES</button>
-      <button class="lang active">EN</button>
-    </div>
-  </div>
-  <div class="downsection">
-    <div class="logos">
-      <img src="images/logo2.png" alt="Logo" width="40" />
-      <img src="images/logo3.png" alt="Logo" width="120" />
-    </div>
-    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu" aria-controls="navMenu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <ul id="navMenu" role="menubar">
-      <button class="close-menu" id="closeMenu" aria-label="Close Menu">✕</button>
-      <li><a href="index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="aboutus.html" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Who We Are</a>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="policies.html">Our Policies</a></li>
-          <li><a href="CONSTITUION.pdf">Our Constitution</a></li>
-          <li><a href="ourhistory.html">Our History</a></li>
-          <li><a href="org.html">Org Structure</a></li>
-          <li><a href="faculty.html">Facilities &amp; Services</a></li>
+      <!-- Down section -->
+      <div class="downsection">
+        <div class="logos">
+          <img src="images/logo2.png" alt="Logo" width="40" />
+          <img src="images/logo3.png" alt="Logo" width="120" />
+        </div>
+
+        <!-- Mobile menu button -->
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Open Menu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- Main Nav -->
+        <ul id="navMenu" role="menubar">
+          <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+            ✕
+          </button>
+
+          <li><a href="index.html">Home</a></li>
+
+          <!-- Who We Are Dropdown -->
+          <li class="dropdown">
+            <a
+              href="aboutus.html"
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Who We Are</a
+            >
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="policies.html">Our Policies</a></li>
+              <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+              <li><a href="ourhistory.html">Our History</a></li>
+              <li><a href="org.html">Org Structure</a></li>
+              <li><a href="faculty.html">Facilities &amp; Services</a></li>
+            </ul>
+          </li>
+
+          <!-- What We Do Dropdown -->
+          <li class="dropdown">
+            <a
+              href="whatwedo.html"
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              What We Do
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+              <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li>
+                <a href="whatwedo.html#guiding-prin">Guiding Principles</a>
+              </li>
+              <li>
+                <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+              </li>
+              <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+              <li>
+                <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+              </li>
+              <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+            </ul>
+          </li>
+
+          <!-- News Dropdown -->
+          <li class="dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >News</a
+            >
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="latest.html">Latest News</a></li>
+              <li><a href="stories.html">Success Stories</a></li>
+              <li><a href="documentaries.html">Documentaries</a></li>
+              <li><a href="publications.html">Publications</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact.html">Contact Us</a></li>
+          <li class="highlight"><a href="#">DONATE</a></li>
         </ul>
-      </li>
-      <li><a href="whatwedo.html">What We Do</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-      <li class="highlight"><a href="#">DONATE</a></li>
-    </ul>
-  </div>
-</div>
-
-
-</head>
-<body>
-
+      </div>
+    </div>
+  </head>
+  <body>
     <!-- MAIN HERO IMAGE -->
     <section class="hero">
-      <img
-        src="images/org1.jpg"
-        alt="Main Image"
-        class="mainimg"
-      />
+      <img src="images/org1.jpg" alt="Main Image" class="mainimg" />
       <div class="hero-text">
         <h1>ORGANIZATION STRUCTURE</h1>
-        <p>Our journey began with a simple vision to create a place where passion meets purpose. From humble beginnings, we have grown into a community that values trust, dedication, and innovation. Every step of our story is shaped by the people we serve and the commitment we carry to make a difference. As we continue to grow, we invite you to be a part of this journey, because our story is not just about us it’s about all of us, together.</p>
+        <p>
+          Our journey began with a simple vision to create a place where passion
+          meets purpose. From humble beginnings, we have grown into a community
+          that values trust, dedication, and innovation. Every step of our story
+          is shaped by the people we serve and the commitment we carry to make a
+          difference. As we continue to grow, we invite you to be a part of this
+          journey, because our story is not just about us it’s about all of us,
+          together.
+        </p>
       </div>
     </section>
-    
 
-
-  <!-- structure -->
-  <div class="struc">
-    <div class="upper">
-      <img src="images/struc1.png" alt="logo icons">
-      <h1>Caritas Sri Lanka-SEDEC Organogram</h1>
-      <img src="images/logo2.png" alt="logo icons">
-    </div>
-    <img src="images/structure.png" alt="Picture of Organization Structure" class="popup-trigger">
-  </div>
-
-  <!-- Popup Modal -->
-  <div class="popup" id="popup">
-    <span class="close" id="closeBtn">&times;</span>
-    <img class="popup-content" id="popupImg">
-  </div>
-  <script>
-    // Get elements
-const popup = document.getElementById("popup");
-const popupImg = document.getElementById("popupImg");
-const triggerImg = document.querySelector(".popup-trigger");
-const closeBtn = document.getElementById("closeBtn");
-
-// Open Popup
-triggerImg.addEventListener("click", () => {
-  popup.style.display = "block";
-  popupImg.src = triggerImg.src;
-});
-
-// Close Popup
-closeBtn.addEventListener("click", () => {
-  popup.style.display = "none";
-});
-
-// Close when clicking outside image
-popup.addEventListener("click", (e) => {
-  if (e.target === popup) {
-    popup.style.display = "none";
-  }
-});
-
-  </script>
-
-</body>
-
-<div class="footer">
-  <div class="lesftpanel">
-    <img class="logofooter" src="images/logo3.png" alt="The Logo">
-    <h1>Caritas<br><span>SRI LANKA - SEDEC</span></h1>
-    <p>
-      Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
-      Conference of Sri Lanka and is affiliated to Caritas Internationalis,
-    </p>
-  </div>
-
-  <div class="middlepanel">
-    <h1>Quick Links</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">Who We Are</a></li>
-      <li><a href="">Documentaries</a></li>
-      <li><a href="">Publications</a></li>
-      <li><a href="">Project Proposals</a></li>
-      <li><a href="">Donate</a></li>
-      <li><a href="">Contact Us</a></li>
-    </ul>
-  </div>
-
-  <div class="rightpanel">
-    <h1>Newsletter subscription</h1>
-    <div class="newsletter">
-      <input type="email" placeholder="Email Address">
-      <button>Subscribe</button>
+    <!-- structure -->
+    <div class="struc">
+      <div class="upper">
+        <img src="images/struc1.png" alt="logo icons" />
+        <h1>Caritas Sri Lanka-SEDEC Organogram</h1>
+        <img src="images/logo2.png" alt="logo icons" />
+      </div>
+      <img
+        src="images/structure.png"
+        alt="Picture of Organization Structure"
+        class="popup-trigger"
+      />
     </div>
 
-    <h1>Follow us</h1>
-    <div class="social-icons">
-      <a href=""><img src="images/youtube.png" alt=""></a>
-      <a href=""><img src="images/instagram.png" alt=""></a>
-      <a href=""><img src="images/facebook.png" alt=""></a>
+    <!-- Popup Modal -->
+    <div class="popup" id="popup">
+      <span class="close" id="closeBtn">&times;</span>
+      <img class="popup-content" id="popupImg" />
+    </div>
+    <script>
+      // Get elements
+      const popup = document.getElementById("popup");
+      const popupImg = document.getElementById("popupImg");
+      const triggerImg = document.querySelector(".popup-trigger");
+      const closeBtn = document.getElementById("closeBtn");
+
+      // Open Popup
+      triggerImg.addEventListener("click", () => {
+        popup.style.display = "block";
+        popupImg.src = triggerImg.src;
+      });
+
+      // Close Popup
+      closeBtn.addEventListener("click", () => {
+        popup.style.display = "none";
+      });
+
+      // Close when clicking outside image
+      popup.addEventListener("click", (e) => {
+        if (e.target === popup) {
+          popup.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
     </div>
 
-    <p>Call us: 0094 11 2691885</p>
-    <br>
-    <p>
-      Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
-      Colombo 08, 00800 Sri Lanka
-    </p>
-  </div>
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
 
-  <div class="underpanel">
-    <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
-    <a href=""><p>Solution by: Ceylon Innovation Services (PVT) LTD</p></a>
-  </div>
-</div>
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
 
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Solution by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
 </html>

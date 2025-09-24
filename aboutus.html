@@ -7,64 +7,127 @@
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
-        <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <!-- Top section -->
+      <div class="topsection">
+        <div class="item">
+          <img src="images/phone-call.png" alt="Call Icon" />
+          <p>0094 11 2691885</p>
+        </div>
+        <div class="item">
+          <img src="images/mail.png" alt="Email Icon" />
+          <p>sedec@caritaslk.org</p>
+        </div>
+        <div class="language-selector">
+          <button class="lang">FR</button>
+          <button class="lang">ES</button>
+          <button class="lang active">EN</button>
+        </div>
+      </div>
 
+      <!-- Down section -->
+      <div class="downsection">
+        <div class="logos">
+          <img src="images/logo2.png" alt="Logo" width="40" />
+          <img src="images/logo3.png" alt="Logo" width="120" />
+        </div>
 
-<!-- NAVBAR -->
-<div class="navbar">
-  <!-- Top section -->
-  <div class="topsection">
-    <div class="item">
-      <img src="images/phone-call.png" alt="Call Icon" />
-      <p>0094 11 2691885</p>
-    </div>
-    <div class="item">
-      <img src="images/mail.png" alt="Email Icon" />
-      <p>sedec@caritaslk.org</p>
-    </div>
-    <div class="language-selector">
-      <button class="lang">FR</button>
-      <button class="lang">ES</button>
-      <button class="lang active">EN</button>
-    </div>
-  </div>
-  <div class="downsection">
-    <div class="logos">
-      <img src="images/logo2.png" alt="Logo" width="40" />
-      <img src="images/logo3.png" alt="Logo" width="120" />
-    </div>
-    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu" aria-controls="navMenu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <ul id="navMenu" role="menubar">
-      <button class="close-menu" id="closeMenu" aria-label="Close Menu">✕</button>
-      <li><a href="index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="aboutus.html" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Who We Are</a>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="policies.html">Our Policies</a></li>
-          <li><a href="CONSTITUION.pdf">Our Constitution</a></li>
-          <li><a href="ourhistory.html">Our History</a></li>
-          <li><a href="org.html">Org Structure</a></li>
-          <li><a href="faculty.html">Facilities &amp; Services</a></li>
+        <!-- Mobile menu button -->
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Open Menu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- Main Nav -->
+        <ul id="navMenu" role="menubar">
+          <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+            ✕
+          </button>
+
+          <li><a href="index.html">Home</a></li>
+
+          <!-- Who We Are Dropdown -->
+          <li class="dropdown">
+            <a
+              href="aboutus.html"
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Who We Are</a
+            >
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="policies.html">Our Policies</a></li>
+              <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+              <li><a href="ourhistory.html">Our History</a></li>
+              <li><a href="org.html">Org Structure</a></li>
+              <li><a href="faculty.html">Facilities &amp; Services</a></li>
+            </ul>
+          </li>
+
+          <!-- What We Do Dropdown -->
+          <li class="dropdown">
+            <a
+              href="whatwedo.html"
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              What We Do
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+              <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li>
+                <a href="whatwedo.html#guiding-prin">Guiding Principles</a>
+              </li>
+              <li>
+                <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+              </li>
+              <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+              <li>
+                <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+              </li>
+              <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+            </ul>
+          </li>
+
+          <!-- News Dropdown -->
+          <li class="dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >News</a
+            >
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="latest.html">Latest News</a></li>
+              <li><a href="stories.html">Success Stories</a></li>
+              <li><a href="documentaries.html">Documentaries</a></li>
+              <li><a href="publications.html">Publications</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact.html">Contact Us</a></li>
+          <li class="highlight"><a href="#">DONATE</a></li>
         </ul>
-      </li>
-      <li><a href="whatwedo.html">What We Do</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-      <li class="highlight"><a href="#">DONATE</a></li>
-    </ul>
-  </div>
-</div>
-
-
-
+      </div>
+    </div>
   </head>
   <body>
     <!-- Banner Section -->
@@ -73,58 +136,56 @@
       <div class="banner-text">About OUR STORY</div>
     </section>
 
-
     <!-- mission ans vission -->
-<section class="mission-vision">
-  <!-- Mission -->
-  <div class="card">
-    <div class="card-content">
-      <img src="mission-icon.png" alt="Mission Icon">
-      <h2>Our Mission</h2>
-    </div>
-    <div class="card-overlay">
-      <p>
-        Our mission is to bring love, care, and happiness to pets and their families by
-        providing trusted services and quality products.
-      </p>
-    </div>
-  </div>
+    <section class="mission-vision">
+      <!-- Mission -->
+      <div class="card">
+        <div class="card-content">
+          <img src="mission-icon.png" alt="Mission Icon" />
+          <h2>Our Mission</h2>
+        </div>
+        <div class="card-overlay">
+          <p>
+            Our mission is to bring love, care, and happiness to pets and their
+            families by providing trusted services and quality products.
+          </p>
+        </div>
+      </div>
 
-  <!-- Vision -->
-  <div class="card">
-    <div class="card-content">
-      <img src="vision-icon.png" alt="Vision Icon">
-      <h2>Our Vision</h2>
-    </div>
-    <div class="card-overlay">
-      <p>
-        Our vision is to be the most trusted and innovative pet care provider, creating a
-        community where every pet lives a healthier and happier life.
-      </p>
-    </div>
-  </div>
-</section>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const cards = document.querySelectorAll(".mission-vision .card");
+      <!-- Vision -->
+      <div class="card">
+        <div class="card-content">
+          <img src="vision-icon.png" alt="Vision Icon" />
+          <h2>Our Vision</h2>
+        </div>
+        <div class="card-overlay">
+          <p>
+            Our vision is to be the most trusted and innovative pet care
+            provider, creating a community where every pet lives a healthier and
+            happier life.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".mission-vision .card");
 
-      const observer = new IntersectionObserver(
-        entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              observer.unobserve(entry.target); // animate once
-            }
-          });
-        },
-        { threshold: 0.5 } // trigger when 50% visible
-      );
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // animate once
+              }
+            });
+          },
+          { threshold: 0.5 } // trigger when 50% visible
+        );
 
-      cards.forEach(card => observer.observe(card));
-    });
-
-</script>
-
+        cards.forEach((card) => observer.observe(card));
+      });
+    </script>
 
     <!-- About Caritas Section -->
     <section class="about-caritas">
@@ -179,446 +240,432 @@
 
     <br />
 
-
-
-
-    
-<!-- Our Team -->
-   <!-- Our Team -->
+    <!-- Our Team -->
+    <!-- Our Team -->
     <div class="team-section">
-        <h1>OUR TEAM</h1>
-        <p>The outstanding and hardworking Caritas<br />Sri Lanka family</p>
+      <h1>OUR TEAM</h1>
+      <p>The outstanding and hardworking Caritas<br />Sri Lanka family</p>
 
-        <div class="team-container">
-            <!-- Member 1 -->
-            <div class="team-card">
-                <div class="team-image">
-                    <img src="images/1.jpg" alt="Team Member 1" />
-                    <h3>Rt. Rev. Dr. Harold Anthony Perera</h3>
-                    <span class="role">Chairman</span>
-                </div>
-                <div class="team-info">
-                    <p>
-                        Rt. Rev. Dr. Harold Anthony Perera, born on 6 June 1951, is a respected
-                        Catholic Bishop in Sri Lanka. Ordained a priest in 1980, he has served as
-                        Bishop of Ratnapura, Galle, and Kurunegala. Becoming the first local diocesan
-                        bishop of Ratnapura, he is the current President of the Catholic Bishops'
-                        Conference of Sri Lanka and Chairman of Caritas Sri Lanka, recognized for his
-                        leadership in justice, peace, interfaith dialogue, and humanitarian service.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Member 2 -->
-            <div class="team-card reverse">
-                <div class="team-image">
-                    <img src="images/2.jpeg" alt="Rt. Rev. Dr. Anton Wyman Croos" />
-                    <h3>Rt. Rev. Dr. Anton Wyman Croos</h3>
-                    <span class="role">Vice Chairman</span>
-                </div>
-                <div class="team-info">
-                    <p>
-                        Rt. Rev. Dr. Anton Wyman Croos is a dedicated Catholic Bishop serving the Sri
-                        Lankan community. Known for his deep commitment to faith, social justice, and
-                        pastoral care, he actively contributes to Caritas Sri Lanka's mission of
-                        uplifting communities through education, social welfare, and interreligious
-                        dialogue.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Member 3 -->
-            <div class="team-card">
-                <div class="team-image">
-                    <img src="images/3.jpg" alt="Team Member 3" />
-                    <h3>Rev. Fr. Luke Nelson Perera</h3>
-                    <span class="role">National Director</span>
-                </div>
-                <div class="team-info">
-                    <p>
-                        Rev. Fr. Luke Nelson Perera has been a guiding force within Caritas Sri Lanka,
-                        leading with compassion and vision. His pastoral service and dedication to
-                        fostering social harmony have significantly strengthened Caritas' mission to
-                        serve the marginalized and promote unity among communities.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Member 4 -->
-            <div class="team-card reverse">
-                <div class="team-image">
-                    <img src="images/4.jpg" alt="Another Member" />
-                    <h3>Another Member Name</h3>
-                    <span class="role">Role Here</span>
-                </div>
-                <div class="team-info">
-                    <p>
-                        Rev. Fr. Luke Nelson Perera has been a guiding force within Caritas Sri Lanka,
-                        leading with compassion and vision. His pastoral service and dedication to
-                        fostering social harmony have significantly strengthened Caritas' mission to
-                        serve the marginalized and promote unity among communities.
-                    </p>
-                </div>
-            </div>
+      <div class="team-container">
+        <!-- Member 1 -->
+        <div class="team-card">
+          <div class="team-image">
+            <img src="images/1.jpg" alt="Team Member 1" />
+            <h3>Rt. Rev. Dr. Harold Anthony Perera</h3>
+            <span class="role">Chairman</span>
+          </div>
+          <div class="team-info">
+            <p>
+              Rt. Rev. Dr. Harold Anthony Perera, born on 6 June 1951, is a
+              respected Catholic Bishop in Sri Lanka. Ordained a priest in 1980,
+              he has served as Bishop of Ratnapura, Galle, and Kurunegala.
+              Becoming the first local diocesan bishop of Ratnapura, he is the
+              current President of the Catholic Bishops' Conference of Sri Lanka
+              and Chairman of Caritas Sri Lanka, recognized for his leadership
+              in justice, peace, interfaith dialogue, and humanitarian service.
+            </p>
+          </div>
         </div>
+
+        <!-- Member 2 -->
+        <div class="team-card reverse">
+          <div class="team-image">
+            <img src="images/2.jpeg" alt="Rt. Rev. Dr. Anton Wyman Croos" />
+            <h3>Rt. Rev. Dr. Anton Wyman Croos</h3>
+            <span class="role">Vice Chairman</span>
+          </div>
+          <div class="team-info">
+            <p>
+              Rt. Rev. Dr. Anton Wyman Croos is a dedicated Catholic Bishop
+              serving the Sri Lankan community. Known for his deep commitment to
+              faith, social justice, and pastoral care, he actively contributes
+              to Caritas Sri Lanka's mission of uplifting communities through
+              education, social welfare, and interreligious dialogue.
+            </p>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="team-card">
+          <div class="team-image">
+            <img src="images/3.jpg" alt="Team Member 3" />
+            <h3>Rev. Fr. Luke Nelson Perera</h3>
+            <span class="role">National Director</span>
+          </div>
+          <div class="team-info">
+            <p>
+              Rev. Fr. Luke Nelson Perera has been a guiding force within
+              Caritas Sri Lanka, leading with compassion and vision. His
+              pastoral service and dedication to fostering social harmony have
+              significantly strengthened Caritas' mission to serve the
+              marginalized and promote unity among communities.
+            </p>
+          </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="team-card reverse">
+          <div class="team-image">
+            <img src="images/4.jpg" alt="Another Member" />
+            <h3>Another Member Name</h3>
+            <span class="role">Role Here</span>
+          </div>
+          <div class="team-info">
+            <p>
+              Rev. Fr. Luke Nelson Perera has been a guiding force within
+              Caritas Sri Lanka, leading with compassion and vision. His
+              pastoral service and dedication to fostering social harmony have
+              significantly strengthened Caritas' mission to serve the
+              marginalized and promote unity among communities.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
-     <script>
-document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".team-card");
-  
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target); // animate only once
-          }
-        });
-      },
-      { threshold: 0.4 } // starts animation when 40% visible
-    );
-  
-    cards.forEach((card) => observer.observe(card));
-  });
-     </script>
-
-
-
-
-
-
-
-    
-    <!-- Our Team other members -->
-    <div class="staff-section">
-        <h2>OUR DEDICATED TEAM</h2>
-        <p>Meet the professionals behind Caritas Sri Lanka's success</p>
-        
-        <div class="staff-container">
-            <!-- Row 1 -->
-            <div class="staff-row">
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/5.jpg" alt="MR. NIRMAL CHAMINDA" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MR. NIRMAL CHAMINDA</h3>
-                    <span>FINANCE MANAGER</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/6.jpg" alt="MRS. DUSHMANTHI HEWAGE" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MRS. DUSHMANTHI HEWAGE</h3>
-                    <span>FINANCE MANAGER / PROGRAMMES</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/7.jpg" alt="MRS. WENDY THERESE STARLING" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MRS. WENDY THERESE STARLING</h3>
-                    <span>SECRETARY TO THE DIRECTOR / HR OFFICER</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/8.jpg" alt="MR. JAYASIRI PREMARATNE" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MR. JAYASIRI PREMARATNE</h3>
-                    <span>NATIONAL CORDINATOR - SA&FS</span>
-                </div>
-            </div>
-            
-            <!-- Row 2 -->
-            <div class="staff-row">
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/9.jpg" alt="MRS. NILANI TISSERA" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MRS. NILANI TISSERA</h3>
-                    <span>UNIT HEAD - EC&PP</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/10.jpg" alt="MR. J. P. SAGAYARAJ" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MR. J. P. SAGAYARAJ</h3>
-                    <span>UNIT HEAD - DRRM</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/11.jpg" alt="MR. J. A. ELIYAS" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MR. J. A. ELIYAS</h3>
-                    <span>ADMINISTRATIVE OFFICER</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/12.jpg" alt="MR. CHAMINDA THUSHARA PERERA" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MR. CHAMINDA THUSHARA PERERA</h3>
-                    <span>UNIT HEAD ADMIN / PROCUREMENT OFFICER</span>
-                </div>
-            </div>
-            
-            <!-- Row 3 -->
-            <div class="staff-row">
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/13.jpg" alt="MR. A. SHERLY HOUGH" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MR. A. SHERLY HOUGH</h3>
-                    <span>ASSISTANT ADMINISTRATIVE OFFICER</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/14.jpg" alt="MR. TERRANCE CODIPILY" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MR. TERRANCE CODIPILY</h3>
-                    <span>IT / MEDIA COORDINATOR</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/15.jpg" alt="MR. L. RUKESH SANMUGANATHAN" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MR. L. RUKESH SANMUGANATHAN</h3>
-                    <span>FINANCE PROJECT OFFICER</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/16.jpg" alt="MS. CHATHURIKA WIJESINGHE" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MS. CHATHURIKA WIJESINGHE</h3>
-                    <span>FINANCE PROJECT OFFICER</span>
-                </div>
-            </div>
-            
-            <!-- Row 4 -->
-            <div class="staff-row">
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/17.jpg" alt="MRS. R. M. ANN ROSEDELIMA RATNAYAKE" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MRS. R. M. ANN ROSEDELIMA RATNAYAKE</h3>
-                    <span>PROJECT ACCOUNTANT</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/18.jpg" alt="MR. NEMAL FERNANDO" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MR. NEMAL FERNANDO</h3>
-                    <span>PROJECT FINANCE OFFICER</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/19.jpg" alt="MS. THAYAGI SILVA" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MS. THAYAGI SILVA</h3>
-                    <span>ACCOUNTS ASSISTANT / CASHIER</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/20.jpg" alt="MS. SHELANI DAVID" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MS. SHELANI DAVID</h3>
-                    <span>ACCOUNTING OFFICER</span>
-                </div>
-            </div>
-            
-            <!-- Row 5 -->
-            <div class="staff-row">
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/21.jpg" alt="MISS CHATHURANI N. HETTIARACHCHI" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MISS CHATHURANI N. HETTIARACHCHI</h3>
-                    <span>PROJECT OFFICER - CE&SM</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/22.jpg" alt="MS. MICHELLE SENARATHNE" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MS. MICHELLE SENARATHNE</h3>
-                    <span>PROGRAMME COORDINATOR - CE&SM</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/23.jpg" alt="REV. SR. USHANI PERERA" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>REV. SR. USHANI PERERA</h3>
-                    <span>UNIT HEAD - SP&J</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/24.jpg" alt="MS. DHARSHIKA A. FERNANDO" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MS. DHARSHIKA A. FERNANDO</h3>
-                    <span>PROGRAMME OFFICER - SP&J</span>
-                </div>
-            </div>
-            
-            <!-- Row 6 -->
-            <div class="staff-row">
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/25.jpg" alt="MISS. SHOPANJANI SIVANANTHARAJAH" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MISS. SHOPANJANI SIVANANTHARAJAH</h3>
-                    <span>PROGRAMME OFFICER - EC&PP</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/26.jpg" alt="MRS. MALAR RAVEENDRANY" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MRS. MALAR RAVEENDRANY</h3>
-                    <span>ADMINISTRATIVE SECRETARY</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/27.jpg" alt="MS. EVANJALIINA SAMPATHAWADUGE" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MS. EVANJALIINA SAMPATHAWADUGE</h3>
-                    <span>PROJECT OFFICER - DRRM</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/28.jpg" alt="MS. NIRANJANI ROLAND RONALD" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MS. NIRANJANI ROLAND RONALD</h3>
-                    <span>PROGRAMME COORDINATOR - EC&PP</span>
-                </div>
-            </div>
-            
-            <!-- Row 7 -->
-            <div class="staff-row">
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/29.jpg" alt="MR. K. HERSHANTH" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MR. K. HERSHANTH</h3>
-                    <span>REGIONAL COORDINATOR - SA&FS (NORTH&EAST)</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/30.jpg" alt="MR. A. SIRANTHA RIHAN FERNANDO" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MR. A. SIRANTHA RIHAN FERNANDO</h3>
-                    <span>PROGRAMME COORDINATOR - SSEP</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/31.jpg" alt="MS. C. A. D. AMALI SHAMINI" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MS. C. A. D. AMALI SHAMINI</h3>
-                    <span>REGIONAL PROGRAMME COORDINATOR -SA&FS</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/32.jpg" alt="MR. DHANUSHKA GOMES" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MR. DHANUSHKA GOMES</h3>
-                    <span>ACCOUNTING OFFICER</span>
-                </div>
-            </div>
-            
-            <!-- Row 8 -->
-            <div class="staff-row">
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/33.jpg" alt="MISS. CHAMIKA" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MISS. CHAMIKA</h3>
-                    <span>PROJECT OFFICER - DRRM</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/34.jpg" alt="MISS. OSHADI SENURI" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MISS. OSHADI SENURI</h3>
-                    <span>COMMUNICATION OFFICER</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/35.jpg" alt="MISS. EURRESHI KAVEESHA" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MISS. EURRESHI KAVEESHA</h3>
-                    <span>PROGRAMME OFFICER - SPJ</span>
-                </div>
-                <div class="staff-member">
-                    <div class="image-container">
-                        <img src="images/36.jpg" alt="MISS. DEEPTHI" />
-                        <div class="red-border"></div>
-                    </div>
-                    <h3>MISS. DEEPTHI</h3>
-                    <span>REGIONAL PROGRAMME COORDINATOR - SA&FS</span>
-                </div>
-            </div>
-        </div>
-    </div>
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const staffRows = document.querySelectorAll(".staff-row")
-            const observerOptions = {
-                threshold: 0.2, // Trigger when 20% of the row is visible
-                rootMargin: "0px 0px -50px 0px" 
-            };
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const index = Array.from(staffRows).indexOf(entry.target);
-                        setTimeout(() => {
-                            entry.target.classList.add("visible");
-                        }, index * 150); // 150ms delay between rows
-                        
-                        // Stop observing after animation triggers
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-            staffRows.forEach(row => {
-                observer.observe(row);
+      document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".team-card");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // animate only once
+              }
             });
-        });
+          },
+          { threshold: 0.4 } // starts animation when 40% visible
+        );
+
+        cards.forEach((card) => observer.observe(card));
+      });
     </script>
 
+    <!-- Our Team other members -->
+    <div class="staff-section">
+      <h2>OUR DEDICATED TEAM</h2>
+      <p>Meet the professionals behind Caritas Sri Lanka's success</p>
 
+      <div class="staff-container">
+        <!-- Row 1 -->
+        <div class="staff-row">
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/5.jpg" alt="MR. NIRMAL CHAMINDA" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MR. NIRMAL CHAMINDA</h3>
+            <span>FINANCE MANAGER</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/6.jpg" alt="MRS. DUSHMANTHI HEWAGE" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MRS. DUSHMANTHI HEWAGE</h3>
+            <span>FINANCE MANAGER / PROGRAMMES</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/7.jpg" alt="MRS. WENDY THERESE STARLING" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MRS. WENDY THERESE STARLING</h3>
+            <span>SECRETARY TO THE DIRECTOR / HR OFFICER</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/8.jpg" alt="MR. JAYASIRI PREMARATNE" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MR. JAYASIRI PREMARATNE</h3>
+            <span>NATIONAL CORDINATOR - SA&FS</span>
+          </div>
+        </div>
 
+        <!-- Row 2 -->
+        <div class="staff-row">
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/9.jpg" alt="MRS. NILANI TISSERA" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MRS. NILANI TISSERA</h3>
+            <span>UNIT HEAD - EC&PP</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/10.jpg" alt="MR. J. P. SAGAYARAJ" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MR. J. P. SAGAYARAJ</h3>
+            <span>UNIT HEAD - DRRM</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/11.jpg" alt="MR. J. A. ELIYAS" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MR. J. A. ELIYAS</h3>
+            <span>ADMINISTRATIVE OFFICER</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/12.jpg" alt="MR. CHAMINDA THUSHARA PERERA" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MR. CHAMINDA THUSHARA PERERA</h3>
+            <span>UNIT HEAD ADMIN / PROCUREMENT OFFICER</span>
+          </div>
+        </div>
 
+        <!-- Row 3 -->
+        <div class="staff-row">
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/13.jpg" alt="MR. A. SHERLY HOUGH" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MR. A. SHERLY HOUGH</h3>
+            <span>ASSISTANT ADMINISTRATIVE OFFICER</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/14.jpg" alt="MR. TERRANCE CODIPILY" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MR. TERRANCE CODIPILY</h3>
+            <span>IT / MEDIA COORDINATOR</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/15.jpg" alt="MR. L. RUKESH SANMUGANATHAN" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MR. L. RUKESH SANMUGANATHAN</h3>
+            <span>FINANCE PROJECT OFFICER</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/16.jpg" alt="MS. CHATHURIKA WIJESINGHE" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MS. CHATHURIKA WIJESINGHE</h3>
+            <span>FINANCE PROJECT OFFICER</span>
+          </div>
+        </div>
 
+        <!-- Row 4 -->
+        <div class="staff-row">
+          <div class="staff-member">
+            <div class="image-container">
+              <img
+                src="images/17.jpg"
+                alt="MRS. R. M. ANN ROSEDELIMA RATNAYAKE"
+              />
+              <div class="red-border"></div>
+            </div>
+            <h3>MRS. R. M. ANN ROSEDELIMA RATNAYAKE</h3>
+            <span>PROJECT ACCOUNTANT</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/18.jpg" alt="MR. NEMAL FERNANDO" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MR. NEMAL FERNANDO</h3>
+            <span>PROJECT FINANCE OFFICER</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/19.jpg" alt="MS. THAYAGI SILVA" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MS. THAYAGI SILVA</h3>
+            <span>ACCOUNTS ASSISTANT / CASHIER</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/20.jpg" alt="MS. SHELANI DAVID" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MS. SHELANI DAVID</h3>
+            <span>ACCOUNTING OFFICER</span>
+          </div>
+        </div>
 
+        <!-- Row 5 -->
+        <div class="staff-row">
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/21.jpg" alt="MISS CHATHURANI N. HETTIARACHCHI" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MISS CHATHURANI N. HETTIARACHCHI</h3>
+            <span>PROJECT OFFICER - CE&SM</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/22.jpg" alt="MS. MICHELLE SENARATHNE" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MS. MICHELLE SENARATHNE</h3>
+            <span>PROGRAMME COORDINATOR - CE&SM</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/23.jpg" alt="REV. SR. USHANI PERERA" />
+              <div class="red-border"></div>
+            </div>
+            <h3>REV. SR. USHANI PERERA</h3>
+            <span>UNIT HEAD - SP&J</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/24.jpg" alt="MS. DHARSHIKA A. FERNANDO" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MS. DHARSHIKA A. FERNANDO</h3>
+            <span>PROGRAMME OFFICER - SP&J</span>
+          </div>
+        </div>
 
+        <!-- Row 6 -->
+        <div class="staff-row">
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/25.jpg" alt="MISS. SHOPANJANI SIVANANTHARAJAH" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MISS. SHOPANJANI SIVANANTHARAJAH</h3>
+            <span>PROGRAMME OFFICER - EC&PP</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/26.jpg" alt="MRS. MALAR RAVEENDRANY" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MRS. MALAR RAVEENDRANY</h3>
+            <span>ADMINISTRATIVE SECRETARY</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/27.jpg" alt="MS. EVANJALIINA SAMPATHAWADUGE" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MS. EVANJALIINA SAMPATHAWADUGE</h3>
+            <span>PROJECT OFFICER - DRRM</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/28.jpg" alt="MS. NIRANJANI ROLAND RONALD" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MS. NIRANJANI ROLAND RONALD</h3>
+            <span>PROGRAMME COORDINATOR - EC&PP</span>
+          </div>
+        </div>
 
+        <!-- Row 7 -->
+        <div class="staff-row">
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/29.jpg" alt="MR. K. HERSHANTH" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MR. K. HERSHANTH</h3>
+            <span>REGIONAL COORDINATOR - SA&FS (NORTH&EAST)</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/30.jpg" alt="MR. A. SIRANTHA RIHAN FERNANDO" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MR. A. SIRANTHA RIHAN FERNANDO</h3>
+            <span>PROGRAMME COORDINATOR - SSEP</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/31.jpg" alt="MS. C. A. D. AMALI SHAMINI" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MS. C. A. D. AMALI SHAMINI</h3>
+            <span>REGIONAL PROGRAMME COORDINATOR -SA&FS</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/32.jpg" alt="MR. DHANUSHKA GOMES" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MR. DHANUSHKA GOMES</h3>
+            <span>ACCOUNTING OFFICER</span>
+          </div>
+        </div>
 
+        <!-- Row 8 -->
+        <div class="staff-row">
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/33.jpg" alt="MISS. CHAMIKA" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MISS. CHAMIKA</h3>
+            <span>PROJECT OFFICER - DRRM</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/34.jpg" alt="MISS. OSHADI SENURI" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MISS. OSHADI SENURI</h3>
+            <span>COMMUNICATION OFFICER</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/35.jpg" alt="MISS. EURRESHI KAVEESHA" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MISS. EURRESHI KAVEESHA</h3>
+            <span>PROGRAMME OFFICER - SPJ</span>
+          </div>
+          <div class="staff-member">
+            <div class="image-container">
+              <img src="images/36.jpg" alt="MISS. DEEPTHI" />
+              <div class="red-border"></div>
+            </div>
+            <h3>MISS. DEEPTHI</h3>
+            <span>REGIONAL PROGRAMME COORDINATOR - SA&FS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const staffRows = document.querySelectorAll(".staff-row");
+        const observerOptions = {
+          threshold: 0.2, // Trigger when 20% of the row is visible
+          rootMargin: "0px 0px -50px 0px",
+        };
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const index = Array.from(staffRows).indexOf(entry.target);
+              setTimeout(() => {
+                entry.target.classList.add("visible");
+              }, index * 150); // 150ms delay between rows
+
+              // Stop observing after animation triggers
+              observer.unobserve(entry.target);
+            }
+          });
+        }, observerOptions);
+        staffRows.forEach((row) => {
+          observer.observe(row);
+        });
+      });
+    </script>
   </body>
 
   <br />

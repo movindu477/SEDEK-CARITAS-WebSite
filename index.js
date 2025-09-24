@@ -1,36 +1,40 @@
 /* navbar function */
-
 document.addEventListener('DOMContentLoaded', function () {
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
   const navMenu = document.getElementById("navMenu");
   const closeMenu = document.getElementById("closeMenu");
   const dropdownItems = document.querySelectorAll("#navMenu .dropdown");
   const isMobile = () => window.matchMedia("(max-width: 640px)").matches;
+
   function openMenu() {
     navMenu.classList.add("active");
     mobileMenuBtn.setAttribute("aria-expanded", "true");
     document.body.style.overflow = "hidden";
   }
+
   function closeMenuFn() {
     navMenu.classList.remove("active");
     mobileMenuBtn.setAttribute("aria-expanded", "false");
     document.body.style.overflow = "";
     dropdownItems.forEach(d => d.classList.remove("active"));
   }
+
   mobileMenuBtn.addEventListener("click", openMenu);
   closeMenu.addEventListener("click", closeMenuFn);
+
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && navMenu.classList.contains("active")) closeMenuFn();
   });
+
   dropdownItems.forEach(item => {
     const toggleLink = item.querySelector("a.dropdown-toggle");
     let tappedOnce = false; // Track double tap on mobile
     toggleLink.addEventListener("click", (e) => {
       if (isMobile()) {
         if (!item.classList.contains("active") && !tappedOnce) {
-          e.preventDefault(); // stop navigat
+          e.preventDefault(); // stop navigation
           item.classList.add("active");
-          tappedOnce = true; 
+          tappedOnce = true;
           setTimeout(() => tappedOnce = false, 1000);
         } else {
           window.location.href = toggleLink.getAttribute("href");
@@ -43,12 +47,14 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
   document.addEventListener("click", (e) => {
     if (isMobile() && navMenu.classList.contains("active")) {
       const inside = e.target.closest("#navMenu") || e.target.closest("#mobileMenuBtn");
       if (!inside) closeMenuFn();
     }
   });
+
   window.addEventListener("resize", () => {
     if (!isMobile()) {
       document.body.style.overflow = "";
@@ -56,58 +62,63 @@ document.addEventListener('DOMContentLoaded', function () {
       dropdownItems.forEach(d => d.classList.remove("active"));
     }
   });
+
+  // ===== Carousel / Horizontal Scroll for Recent Posts =====
+  const wrapper = document.querySelector('.cards');
+  const btnLeft = document.querySelector('.scroll-btn.left');
+  const btnRight = document.querySelector('.scroll-btn.right');
+
+  if (wrapper && btnLeft && btnRight) {
+    const scrollAmount = 320; // adjust according to card width + gap
+    btnRight.addEventListener('click', () => {
+      wrapper.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+    btnLeft.addEventListener('click', () => {
+      wrapper.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+  }
 });
-  
-  
 
 
+// Simple script to highlight active dot
+document.addEventListener('DOMContentLoaded', function() {
+  const dots = document.querySelectorAll('.carousel-dot');
+
+  function activateDot(index) {
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+  }
+
+  // Change dot every 5 seconds (matching animation timing)
+  let currentIndex = 0;
+  setInterval(() => {
+    activateDot(currentIndex);
+    currentIndex = (currentIndex + 1) % dots.length;
+  }, 5000);
+});
 
 
-  // Simple script to highlight active dot
-        document.addEventListener('DOMContentLoaded', function() {
-            const dots = document.querySelectorAll('.carousel-dot');
-            
-            function activateDot(index) {
-                dots.forEach(dot => dot.classList.remove('active'));
-                dots[index].classList.add('active');
-            }
-            
-            // Change dot every 5 seconds (matching animation timing)
-            let currentIndex = 0;
-            setInterval(() => {
-                activateDot(currentIndex);
-                currentIndex = (currentIndex + 1) % dots.length;
-            }, 5000);
-        });
+document.addEventListener('DOMContentLoaded', function() {
+  const unitHeadings = document.querySelectorAll('.unitboxes-headings h1');
+  const unitContents = document.querySelectorAll('.imagebox1');
+
+  unitHeadings.forEach(heading => {
+    heading.addEventListener('click', function() {
+      const targetId = this.getAttribute('data-target');
+
+      // Remove active class from all headings and contents
+      unitHeadings.forEach(h => h.classList.remove('active'));
+      unitContents.forEach(c => c.classList.remove('active'));
+
+      // Add active class to clicked heading and corresponding content
+      this.classList.add('active');
+      document.getElementById(targetId).classList.add('active');
+    });
+  });
+});
 
 
-
-
-
-      document.addEventListener('DOMContentLoaded', function() {
-            const unitHeadings = document.querySelectorAll('.unitboxes-headings h1');
-            const unitContents = document.querySelectorAll('.imagebox1');
-            
-            unitHeadings.forEach(heading => {
-                heading.addEventListener('click', function() {
-                    const targetId = this.getAttribute('data-target');
-                    
-                    // Remove active class from all headings and contents
-                    unitHeadings.forEach(h => h.classList.remove('active'));
-                    unitContents.forEach(c => c.classList.remove('active'));
-                    
-                    // Add active class to clicked heading and corresponding content
-                    this.classList.add('active');
-                    document.getElementById(targetId).classList.add('active');
-                });
-            });
-        });
-
-
-
-
-
-        // Get the button
+// Get the button
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
 // Show button when user scrolls down 200px
@@ -123,9 +134,6 @@ window.onscroll = function () {
 scrollTopBtn.onclick = function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
-
-
-
 
 
 /* impact-section function */
@@ -167,8 +175,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const headings = document.querySelectorAll(".unitboxes-headings h2");
   const boxes = document.querySelectorAll(".imagebox1");
@@ -187,6 +193,28 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+/* Modal Image Functionality */
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById("imgModal");
+  const img = document.getElementById("organigram-img");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.querySelector(".close");
+
+  if (img && modal && modalImg && closeBtn) {
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    };
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    };
+    modal.onclick = function (e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  }
+});
 
 
 /* map function */
@@ -205,9 +233,6 @@ dots.forEach(dot => {
     popupText.textContent = info;
 
     // Position popup near the clicked dot
-    const rect = dot.getBoundingClientRect();
-    const containerRect = dot.closest('.map-container').getBoundingClientRect();
-
     popup.style.top = (dot.offsetTop - 10) + "px";
     popup.style.left = (dot.offsetLeft + 30) + "px";
 
@@ -240,8 +265,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
 // mainimage2 section function
 // Reveal boxes on scroll
 document.addEventListener("DOMContentLoaded", () => {
@@ -257,3 +280,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   boxes.forEach(box => observer.observe(box));
 });
+
+
+//Rithu code
+// Simple JS to show clicked category info
+function showInfo(element) {
+  const infoBox = document.getElementById('category-info');
+  infoBox.innerHTML = `<h3>${element.textContent}</h3>
+  <p>Here you can display details or description related to <strong>${element.textContent}</strong>.</p>`;
+}
+
+
+// ===== Single-Expand Toggle Function (true accordion) =====
+function toggleYear(header) {
+  const container = header.parentElement;
+  const all = document.querySelectorAll('.year-container');
+
+  all.forEach(c => {
+    if (c === container) {
+      c.classList.toggle('open');  // toggle clicked year
+    } else {
+      c.classList.remove('open');  // force all others closed
+    }
+  });
+}
