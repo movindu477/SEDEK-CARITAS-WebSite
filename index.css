@@ -189,7 +189,7 @@ body {
 .mainimage1 {
     position: relative;
     width: 100%;
-    margin-top: -2%;
+    margin-top: -13%;
     height: 650px; /* Match section height to image height */
     overflow: hidden;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);

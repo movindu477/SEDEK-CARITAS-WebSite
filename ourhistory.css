@@ -54,7 +54,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 700px; /* fixed hero height for desktop */
+  height: 750px; /* fixed hero height for desktop */
   overflow: hidden;
   margin-top: -1.5%;
 }
@@ -67,7 +67,7 @@
 }
 .hero-text {
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 150px;
   color: white;
   max-width: 700px;
@@ -145,10 +145,11 @@
 }
 @media (max-width: 480px) {
   .hero {
-    height: 450px;
+    height: 700px;
+    margin-top: -20%;
   }
   .hero-text {
-    top: 18%;
+    top: 20%;
     left: 5%;
     transform: translateX(-50%);
     text-align: center;
@@ -173,10 +174,10 @@
   position: relative;
   margin: -100px auto 60px;
   width: 80%;
-  background: #fff;
+  background: #000; /* Changed to black background */
   padding: 50px 40px;
   border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4); /* Adjusted shadow for dark background */
   z-index: 10;
   opacity: 0;
   transform: translateY(50px);
@@ -186,15 +187,17 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Heading */
 .topic-heading {
   text-align: center;
-  margin-left: 19%;
+  margin-left: 0; /* Centered horizontally */
 }
 .history-description .topic-heading {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 25px;
-  color: #222;
+  color: #fff; /* Changed to white text */
   position: relative;
   display: inline-block;
   padding-bottom: 10px;
@@ -210,12 +213,14 @@
   border-radius: 3px;
   transform: translateX(-50%);
 }
+
+/* Paragraphs */
 .history-description p {
   font-size: 17px;
   line-height: 1.9;
   margin-bottom: 20px;
-  text-align: justify;
-  color: #444;
+  text-align: center; /* Changed to center-align paragraphs */
+  color: #fff; /* Changed to white text */
   opacity: 0;
   transform: translateY(30px);
 }
@@ -223,43 +228,48 @@
   animation: fadeUp 0.9s ease forwards;
 }
 .history-description p:hover {
-  color: #000;
+  color: #ddd; /* A lighter white on hover */
 }
+
+/* Directors Heading */
 .directors-heading {
-  text-align: center; /* ✅ centered */
+  text-align: center;
   font-size: 28px;
   margin-top: 50px;
   margin-bottom: 25px;
   font-weight: 700;
-  color: #222;
+  color: #fff; /* Changed to white text */
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.8s ease;
   display: flex;
   align-items: center;
-  justify-content: center; /* ✅ center horizontally */
+  justify-content: center;
   gap: 10px;
 }
 .directors-heading.show {
   opacity: 1;
   transform: translateY(0);
 }
-.directors-text { color: #222; font-weight: 600; }
+.directors-text { color: #fff; font-weight: 600; }
 .administrators-text { color: #e63946; font-weight: 600; }
+
+/* Directors List */
 .directors-list {
   list-style-type: none;
   padding: 25px 30px;
   max-width: 750px;
-  background: #ffffff;
+  background: #1a1a1a; /* A slightly lighter black for contrast */
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-  margin: 0 auto 60px; /* ✅ center align */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  margin: 0 auto 60px;
+  color: #fff; /* Changed to white text */
 }
 .directors-list li {
   padding: 12px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #333; /* Darkened border for contrast */
   font-size: 18px;
-  color: #333;
+  color: #fff; /* Changed to white text */
   display: flex;
   align-items: center;
   gap: 12px;
@@ -274,6 +284,8 @@
   color: #e63946;
   transform: translateX(8px) scale(1.02);
 }
+
+/* Animations */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
@@ -282,35 +294,54 @@
   from { opacity: 0; transform: translateX(-20px); }
   to { opacity: 1; transform: translateX(0); }
 }
+
+/* ================= RESPONSIVE BREAKPOINTS ================= */
+
+/* Large tablets & smaller laptops */
 @media (max-width: 1024px) {
   .history-description {
     width: 85%;
     padding: 40px 30px;
-    margin-top: -14%;
+    margin-top: -10%;
   }
-  .topic-heading{
-    margin-right: 20%;
-  }
+  .topic-heading { margin-left: 0; }
   .history-description .topic-heading { font-size: 26px; }
   .directors-heading { font-size: 24px; }
   .directors-list { max-width: 90%; }
 }
+
+/* Tablets & large phones */
 @media (max-width: 768px) {
   .history-description {
     width: 90%;
     padding: 30px 20px;
+    margin-top: -5%;
   }
   .history-description .topic-heading { font-size: 24px; }
   .directors-heading { font-size: 22px; flex-direction: column; gap: 5px; }
   .directors-list { padding: 20px; }
   .directors-list li { font-size: 16px; }
 }
+
+/* Small phones */
 @media (max-width: 480px) {
   .history-description {
     width: 95%;
     padding: 25px 15px;
+    margin-top: 0;
   }
   .history-description .topic-heading { font-size: 20px; }
-  .directors-heading { font-size: 20px; }
-  .directors-list li { font-size: 15px; }
+  .directors-heading { font-size: 20px; text-align: center; }
+  .directors-list li { font-size: 15px; gap: 8px; }
+}
+
+/* Extra small devices (320px and below) */
+@media (max-width: 360px) {
+  .history-description {
+    width: 96%;
+    padding: 20px 12px;
+  }
+  .history-description .topic-heading { font-size: 18px; }
+  .directors-heading { font-size: 18px; }
+  .directors-list li { font-size: 14px; }
 }
