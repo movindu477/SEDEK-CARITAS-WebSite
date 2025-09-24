@@ -15,15 +15,18 @@ body {
 .navbar {
   width: 100%;
   background-color: #ffffff;
-  position: fixed;              /* 👈 changed from relative to fixed */
-  top: 0;                       /* stick to top */
+  position: fixed;      /* stick at top */
+  top: 0;
   left: 0;
-  z-index: 10000;               /* ensure it's above everything */
+  z-index: 10000;       /* above all */
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
+
 body {
-  margin-top: 120px;  /* adjust depending on navbar height */
+  margin-top: 120px; /* push content below navbar */
 }
+
+/* ================= TOP SECTION ================= */
 .topsection {
   background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%);
   display: flex;
@@ -47,6 +50,7 @@ body {
   width: 18px; height: 18px; transition: transform 0.3s ease;
 }
 .topsection .item:hover img { transform: translateY(-1px); }
+
 .language-selector { display: flex; gap: 12px; }
 .language-selector .lang {
   background: none; border: none; font-weight: 600; font-size: 14px;
@@ -55,9 +59,10 @@ body {
 .language-selector .lang:hover { color: #e63946; }
 .language-selector .lang.active { color: #000000; }
 
+/* ================= DOWN SECTION ================= */
 .downsection {
   display: flex; align-items: center; justify-content: space-between;
-  padding: 4px 40px; background: #e8baba;
+  padding: 10px 40px; background: #e8baba;
 }
 .downsection .logos { display: flex; align-items: center; gap: 15px; }
 .downsection .logos img { transition: transform 0.3s ease; }
@@ -79,6 +84,7 @@ body {
 .downsection ul li a:hover { color: #e63946; }
 .downsection ul li.dropdown { position: relative; }
 
+/* ================= DROPDOWN ================= */
 .downsection ul li.dropdown .dropdown-menu {
   display: none; position: absolute; top: 100%; left: 0;
   background: #ffffff; min-width: 220px;
@@ -97,6 +103,8 @@ body {
 .downsection ul li.dropdown .dropdown-menu li a:hover {
   background: #f8f9fa; color: #e63946;
 }
+
+/* ================= HIGHLIGHT BUTTON ================= */
 .downsection ul li.highlight a {
   font-weight: 600;
   background: linear-gradient(135deg, #e63946 0%, #d90429 100%);
@@ -111,6 +119,8 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(230, 57, 70, 0.4);
 }
+
+/* ================= MOBILE MENU TOGGLE ================= */
 .mobile-menu-btn {
   display: none; flex-direction: column; gap: 4px;
   background: none; border: none; cursor: pointer; padding: 8px;
@@ -118,6 +128,7 @@ body {
 .mobile-menu-btn span { width: 25px; height: 2px; background: #2d3748; transition: all 0.3s ease; }
 .close-menu { display: none; }
 
+/* ================= RESPONSIVE BREAKPOINTS ================= */
 @media (max-width: 1024px) {
   .downsection ul { gap: 30px; }
   .downsection { padding: 15px 30px; }
@@ -136,7 +147,7 @@ body {
   .downsection ul {
     position: fixed; top: 0; left: -100%; width: 80%; height: 100vh; background: #ffffff;
     flex-direction: column; gap: 0; padding: 80px 30px 30px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1); transition: left 0.3s ease; z-index: 1000;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); transition: left 0.3s ease; z-index: 9999;
   }
   .downsection ul.active { left: 0; animation: slideIn 0.3s ease forwards; }
   .downsection ul li { width: 100%; padding: 15px 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
@@ -152,10 +163,14 @@ body {
     background: none; border: none; font-size: 24px; cursor: pointer; color: #2d3748;
   }
 }
+
+/* ================= ANIMATIONS ================= */
 @keyframes slideIn {
   from { transform: translateX(-100%); }
   to   { transform: translateX(0); }
 }
+
+/* ================= ACCESSIBILITY ================= */
 .downsection ul li a:focus,
 .topsection .item:focus {
   outline: none;
@@ -164,6 +179,8 @@ body {
 .topsection .item:focus-visible {
   outline: 2px solid #e63946; outline-offset: 2px;
 }
+
+/* Reduce Motion */
 @media (prefers-reduced-motion: reduce) {
   .topsection .item,
   .topsection img,
@@ -190,7 +207,7 @@ body {
     position: relative;
     width: 100%;
     margin-top: -13%;
-    height: 800px; /* Match section height to image height */
+    height: 820px; /* Match section height to image height */
     overflow: hidden;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
     isolation: isolate;
@@ -476,6 +493,7 @@ body {
             .texts h1 {
                 font-size: 3.5rem;
                 max-width: 650px;
+                margin-top: -55%;
             }
         }
         @media (max-width: 992px) {
@@ -561,7 +579,7 @@ body {
 
 /* Box styles */
 .mainimage2 .box {
-  flex: 0 1 300px;
+  flex: 1 1 300px;                /* grow/shrink evenly */
   min-width: 260px;
   height: 500px;
   display: flex;
@@ -658,7 +676,7 @@ body {
     padding: 60px 20px;
   }
   .mainimage2 .box {
-    flex: 0 1 45%;
+    flex: 1 1 calc(50% - 18px);   /* two per row */
     height: 420px;
     padding: 25px 18px;
   }
@@ -673,7 +691,7 @@ body {
   }
   .mainimage2 .box {
     width: 100%;
-    max-width: 420px;
+    max-width: 480px;
     height: auto;
     min-height: 350px;
   }
@@ -682,11 +700,11 @@ body {
 /* Small phones */
 @media (max-width: 576px) {
   .mainimage2 {
-    padding: 40px 10px;
+    padding: 40px 12px;
     gap: 16px;
   }
   .mainimage2 .box {
-    width: 100%;
+    width: 100px;
     max-width: 100%;
     min-height: 280px;
     padding: 20px 15px;
@@ -721,6 +739,7 @@ body {
     line-height: 1.5;
   }
 }
+
 
 
 
@@ -1839,11 +1858,11 @@ body {
 
 
 
-/* Main Hero Section */
+/* ================= MAIN HERO SECTION ================= */
 .mainimage8 {
   position: relative;
   width: 100%;
-  height: 70vh; /* section height */
+  height: 70vh; /* default height */
   background: url('images/date.png') no-repeat center center/cover;
   background-attachment: fixed; /* parallax effect */
   display: flex;
@@ -1860,7 +1879,7 @@ body {
   background: linear-gradient(
     rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.4)
-  ); /* soft gradient overlay for readability */
+  ); /* overlay for readability */
 }
 
 .mainimage8 .overlay {
@@ -1875,7 +1894,7 @@ body {
   font-weight: 700;
   margin-bottom: 20px;
   color: #ffffff;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* highlight */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
@@ -1892,12 +1911,12 @@ body {
   transform: scale(1.03);
 }
 
-/* Content Section */
+/* ================= CONTENT SECTIONS ================= */
 .content-section {
-  height: 100vh;
+  min-height: 100vh;
   padding: 80px 15%;
-  background: #222; /* dark background */
-  color: #ffffff; /* white text */
+  background: #222; 
+  color: #ffffff; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1907,7 +1926,7 @@ body {
 .content-section h2,
 .content-section p {
   color: #ffffff;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6); /* highlight effect */
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
   transition: all 0.3s ease;
 }
 
@@ -1918,19 +1937,16 @@ body {
 }
 
 .content-section:nth-child(even) {
-  background: #333; /* alternating darker section */
-  color: #ffffff;
+  background: #333;
 }
 
-/* ========================= */
-/* RESPONSIVE DESIGN */
-/* ========================= */
+/* ================= RESPONSIVE DESIGN ================= */
 
-/* Tablets */
+/* Large Tablets / Small Desktops */
 @media (max-width: 992px) {
   .mainimage8 {
     height: 60vh;
-    background-attachment: scroll; /* better mobile support */
+    background-attachment: scroll; /* disable parallax for smoother mobile */
   }
   .mainimage8 h1 {
     font-size: 2.2rem;
@@ -1940,11 +1956,11 @@ body {
   }
   .content-section {
     padding: 60px 10%;
-    height: auto;
+    min-height: auto;
   }
 }
 
-/* Large Mobiles */
+/* Tablets */
 @media (max-width: 768px) {
   .mainimage8 {
     height: 50vh;
@@ -1956,31 +1972,38 @@ body {
     font-size: 0.95rem;
   }
   .content-section {
-    padding: 40px 8%;
+    padding: 50px 8%;
+  }
+  .content-section h2 {
+    font-size: 1.6rem;
+  }
+  .content-section p {
+    font-size: 1rem;
   }
 }
 
-/* Small Mobiles */
+/* Small Phones */
 @media (max-width: 576px) {
   .mainimage8 {
     height: 45vh;
-    padding: 0 10px;
+    padding: 0 8px;
+    width: 90%;
+    left: 3%;
   }
   .mainimage8 h1 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
   }
   .mainimage8 p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     line-height: 1.4;
-    padding: 0 5px;
   }
   .content-section {
-    padding: 30px 6%;
+    padding: 35px 6%;
   }
   .content-section h2 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
   }
   .content-section p {
     font-size: 0.9rem;
@@ -1988,13 +2011,13 @@ body {
   }
 }
 
-/* Extra Small Devices */
+/* Extra Small Devices (≤400px) */
 @media (max-width: 400px) {
   .mainimage8 {
     height: 40vh;
   }
   .mainimage8 h1 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .mainimage8 p {
     font-size: 0.8rem;
@@ -2007,9 +2030,26 @@ body {
   }
 }
 
-/* ========================= */
-/* Animations */
-/* ========================= */
+/* Very Small Devices (≤320px) */
+@media (max-width: 320px) {
+  .mainimage8 {
+    height: 35vh;
+  }
+  .mainimage8 h1 {
+    font-size: 1.1rem;
+  }
+  .mainimage8 p {
+    font-size: 0.75rem;
+  }
+  .content-section h2 {
+    font-size: 1rem;
+  }
+  .content-section p {
+    font-size: 0.8rem;
+  }
+}
+
+/* ================= ANIMATIONS ================= */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -2516,18 +2556,19 @@ body {
 /* Text Side */
 .map-text {
   max-width: 400px;
+  text-align: left;
 }
 
 .map-text h1 {
   font-size: 26px;
   margin-bottom: 15px;
-  color: #000; /* black */
+  color: #000;
 }
 
 .map-text p {
   font-size: 15px;
   line-height: 1.6;
-  color: #000; /* black */
+  color: #000;
 }
 
 /* Map Container */
@@ -2535,10 +2576,13 @@ body {
   position: relative;
   width: 360px;
 }
-.map-container img{
-  width: 410px;
-  margin-left: -40%;
+
+.map-container img {
+  width: 100%; /* responsive */
+  height: auto;
+  margin-left: 0;
 }
+
 /* Dots */
 .diocese-dot {
   position: absolute;
@@ -2598,4 +2642,54 @@ body {
 @keyframes popupFade {
   from { opacity: 0; transform: scale(0.8); }
   to { opacity: 1; transform: scale(1); }
+}
+
+/* ================= RESPONSIVE BREAKPOINTS ================= */
+@media (max-width: 768px) {
+  .map-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .map-text {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .map-container {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .popup-box {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 80%;
+    max-width: 350px;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-section {
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .map-text h1 {
+    font-size: 22px;
+  }
+
+  .map-text p {
+    font-size: 14px;
+  }
+
+  .popup-box {
+    width: 90%;
+    max-width: none;
+  }
 }

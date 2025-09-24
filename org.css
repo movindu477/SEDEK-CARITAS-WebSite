@@ -69,7 +69,10 @@
     height: 600px;
   }
   .hero-text {
-    left: 80px;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    text-align: center;
     max-width: 600px;
   }
   .hero-text h1 {
@@ -77,15 +80,16 @@
   }
   .hero-text p {
     font-size: 17px;
-    margin-right: 10%;
+    margin: 0 auto;
   }
 }
+
 @media (max-width: 1024px) {
   .hero {
     height: 550px;
   }
   .hero::before {
-    width: 100%; /* full overlay */
+    width: 100%;
   }
   .hero-text {
     left: 50%;
@@ -102,12 +106,16 @@
     margin: 0 auto;
   }
 }
+
 @media (max-width: 768px) {
   .hero {
     height: 500px;
   }
   .hero-text {
+    left: 50%;
     top: 20%;
+    transform: translateX(-50%);
+    text-align: center;
     max-width: 85%;
   }
   .hero-text h1 {
@@ -115,27 +123,31 @@
   }
   .hero-text p {
     font-size: 15px;
+    margin: 0 auto;
   }
 }
+
 @media (max-width: 480px) {
   .hero {
-    height: 450px;
+    height: 650px;
+    margin-top: -14%;
   }
   .hero-text {
+    left: 5%;
     top: 18%;
-    left: 50%;
-    transform: translateX(-50%);
+    gap: 100px;
+    transform: translate(-50%, -50%); /* true center */
     text-align: center;
     max-width: 90%;
   }
   .hero-text h1 {
     font-size: 24px;
-    margin-left: -98%;
+    margin: 0 auto;
   }
   .hero-text p {
     font-size: 14px;
     line-height: 1.6;
-    margin-left: -98%;
+    margin: 10px auto 0;
   }
 }
 
@@ -143,6 +155,7 @@
 
 
 
+/* structure style sheet */
 /* structure style sheet */
 .struc {
   text-align: center;
@@ -183,12 +196,11 @@
 
 /* Popup modal */
 .popup {
-  display: none;
+  display: none; /* start hidden */
   position: fixed;
   z-index: 9999;
   inset: 0;
   background: rgba(0, 0, 0, 0.9);
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;

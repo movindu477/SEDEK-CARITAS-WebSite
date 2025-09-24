@@ -225,20 +225,38 @@ const popupText = document.getElementById('popup-text');
 const popupBtn = document.getElementById('popup-btn');
 
 dots.forEach(dot => {
-  dot.addEventListener('click', (e) => {
+  dot.addEventListener('click', () => {
     const name = dot.getAttribute('data-name');
     const info = dot.getAttribute('data-info');
 
     popupTitle.textContent = name;
     popupText.textContent = info;
 
-    // Position popup near the clicked dot
-    popup.style.top = (dot.offsetTop - 10) + "px";
-    popup.style.left = (dot.offsetLeft + 30) + "px";
+    if (window.innerWidth > 768) {
+      // Desktop → show near dot
+      popup.style.position = "absolute";
+      popup.style.top = (dot.offsetTop - 10) + "px";
+      popup.style.left = (dot.offsetLeft + 30) + "px";
+      popup.style.transform = "none";
+    } else {
+      // Mobile → center screen
+      popup.style.position = "fixed";
+      popup.style.top = "50%";
+      popup.style.left = "50%";
+      popup.style.transform = "translate(-50%, -50%)";
+    }
 
     popup.style.display = 'block';
   });
 });
+
+// Optional: close popup
+popupBtn.addEventListener('click', () => {
+  popup.style.display = 'none';
+});
+
+
+
 
 // Hide popup when clicking outside
 document.addEventListener('click', (e) => {
