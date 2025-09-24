@@ -1,33 +1,3 @@
-/* === Global fix for mobile horizontal overflow STARTS === */
-/* === Global fix for mobile horizontal overflow === */
-html, body {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-/* Remove unwanted left/right gaps on small screens */
-@media (max-width: 768px) {
-  .topic-heading {
-    margin-left: 0 !important;  /* ✅ Remove extra left margin */
-    margin-right: 0 !important;
-  }
-  .history-description {
-    margin: -80px auto 60px !important; /* ✅ keep it centered */
-    width: 90% !important;
-    padding: 30px 20px !important;
-   margin-top: -40px !important;  /* 🔽 move slightly DOWN (less negative) */
-  }
-}
-
-@media (max-width: 480px) {
-  .topic-heading {
-    margin-left: 0 !important;
-  }
-  .hero {
-     margin-top: 0 !important;  /* ✅ Prevent shifting */
-  }
-}
-/* === Global fix for mobile horizontal overflow  ENDS === */
-
 /* Dropdown Container */
 .navbar ul li.dropdown {
   position: relative;
