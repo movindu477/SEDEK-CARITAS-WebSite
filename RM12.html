@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="RM12.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <script src="projects.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>Home / News</h1>
+      </div>
+    </section>
+
+    <div class="events-wrapper">
+      <!-- THE 1ST POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Wednesday, 18 June 2025
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+
+        <!-- Divider after header -->
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Monthly Newsletter of Caritas Sri Lanka – SEDEC – May 2025
+        </h2>
+
+        <!-- ===== Add PDF Download Link Here ===== -->
+        <div style="text-align: center; margin-top: 10px; margin-bottom: 20px">
+          <a
+            href="pdf/download.pdf"
+            download
+            style="
+              display: inline-block;
+              padding: 10px 20px;
+              background: #ac0000;
+              color: #fff;
+              text-decoration: none;
+              border-radius: 6px;
+              font-weight: bold;
+            "
+          >
+            CLICK HERE TO DOWNLOAD
+          </a>
+        </div>
+
+        <p class="event-desc">
+          Message from the National Director Dear Friends and Partners, The
+          month of May has been a period of significant progress and reflection
+          for Caritas Sri Lanka–SEDEC. As we strive to uplift the lives of the
+          most vulnerable people through our various projects, I am encouraged
+          by the commitment and collaboration demonstrated across our diocesan
+          network.…
+        </p>
+
+        <!-- Divider after header -->
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> CSL EVENTS, Latest News
+          </span>
+          <a href="RM7.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Wednesday, 18 June 2025
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+
+        <!-- Divider after header -->
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Monthly Newsletter of Caritas Sri Lanka – SEDEC / April
+        </h2>
+
+        <!-- ===== Add PDF Download Link Here ===== -->
+        <div style="text-align: center; margin-top: 10px; margin-bottom: 20px">
+          <a
+            href="pdf/download (1).pdf"
+            download
+            style="
+              display: inline-block;
+              padding: 10px 20px;
+              background: #ac0000;
+              color: #fff;
+              text-decoration: none;
+              border-radius: 6px;
+              font-weight: bold;
+            "
+          >
+            CLICK HERE TO DOWNLOAD
+          </a>
+        </div>
+
+        <p class="event-desc">
+          Message from the National Director Dear Friends and Partners, This
+          April was a significant month for Caritas Sri Lanka as we advanced our
+          communication, food security, and peace-building efforts through
+          impactful collaborations and activities. We were honoured to welcome
+          Mr. Frode Nordahl, Head of Communications at Caritas Norway, whose
+          visit enriched our communication capacity. His…
+        </p>
+
+        <!-- Divider after header -->
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> CSL EVENTS, Latest News
+          </span>
+          <a href="RM8.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Wednesday, 11 June 2025
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+
+        <!-- Divider after header -->
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Caritas Sri Lanka’s Food Security program Rooted in Resilience: The
+          Inspiring Story of Mr. S.A. Sebasthiyan and His Demonstration Farm
+        </h2>
+
+        <div class="event-image">
+          <img src="images/1 (1).jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          In the quiet village of Pappamottai, nestled in the northern dry zone
+          of Sri Lanka, lives Mr. S. A. Sebasthiyan—a 70-year-old farmer whose
+          life is a remarkable story of resilience, love, and transformation.
+          Born into poverty and educated only up to Grade 5, Sebasthiyan’s early
+          years were shaped by hardship. Yet amidst the struggles, his…
+        </p>
+
+        <!-- Divider after header -->
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> CSL EVENTS, Latest News
+          </span>
+          <a href="RM9.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Monday, 02 June 2025
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+
+        <!-- Divider after header -->
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Walking in Faith: Schoolchildren Explore the Beauty of Religious
+          Diversity
+        </h2>
+
+        <div class="event-image">
+          <img src="images/IMG_3870-1-768x576.jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          Caritas Sri Lanka, with the generous support of CAFOD, successfully
+          organized a special programme on 22nd May 2025 to promote
+          Inter-Religious Training Modules in schools. Held from 2.30 p.m. to
+          10.30 p.m., this event aimed to foster mutual understanding, respect,
+          and harmony among schoolchildren of different faiths. The initiative
+          provided a meaningful platform for students…
+        </p>
+
+        <!-- Divider after header -->
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> CSL EVENTS, Latest News
+          </span>
+          <a href="RM10.html" class="read-more">Read more</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

@@ -1,0 +1,262 @@
+/* Reset body default margin */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+/* HERO SECTION STARTS */
+/* hero must be relative so we can overlap onto next section */
+.hero {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+.hero img.mainimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,.5);
+  /*font-size: 2rem;*/
+}
+/* HERO SECTION ENS */
+
+/* ====== Event Card Grid ====== */
+.events-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* ensures responsiveness */
+  gap: 20px; /* space between cards */
+  justify-content: center; /* center cards in row */
+  margin: 40px auto;
+  max-width: 1200px; /* control total width */
+  padding: 0 15px;
+}
+
+/* ====== Card Container ====== */
+.event-card {
+  flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
+  max-width: 380px; /* keeps cards uniform width */
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.397);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+/* ====== Header ====== */
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #000000;
+  margin: 16px;
+}
+.event-header i {
+  margin-right: 6px;
+}
+
+/* ====== Title ====== */
+.event-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.4;
+  margin: 0 15px 16px;
+}
+.event-title span {
+  color: #b32626;
+}
+
+/* ====== Image ====== */
+.event-image {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 20px 0px; /* adds spacing from left/right edges */
+}
+
+.event-image img {
+  width: 90%;
+  height: 180px; /* smaller height */
+  object-fit: cover;
+  display: block;
+  border-radius: 12px; /* keeps rounded corners inside */
+  transition: transform 0.4s ease;
+}
+
+
+/* ====== Description ====== */
+.event-desc {
+  color: #000000;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0 15px 20px;
+  text-align: justify; /* ✅ justify description */
+}
+
+/* ====== Divider Line ====== */
+.event-card .divider {
+  border-top: 3px solid #c81536;
+  margin: 12px 15px; /* space around line */
+}
+
+/* ====== Footer ====== */
+.event-footer {
+  border-top: 1px solid #eee;
+  padding: 12px 15px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.event-tag {
+  font-size: 0.85rem;
+  color: #777;
+}
+.event-tag i {
+  font-size: 0.5rem;
+  margin-right: 4px;
+  color: #1e90ff;
+}
+.read-more {
+  background: #b32626;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.read-more:hover {
+  background: #8d1f1f;
+}
+
+/* ====== Fade-in Animation ====== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ====== Responsive Hero & Event Cards ====== */
+
+/* Large tablets / smaller desktops */
+@media (max-width: 992px) {
+  .hero {
+    height: auto; /* allow hero image to scale naturally */
+  }
+
+  .hero img.mainimg {
+    height: auto;
+  }
+
+  .hero-text {
+    font-size: 1.6rem;
+    padding: 0 20px;
+  }
+
+  .events-wrapper {
+    gap: 15px;
+  }
+
+  .event-card {
+    flex: 1 1 calc(50% - 15px); /* 2 cards per row */
+    max-width: 100%;
+  }
+
+  .event-image img {
+    width: 95%;
+    height: 170px;
+  }
+
+  .event-title {
+    font-size: 1.15rem;
+  }
+
+  .event-desc {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets / large phones */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.4rem;
+  }
+
+  .event-card {
+    flex: 1 1 100%; /* 1 card per row */
+    max-width: 100%;
+  }
+
+  .event-image img {
+    width: 100%;
+    height: 160px;
+  }
+
+  .event-title {
+    font-size: 1.05rem;
+  }
+
+  .event-desc {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .read-more {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
+  .event-image img {
+    height: 140px;
+  }
+
+  .event-title {
+    font-size: 1rem;
+  }
+
+  .event-desc {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  .read-more {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+
+  .event-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

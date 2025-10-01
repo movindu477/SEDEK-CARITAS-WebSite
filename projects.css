@@ -395,6 +395,28 @@ body {
   margin: 10px 0;
 }
 
+.info-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.pdf-download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg,#ac0000,#e24f4f);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.pdf-download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(172,0,0,0.18);
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .info-entry {
@@ -405,6 +427,15 @@ body {
   }
 }
 
+/* ===== Category Intro Paragraph ===== */
+.category-intro {
+  text-align: justify;          /* Justify the text */
+  font-size: 16px;              /* Adjust font size for readability */
+  line-height: 1.7;             /* Add spacing between lines */
+  color: #333333;               /* Dark gray for better readability */
+  margin-bottom: 20px;          /* Space after the paragraph */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
 
 
 
@@ -419,6 +450,7 @@ body {
   font-weight: 700;
   margin-bottom: 30px;
   color: #111;
+  animation: fadeIn 0.8s ease-out;
 }
 
 /* Grid container for years: 3 in a row */
@@ -430,36 +462,74 @@ body {
   margin: 0 auto;
 }
 
-/* Year Container */
+/* Year Container - Base styling */
 .year-container {
   position: relative;
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
   border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   overflow: hidden;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  min-height: 60px;
+  background: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
 }
 
-/* Hover effect like categories */
-.year-container::before {
+/* Stagger animation for year containers */
+.year-container:nth-child(1) { animation-delay: 0.1s; }
+.year-container:nth-child(2) { animation-delay: 0.15s; }
+.year-container:nth-child(3) { animation-delay: 0.2s; }
+.year-container:nth-child(4) { animation-delay: 0.25s; }
+.year-container:nth-child(5) { animation-delay: 0.3s; }
+.year-container:nth-child(6) { animation-delay: 0.35s; }
+.year-container:nth-child(7) { animation-delay: 0.4s; }
+.year-container:nth-child(8) { animation-delay: 0.45s; }
+.year-container:nth-child(9) { animation-delay: 0.5s; }
+.year-container:nth-child(10) { animation-delay: 0.55s; }
+.year-container:nth-child(11) { animation-delay: 0.6s; }
+.year-container:nth-child(12) { animation-delay: 0.65s; }
+
+/* Only show visual styling when year is open */
+.year-container.open {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Hover effect for closed containers */
+.year-container:not(.open):hover {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+/* Shimmer effect - only for closed containers on hover */
+.year-container:not(.open)::before {
   content: '';
   position: absolute;
   top: 0;
   left: -75%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 100%);
   transform: skewX(-25deg);
-  transition: all 0.7s ease;
+  transition: all 0.6s ease;
+  opacity: 0;
 }
-.year-container:hover::before {
+
+.year-container:not(.open):hover::before {
   left: 125%;
+  opacity: 1;
 }
-.year-container:hover {
-  transform: scale(1.03);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.25), 0 0 15px rgba(255,255,255,0.1);
+
+/* Enhanced hover for open containers */
+.year-container.open:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15), 0 0 10px rgba(255,255,255,0.05);
 }
 
 /* Year Header */
@@ -470,6 +540,8 @@ body {
   color: #111;
   position: relative;
   z-index: 1;
+  transition: all 0.3s ease;
+  user-select: none;
 }
 
 /* Arrow indicator */
@@ -477,25 +549,26 @@ body {
   content: '▼';
   position: absolute;
   right: 20px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.8em;
 }
 
 .year-container.open .year-header::after {
-  transform: rotate(-180deg);
+  transform: rotate(180deg);
 }
-
-
 
 /* Months List */
 .months-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: none;         /* completely remove when closed */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .year-container.open .months-list {
-  display: block;        /* show only the open one */
+  max-height: 500px;
 }
 
 .months-list li {
@@ -504,16 +577,142 @@ body {
   font-weight: 600;
   cursor: pointer;
   background: rgba(255,255,255,0.05);
-  transition: all 0.3s ease;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #111;
+  opacity: 0;
+  transform: translateY(-10px);
+  user-select: none;
+  position: relative;
 }
+
+/* Click feedback for month items */
+.months-list li:active {
+  transform: translateY(-8px) scale(0.98);
+  background: rgba(255,255,255,0.15);
+  transition: all 0.1s ease;
+}
+
+.year-container.open .months-list li {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Stagger animation for month items */
+.year-container.open .months-list li:nth-child(1) { transition-delay: 0.05s; }
+.year-container.open .months-list li:nth-child(2) { transition-delay: 0.08s; }
+.year-container.open .months-list li:nth-child(3) { transition-delay: 0.11s; }
+.year-container.open .months-list li:nth-child(4) { transition-delay: 0.14s; }
+.year-container.open .months-list li:nth-child(5) { transition-delay: 0.17s; }
+.year-container.open .months-list li:nth-child(6) { transition-delay: 0.2s; }
+.year-container.open .months-list li:nth-child(7) { transition-delay: 0.23s; }
+.year-container.open .months-list li:nth-child(8) { transition-delay: 0.26s; }
+.year-container.open .months-list li:nth-child(9) { transition-delay: 0.29s; }
+.year-container.open .months-list li:nth-child(10) { transition-delay: 0.32s; }
+.year-container.open .months-list li:nth-child(11) { transition-delay: 0.35s; }
+.year-container.open .months-list li:nth-child(12) { transition-delay: 0.38s; }
 
 .months-list li:hover {
   background: rgba(255,255,255,0.1);
+  padding-left: 30px;
+  transform: translateX(5px);
+}
+
+/* Navigation loading state */
+.months-list li.navigating {
+  pointer-events: none;
+  background: rgba(255,255,255,0.2);
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.months-list li.navigating::after {
+  content: '...';
+  position: absolute;
+  right: 25px;
+  animation: loadingDots 1.5s infinite;
+}
+
+/* Smooth close animation */
+.year-container:not(.open) .months-list li {
+  transition: all 0.2s ease !important;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loadingDots {
+  0%, 20% { content: '.'; }
+  40% { content: '..'; }
+  60%, 100% { content: '...'; }
+}
+
+@keyframes clickPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Responsive */
 @media (max-width: 900px) {
   .archives-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .year-container {
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+  
+  .months-list li {
+    padding: 14px 20px;
+  }
+  
+  .months-list li:hover {
+    padding-left: 25px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .year-container,
+  .months-list li,
+  .year-header::after {
+    transition: none;
+    animation: none;
+  }
+  
+  .year-container {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .months-list li {
+    opacity: 1;
+    transform: none;
   }
 }

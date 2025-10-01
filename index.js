@@ -309,129 +309,31 @@ function showInfo(element) {
 }
 
 
-// ===== Single-Expand Toggle Function (true accordion) =====
-function toggleYear(header) {
-  const container = header.parentElement;
-  const all = document.querySelectorAll('.year-container');
-
-  all.forEach(c => {
-    if (c === container) {
-      c.classList.toggle('open');  // toggle clicked year
-    } else {
-      c.classList.remove('open');  // force all others closed
-    }
+// ===== Archives Functionality =====
+function toggleYear(element) {
+  const yearContainer = element.parentElement;
+  const wasOpen = yearContainer.classList.contains('open');
+  
+  // Close all open year containers
+  document.querySelectorAll('.year-container.open').forEach(container => {
+    container.classList.remove('open');
   });
+  
+  // If the clicked year wasn't open, open it
+  if (!wasOpen) {
+    yearContainer.classList.add('open');
+  }
 }
 
-// ===== FOR THE RIGHT SIDE CATEGORY DATA DISPLAY =====
-function showInfo(item) {
-  const infoBox = document.getElementById('category-info');
-
-  // Clear existing content
-  infoBox.innerHTML = '';
-
-  // Array for entries
-  let entries = [];
-
-  // Caritas Sri Lanka Youth Program entries
-  if(item.innerText.includes('Caritas Sri Lanka Youth Program')) {
-    entries = [
-      {
-        date: 'Tuesday, 08 July 2025',
-        org: 'Caritas Sri Lanka',
-        topic: 'Empowered in Christ: Ecumenical Youth Programme Unites Christian Youth Across Sri Lanka',
-        image: 'images/IMG-20250624-WA0088 (1).jpg',
-        video: '', 
-        description: 'From June 20th to 21st, 2025, the peaceful surroundings of Arunodaya Retreat Centre in Athurugiriya came alive with the vibrant spirit of youth, faith, and unity as 68 young participants from across Sri Lanka gathered for the Ecumenical Youth Programme. This transformative two-day initiative was jointly organized by Caritas Sri Lanka – SEDEC, the National…',
-        category: '<span>Caritas Sri Lanka Youth Program</span><span>Sustainable Peace & Justice (SP&J)</span>',
-        readMoreLink: '#'
-      },
-      {
-        date: 'Tuesday, 06 October 2020',
-        org: 'Caritas Sri Lanka',
-        topic: 'Caritas Youth programme',
-        image: 'images/DSC_8321-768x512.jpg', 
-        video: 'https://www.youtube.com/embed/your_youtube_id', 
-        description: 'Some highlights of the past youth programme',
-        category: 'Caritas Sri Lanka Youth Program',
-        readMoreLink: '#'
-      }
-    ];
-  } 
-  // Community Empowerment & Safe Migration entries
-  else if(item.innerText.includes('Community Empowerment & Safe Migration')) {
-    entries = [
-      {
-        date: 'Thursday, 10 April 2025',
-        org: 'Caritas Sri Lanka',
-        topic: 'Strengthening Bonds for Sustainable Change: Partner Visit by Irasil Foundation',
-        image: 'images/irasil-visit.jpg',
-        video: '', 
-        description: 'Caritas Sri Lanka had the privilege of hosting Mr. Gerard Chitty and Mrs. Shivanthi Chitty, representatives of the Irasil Foundation, from February 20th to 25th, 2025. This partner visit took place across several key project locations supported by the Irasil Foundation, including Caritas Badulla, CODESEP – Galle, Caritas Kurunegala, Caritas Anuradhapura, Don Bosco School Mannar,…',
-        category: '<span>Community Empowerment & Safe Migration</span><span>(CE&SM), Latest News</span>',
-        readMoreLink: '#'
-      },
-      {
-        date: 'Thursday, 10 April 2025',
-        org: 'Caritas Sri Lanka',
-        topic: 'Caritas Korea Delegation Visits Sri Lanka: Strengthening Partnerships and Evaluating Community Projects',
-        image: 'images/korea-delegation.jpg',
-        video: '', 
-        description: 'A delegation from Caritas Korea, led by Executive Director Fr. Francis and Program Coordinator Ms. Agnes, recently concluded a four-day visit to Sri Lanka to evaluate ongoing projects and strengthen partnerships with Caritas Sri Lanka. The visit, which took place from March 26 to 29, 2025, included meetings with all 13 diocesan partners and field…',
-        category: '<span>Community Empowerment & Safe Migration</span><span>(CE&SM), Latest News</span>',
-        readMoreLink: '#'
-      },
-      {
-        date: 'Monday, 06 May 2024',
-        org: 'Caritas Sri Lanka',
-        topic: 'Celebrating Culture and Unity: Caritas Sri Lanka’s Sinhala and Tamil New Year Festival 2024',
-        image: '',
-        video: '', 
-        description: 'On April 29, 2024, the Caritas Sri Lanka Welfare Society organized the Awrudu festival for all staff members, an annual event that brings together the Sinhala and Tamil New Year with enthusiasm. This year’s celebration was marked by a series of heartfelt and culturally rich activities that showcased the traditions of Sri Lanka’s diverse communities.…',
-        category: '<span>Community Empowerment & Safe Migration</span><span>(CE&SM), Latest News</span>',
-        readMoreLink: '#'
-      }
-    ];
-  } 
-  // Default for other categories
-  else {
-    entries = [
-      {
-        date: '',
-        org: '',
-        topic: item.innerText,
-        image: '',
-        video: '',
-        description: 'Details not available yet.',
-        category: '',
-        readMoreLink: '#'
-      }
-    ];
+function navigateToPage(element) {
+  const fileName = element.getAttribute('data-file');
+  if (fileName) {
+    // Add click feedback
+    element.style.transform = 'scale(0.95)';
+    element.style.opacity = '0.8';
+    
+    setTimeout(() => {
+      window.location.href = fileName;
+    }, 150);
   }
-
-  // Build HTML for all entries
-  entries.forEach(entry => {
-    const container = document.createElement('div');
-    container.className = 'info-entry';
-    container.innerHTML = `
-      <div class="info-header" style="text-align: justify;">
-        <span class="info-date">${entry.date}</span>
-        <span class="info-org">${entry.org}</span>
-      </div>
-      <hr>
-      <h3 class="info-topic" style="text-align: justify;">${entry.topic}</h3>
-      ${entry.image ? `<img src="${entry.image}" alt="${entry.topic}">` : ''}
-      ${entry.video ? `<div class="info-video"><iframe width="100%" height="300" src="${entry.video}" frameborder="0" allowfullscreen></iframe></div>` : ''}
-      <p class="info-description" style="text-align: justify;">${entry.description}</p>
-      <hr>
-      <div class="info-footer" style="text-align: justify;">
-        <span class="info-category">${entry.category}</span>
-        <a href="${entry.readMoreLink}" class="read-more-btn">READ MORE</a>
-      </div>
-    `;
-    infoBox.appendChild(container);
-  });
-
-  // Scroll into view smoothly
-  infoBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }

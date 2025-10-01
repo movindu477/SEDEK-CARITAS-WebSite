@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="RM9.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Caritas Sri Lanka’s Food Security program Rooted in Resilience: The
+          Inspiring Story of Mr. S.A. Sebasthiyan and His Demonstration Farm
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Wednesday</span>
+            <span class="date">11 June 2025</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            In the quiet village of Pappamottai, nestled in the northern dry
+            zone of Sri Lanka, lives Mr. S. A. Sebasthiyan—a 70-year-old farmer
+            whose life is a remarkable story of resilience, love, and
+            transformation.
+            <br /><br />
+            Born into poverty and educated only up to Grade 5, Sebasthiyan’s
+            early years were shaped by hardship. Yet amidst the struggles, his
+            childhood was also filled with the simple joys of farming—a skill
+            and passion handed down through generations.
+            <br /><br />
+            <b>A Life of Struggle and Strength;</b> In his youth, Mr.
+            Sebasthiyan endured multiple relocations due to the civil conflict,
+            which upended both his personal life and his work on the land.
+            Despite the turmoil, his love for farming never wavered. At the age
+            of 30, he married the woman who would become his steadfast companion
+            and greatest support. Together, they raised two children. But
+            tragedy struck when they lost one during the war—a heartbreak that
+            remains their deepest sorrow. <br /><br />
+            <b>A New Beginning in Pappamottai:</b> After years of displacement,
+            the couple finally settled in Pappamottai in 2010. The land they
+            found offered little more than a few coconut trees. But where others
+            saw emptiness, Sebasthiyan and his wife saw promise. <br /><br />
+            “We didn’t have much,” he recalls, “but we had the soil due to 30
+            years’ Civil War. That was enough to start.”
+            <br /><br />
+            <b>Partnership That Changed Everything;</b> In 2024, the couple’s
+            life took a brighter turn when they joined the Caritas Valvuthayam
+            Food Security community. This initiative is part of Caritas Sri
+            Lanka’s Food Security Program,
+            <i
+              >“Improving Rural Livelihoods, Enhancing Food Security, and
+              Building Climate Resilience in Sri Lanka,”</i
+            >
+            funded by Caritas Norway and implemented since January 2023.
+            <br /><br />
+            Through the program, the Caritas Mannar Food Security Team raised
+            awareness about the harmful effects of agrochemicals and trained
+            participants in various organic farming techniques. These included
+            methods for preparing compost fertilizer (heap system, pit system,
+            “Jeewakotuwa” method, drum system, pipe system, bin system, and
+            flower pot system), producing liquid fertilizers (such as fish
+            tonic, fruit tonic, leaf extracts, and “Jeewamurtha”), and making
+            vermicomposting and vermiwash. The team also taught the preparation
+            of natural pest repellents using tobacco, onion, margoza leaves, and
+            the “3G solution” (garlic, ginger, and green chili).
+            <br /><br />
+            Through training programs, equipment support, and—most
+            importantly—the introduction of a micro-irrigation system, Caritas
+            empowered the Sebasthiyan family to maximize the potential of their
+            farm.
+            <br /><br />
+            With patience and dedication, they cultivated a thriving home garden
+            filled with nutritious vegetables such as tomatoes, keera, green
+            chilies, long beans, brinjals, and a variety of leafy greens. Their
+            farm also includes cattle and poultry, forming a small but complete
+            demonstration model of sustainable agriculture. They continue to
+            practice environmentally friendly farming techniques consistently.
+            <br /><br />
+            “Caritas gave us more than just tools,” Mr. Sebasthiyan shared. Now
+            earning between LKR 20,000 and 25,000 per month, the farm has become
+            both a reliable source of income and a living legacy. More than just
+            a place of cultivation, it stands as a model farm and a source of
+            inspiration for the Pappamottai community.
+            <br /><br />
+            Mr. Sebasthiyan’s story is a reminder that even the hardest soil can
+            bear fruit when nurtured with love, patience, and support. His
+            journey reflects not only personal triumph but also the
+            transformative power of community and shared growth.
+            <br /><br />
+            Caritas Valvuthayam Mannar remains committed to uplifting rural
+            families like the Sebasthiyans—ensuring that knowledge, dignity, and
+            opportunity reach every corner of the land.
+            <br /><br />
+            Mr. Sebasthiyan gratefully acknowledges the support received from
+            Caritas Sri Lanka – SEDEC through Caritas Norway.
+            <br /><br />
+            <b
+              >“Farming is not just work. It’s our life, our pride, and our
+              peace.”</b
+            >
+            – <i>Mr. S.A. Sebasthiyan</i> <br /><br />
+            <br /><br />
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/IMG-20250611-WA0015-150x150.jpg"
+              alt="Caritas Event 1"
+            />
+          </div>
+          <div class="gallery-item">
+            <img src="images/6 (1).jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/5 (1).jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/4 (1).jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/3 (1).jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/2.jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/1 (1).jpg" alt="Caritas Event 7" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

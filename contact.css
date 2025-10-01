@@ -27,6 +27,7 @@
   max-width: 1200px;
   margin: 0 auto;         /* center horizontally */
   padding: 0 20px;
+  margin-bottom: 20px;  
   /* pull upward so it sits on hero & next section */
   transform: translateY(-80px);   /* adjust value as needed */
 }
@@ -120,4 +121,235 @@ height:100%;
 min-height:400px;
 border:none;
 border-radius:10px
+}
+
+
+
+/* ==============================
+   DIOCESAN CENTRES – WHITE CARDS WITH BLACK SHADOWS & RED ACCENTS
+   ============================== */
+
+.diocesan-wrapper {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #b32626;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.diocesan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.diocesan-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px 28px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Subtle red corner indicators */
+.diocesan-card::before,
+.diocesan-card::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.diocesan-card::before {
+  top: 0;
+  left: 0;
+  border-width: 20px 20px 0 0;
+  border-color: #b32626 transparent transparent transparent;
+}
+
+.diocesan-card::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 0 20px 20px;
+  border-color: transparent transparent #b32626 transparent;
+}
+
+.diocesan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  border-color: #ffe6e6;
+}
+
+.diocesan-card:hover::before,
+.diocesan-card:hover::after {
+  opacity: 0.8;
+}
+
+.diocesan-card h2 {
+  color: #b32626;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  font-weight: 600;
+}
+
+.diocesan-card h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #b32626;
+  margin: 12px auto 0;
+  border-radius: 1px;
+}
+
+.diocesan-card p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.diocesan-card strong {
+  color: #b32626;
+  font-weight: 600;
+}
+
+.diocesan-card a:not(.card-actions a) {
+  color:#000000;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.diocesan-card a:not(.card-actions a):hover {
+  border-bottom: 1px solid #b32626;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+/* Both buttons in red */
+.card-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: #f85858;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #ff8888;
+  text-align: center;
+}
+
+.card-actions a:hover {
+  background: #921b1b;
+  border-color: #921b1b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(179, 38, 38, 0.3);
+}
+
+.card-actions a:active {
+  transform: translateY(0);
+}
+
+/* Impact badge */
+.impact-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #fff5f5;
+  color: #b32626;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 5px 0;
+  border: 1px solid #ffcccc;
+}
+
+/* Progress bar for fundraising goals */
+.progress-container {
+  margin: 15px 0;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #b32626, #ff6b6b);
+  border-radius: 3px;
+  transition: width 1s ease-in-out;
+}
+
+/* Trust indicators */
+.trust-indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.trust-indicators i {
+  color: #b32626;
+  margin-right: 4px;
+}
+
+
+/* Focus states for accessibility */
+.card-actions a:focus {
+  outline: 2px solid #b32626;
+  outline-offset: 2px;
+  background: #921b1b;
 }
