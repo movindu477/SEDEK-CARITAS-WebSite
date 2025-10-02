@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="RM28.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>Holy Eucharistic Celebration Marks the 20th Tsunami Remembrance</h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Tuesday</span>
+            <span class="date">04 March 2025</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            On February 19, 2025, a solemn Holy Eucharistic Celebration was held
+            at the Bandaranaike Memorial International Conference Hall (BMICH),
+            Colombo, Sri Lanka to mark the 20th anniversary of the Tsunami that
+            devastated some coastal areas of Sri Lanka in 2004. This significant
+            event, held under the theme “Memories of an Empowering Journey of
+            Resilience,” honoured the memory of those who lost their lives while
+            acknowledging survivors’ strength and perseverance.
+            <br /><br />
+            The Chief Celebrant of the Holy Mass was His Eminence Malcolm
+            Cardinal Ranjith, Archbishop of Colombo, with the Con-Celebrants of
+            His Excellency Most Rev. Archbishop Brian Udaigwe, Papal Nuncio of
+            the Holy See to Sri Lanka, Most Rev. Dr. Justin Bernard
+            Gnanapragasam, Chairman of Caritas Sri Lanka-SEDEC, Rt. Rev. Dr.
+            Maxwell Grenville Silva – Vice Chairman of Caritas Sri Lanka-SEDEC
+            and Rev. Fr. Luke Nelson Perera, National Director of Caritas Sri
+            Lanka-SEDEC. There were other Diocesan Bishops, Caritas Diocesan
+            Directors, Priests, Religious Re. Sisters, and numerous faithful
+            participated in this deeply moving commemoration.
+            <br /><br />
+            The Indian Ocean Tsunami of 2004 devastated Sri Lanka, leaving
+            thousands dead, millions displaced, and entire communities in
+            despair. As the Church and Caritas Sri Lanka stood at the forefront
+            of relief, rehabilitation, and reconstruction, this Eucharistic
+            Celebration served as a tribute to two decades of resilience, faith,
+            and community empowerment.
+            <br /><br />
+            Through prayers, scripture readings, and reflections, the service
+            emphasized the role of faith in healing and rebuilding. The presence
+            of international partners, who supported Sri Lanka’s recovery
+            efforts, highlighted the spirit of global solidarity that was
+            instrumental in restoring affected communities.
+            <br /><br />
+            As Sri Lanka continues its journey of resilience, the Holy Eucharist
+            was a moment to renew the collective commitment towards supporting
+            disaster-affected communities, advocating for sustainable
+            development, and fostering a spirit of unity. As the social arm of
+            the Catholic Church, Caritas Sri Lanka, and its partners remain
+            steadfast in their mission to uplift lives through faith-driven
+            humanitarian efforts.
+            <br /><br />
+            Following the Holy Mass, a special event was held to commemorate the
+            20th anniversary of the tsunami. Stay tuned for our next article,
+            where we will bring you detailed insights into this significant
+            gathering.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/KLS3863.jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/KLS3864.jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/002.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/02.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0003.jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/003.jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/03.jpg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/004.jpg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/005.jpg" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/006.jpg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/007.jpg" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/008.jpg" alt="Caritas Event 12" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/009.jpg" alt="Caritas Event 13" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0010.jpg" alt="Caritas Event 14" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0011.jpg" alt="Caritas Event 15" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/011.jpg" alt="Caritas Event 16" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/00012.jpg" alt="Caritas Event 17" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0012.jpg" alt="Caritas Event 18" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/012.jpg" alt="Caritas Event 19" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0013.jpg" alt="Caritas Event 20" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/013.jpg" alt="Caritas Event 21" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0014.jpg" alt="Caritas Event 22" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/014.jpg" alt="Caritas Event 23" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0015.jpg" alt="Caritas Event 24" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/015.jpg" alt="Caritas Event 25" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0016.jpg" alt="Caritas Event 26" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/016.jpg" alt="Caritas Event 27" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/000017.jpg" alt="Caritas Event 28" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/00017.jpg" alt="Caritas Event 29" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0017.jpg" alt="Caritas Event 30" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/017.jpg" alt="Caritas Event 31" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0018.jpg" alt="Caritas Event 32" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0019.jpg" alt="Caritas Event 33" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/019.jpg" alt="Caritas Event 34" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0020.jpg" alt="Caritas Event 35" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0021.jpg" alt="Caritas Event 36" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0022.jpg" alt="Caritas Event 37" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0023.jpg" alt="Caritas Event 38" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0024.jpg" alt="Caritas Event 39" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0025.jpg" alt="Caritas Event 40" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0026.jpg" alt="Caritas Event 41" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0027.jpg" alt="Caritas Event 42" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0029.jpg" alt="Caritas Event 43" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0030.jpg" alt="Caritas Event 44" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0031.jpg" alt="Caritas Event 45" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0032.jpg" alt="Caritas Event 46" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0033.jpg" alt="Caritas Event 47" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/033.jpg" alt="Caritas Event 48" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0034.jpg" alt="Caritas Event 49" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0035.jpg" alt="Caritas Event 50" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/035.jpg" alt="Caritas Event 51" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0036.jpg" alt="Caritas Event 52" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0037.jpg" alt="Caritas Event 53" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0039.jpg" alt="Caritas Event 54" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0040.jpg" alt="Caritas Event 55" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0041.jpg" alt="Caritas Event 56" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0042.jpg" alt="Caritas Event 57" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/042.jpg" alt="Caritas Event 58" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0043.jpg" alt="Caritas Event 59" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0044.jpg" alt="Caritas Event 60" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0045.jpg" alt="Caritas Event 61" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0046.jpg" alt="Caritas Event 62" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/046.jpg" alt="Caritas Event 63" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0047.jpg" alt="Caritas Event 64" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/047.jpg" alt="Caritas Event 65" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0048.jpg" alt="Caritas Event 66" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/048.jpg" alt="Caritas Event 67" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0049.jpg" alt="Caritas Event 68" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0050.jpg" alt="Caritas Event 69" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0051.jpg" alt="Caritas Event 70" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0052.jpg" alt="Caritas Event 71" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/052.jpg" alt="Caritas Event 72" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

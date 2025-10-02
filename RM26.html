@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="RM26.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          “Working Towards a Decent Life: Support for Families in the
+          Anuradhapura Diocese, Sri Lanka.”
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Wednesday</span>
+            <span class="date">26 March 2025</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            Caritas Sri Lanka, under the leadership of Rev. Fr. Luke Nelson
+            Perera, National Director, continues its mission of empowering rural
+            communities by providing targeted support to small-scale
+            micro-business owners in Sri Lanka, aiming to reduce poverty across
+            the country. This initiative has been made possible through the
+            generous support of <b>Caritas Slovenia,</b> whose ongoing funding
+            has enabled the successful implementation of the program in Sri
+            Lanka. This partnership underscores the significance of
+            international cooperation in promoting local economic growth and
+            improving the livelihoods of vulnerable communities. <br /><br />
+            Sixteen micro-business owners were selected and received training on
+            Micro Business Planning, which took place from March 19th to 21st,
+            2025, at “Kithu Dam Nikethanaya” in Anuradhapura. The three-day
+            program brought together participants from the Anuradhapura and
+            Polonnaruwa Districts, providing them with essential knowledge to
+            enhance their businesses and improve their livelihoods. The event
+            began with a spiritually uplifting session led by Rev. Fr. Alec Roy,
+            Diocesan Director of Caritas Anuradhapura. His blessings marked the
+            official opening of the training, fostering unity and reflection
+            among the participants.
+            <br /><br />
+            The program was conducted by three expert resource persons: Mr. M.S.
+            Balasooriya, Mr. G.M.C.S.K. Jayalath, and Mrs. Nilani Tissera, all
+            certified CEFE (Competency-based Economies Through Formation of
+            Entrepreneurs) trainers. Their collective expertise in business
+            development and agricultural practices provided immense value to the
+            participants.
+            <br /><br />
+            The training program was comprehensive, covering essential aspects
+            of entrepreneurial development and business planning. Key focus
+            areas included:
+            <br /><br />
+            <ul style="text-align: justify; margin-left: 20px">
+                <li>
+              <strong>Entrepreneurial Development:</strong> This session encouraged participants to adopt a proactive, growth-oriented mindset, helping them think creatively and strategically about their businesses.
+            </li>
+            <li>
+              <strong>Business Planning:</strong> Small-scale agribusiness holders often struggle with formal business planning. This component guided participants in developing clear, actionable business plans that addressed both short-term goals and long-term sustainability.
+            </li>
+            <li>
+              <strong>Financial Management:</strong>Understanding the financial health of a business is crucial. Participants were trained in managing cash flow, budgeting, and making informed financial decisions to ensure profitability.
+            </li>
+            </ul>
+          </p>
+          <p class="caritas-text">
+            By the end of the three-day training, participants left with
+            valuable knowledge and skills they could immediately apply to
+            develop their businesses. The program not only provided theoretical
+            insights but also fostered practical skills in business management
+            and sustainability, helping entrepreneurs build a foundation for
+            long-term growth. Additionally, the opportunity to network with
+            fellow small business owners created a sense of community and shared
+            purpose. Participants gained inspiration from each other’s
+            experiences and collaborated on finding solutions to common
+            challenges.
+            <br /><br />
+            Caritas Sri Lanka’s commitment to supporting rural communities
+            through educational programs like this one reflects its dedication
+            to creating long-lasting positive change. This training is part of a
+            broader effort to promote self-reliance and provide opportunities
+            for small-scale businesses to thrive.
+            <br /><br />
+            The success of this training program marks a significant milestone,
+            but it is only one part of Caritas Sri Lanka’s broader strategy to
+            empower small-scale entrepreneurs. Future initiatives will continue
+            to build on the foundation laid by this training, ensuring that
+            business holders in Anuradhapura and other regions have access to
+            the tools, resources, and networks they need to succeed. Most of the
+            beneficiaries plan to expand their micro-businesses, while others
+            aim to create new businesses.
+            <br /><br />
+            In conclusion, the entrepreneurial development and business planning
+            training program represents a vital step toward improving the
+            livelihoods of small-scale business holders in the Anuradhapura
+            Diocese. With the guidance of resource persons and the generous
+            support from Slovenia, participants now have the knowledge and
+            confidence to take their businesses to the next level and contribute
+            to the overall growth of Sri Lanka’s small-scale business sector.
+            After the training, each beneficiary was given 50,000 LKR to help
+            expand their micro-businesses. His Lordship Rt. Rev. Dr. Norbert
+            Andradi OMI, Bishop of Anuradhapura, participated in the closing
+            ceremony, distributing the financial support and delivering an
+            inspirational speech to prospective entrepreneurs from the
+            Anuradhapura and Polonnaruwa Districts.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-21-at-2.35.38-PM.jpeg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-21-at-2.35.39-PM-6.jpeg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-21-at-2.35.39-PM-8.jpeg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-21-at-2.35.39-PM-15.jpeg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-26-at-3.32.25-PM.jpeg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-26-at-3.32.31-PM.jpeg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-26-at-3.32.48-PM.jpeg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-26-at-3.32.49-PM.jpeg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-26-at-3.36.05-PM-3.jpeg" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-26-at-3.36.05-PM.jpeg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-26-at-3.36.06-PM-1.jpeg" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-26-at-3.41.58-PM-1.jpeg" alt="Caritas Event 12" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-26-at-3.41.58-PM-2.jpeg" alt="Caritas Event 13" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2025-03-26-at-3.41.58-PM.jpeg" alt="Caritas Event 14" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

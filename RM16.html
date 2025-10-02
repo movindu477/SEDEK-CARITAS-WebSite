@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="RM16.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>Home / News</h1>
+      </div>
+    </section>
+
+    <div class="events-wrapper">
+      <!-- THE 1ST POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Friday, 28 February 2025
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">CSL NEWS – NEWSLETTER</h2>
+
+        <div class="event-image">
+          <img src="images/Cover-Page-768x543.jpg" alt="Event photo" />
+        </div>
+
+        <br />
+        <!-- ===== Add PDF Download Link Here ===== -->
+        <div style="text-align: center; margin-top: 10px; margin-bottom: 20px">
+          <a
+            href="pdf/download (4).pdf"
+            download
+            style="
+              display: inline-block;
+              padding: 10px 20px;
+              background: #ac0000;
+              color: #fff;
+              text-decoration: none;
+              border-radius: 6px;
+              font-weight: bold;
+            "
+          >
+            CLICK HERE TO DOWNLOAD
+          </a>
+        </div>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News, Publications
+          </span>
+        </div>
+      </section>
+
+      <!-- THE 2ND POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Friday, 28 February 2025
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">“The Country Profile Sri Lanka”</h2>
+
+        <div class="event-image">
+          <img src="images/CSL-768x1089.png" alt="Event photo" />
+        </div>
+
+        <div class="event-image-small">
+          <img
+            src="images/Screenshot 2025-10-02 092322.jpg"
+            alt="Event photo"
+          />
+        </div>
+        <!-- ===== Add PDF Download Link Here ===== -->
+        <div style="text-align: center; margin-top: 10px; margin-bottom: 20px">
+          <a
+            href="pdf/download (5).pdf"
+            download
+            style="
+              display: inline-block;
+              padding: 10px 20px;
+              background: #ac0000;
+              color: #fff;
+              text-decoration: none;
+              border-radius: 6px;
+              font-weight: bold;
+            "
+          >
+            CLICK HERE TO DOWNLOAD
+          </a>
+        </div>
+
+        <p class="event-desc">
+          It gives me immense pride and satisfaction to present “The Country
+          Profile Sri Lanka”, a comprehensive and informative resource that
+          provides a detailed contextual analysis of Sri Lanka. This publication
+          deep into the multifaceted dimensions of our nation, encompassing
+          social, economic, political, environmental, cultural, educational, and
+          health sectors. With a wealth of statistical data and evidence-based
+          insights,…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News, Publications
+          </span>
+          <a href="RM1.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THE 3RD POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Friday, 28 February 2025
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">CSL Annual Report 2023-2024</h2>
+
+        <div class="event-image">
+          <img
+            src="images/Cover-Page-Annual-Report-2024.jpg"
+            alt="Event photo"
+          />
+        </div>
+
+        <!-- ===== Add PDF Download Link Here ===== -->
+        <div style="text-align: center; margin-top: 10px; margin-bottom: 20px">
+          <a
+            href="pdf/download (6).pdf"
+            download
+            style="
+              display: inline-block;
+              padding: 10px 20px;
+              background: #ac0000;
+              color: #fff;
+              text-decoration: none;
+              border-radius: 6px;
+              font-weight: bold;
+            "
+          >
+            CLICK HERE TO DOWNLOAD
+          </a>
+        </div>
+
+        <p class="event-desc">CSL AR 23-24 – web</p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News, Publications
+          </span>
+        </div>
+      </section>
+
+      <!-- THE 4TH POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Friday, 28 February 2025
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          “Memories of an Empowering Journey of Resilience”- 20th Tsunami
+          Remembrance
+        </h2>
+
+        <div class="event-image">
+          <img src="images/BOOK-COVER-1-768x541.jpg" alt="Event photo" />
+        </div>
+
+        <!-- ===== Add PDF Download Link Here ===== -->
+        <div style="text-align: center; margin-top: 10px; margin-bottom: 20px">
+          <a
+            href="pdf/download (7).pdf"
+            download
+            style="
+              display: inline-block;
+              padding: 10px 20px;
+              background: #ac0000;
+              color: #fff;
+              text-decoration: none;
+              border-radius: 6px;
+              font-weight: bold;
+            "
+          >
+            CLICK HERE TO DOWNLOAD
+          </a>
+        </div>
+
+        <p class="event-desc">Tsunami Book – WEB</p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News, Publications
+          </span>
+        </div>
+      </section>
+
+      <!-- THE 5TH POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Thursday, 27 February 2025
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Caritas Norway’s Visit to Caritas Sri Lanka: Gratitude in Action
+        </h2>
+
+        <div class="event-image">
+          <img src="images/DSC5713-768x512.jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          Caritas Sri Lanka – SEDEC had the honour of welcoming Ms. Ingrid
+          Rosendorf Joys, Secretary General of Caritas Norway, and Ms. Maria
+          Knutsdotter Langas, Program Advisor at Caritas Norway, to Caritas Sri
+          Lanka – SEDEC. Their extraordinary generosity has made a lasting
+          impact on the mission, and it was inspiring to witness firsthand how
+          their…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News, Sustainable <br />
+            Agriculture & Food <br />
+            Security unit (SA&FS)
+          </span>
+
+          <a href="RM1.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THE 6TH POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Wednesday, 26 February 2025
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Caritas Sri Lanka Partners’ Forum 2025: Strengthening Collaboration
+          for a Just and Prosperous Future
+        </h2>
+
+        <div class="event-image">
+          <img src="images/IMG_0364-768x512 (1).jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          Caritas Sri Lanka – SEDEC successfully hosted the Partners’ Forum 2025
+          on February 18, 2025, under the theme “Continuing the Journey towards
+          Uplifting Sri Lanka.” The event brought together national and
+          international partners, government representatives, experts, diocesan
+          directors, coordinators and community leaders to discuss Sri Lanka’s
+          pressing social and economic challenges and explore collaborative
+          strategies…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> CSL EVENTS, Latest News
+          </span>
+          <a href="RM1.html" class="read-more">Read more</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>
