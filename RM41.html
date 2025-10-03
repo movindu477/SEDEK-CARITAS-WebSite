@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="RM41.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Enhancing Thalassemia Care in Sri Lanka: Insights from the Exposure
+          Visit to India
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Monday</span>
+            <span class="date">18 November 2024</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            From November 1st to 5th, a national-level capacity-building program
+            and exposure visit for ‘Mitigation of Thalassemia, caring for the
+            neglected and the helpless’ programme officers was held in Chennai,
+            India, funded by Misereor. The program brought together seven
+            participants, including three staff members from the National Centre
+            and four diocesan staff members from Badulla, Chilaw, Kurunegala,
+            and Batticaloa dioceses. This visit was organised to deepen
+            participants’ understanding of the challenges, benefits, and rights
+            associated with families of Thalassemia patients, drawing parallels
+            with Sri Lankan realities. It also focused on acquiring knowledge of
+            tools, techniques, and best practices used in India to mitigate and
+            minimize the impact of Thalassemia. Participants explored strategies
+            for educating parents and family members to take proactive roles in
+            supporting Thalassemia patients and overcoming societal pressures,
+            as well as approaches to foster collaboration with stakeholders,
+            particularly government officials, as exemplified by Indian
+            Thalassemia organizations.
+            <br /><br />
+            The program featured a range of resource persons, including Mr L.
+            Lobithas, Disability and Development Consultant; Ms Mumtaj Suriya, a
+            High Court Lawyer, Thalassemia patient, and activist; Ms Manjula,
+            Manager of the Thalassemia Association of Tamil Nadu; Dr. Revathi
+            Raj, Senior Consultant in Pediatric hematology-oncology at Apollo
+            Cancer Centre; and Dr. Venkanda Deskalanu, a Hematologist at
+            Voluntary Health Services. Their expertise gave participants a
+            comprehensive understanding of Thalassemia care, advocacy, and
+            patient support systems in India.
+            <br /><br />
+            Over the four days, participants gained diverse insights into
+            Thalassemia management in the state of Tamil Nadu. On the first day,
+            Mr. Lobithas provided an overview of Thalassemia and its inclusion
+            under India’s Disability Act, significantly enhancing patient rights
+            and access to services. Ms. Mumtaj Suriya shared her inspiring life
+            journey, highlighting the power of resilience, self-advocacy, and
+            community support in overcoming the challenges of living with
+            Thalassemia. The second day delved into advocacy strategies and the
+            current living conditions of Thalassemia patients. Discussions
+            centered on key challenges, such as access to specialized care and
+            the importance of continuous medical treatment, while emphasizing
+            practical adaptations for Sri Lanka.
+            <br /><br />
+            On the third day, participants met with officers from the Social
+            Care Services Department of the State Commissioner for the
+            Differently Abled, who explained how Thalassemia is managed under
+            India’s Disability Act through a multi-stakeholder approach
+            involving the government and NGOs. The team visited the Voluntary
+            Health Services Hospital, where they interacted with patients and
+            families, gaining firsthand insights into the socio-economic and
+            medical challenges faced by Thalassemia patients. The fourth day
+            featured a session with Dr. Revathi Raj, who shared her expertise on
+            advanced medical facilities, treatments, and the use of technology
+            in Thalassemia care. She also discussed on how Bone Marrow
+            Transplantation is a potential cure, highlighting the need for
+            specialized infrastructure.
+            <br /><br />
+            The visit highlighted the significant benefits of recognizing
+            Thalassemia under India’s Disability Act, which facilitates access
+            to healthcare, financial assistance, and social services while
+            reducing stigma. In comparison, Sri Lanka, though equipped with an
+            established blood transfusion system, faces gaps in managing iron
+            overload and lacks comprehensive, holistic care models. Lessons from
+            India, such as the integration of medical, psychological, and
+            community support, offer a blueprint for addressing these gaps in
+            Sri Lanka.
+            <br /><br />
+            The program concluded with actionable recommendations to enhance
+            Thalassemia care in Sri Lanka. Participants proposed debriefing
+            sessions to share insights with local stakeholders, the
+            establishment of a National Thalassemia Association to advocate for
+            patient rights, and the adaptation of Indian practices to improve
+            access to healthcare and support. Emphasis was placed on promoting
+            collaboration between government and NGOs, prioritizing accessible
+            healthcare, subsidized medication, regular screenings, and
+            counselling services to enhance the quality of life for Thalassemia
+            patients in Sri Lanka. This exposure visit highlighted the potential
+            for transformative change through inclusive, and collaborative
+            strategies.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/1.jpeg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/2 (1).jpeg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/3.jpeg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/4.jpeg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/5.jpeg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/7.jpeg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/8.jpeg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/9.jpeg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/10.jpeg" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8102.jpeg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8104.jpeg" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8106.jpeg" alt="Caritas Event 12" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8111.jpeg" alt="Caritas Event 13" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8146.jpeg" alt="Caritas Event 14" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8151.jpeg" alt="Caritas Event 15" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8153.jpeg" alt="Caritas Event 16" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8281.jpeg" alt="Caritas Event 17" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8284.jpeg" alt="Caritas Event 18" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8287.jpeg" alt="Caritas Event 19" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8290.jpeg" alt="Caritas Event 20" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8292.jpeg" alt="Caritas Event 21" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8293.jpeg" alt="Caritas Event 22" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8295.jpeg" alt="Caritas Event 23" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8297.jpeg" alt="Caritas Event 24" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8300.jpeg" alt="Caritas Event 25" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8308.jpeg" alt="Caritas Event 26" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

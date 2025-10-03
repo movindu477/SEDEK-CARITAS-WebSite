@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="RM38.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>Caritas Vanni Establishes Village Knowledge Centre for Farmers</h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Tuesday</span>
+            <span class="date">26 November 2024</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            Caritas Vanni launched the
+            <b
+              ><i
+                >“Improving Rural Livelihoods, Enhancing Food Security, and
+                Building Climate Resilience in Sri Lanka”</i
+              ></b
+            >
+            program in January 2023. The program’s vision is to safeguard food
+            security for 2,500 subsistence farming households, including
+            marginalized urban and rural communities, war widows, women, and
+            2,500 schoolchildren. Its objectives include improving livelihoods
+            through sustainable agricultural practices, empowering 250
+            unemployed youth to engage in productive labor, and supporting 1,000
+            mothers of preschool children in selected villages to prevent
+            malnutrition within their families. The initiative is supported by
+            Caritas Norway, with implementation assistance provided by Caritas
+            Sri Lanka-SEDEC under the leadership of Rev. Fr. Luke Nelson Perera,
+            National Director of Caritas Sri Lanka-SEDEC. The program strongly
+            emphasizes empowering smallholder farmers and people with
+            disabilities, offering them resources and opportunities to achieve
+            greater independence.
+            <br /><br />
+            Led by Rev. Fr. Sebajeewan, the Diocesan Director of Caritas Vanni,
+            the program seeks to extend its reach across the Killinochchi and
+            Mullaitivu administrative districts by 2028. A key component of the
+            program is the implementation of organic home gardening initiatives,
+            which will directly benefit 2,500 Small Holder Farmer Families and
+            250 individuals with disabilities in Killinochchi and Mullative
+            Districts. These programs aim not only to support participants’
+            livelihoods but also to promote sustainable and healthy living.
+            Additionally, the program ensures that these individuals have equal
+            access to online services and center-based delivery networks, which
+            are crucial for connecting them with employment opportunities. This
+            connectivity is essential for their full integration into society
+            and improving their economic well-being. The goal is to create a
+            more inclusive society where people with disabilities are empowered
+            to live with dignity and contribute to their communities.
+            <br /><br />
+            The primary objective of the Food Security program is to enhance
+            sustainable agricultural production across agriculture, animal
+            husbandry, and fisheries, leading to improved income, nutrition, and
+            overall health.
+            <br /><br />
+            Caritas Vanni, a humanitarian organization, has established a
+            Diocesan-level Information Centre for farmers in the Vanni region.
+            This center provides vital agricultural information and support to
+            local farmers, helping them improve their farming practices, access
+            market information, and receive guidance on modern techniques to
+            increase productivity and sustainability. The Information Centre
+            serves as a hub for disseminating knowledge on crop management, pest
+            control, water conservation, and organic farming. It offers crop
+            calendars for various crops such as Big Onion, Red Onion, Cowpea,
+            Chilli, Green Gram, Groundnut, Maize, Black Gram, and Sesame.
+            Additionally, seed storage and sharing services are available, and
+            farmers receive both theoretical and practical training on
+            sustainable farming practices.
+            <br /><br />
+            The center also connects farmers to relevant government and
+            non-governmental programs and services, enhancing their access to
+            resources, technical advice, and financial support. Through this
+            initiative, Caritas Vanni aims to empower farmers, particularly
+            those in regions affected by economic constraints, natural
+            disasters, or post-conflict recovery. The center is poised to become
+            a key resource for fostering agricultural growth and improving the
+            livelihoods of farmers in the region.
+            <br /><br />
+            In addition to the Information Centre, Caritas Vanni has set up a
+            protected house for vegetable farming to demonstrate sustainable
+            cultivation methods in the Killinochchi and Mullaitivu districts.
+            The benefits of the protected house include:
+            <br /><br />
+            <ul style="text-align: justify; margin-left: 20px">
+            <li>
+              <strong>Climate Control:</strong> Maintains stable temperatures and humidity, protecting crops from extreme weather conditions.
+            </li>
+
+            <li>
+              <strong>Pest and Disease Protection:</strong> Acts as a barrier to insects and pests, reducing the need for pesticides.
+            </li>
+
+            <li>
+              <strong>Water Conservation:</strong> Minimizes water evaporation and utilizes rainwater more efficiently.
+            </li>
+
+            <li>
+              <strong>Better Quality Produce: </strong> Creates a controlled environment that leads to healthier plants and higher-quality fruits and vegetables.
+            </li>
+
+            <li>
+              <strong>Increased Yield: </strong> Optimal conditions and protection from harsh weather boost crop productivity.
+            </li>
+
+            <li>
+              <strong>Extended Growing Seasons: </strong> Enables year-round cultivation, even during off-seasons.
+            </li>
+
+            <li>
+              <strong>Reduced Labor Costs:</strong> Fewer pest and disease management requirements lead to reduced overall labor costs.
+            </li>
+          </ul>
+          </p>
+          <p class="caritas-text">
+            The opening ceremony of the protected house and Information Centre was held on November 23, 2024, and was attended by several dignitaries, including Very Rev. Fr. P. J. Jebaratnam, Vicar General of the RC Diocese of Jaffna; Rev. Fr. Eugine Francis, Diocesan Director of Caritas Jaffna; Rev. Fr. Bennette, Dean of the Mullaitivu Division of the Catholic Church; Rev. Fr. Silvester, Parish Priest; Mrs. Nilani Tissera, National Coordinator of the Food Security Program, Caritas Sri Lanka-SEDEC; Mr. Hershanth, Regional Coordinator of the Food Security Program; and Mrs. Amali, Regional Coordinator.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2024-11-26-at-12.29.51_41a83071.jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-11-26-at-12.29.51_ee00ec72.jpg"
+              alt="Caritas Event 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-11-26-at-12.29.50_549fe0a3.jpg"
+              alt="Caritas Event 3"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-11-26-at-12.29.52_deab1b44.jpg"
+              alt="Caritas Event 4"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-11-26-at-12.29.53_ee659bd1.jpg"
+              alt="Caritas Event 5"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-11-26-at-12.29.53_4c3682bd.jpg"
+              alt="Caritas Event 6"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-11-26-at-12.29.54_f6da8429.jpg"
+              alt="Caritas Event 7"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-11-26-at-12.29.55_46164433.jpg"
+              alt="Caritas Event 8"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-11-26-at-12.29.54_d01760ee.jpg"
+              alt="Caritas Event 9"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-11-26-at-12.30.23_593c69d6.jpg"
+              alt="Caritas Event 10"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

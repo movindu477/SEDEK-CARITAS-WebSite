@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="RM37.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>Home / News</h1>
+      </div>
+    </section>
+
+    <div class="events-wrapper">
+      <!-- THE 1ST POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Tuesday, 26 November 2024
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Caritas Vanni Establishes Village Knowledge Centre for Farmers
+        </h2>
+
+        <div class="event-image">
+          <img
+            src="images/WhatsApp-Image-2024-11-26-at-12.29.52_02548498-768x512.jpg"
+            alt="Event photo"
+          />
+        </div>
+
+        <p class="event-desc">
+          Caritas Vanni launched the “Improving Rural Livelihoods, Enhancing
+          Food Security, and Building Climate Resilience in Sri Lanka” program
+          in January 2023. The program’s vision is to safeguard food security
+          for 2,500 subsistence farming households, including marginalized urban
+          and rural communities, war widows, women, and 2,500 schoolchildren.
+          Its objectives include improving livelihoods through sustainable
+          agricultural practices,…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News, Sustainable Agriculture &
+            <br />
+            Food Security unit (SA&FS)
+          </span>
+          <a href="RM38.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THIS IS 2ND POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Monday, 18 November 2024
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">Regional Peace Forum – Plantation Region</h2>
+
+        <div class="event-image">
+          <img src="images/IMG-20241106-WA0017-768x575.jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          The Regional Peace Forum for the Plantation Region took place on
+          November 6th, 2024, at Caritas Galle, bringing together a wide range
+          of stakeholders to address the challenges faced by the plantation
+          community. The event, funded by MISEREOR, ran from 8:00 a.m. to 2:30
+          p.m. and provided a platform for in-depth discussions on key regional…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News, Sustainable Peace <br />
+            & Justice (SP&J)
+          </span>
+          <a href="RM39.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THIS IS 3RD POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Monday, 18 November 2024
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">Regional Peace Forum – Western Region</h2>
+
+        <div class="event-image">
+          <img src="images/20241031_093226-768x576.jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          The Regional Peace Forum for the Western Region, held on the 31st of
+          October 2024, brought together the beneficiaries to discuss and
+          address the challenges they face locally. This event, funded by
+          MISEREOR, was conducted at the Caritas Chilaw Auditorium from 8:00
+          a.m. to 4:00 p.m. There were 29 youth and Regional Peace Forum
+          members,…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News, Sustainable Peace <br />
+            & Justice (SP&J)
+          </span>
+          <a href="RM40.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THIS IS THE 4TH POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Monday, 18 November 2024
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Enhancing Thalassemia Care in Sri Lanka: Insights from the Exposure
+          Visit to India
+        </h2>
+
+        <div class="event-image">
+          <img src="images/5-768x576 (1).jpeg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          From November 1st to 5th, a national-level capacity-building program
+          and exposure visit for ‘Mitigation of Thalassemia, caring for the
+          neglected and the helpless’ programme officers was held in Chennai,
+          India, funded by Misereor. The program brought together seven
+          participants, including three staff members from the National Centre
+          and four diocesan staff members from Badulla, Chilaw,…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Disaster Risk Reduction Management
+            <br />
+            (DRRM), Latest News
+          </span>
+          <a href="RM41.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THIS IS 5TH POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Tuesday, 12 November 2024
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Promoting Peace: Insights from the Regional Peace Forum in Trincomalee
+        </h2>
+
+        <p class="event-desc">
+          On 9th October 2024, the Regional Peace Forum was successfully
+          conducted at Caritas Trincomalee, organized by Caritas Sri Lanka –
+          SEDEC with the support of MISEREOR. This forum brought together key
+          stakeholders and participants from the Jaffana, Mannar, Vanni,
+          Trincomalee and Batticaloa Diocesan Centers, aiming to promote peace,
+          stability, and prosperity by addressing the roots of…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News, Sustainable Peace <br />
+            & Justice (SP&J)
+          </span>
+          <a href="RM42.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THIS IS 6TH POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Monday, 04 November 2024
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Advocacy and Lobbying Workshops: Empowering Youth for Peace and
+          Justice
+        </h2>
+
+        <div class="event-image">
+          <img
+            src="images/WhatsApp-Image-2024-10-18-at-20.01.33_38152c4c-768x479.jpg"
+            alt="Event photo"
+          />
+        </div>
+
+        <p class="event-desc">
+          Sustainable Peace & Justice Unit of Caritas Sri Lanka organized two
+          key advocacy and lobbying workshops in 2024 for the objective of
+          equipping youth with the skills to promote peace and justice in their
+          communities. The first workshop, held on the 6th and 7th of August at
+          the Caritas Sri Lanka Auditorium, was designed for…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News
+          </span>
+          <a href="RM43.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THIS IS 7TH POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Monday, 04 November 2024
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Community Market at Chilaw DC: A Platform for Sustainable Livelihoods
+        </h2>
+
+        <div class="event-image">
+          <img src="images/IMG-20241014-WA0169-768x576.jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          On the 14th of October 2024, the Caritas Chilaw Diocesan Centre, under
+          the CAFOD project, organized a community market opening ceremony to
+          empower local beneficiaries. The event occurred at two locations,
+          Baththulu Oya and Akkarapaha, gathering diverse participants.
+          Beneficiaries, stakeholders, Caritas staff, and community leaders from
+          various backgrounds came together, including representatives from the
+          Sinhala…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News, Sustainable Peace <br />
+            & Justice (SP&J)
+          </span>
+          <a href="RM44.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THIS IS 8TH POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Friday, 01 November 2024
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">Celebrating Children’s Day in Anuradhapura</h2>
+
+        <div class="event-image">
+          <img src="images/IMG-20241101-WA0009-768x512.jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          On October 12th, 2024, Caritas Sri Lanka – SEDEC, in collaboration
+          with Caritas Anuradhapura – Sethsaviya and Kekirawa Parish, organized
+          a memorable Children’s Day celebration. The event was part of the
+          Caritas Korea project titled “Educational Assistance to Economic
+          Crisis and War-affected Poor Children in Northern, Eastern, and North
+          Central Provinces of Sri Lanka”, with a…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News, Safe Migration
+          </span>
+          <a href="RM45.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THIS IS 9TH POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Friday, 01 November 2024
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Election Awareness and Empowering Communities
+        </h2>
+
+        <div class="event-image">
+          <img src="images/IMG_0230-768x512.jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          On the 2nd of September 2024, Caritas Sri Lanka conducted an Election
+          Awareness session at the Caritas Sri Lanka Auditorium under the
+          Misereor-supported peace-building project. The event was attended by
+          36 project beneficiaries, stakeholders, program coordinators, 13 DC
+          Directors, and National Center staff. The aim was to provide critical
+          insights into the upcoming Presidential Election of…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News, Sustainable <br />
+            Peace & Justice (SP&J)
+          </span>
+          <a href="RM46.html" class="read-more">Read more</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

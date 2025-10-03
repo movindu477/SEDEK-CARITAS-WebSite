@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="RM36.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Kumari from Thalawa, Anuradhapura empowered through the Food Security
+          program of Caritas Sri Lanka.
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Wednesday</span>
+            <span class="date">04 December 2024</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            Caritas Sri Lanka – SEDEC in collaboration with its network, is
+            implementing a Food Security program titled
+            <b
+              ><i
+                >“Improving Rural Livelihoods, Enhancing Food Security, and
+                Building Climate Resilience in Sri Lanka.”</i
+              ></b
+            >This initiative is spearheaded by Rev. Fr. Luke Nelson Perera,
+            National Director of Caritas Sri Lanka – SEDEC, with support from
+            Caritas Norway. The program aims to improve food security for 26,200
+            subsistence farming households, including marginalized urban and
+            rural communities in select villages across Sri Lanka. It
+            specifically targets vulnerable groups such as war widows, women,
+            youth, persons with disabilities, and 32,500 schoolchildren,
+            equipping them with knowledge of sustainable agricultural practices
+            and home gardening. Additionally, the program focuses on 13,000
+            mothers of preschool children, working to safeguard their children
+            from malnutrition by 2028. Already, the program has fostered
+            significant positive change in rural communities across Sri Lanka.
+            Below, we share one such inspiring story of transformation.
+            <br /><br />
+            My name is R.A. Kumarika Ranaweera, and I am 48 years old. I live in
+            a village called Sumudugama, located in the Thalawa Divisional
+            Secretariat Division of Anuradhapura. I am a mother of two children,
+            and together with my husband, we lead a very happy family life.
+            <br /><br />
+            In 2023, Caritas Anuradhapura – Sethsaviya introduced the Food
+            Security Program to our village. This initiative, supported by
+            Caritas Norway, is being implemented by Caritas Sri Lanka’s network
+            across all 25 administrative districts in Sri Lanka. Through this
+            program, Caritas Anuradhapura provided us with valuable training in
+            sustainable home gardening practices, with a focus on composting
+            without chemical additives. The goal was to ensure a toxin-free and
+            sustainable food supply for our households. We learned how to
+            prepare compost using the “Jeewakotuwa” method and the Pit method,
+            as well as how to create natural pest repellents (such as Magoza
+            leaf extraction, Gliricidia leaf extraction, and garlic solution)
+            and liquid fertilizers. Additionally, we were taught how to select
+            and prepare a Home garden that is resilient to Sri Lanka’s changing
+            climate.
+            <br /><br />
+            As part of the program, we received traditional seeds, poly bags,
+            and micro-sprinkler irrigation systems from Caritas Anuradhapura.
+            Agronomists, agricultural instructors, and Caritas Food Security
+            staff provided expert guidance throughout the process. Exposure
+            visits to an agronomist’s home garden sparked great interest among
+            us, where we learned practical Home gardening techniques, such as
+            proper pruning. We were also introduced to the concept of wormy
+            compost and received support with various techniques to improve our
+            gardening.
+            <br /><br />
+            My entire family has been actively involved in home gardening, which
+            has not only brought us closer together but also increased our
+            overall happiness. What was once unproductive land has now become
+            highly productive, providing a steady source of income for my
+            family. In our garden, we grow 20 varieties of fruits, 25 types of
+            vegetables, 15 kinds of leafy greens, 15 herbs, 15 spices, and 6
+            different grains. Additionally, I have completed training in
+            composting, worm composting and worm tea production, pest-repellent
+            creation, animal husbandry, and nursery management. These practices
+            have become integral to the success of my home garden.
+            <br /><br />
+            My garden has become a model farm for our village, and many people
+            come to visit and learn from it. Officials from the Department of
+            Agriculture and staff from National Caritas have also visited. Over
+            time, we have gained the confidence to voice our concerns on social
+            issues and advocate for our civil rights. As a result, we prepared
+            three proposals to present to religious leaders, government
+            officials, and the Provincial Director of the Department of
+            Agriculture. These proposals addressed local agricultural
+            challenges, the human-elephant conflict, and the economic
+            difficulties faced by our community.
+            <br /><br />
+            As a mother, I am truly happy because I can now feed my children and
+            husband nutritious, poison-free food that we grow together as a
+            family. I no longer need to buy these food items, and the money I
+            used to spend on food is now available for other family needs, such
+            as our children’s education and healthcare. I have saved money in
+            the bank and the community-based organization (CBO), and I am also
+            able to share my produce with others in the village.
+            <br /><br />
+            We are deeply grateful to Caritas Sri Lanka and Caritas Norway for
+            this transformative project in our village.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/33 (1).jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-11-21-at-16.11.29_1f4836a7.jpg"
+              alt="Caritas Event 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-11-21-at-16.11.29_5f75ef67.jpg"
+              alt="Caritas Event 3"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-01-10-at-16.28.40_01998a49.jpg"
+              alt="Caritas Event 4"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-12-04-at-09.26.07_568c83d4.jpg"
+              alt="Caritas Event 5"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-12-04-at-09.27.49_62490c6b.jpg"
+              alt="Caritas Event 6"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-12-04-at-09.29.48_f48eb481.jpg"
+              alt="Caritas Event 7"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-12-04-at-09.32.53_c91932fe.jpg"
+              alt="Caritas Event 8"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-12-04-at-09.33.48_66844856.jpg"
+              alt="Caritas Event 9"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-12-04-at-09.39.49_fb9c08c3.jpg"
+              alt="Caritas Event 10"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-12-04-at-09.41.46_359b8fb1.jpg"
+              alt="Caritas Event 11"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-12-04-at-09.45.42_3c275b75.jpg"
+              alt="Caritas Event 12"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>
