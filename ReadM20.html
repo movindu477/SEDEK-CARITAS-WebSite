@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM20.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Celebrating Culture and Unity: Caritas Sri Lanka’s Sinhala and Tamil
+          New Year Festival 2024
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Monday</span>
+            <span class="date">06 May 2024</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            On April 29, 2024, the Caritas Sri Lanka Welfare Society organized
+            the Awrudu festival for all staff members, an annual event that
+            brings together the Sinhala and Tamil New Year with enthusiasm. This
+            year’s celebration was marked by a series of heartfelt and
+            culturally rich activities that showcased the traditions of Sri
+            Lanka’s diverse communities.
+            <br /><br />
+            The day began with a holy Mass conducted by the National Director,
+            Rev Fr Luke Nelson, setting a tone of community spirit. Following
+            the Mass, staff members were treated to delightful traditional
+            Awrudu sweets. This sweets table was a feast for the senses,
+            decorated with a variety of treats from both Sinhala and Tamil
+            culinary traditions and a highlight of the day’s celebrations.
+            <br /><br />
+            Adding a special touch to the festivities was a performance by Mrs.
+            Prasangi, a singer who has captured the hearts of many by singing on
+            trains to support her family. Her presence at the Awrudu celebration
+            was not just entertainment; it was an inspiring display of
+            resilience and talent. Her songs filled the air with joy and added
+            an extra layer of colour and enjoyment to the celebrations.
+            <br /><br />
+            The festive spirit continued with several fun-filled games that saw
+            active participation from all the staff, who were dressed in
+            traditional attire, enhancing the cultural atmosphere of the event.
+            These games were not just about fun but also about fostering
+            teamwork and unity among the staff. The laughter and cheers echoed
+            the essence of Awrudu, which is to bring staff together in joy and
+            celebration.
+            <br /><br />
+            Caritas Sri Lanka Awrudu celebration of 2024 was a day filled with
+            faith, joy, and a collective affirmation of peace and unity, echoing
+            the organizational ongoing commitment in promoting a more inclusive
+            and compassionate society.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/IMG_0048.jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0055 (1).jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0062.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0064.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0069.jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0074.jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0085.jpg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0099.jpg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0123 (1).jpg" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0128 (1).jpg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0133 (2).jpg" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0138 (1).jpg" alt="Caritas Event 12" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0141.jpg" alt="Caritas Event 13" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0146 (2).jpg" alt="Caritas Event 14" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0148.jpg" alt="Caritas Event 15" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0151.jpg" alt="Caritas Event 16" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0154 (1).jpg" alt="Caritas Event 17" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0160 (1).jpg" alt="Caritas Event 18" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0170.jpg" alt="Caritas Event 19" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0174.jpg" alt="Caritas Event 20" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0175.jpg" alt="Caritas Event 21" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

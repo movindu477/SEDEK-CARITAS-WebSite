@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM33.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Empowering Estate Communities for a Brighter Future: A Transformative
+          Gathering by Caritas Sri Lanka SEDEC
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Friday</span>
+            <span class="date">08 December 2023</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            In a profound demonstration of unity, Caritas Sri Lanka SEDEC
+            organized a three-day event titled “Empowering Estate Communities
+            for a Brighter Future.” This impactful gathering took place at the
+            Samudi Conference Hall in Rathnapura from November 15th to 17th,
+            2023.
+            <br /><br />
+            <b>Day One: Illuminating the Path Forward</b>
+            <br /><br />
+            The first day set the tone with the ceremonial lighting of lamps,
+            symbolizing the enlightenment that awaited the estate communities.
+            Distinguished figures such as Rev. Fr. Luke Nelson National Director
+            of Caritas Sri Lanka SEDEC and Rev. Fr. Damian Fernando Director of
+            Caritas Rathnapura Sethmini graced the event. Rev. Fr. Damian
+            Fernando warmly welcomed participants from Rathnapura, Galle,
+            Badulla, and Kandy dioceses. Mr Selvaraj, CBO Leader, shared
+            uplifting success stories, illustrating the tangible positive
+            changes post-Caritas intervention. District Coordinator Mrs. Anoja
+            shed light on project achievements; The District Secretary
+            Mr.Wasantha Gunarathne, chief guest of the day stressed the
+            historical economic contributions of tea and rubber plantations,
+            noting a lack of government support. He proposed a legal clinic
+            program to achieve zero percentage legal documents for plantation
+            communities, with assured backing from officials. He also called for
+            reducing substance abuse, promoting religion, fostering humanity,
+            and inspiring everyone to be agents of change.
+            <br /><br />
+            <b>Day Two: Focusing on Health and Education</b>
+            <br /><br />
+            The second day turned attention to health and education issues
+            within estate communities. Engaging discussions delved into the
+            challenges faced by estate schools, the nutritional needs of
+            pregnant mothers, and the imperative of unity within the community.
+            The Community leaders, Mr. Sadeesh and Mr. Vigneshwaren provided
+            valuable insights on community initiatives to improve health
+            conditions. Conversations extended to enclose labour rights,
+            education, housing, and poverty, exploring innovative strategies
+            such as the outgrow system and advocating for an ATM at Galabada
+            Estate to address exploitation in tea estates. Mrs. Subashini, a
+            government teacher, emphasized the significance of legal
+            documentation, housing, and poverty reduction, conducting practical
+            leadership sessions that were completed in the awarding of
+            certificates and gifts to participants and coordinators,
+            underscoring their inherent social responsibility.
+            <br /><br />
+            <b>Day Three: Reflection and Celebration</b>
+            <br /><br />
+            The concluding day, led by Mr. Sagayaraj from Caritas Sri Lanka
+            SEDEC, featured a comprehensive evaluation session. Leaders
+            presented remarkable project progress, expressing gratitude for
+            Caritas initiatives that have fueled positive change. The conference
+            wrapped up with a reminder of the social responsibility each
+            community leader carries back to their respective communities. This
+            transformative gathering not only empowered estate communities but
+            also nurtured unity, leadership, and awareness for a better future.
+            Caritas Sri Lanka SEDEC’s strong commitment to uplifting
+            marginalized communities was appreciable throughout the conference,
+            laying a powerful foundation for sustained positive change. The
+            event signalled a brighter future for those often overlooked in
+            society.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/2023_11_15_14_42_IMG_6662.jpg"
+              alt="Caritas Event 1"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/2023_11_15_14_47_IMG_6673.jpg"
+              alt="Caritas Event 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/2023_11_16_10_29_IMG_6702.jpg"
+              alt="Caritas Event 3"
+            />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8443.png" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8445.png" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8458.png" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8464.png" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8458-1.png" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8469.png" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8473.png" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8479.png" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_8483.png" alt="Caritas Event 12" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>
