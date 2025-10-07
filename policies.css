@@ -5,165 +5,575 @@ body {
   color: #333;
 }
 
-/* Section title */
-.page-title {
-  text-align: center;
-  font-size: 2.2rem;
-  margin: 40px 0 30px;
-  color: #222;
-}
+       /* ===== MODERN POLICIES SECTION ===== */
+        .policies {
+            padding: 60px 15px;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+        }
 
-/* =============================== */
-/* GRID LAYOUT - Responsive        */
-/* =============================== */
-.policy-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  max-width: 1200px;
-  margin: 0 auto 60px;
-  padding: 0 20px;
-}
+        .policies::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(185, 28, 28, 0.08) 0%, transparent 50%);
+            animation: pulseBackground 8s ease-in-out infinite;
+            z-index: 1;
+        }
 
-/* =============================== */
-/* CARD STYLING - Modern Look      */
-/* =============================== */
-.policy-card, 
-.single-policy {
-  background: linear-gradient(135deg, #3d0a0a, #c81536);
-  border-radius: 18px;
-  padding: 28px 22px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  text-align: center;
-  transition: all 0.35s ease;
+        @keyframes pulseBackground {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 180px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
+        .page-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #ffffff 0%, #fecaca 50%, #dc2626 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            position: relative;
+            z-index: 2;
+            line-height: 1.2;
+        }
 
-/* Smooth hover effect */
-.policy-card::before,
-.single-policy::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);
-  transform: rotate(25deg);
-  transition: all 0.6s ease;
-  opacity: 0;
-}
+        .policy-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
 
-.policy-card:hover::before,
-.single-policy:hover::before {
-  opacity: 1;
-  transform: rotate(0deg);
-}
+        /* Policy Card Styling */
+        .policy-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            padding: 25px 20px;
+            transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s ease forwards;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-height: 180px;
+            justify-content: space-between;
+        }
 
-.policy-card:hover,
-.single-policy:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
-}
+        .policy-card:nth-child(1) { animation-delay: 0.1s; }
+        .policy-card:nth-child(2) { animation-delay: 0.15s; }
+        .policy-card:nth-child(3) { animation-delay: 0.2s; }
+        .policy-card:nth-child(4) { animation-delay: 0.25s; }
+        .policy-card:nth-child(5) { animation-delay: 0.3s; }
+        .policy-card:nth-child(6) { animation-delay: 0.35s; }
+        .policy-card:nth-child(7) { animation-delay: 0.4s; }
+        .policy-card:nth-child(8) { animation-delay: 0.45s; }
+        .policy-card:nth-child(9) { animation-delay: 0.5s; }
+        .policy-card:nth-child(10) { animation-delay: 0.55s; }
+        .policy-card:nth-child(11) { animation-delay: 0.6s; }
+        .policy-card:nth-child(12) { animation-delay: 0.65s; }
+        .policy-card:nth-child(13) { animation-delay: 0.7s; }
+        .policy-card:nth-child(14) { animation-delay: 0.75s; }
+        .policy-card:nth-child(15) { animation-delay: 0.8s; }
+        .policy-card:nth-child(16) { animation-delay: 0.85s; }
 
-/* =============================== */
-/* HEADING INSIDE CARD             */
-/* =============================== */
-.policy-card h2,
-.single-policy h2 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #fff;
-  line-height: 1.5;
-  flex: 1;
-  transition: color 0.3s ease;
-}
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-.policy-card:hover h2,
-.single-policy:hover h2 {
-  color: #f9f9f9;
-}
+        .policy-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 14px;
+            padding: 1.5px;
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.3), rgba(255, 255, 255, 0.1), rgba(185, 28, 28, 0.3));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
 
-/* =============================== */
-/* DOWNLOAD LINK STYLE             */
-/* =============================== */
-.small-link,
-.single-download {
-  color: #fff;
-  font-size: 0.95rem;
-  text-decoration: none;
-  font-weight: 500;
-  background: rgba(255, 255, 255, 0.15);
-  padding: 10px 15px;
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
+        .policy-card:hover::before {
+            opacity: 1;
+        }
 
-.small-link:hover,
-.single-download:hover {
-  background: rgba(255, 255, 255, 0.25);
-  transform: scale(1.05);
-}
+        .policy-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                transparent 0%,
+                rgba(220, 38, 38, 0.08) 50%,
+                transparent 100%
+            );
+            transform: skewX(-25deg);
+            transition: left 0.6s ease;
+        }
 
-.small-link i,
-.single-download i {
-  margin-right: 8px;
-  font-size: 0.9rem;
-}
+        .policy-card:hover::after {
+            left: 100%;
+        }
 
-/* =============================== */
-/* SINGLE POLICY CONTAINER         */
-/* =============================== */
-.single-policy-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
-  padding: 20px;
-  box-sizing: border-box;
-}
+        .policy-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 
+                0 15px 30px rgba(220, 38, 38, 0.12),
+                0 6px 20px rgba(0, 0, 0, 0.25);
+        }
 
-/* =============================== */
-/* RESPONSIVENESS                 */
-/* =============================== */
-@media (max-width: 768px) {
-  .policy-card h2,
-  .single-policy h2 {
-    font-size: 1rem;
-  }
+        .policy-card h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 20px;
+            line-height: 1.4;
+            text-align: center;
+            width: 100%;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-  .small-link,
-  .single-download {
-    font-size: 0.9rem;
-    padding: 8px 12px;
-  }
-}
+        /* Unified Download Button Styling */
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            max-width: 220px;
+            margin: 0 auto;
+            min-height: 44px;
+            box-sizing: border-box;
+        }
 
-@media (max-width: 480px) {
-  .policy-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
+        .download-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+            transition: left 0.5s ease;
+        }
 
-  .policy-card, 
-  .single-policy {
-    min-height: 160px;
-    padding: 24px 18px;
-  }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 
+                0 6px 15px rgba(220, 38, 38, 0.3),
+                0 3px 8px rgba(0, 0, 0, 0.25);
+        }
 
-  .policy-card h2,
-  .single-policy h2 {
-    font-size: 0.95rem;
-  }
-}
+        .download-btn:hover::before {
+            left: 100%;
+        }
+
+        .download-btn:active {
+            transform: translateY(0) scale(0.98);
+        }
+
+        .download-btn i {
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        /* Single Policy Styling */
+        .single-policy {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            padding: 30px 25px;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeInUp 0.5s ease 0.9s forwards;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 200px;
+        }
+
+        .single-policy::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 14px;
+            padding: 1.5px;
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.3), rgba(255, 255, 255, 0.1), rgba(185, 28, 28, 0.3));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .single-policy:hover::before {
+            opacity: 1;
+        }
+
+        .single-policy:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 
+                0 15px 30px rgba(220, 38, 38, 0.12),
+                0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .single-policy h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 25px;
+            line-height: 1.4;
+            text-align: center;
+            width: 100%;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Download Progress Animation */
+        .download-progress {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(220, 38, 38, 0.2);
+            border-radius: 10px;
+            padding: 12px 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            z-index: 1000;
+            transform: translateY(-150%);
+            transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        .download-progress.show {
+            transform: translateY(0);
+        }
+
+        .download-progress i {
+            color: #dc2626;
+            font-size: 1.1rem;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 3px;
+            background: rgba(220, 38, 38, 0.2);
+            border-radius: 2px;
+            overflow: hidden;
+            margin-top: 6px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #dc2626, #b91c1c);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+
+        /* Small Tablets and Large Phones */
+        @media (min-width: 481px) and (max-width: 768px) {
+            .policies {
+                padding: 70px 20px;
+            }
+            
+            .page-title {
+                font-size: 2.2rem;
+                margin-bottom: 35px;
+            }
+            
+            .policy-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .policy-card {
+                padding: 25px 20px;
+                min-height: 190px;
+            }
+            
+            .policy-card h2 {
+                font-size: 1.1rem;
+            }
+            
+            .single-policy {
+                padding: 35px 30px;
+                min-height: 220px;
+            }
+            
+            .single-policy h2 {
+                font-size: 1.4rem;
+            }
+            
+            .download-btn {
+                max-width: 240px;
+                padding: 13px 26px;
+                min-height: 46px;
+            }
+            
+            .download-progress {
+                top: 15px;
+                right: 15px;
+                left: auto;
+                max-width: 300px;
+                transform: translateX(150%);
+            }
+            
+            .download-progress.show {
+                transform: translateX(0);
+            }
+        }
+
+        /* Tablets */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .policies {
+                padding: 80px 25px;
+            }
+            
+            .page-title {
+                font-size: 2.5rem;
+                margin-bottom: 40px;
+            }
+            
+            .policy-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+            
+            .policy-card {
+                padding: 28px 22px;
+                min-height: 200px;
+            }
+            
+            .policy-card h2 {
+                font-size: 1.15rem;
+            }
+            
+            .single-policy {
+                padding: 40px 35px;
+                min-height: 240px;
+            }
+            
+            .single-policy h2 {
+                font-size: 1.5rem;
+            }
+            
+            .download-btn {
+                max-width: 260px;
+                padding: 14px 28px;
+                min-height: 48px;
+                font-size: 0.9rem;
+            }
+            
+            .download-progress {
+                top: 20px;
+                right: 20px;
+                left: auto;
+                max-width: 350px;
+                transform: translateX(150%);
+            }
+            
+            .download-progress.show {
+                transform: translateX(0);
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 1025px) {
+            .policies {
+                padding: 100px 30px;
+            }
+            
+            .page-title {
+                font-size: 3rem;
+                margin-bottom: 50px;
+            }
+            
+            .policy-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 25px;
+            }
+            
+            .policy-card {
+                padding: 30px 25px;
+                min-height: 220px;
+            }
+            
+            .policy-card h2 {
+                font-size: 1.3rem;
+            }
+            
+            .single-policy {
+                padding: 45px 40px;
+                min-height: 260px;
+            }
+            
+            .single-policy h2 {
+                font-size: 1.6rem;
+            }
+            
+            .download-btn {
+                max-width: 280px;
+                padding: 15px 30px;
+                min-height: 50px;
+                font-size: 0.95rem;
+            }
+            
+            .download-progress {
+                top: 20px;
+                right: 20px;
+                left: auto;
+                max-width: 400px;
+                transform: translateX(150%);
+            }
+            
+            .download-progress.show {
+                transform: translateX(0);
+            }
+        }
+
+        /* Extra Small Devices */
+        @media (max-width: 360px) {
+            .policies {
+                padding: 40px 10px;
+            }
+            
+            .page-title {
+                font-size: 1.7rem;
+                margin-bottom: 25px;
+            }
+            
+            .policy-card {
+                padding: 20px 16px;
+                min-height: 170px;
+            }
+            
+            .policy-card h2 {
+                font-size: 1rem;
+                margin-bottom: 18px;
+            }
+            
+            .single-policy {
+                padding: 25px 20px;
+                min-height: 190px;
+            }
+            
+            .single-policy h2 {
+                font-size: 1.2rem;
+            }
+            
+            .download-btn {
+                max-width: 200px;
+                padding: 11px 20px;
+                min-height: 42px;
+                font-size: 0.8rem;
+            }
+            
+            .download-progress {
+                padding: 10px 14px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Touch Device Optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .policy-card:hover {
+                transform: none;
+            }
+            
+            .policy-card:active {
+                transform: scale(0.98);
+            }
+            
+            .download-btn:hover {
+                transform: none;
+            }
+            
+            .download-btn:active {
+                transform: scale(0.95);
+            }
+        }
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            .policy-card,
+            .download-btn,
+            .download-progress,
+            .policies::before {
+                transition: none;
+                animation: none;
+            }
+            
+            .policy-card {
+                opacity: 1;
+                transform: none;
+            }
+            
+            .single-policy {
+                opacity: 1;
+                transform: none;
+            }
+        }

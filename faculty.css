@@ -11,47 +11,121 @@ body {
 /* ---------- HERO SECTION ---------- */
 .hero {
   position: relative;
-  height: 450px;
+  height: 620px; /* slightly reduced for better first-fold */
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px; /* ✅ lift section slightly upwards */
 }
 
 .hero img.mainimg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.85); /* subtle dark overlay effect */
-  transition: transform 0.5s ease;
+  filter: brightness(0.8);
+  transition: transform 0.8s ease, filter 0.8s ease;
+  will-change: transform;
 }
 
 .hero:hover img.mainimg {
-  /*transform: scale(1.05);*/ /* subtle zoom on hover */
-  transform: none;
+  transform: scale(1.03);
+  filter: brightness(0.75);
 }
 
 .hero-text {
   position: absolute;
-  top: 50%;
+  top: 48%; /* ✅ slightly higher position */
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff; /* white text for contrast */
+  color: #fff;
   text-align: center;
-  padding: 20px 40px;
-  border-radius: 12px;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* subtle shadow for readability */
+  opacity: 0;
+  transform: translate(-50%, -40%) translateY(40px);
+  animation: heroFadeIn 1.2s ease forwards;
 }
 
 .hero-text h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 14px;
+  font-weight: 800;
   letter-spacing: 1px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.7); /* ✅ clean shadow for readability */
 }
 
 .hero-text h4 {
   font-size: 1.3rem;
   font-weight: 400;
   letter-spacing: 0.5px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
 }
+
+/* ---------- Animation ---------- */
+@keyframes heroFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%) translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) translateY(0);
+  }
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .hero {
+    height: 500px;
+    margin-top: -20px;
+  }
+
+  .hero-text {
+    top: 45%;
+    padding: 0 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text h4 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .hero {
+    height: 600px;
+    margin-top: -49px;
+  }
+
+  .hero-text {
+    max-width: 90%;
+    top: 42%;
+    padding: 0 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .hero-text h4 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+
+
+
+
+
 
 /* ---------- Venue Container ---------- */
 .venue-container {
@@ -75,7 +149,8 @@ body {
 /* ---------- VENUE SECTION ---------- */
 .venue-section {
   padding: 80px 20px;
-  background: #f8f8f8;
+  background: #0a0a0a;
+  color: #fff;
 }
 
 .venue-wrapper {
@@ -88,12 +163,12 @@ body {
   font-size: 2.6rem;
   margin-bottom: 12px;
   font-weight: 700;
-  color: #0a0a0a;
+  color: #000000;
 }
 
 .venue-header .tagline {
   font-size: 1.2rem;
-  color: #555;
+  color: #000000;
   max-width: 720px;
   margin: 0 auto 50px;
   line-height: 1.7;
@@ -102,18 +177,20 @@ body {
 /* ---------- Intro ---------- */
 .venue-intro p {
   font-size: 1.15rem;
-  background: #fff;
+  background: linear-gradient(90deg, #0b0708, #d90429);
+  color: #fff;
   display: inline-block;
   padding: 16px 28px;
   border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.06); /* slightly stronger shadow */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
   margin-bottom: 60px;
   font-weight: 500;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Remove hover animation */
 .venue-intro p:hover {
-  transform: none;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* ---------- Content Cards ---------- */
@@ -125,24 +202,30 @@ body {
 }
 
 .venue-card {
-  background: linear-gradient(135deg, #ffffff, #fdfdfd);
+  background: linear-gradient(90deg, #0b0708, #d90429);
   border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   padding: 30px;
   text-align: left;
   display: flex;
-  flex-direction: column; /* stack content vertically */
-  height: 100%;           /* stretch to match tallest card */
-  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
-  }
+  flex-direction: column;
+  height: 100%;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.venue-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .venue-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
-
-
 
 /* ---------- Image Card ---------- */
 .image-card {
@@ -155,7 +238,7 @@ body {
 
 .image-card img {
   width: 100%;
-  height: 100%;        /* fills the card height */
+  height: 100%;
   object-fit: cover;
   border-radius: 20px;
   transition: transform 0.5s ease;
@@ -167,13 +250,14 @@ body {
 
 /* ---------- Details Card ---------- */
 .details-card h3 {
-  color: #0a0a0a;
+  color: #fff;
   margin-top: 0;
-  margin-bottom: 24px; 
+  margin-bottom: 24px;
   font-size: 1.5rem;
   font-weight: 600;
-  padding-bottom: 2px;
   display: inline-block;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 4px;
 }
 
 .feature-list {
@@ -187,7 +271,7 @@ body {
   padding-left: 36px;
   margin-bottom: 16px;
   font-size: 1rem;
-  color: #333;
+  color: #f9f9f9;
   font-weight: 500;
   line-height: 1.65;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -195,7 +279,7 @@ body {
 
 .feature-list li:hover {
   transform: translateX(4px);
-  color: #000;
+  color: #fff;
 }
 
 .feature-list li::before {
@@ -203,65 +287,92 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  color: #000;
+  color: #fff;
   font-weight: bold;
   transform: scale(1.1);
   transition: color 0.3s ease;
 }
 
 .feature-list li:hover::before {
-  color: #00eb3b;
+  color: #00ff6a;
 }
 
-
-
-/* ---------- Amenities Card Heading ---------- */
+/* ---------- Amenities ---------- */
 .amenities-card h3 {
-  color: #0a0a0a;
+  color: #fff;
   margin-top: 0;
-  margin-bottom: 24px;   /* breathing room */
+  margin-bottom: 24px;
   font-size: 1.5rem;
   font-weight: 600;
-  display: inline-block;  /* ensures underline only spans text */
-  padding-bottom: 2px;    /* optional: adjust spacing between text and underline */
+  display: inline-block;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 4px;
 }
-
-
 
 .amenities-row {
   display: flex;
-  justify-content: left;
-  margin-top: 40px; /* increased gap from previous 10px to 40px */
-  gap: 50px; /* optional: spacing between multiple amenities cards if any */
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 30px;
 }
 
 .amenities-card {
-  max-width: 2000px;
-  width: 100%;
-  background: linear-gradient(135deg, #ffffff, #fdfdfd);
+  flex: 1 1 300px;
+  background: linear-gradient(90deg, #0b0708, #d90429);
   border-radius: 20px;
-  padding: 10px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.amenities-card.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .amenities-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
-
-
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
   .venue-content {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
+
   .venue-card {
     text-align: center;
   }
+
   .details-card h3 {
     display: block;
     text-align: center;
+  }
+
+  .feature-list li {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .venue-header h2 {
+    font-size: 2rem;
+  }
+
+  .venue-header .tagline {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .venue-intro p {
+    font-size: 1rem;
+    padding: 12px 20px;
   }
 }
