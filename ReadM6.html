@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM6.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Addressing the Challenges of the Plantation Community: Insights from
+          the LLPP Project Press Conference
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Thursday</span>
+            <span class="date">22 August 2024</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            On the 31st of July 2024, a significant press conference was held at
+            Caritas SETIK in Kandy, addressing the issues faced by the
+            plantation community. This was organized by the Caritas Sri Lanka
+            ECPP unit under the LLPP (Lighting the Lives of the Plantation
+            People Project) funded by Catholic Relief Services (CRS) and the
+            event occurred from 10:00 a.m. to 12:30 p.m. The press conference
+            served as a crucial platform to bring attention to the challenges
+            and issues faced by the plantation workers and to encourage
+            responsible authorities and organizations to take action.
+            <br /><br />
+            The conference brought together a group of significant participants,
+            including Rt. Rev. Dr. Valence Mendis – Bishop of Kandy, Rev. Fr.
+            Luke Nelson Perera – National Director Caritas Sri Lanka SEDEC,
+            Very. Rev. Fr. Michael Rajendram – Director Caritas SED Galle, Rev.
+            Fr. Anthony Jesudasan – Director CODESEP Deniyaya & Caritas SED
+            GALLE, Very. Rev. Fr. Damian Fernando – Director of Caritas
+            Ratnapura Sethmini, Rev. Fr. Newman Peiris – Director of Caritas
+            Kandy SETIK, Rev. Fr. Pradeep Nishantha – Director of Caritas
+            Badulla USCOD, Rev. Fr. Anton – Mathugama Assistant Parish Priest,
+            Mr. Sudesh Rodrigo – Zonal Manager Field Operation, World Vision
+            Lanka and Caritas Sri Lanka ECPP unit staff members. Their presence
+            underscored the importance of the event and the need for collective
+            efforts to address the issues and challenges of the plantation
+            workers.
+            <br /><br />
+            Throughout the conference, a range of issues impacting the
+            plantation community were discussed in detail. The discussions
+            focused on the struggles related to livelihoods, land ownership, and
+            their rights, which continue to affect the daily lives of plantation
+            workers. The participants emphasized the necessity of identifying
+            practical solutions and mobilizing support from both government and
+            non-governmental entities to improve the conditions within the
+            plantation sector.
+            <br /><br />
+            The press conference had considerable media attention, with
+            representatives from leading media organizations in attendance.
+            Journalists from Lakehouse, Derana, Hiru, Swarnavahini, Sirasa,
+            Divaina, Lankadeepa, Kadurata FM, Siyatha, and Virakesari covered
+            the proceedings, ensuring that the issues raised during the press
+            conference reached a wider audience. Their coverage was important in
+            amplifying the concerns of the plantation community and advocating
+            for meaningful change.
+            <br /><br />
+            In conclusion, the press conference at Caritas SETIK Kandy marked an
+            important step in addressing the ongoing challenges and Issues faced
+            by the plantation community in Sri Lanka. By bringing together
+            religious leaders, CSO forum members and media personnel, the event
+            successfully highlighted the critical issues that require urgent
+            attention. It is hoped that the awareness and discussions generated
+            during the conference will lead to actionable solutions that improve
+            the lives of people in the plantation sector.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-07-31-at-12.20.55_11c86e73.jpg"
+              alt="Caritas Event 1"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-07-31-at-12.20.55_31a5fa67.jpg"
+              alt="Caritas Event 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-07-31-at-12.20.55_873cd26e.jpg"
+              alt="Caritas Event 3"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-07-31-at-12.20.54_c40b97d2.jpg"
+              alt="Caritas Event 4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

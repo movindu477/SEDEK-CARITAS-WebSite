@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM15.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Ethno drama to Encourage Communities in their Narrative of Peace and
+          Reconciliation
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Friday</span>
+            <span class="date">31 May 2024</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            On the 11th of May 2024, Caritas Sri Lanka organized a special
+            program called “Ethno drama to Encourage Communities in their
+            Narrative of Peace and Reconciliation” was held. This event aimed at
+            promoting Peace and Reconciliation within the community through the
+            medium of Ethno drama. The event took place at Wepathanga village
+            from 9:00 am to 4:00 pm in Kurunegale Diocese under the Project
+            titled “Helping People Move towards Reconciliation” funded by CAFOD.
+            <br /><br />
+            There was active participation from both beneficiaries and
+            stakeholders in this program. Sixty female beneficiaries attended
+            the event, alongside key stakeholders who included DC Directors and
+            Program Coordinators. Rev. Fr. Thusitha Priyanga, the Director of
+            Caritas Kurunagala, hosted the event.
+            <br /><br />
+            The primary goal of the Ethno drama was to encourage economic and
+            psychological growth among women’s groups in the community. The
+            focus was on enhancing their skills and well-being, promoting a
+            supportive environment for peace and reconciliation.
+            <br /><br />
+            Dr. Ravindra Ranasinghe, one of the best practitioner in
+            psychotherapy and drama therapy, was the resource person for the
+            event. He is the Founder and Director of the National Diploma in
+            Dramatherapy at the Sri Lanka Foundation in Colombo. His expertise
+            greatly contributed to the success of the program.
+            <br /><br />
+            The program was filled with significant activities and discussions
+            that had a great impact on the participants. They were able to
+            identify their strengths and limitations and learned how to use
+            their skills creatively to improve their lives. The sessions
+            included discussions on utilizing available resources for income
+            generation and emphasized the importance of well-being in daily
+            life.
+            <br /><br />
+            The involvement of the women was particularly impressive. They
+            shared their life stories with enthusiasm and engaged actively in
+            the various activities, discussions, and dramatic sessions. These
+            activities not only made the sessions enjoyable but also provided
+            deep insights and learning opportunities.
+            <br /><br />
+            One of the significant outcomes of the event was the formation of a
+            sub-committee from the main group of participants. This committee,
+            consisting of eleven members, was tasked with leading the group in
+            implementing an action plan derived from the day’s learnings and
+            discussions.
+            <br /><br />
+            The Ethno drama program was a successful initiative of Caritas Sri
+            Lanka that provided valuable insights and skills to the
+            participants. It was observed that the active participation and
+            enthusiasm among women had been the key success for the programme.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.09_0dbf7d9b (1).jpg"
+              alt="Caritas Event 1"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.09_0f4ec324.jpg"
+              alt="Caritas Event 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.09_fad9df2c.jpg"
+              alt="Caritas Event 3"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.10_934d7bee.jpg"
+              alt="Caritas Event 4"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.10_f74079ff.jpg"
+              alt="Caritas Event 5"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.11_268a813f.jpg"
+              alt="Caritas Event 6"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.11_b6508d08.jpg"
+              alt="Caritas Event 7"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.12_6a7c4ae0.jpg"
+              alt="Caritas Event 8"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.12_9c3b4b4a.jpg"
+              alt="Caritas Event 9"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.12_41621a5f.jpg"
+              alt="Caritas Event 10"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.13_4c54ceb0.jpg"
+              alt="Caritas Event 11"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.13_258bfe3f.jpg"
+              alt="Caritas Event 12"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.13_ff29ad03.jpg"
+              alt="Caritas Event 13"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.14_07ead0a2.jpg"
+              alt="Caritas Event 14"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.14_3315d59b.jpg"
+              alt="Caritas Event 15"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.15_6afc5266.jpg"
+              alt="Caritas Event 16"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.15_60c2e2d3.jpg"
+              alt="Caritas Event 17"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.15_f1279553.jpg"
+              alt="Caritas Event 18"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.16_97f37bde.jpg"
+              alt="Caritas Event 19"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.16_c84e7e1e.jpg"
+              alt="Caritas Event 20"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.17_80a41325.jpg"
+              alt="Caritas Event 21"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.17_884ea467.jpg"
+              alt="Caritas Event 22"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.17_aeb312cc.jpg"
+              alt="Caritas Event 23"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-05-15-at-11.45.18_553455a4.jpg"
+              alt="Caritas Event 24"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

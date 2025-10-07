@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM5.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Capacitating CSL Staff to Mobilize Vulnerable Communities for Disaster
+          Resilience
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Thursday</span>
+            <span class="date">22 August 2024</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            From July 24th to 27th, 2024, a transformative program “Capacitating
+            CSL Staff to Mobilize Vulnerable Communities to be Resilient for
+            Disasters” was held at the Ranminithenna Tele Cinema Village in
+            Tissamaharama. This significant initiative, funded by Caritas Asia,
+            brought together 38 participants, including Diocesan Center (DC)
+            Directors, DC & NC Program Coordinators, and volunteers from across
+            the country. All the participants united in their commitment to
+            empowering vulnerable communities to withstand and respond
+            effectively to disasters.
+            <br /><br />
+            The main objective of this training was to enhance the disaster
+            resilience and humanitarian capabilities of these communities. The
+            program was facilitated by Mr. Premasiri Geeganage, Executive
+            Director of the Standard Capacity Promotion Center, along with a
+            skilled team of experts. Mr. Chandana Siriwardhana, an experienced
+            OBT trainer, contributed significantly to the program’s success,
+            alongside personnel from the Sri Lanka Navy, the Police, and the St.
+            John’s Ambulance Service.
+            <br /><br />
+            One of the key highlights of the program was the intensive first-aid
+            training provided to all participants. This critical component
+            emphasized the importance of immediate medical assistance during
+            disasters, equipping the attendees with essential life-saving
+            skills. In situations where professional help might be delayed or
+            unavailable, these skills could make the difference between life and
+            death.
+            <br /><br />
+            The program also included disaster scenario simulations, which
+            offered participants the opportunity to apply their newly acquired
+            knowledge in a controlled environment. These hands-on exercises
+            simulated real-life disaster situations, challenging the
+            participants to respond quickly and effectively. A particularly
+            notable aspect was the mock disaster drill, a realistic exercise
+            that tested the participants’ ability to implement their training in
+            an actual disaster scenario.
+            <br /><br />
+            In addition to the technical training, the program featured a range
+            of activities designed to build both soft and hard skills.
+            Participants engaged in hiking, rafting, and first aid practical
+            sessions, all of which contributed to their overall disaster
+            preparedness. The outbound training (OBT) sessions focused on
+            leadership, team building, and personal development, ensuring that
+            the participants were well-rounded and capable of handling the
+            complexities of disaster management.
+            <br /><br />
+            Direct observations during the program highlighted the high level of
+            commitment and active participation from all attendees. The presence
+            of government officers from the Hambantota District Management
+            Center and Navy personnel added an extra layer of expertise,
+            offering authoritative and practical insights into disaster
+            management. The comprehensive nature of the training covered first
+            aid, leadership, team-building activities, physical training
+            sessions, and a dynamic cultural event.
+            <br /><br />
+            As the program concluded, several key action points were identified
+            to ensure the sustainability and effectiveness of the training. One
+            of the main recommendations was to form Community-Based Disaster
+            Preparedness (CBDP) groups at the diocesan level, utilizing the
+            knowledge and experience gained during the training. Additionally,
+            participants were encouraged to identify specific vulnerabilities
+            within their dioceses and create customized preparedness plans to
+            address these challenges.
+            <br /><br />
+            The success of this program marks a significant step forward in
+            Caritas Sri Lanka’s mission to empower vulnerable communities and
+            enhance disaster resilience across the nation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/IMG_0002-1.jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0010.jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0021.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0023.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0025.jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0027.jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0059-1.jpg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0073 (1).jpg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0075.jpg" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0077.jpg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0149.jpg" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0163.jpg" alt="Caritas Event 12" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0178.jpg" alt="Caritas Event 13" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0180.jpg" alt="Caritas Event 14" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0192.jpg" alt="Caritas Event 15" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0194.jpg" alt="Caritas Event 16" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0235.jpg" alt="Caritas Event 17" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0248.jpg" alt="Caritas Event 18" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0249.jpg" alt="Caritas Event 19" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0251.jpg" alt="Caritas Event 20" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0257 (1).jpg" alt="Caritas Event 21" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0259.jpg" alt="Caritas Event 22" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0285.jpg" alt="Caritas Event 23" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0289-1.jpg" alt="Caritas Event 24" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0289 (1).jpg" alt="Caritas Event 25" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0326 (2).jpg" alt="Caritas Event 26" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0338-1.jpg" alt="Caritas Event 27" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0338.jpg" alt="Caritas Event 28" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0349.jpg" alt="Caritas Event 29" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0360.jpg" alt="Caritas Event 30" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0369.jpg" alt="Caritas Event 31" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0374 (1).jpg" alt="Caritas Event 32" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0431.jpg" alt="Caritas Event 33" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0434.jpg" alt="Caritas Event 34" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0469.jpg" alt="Caritas Event 35" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_1132.jpg" alt="Caritas Event 36" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

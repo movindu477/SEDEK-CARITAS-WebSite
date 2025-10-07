@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM10.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>World Environment Day Celebration 2024</h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Friday</span>
+            <span class="date">14 June 2024</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            On June 5th, 2024, communities across various dioceses came together
+            to celebrate World Environment Day, a globally recognized event
+            dedicated to raising awareness and promoting action to protect our
+            planet. The main objective of this day is to educate the public
+            about environmental issues and inspire positive change. This year,
+            the celebrations were held in multiple locations including Jaffna,
+            Trinco, Batticaloa, Badulla, Colombo, Ratnapura, Mannar, and
+            Kurunegala.
+            <br /><br />
+            In Mannar, Caritas Valvuthayam, in collaboration with the Central
+            Environmental Authority and local government officials, held a tree
+            planting campaign. This event also featured awareness sessions for
+            adults and a debate competition for school students, bringing
+            together a diverse group of participants including VTI students and
+            various community members.
+            <br /><br />
+            Caritas Hudec Jaffna celebrated at Chaddy Beach in Velanai, Jaffna,
+            with nearly 200 people participating. The event included a tree
+            planting campaign and a beach cleanup, engaging village-level
+            environmental group members, religious leaders, and the general
+            public.
+            <br /><br />
+            In Ratnapura, Caritas Sethmini organized a celebration at Dehiowita
+            with the local Environment group and the environment committee of
+            the Buddhist Primary School. Activities included a tree planting
+            campaign, a waste management awareness program, and an appreciation
+            event for casual workers of the Pradeshiya Sabha. Key participants
+            included Rev. Fr. Damian Fernando, Ven. Thero, local government
+            officials, and school children
+            <br /><br />
+            Caritas EHED Trincomalee held a tree-planting campaign and an art
+            competition for the children’s environmental group, promoting
+            creativity and environmental awareness among young participants.
+            <br /><br />
+            In Badulla, Caritas USCOD organized a tree planting campaign at
+            BD/Rossett Tamil Vidyalayam in Hali Ela. The event saw participation
+            from the Director of USCOD CARITAS Badulla, local government
+            officials, and estate managers. They also established an Environment
+            Green Circle Team within the school to promote ongoing environmental
+            stewardship.
+            <br /><br />
+            Caritas Colombo Seth Sarana’s celebration featured a mangrove tree
+            planting campaign at Dikowita Lagoon, organized in partnership with
+            NARA, MAS Holding, and Jetwing Negombo. Participants included
+            students from Kelaniya and Colombo universities, staff from
+            MAS-Biyagama, and local villagers. Additionally, they conducted an
+            awareness program on environmental responsibilities for children at
+            Uruwala Junior College, led by environmentalist Mr. Chanaka.
+            <br /><br />
+            In Kurunagala, Caritas Janasetha carried out a tree-planting
+            campaign, engaging local communities in environmental conservation
+            activities.
+            <br /><br />
+            Lastly, Caritas EHED Batticaloa organized a parade, cleanup
+            campaign, and tree-planting event involving village-level
+            environmental groups. The celebration in Batticaloa Diocese included
+            participation from Rt. Rev. Dr. Joseph Ponniah, government officers,
+            religious leaders, and police officers.
+            <br /><br />
+            All these events were organized under the CI Theme ““Care for Our
+            Common Home,” which reflects in the Pope’s encyclical Laudato Si.
+            The World Environment Day celebrations across these dioceses had
+            been a collective effort to safeguard the environment. Caritas Sri
+            Lanka focuses on promoting care for the natural environment and all
+            people through these visibility events.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.34.jpeg"
+              alt="Caritas Event 1"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.33-1.jpeg"
+              alt="Caritas Event 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.33.jpeg"
+              alt="Caritas Event 3"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.32-1.jpeg"
+              alt="Caritas Event 4"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.32.jpeg"
+              alt="Caritas Event 5"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.30.jpeg"
+              alt="Caritas Event 6"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.29.jpeg"
+              alt="Caritas Event 7"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.28.jpeg"
+              alt="Caritas Event 8"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.27.jpeg"
+              alt="Caritas Event 9"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.26.jpeg"
+              alt="Caritas Event 10"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.25.jpeg"
+              alt="Caritas Event 11"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.24.jpeg"
+              alt="Caritas Event 12"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.23-1.jpeg"
+              alt="Caritas Event 13"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.23.jpeg"
+              alt="Caritas Event 14"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.22.jpeg"
+              alt="Caritas Event 15"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.54.21.jpeg"
+              alt="Caritas Event 16"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37-13.jpeg"
+              alt="Caritas Event 17"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37-12.jpeg"
+              alt="Caritas Event 18"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37-11.jpeg"
+              alt="Caritas Event 19"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37-10.jpeg"
+              alt="Caritas Event 20"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37-9.jpeg"
+              alt="Caritas Event 21"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37-8.jpeg"
+              alt="Caritas Event 22"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37-7.jpeg"
+              alt="Caritas Event 23"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37-6.jpeg"
+              alt="Caritas Event 24"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37-5.jpeg"
+              alt="Caritas Event 25"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37-4.jpeg"
+              alt="Caritas Event 26"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37-3.jpeg"
+              alt="Caritas Event 27"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37-2.jpeg"
+              alt="Caritas Event 28"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37-1.jpeg"
+              alt="Caritas Event 29"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.37.jpeg"
+              alt="Caritas Event 30"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.36-1.jpeg"
+              alt="Caritas Event 31"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.49.36.jpeg"
+              alt="Caritas Event 32"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.48.19.jpeg"
+              alt="Caritas Event 33"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.48.15.jpeg"
+              alt="Caritas Event 34"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.48.14.jpeg"
+              alt="Caritas Event 35"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.48.13.jpeg"
+              alt="Caritas Event 36"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.48.12-1.jpeg"
+              alt="Caritas Event 37"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.48.12.jpeg"
+              alt="Caritas Event 38"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.47.56-1.jpeg"
+              alt="Caritas Event 39"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.47.56.jpeg"
+              alt="Caritas Event 40"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.47.54-1.jpeg"
+              alt="Caritas Event 41"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.47.54.jpeg"
+              alt="Caritas Event 42"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2024-06-12-at-13.47.52.jpeg"
+              alt="Caritas Event 43"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

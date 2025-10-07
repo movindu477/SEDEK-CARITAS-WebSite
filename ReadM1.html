@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM1.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>Research Books Launching Event under LLPP</h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Thursday</span>
+            <span class="date">10 October 2024</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            Caritas Sri Lanka proudly launched 02 essential research books in
+            the context of the plantation community in Sri Lanka on 3rd October
+            2024 at CSL-SEDEC under the ‘Lighting the Lives of the Plantation
+            People (LLPP) project.
+            <br /><br />
+            Ecological Conservation and Plantation People (ECPP) Unit has been
+            implementing projects that underscore Caritas Sri Lanka’s
+            commitments towards environmental stewardship and the needs of the
+            plantation community emphasizing their rights.
+            <b> “Lighting the Lives of the Plantation People (LLPP).”</b> The
+            project is the major project implemented by Caritas Sri Lanka from
+            2021 across 06 Dioceses of Sri Lanka with the generous funding
+            support of Catholic Relief Services (CRS). <br /><br />
+            Over the past two centuries, the plantation community, IOTs or
+            Malaiyaha Tamils, has faced historical discrimination and
+            marginalization. Nevertheless, they are one of the main pillars of
+            Sri Lanka’s export economy. Yet, they have often been overlooked and
+            left behind in terms of access to education, healthcare, and social
+            services. Among all the hurdles, many children in this community
+            still struggle to access quality education, which is a fundamental
+            right. This lack of access perpetuates cycles of poverty and limits
+            opportunities for future generations. Simultaneously, the unique
+            cultural identity of the plantation community has often been
+            disregarded, leading to a loss of heritage and community pride. In
+            response to address these challenges, Caritas Sri Lanka conducted
+            two essential researches focused on
+            <b
+              >‘Right to education for the children of the plantation community
+              in Sri Lanka: issues, challenges, and future directions’</b
+            >
+            and
+            <b>
+              ‘Study on the Culture and identity of the plantation community in
+              Sri Lanka’.</b
+            >
+            <br /><br />
+            This research books launching event was held under the leadership of
+            the National Director of Caritas Sri Lanka Rev. Fr. Luke Nelson
+            Perera. He mentioned in his speech that ‘Caritas being a charity
+            organization will continue to work with the plantation community and
+            advocate for their needs and rights’. The event was graced by the
+            presence and speech of the chief guest of the event His Excellency
+            Most. Rev. Dr Brian Udaigwe, the apostolic Nuncio of Sri Lanka,
+            mentioned in his speech that it requires greater political will,
+            inclusive policies, and efforts to foster an environment where the
+            unique cultural identity of the community can thrive alongside the
+            National unity and to ensure that education is not a privilege but a
+            fundamental rights for all. In addition, he conveyed his wishes to
+            Caritas Sri Lanka for taking such initiatives to address the current
+            tough reality of the plantation community in Sri Lanka. Moreover,
+            Most.Rev.Dr. Harold Anthony Perera, the chairman of the Catholic
+            Bishops’ Conference of Sri Lanka honoured the event as the guest of
+            honour and Most.Rev.Dr. Valence Mendis, the Bishop of Kandy Diocese
+            honoured the event as one of the special guests. Hon. Justice S.
+            Thurairajah, PC, the Supreme Court of Sri Lanka was the keynote
+            speaker at the event. Hon.Justice is the first to become Justice of
+            the Supreme Court of Sri Lanka from Indian origin Tamil over 200
+            years of their ancestor’s arrival. In his speech, Justice
+            Thurairajah emphasized the importance of recognizing the plantation
+            community as the Indian origin Tamil community to preserve their
+            identity, and how Education being a fundamental right can assist the
+            community in combating poverty and vulnerabilities. He also
+            highlighted the estate worker’s crucial role as one of the main
+            pillars of the export economy in Sri Lanka, urging for their
+            treatment as dignified human beings deserving of proper
+            compensation. Mr W.A.L. Wickramarachchi, the Director of the
+            Ministry of Plantation, environment, wildlife, Forest Resource,
+            Water Supply and Community Infrastructure, Mr. Trevor Ludowyke, the
+            senior development officer from the Canadian High Commission of Sri
+            Lanka, Mr. Thomas Vanke, and the Country Coordinator from AGIAMONDO
+            participated in the event as special guests. In addition, the
+            Diocesan Directors, religious leaders, academics, media, staff from
+            the Diocesan Partners, members of Civil Society Organizations,
+            community members, and Government Officials along with the staff
+            from Caritas Sri Lanka participated in the event.
+            <br /><br />
+            Education is the key to empowerment. It transforms lives, opens
+            doors, and creates opportunities. Simultaneously, understanding the
+            culture of the plantation community is crucial to highlight their
+            unique heritage, and for comprehending current socio-economic
+            conditions and community dynamics. Therefore, these research
+            documents are critical materials for understanding and addressing
+            the needs of the plantation community. Together, we can help to
+            create a brighter future for the plantation community in Sri Lanka,
+            where every child has the opportunity to thrive and every culture is
+            celebrated.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/IMG_0070.jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0073.jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0104.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0118.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0121.jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0122.jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0123.jpg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0126.jpg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0133 (1).jpg" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0140.jpg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0146 (1).jpg" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0150.jpg" alt="Caritas Event 12" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0162.jpg" alt="Caritas Event 13" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0197.jpg" alt="Caritas Event 14" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0204.jpg" alt="Caritas Event 15" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0211 (1).jpg" alt="Caritas Event 16" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0217.jpg" alt="Caritas Event 17" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0218 (1).jpg" alt="Caritas Event 18" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0219.jpg" alt="Caritas Event 19" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0229 (2).jpg" alt="Caritas Event 20" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0232 (1).jpg" alt="Caritas Event 21" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0233 (3).jpg" alt="Caritas Event 22" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0247.jpg" alt="Caritas Event 23" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0254.jpg" alt="Caritas Event 24" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0262 (1).jpg" alt="Caritas Event 25" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0269 (1).jpg" alt="Caritas Event 27" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0277.jpg" alt="Caritas Event 28" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0289.jpg" alt="Caritas Event 29" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0291.jpg" alt="Caritas Event 30" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0297 (1).jpg" alt="Caritas Event 31" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0304.jpg" alt="Caritas Event 32" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0326 (1).jpg" alt="Caritas Event 33" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0335.jpg" alt="Caritas Event 34" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0340.jpg" alt="Caritas Event 35" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0347.jpg" alt="Caritas Event 36" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0358 (1).jpg" alt="Caritas Event 37" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0362.jpg" alt="Caritas Event 38" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0370 (1).jpg" alt="Caritas Event 39" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0374.jpg" alt="Caritas Event 40" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0386.jpg" alt="Caritas Event 41" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0389.jpg" alt="Caritas Event 42" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0401.jpg" alt="Caritas Event 43" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0405.jpg" alt="Caritas Event 44" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0416.jpg" alt="Caritas Event 45" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0419.jpg" alt="Caritas Event 45" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>
