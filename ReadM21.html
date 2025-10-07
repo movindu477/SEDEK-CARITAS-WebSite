@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM21.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Celebrating Progress: Caritas Sri Lanka Advances with Caritas
+          Internationalis Management Standards
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Thursday</span>
+            <span class="date">25 April 2024</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            Caritas Sri Lanka has reached a significant milestone in its journey
+            towards organizational excellence. From April 2nd to 5th, 2024,
+            Caritas Sri Lanka underwent an onsite assessment of the Caritas
+            Internationalis Management Standards (CIMS). This assessment,
+            conducted by the assessor, Dr John Arokiaraj, marks a pivotal moment
+            in the organization’s commitment to enhancing its standards and
+            practices.
+            <br /><br />
+            Throughout the assessment period, Caritas Sri Lanka engaged in
+            meetings and these meetings ranged from general assemblies to
+            team-level discussions involving core staff from various departments
+            including programs, finance, HR, DRR, communication, and more. This
+            internal engagement was complemented by field visits to communities
+            in the Rathnapura and Mannar Dioceses of Sri Lanka. Despite the
+            tight schedule, the CSL team managed to interact with stakeholders
+            and gain valuable insights.
+            <br /><br />
+            Central to the success of this assessment was the exceptional work
+            of Dr John Arokiaraj, the assessor sent by Caritas Internationalis.
+            Dr. John’s extensive experience, patience, and facilitative approach
+            contributed significantly to the constructive nature of the
+            assessment process. His insights and recommendations will serve as a
+            guide for CSL in further improving its operations and standards.
+            <br /><br />
+            The onsite assessment of the Caritas Internationalis Management
+            Standards holds profound importance for Caritas Sri Lanka. It
+            signifies a commitment to upgrading standards and enhancing
+            organizational practices. The experience gained from Dr. John’s
+            assessment, coupled with CSL’s journey of improvement since the
+            submission of the Organizational Review Tool (ORT), underscores the
+            organization’s dedication to growth and development.
+            <br /><br />
+            Caritas Sri Lanka extends its heartfelt gratitude to Ms Annamaria
+            and Ms Monika for their continuous support throughout the assessment
+            process. Their guidance and assistance have been instrumental in
+            ensuring the success of the onsite assessment. Additionally, the
+            organization expresses gratitude to all stakeholders, including CSL
+            staff and community members, for their cooperation and participation
+            during this period.
+            <br /><br />
+            As Caritas Sri Lanka reflects on the achievements of the onsite
+            assessment of the Caritas Internationalis Management Standards, it
+            stands assured to continue its journey of improvement and
+            excellence. This assessment not only highlights the progress made
+            but also catalyzes further advancement. With a renewed commitment to
+            its mission, Caritas Sri Lanka looks forward to continuing its
+            impactful work serving communities and upholding humanitarian
+            values.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/MG_0282.jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_0287.jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_0296.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_0297.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_0299.jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_0304.jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_0305.jpg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_0306.jpg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0312 (1).jpg" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0315.jpg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0323.jpg" alt="Caritas Event 11" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

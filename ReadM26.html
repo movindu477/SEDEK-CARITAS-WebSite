@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM26.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          A Momentous Occasion: Caritas Asia President Dr. Benedict Alo
+          D’Rozario’s Inspiring Visit to Caritas Sri Lanka
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Friday</span>
+            <span class="date">09 February 2024</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            <b
+              >In a heartening event on the 6th of February 2024, Caritas Sri
+              Lanka (CSL) opened its doors to an esteemed guest, Dr. Benedict
+              Alo D’Rozario, the President of Caritas Asia. CSL members extended
+              a warm and heartfelt welcome to Dr. Alo, embracing him with open
+              arms.</b
+            >
+            <br /><br />
+            The visit commenced with a significant meeting, where Dr. Alo
+            engaged with the National Director and Caritas Sri Lanka staff. Rev.
+            Fr. Luke Nelson set the tone with his opening remarks. As each
+            participant was introduced, the room buzzed with a sense of
+            collaboration.
+            <br /><br />
+            Programme Manager, Mr. Priyantha, took the floor to present a
+            comprehensive overview of Caritas Sri Lanka. His presentation delved
+            into the inception of CSL, tracing its evolutionary journey, and
+            outlining its history, vision, mission, network, policies, and
+            overall image.
+            <br /><br />
+            Following the insightful presentation, the Heads of different units
+            provided a glimpse into their respective domains. They shared
+            valuable insights into the nature of their work, ongoing projects,
+            and the methodologies employed in achieving their goals. This
+            segment illuminated the diverse and impactful contributions made by
+            each unit within CSL.
+            <br /><br />
+            Dr. Alo, in turn, shared his journey and experiences within Caritas,
+            shedding light on the rich history of Caritas Asia. His narrative
+            served as a source of inspiration, emphasizing the collective power
+            of individuals coming together to make a meaningful difference in
+            the world.
+            <br /><br />
+            The meeting reached its climax with a dynamic question-and-answer
+            session. CSL staff had the opportunity to seek clarification, share
+            thoughts, and gain valuable insights from Dr. Alo. This interactive
+            exchange proved to be both informative and transformative, paving
+            the way for a stronger and more cohesive Caritas Sri Lanka.
+            <br /><br />
+            A memorable moment emerged when Dr. Benedict Alo D’Rozario imparted
+            a profound lesson to all present, stating, “You can learn from
+            everyone at every time.” These words resonated deeply, underscoring
+            the importance of continuous learning and the wealth of knowledge
+            that can be gleaned from every encounter.
+            <br /><br />
+            The visit of Caritas Asia President Dr. Benedict Alo D’Rozario
+            undoubtedly left an indelible mark on Caritas Sri Lanka. It not only
+            strengthened the bonds within the organization but also served as a
+            beacon of inspiration, reminding everyone of the collective purpose
+            and potential for positive change. As CSL continues its noble
+            mission, the wisdom shared by Dr. Alo will guide them towards a
+            brighter and more impactful future.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/IMG_0011 (1).jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0014 (2).jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0016.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0018.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0019 (1).jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0020.jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0024.jpg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0036.jpg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0042 (1).jpg" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0047 (4).jpg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0050 (1).jpg" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0052 (1).jpg" alt="Caritas Event 12" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0053.jpg" alt="Caritas Event 13" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0056-1.jpg" alt="Caritas Event 14" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0057.jpg" alt="Caritas Event 15" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0058-1.jpg" alt="Caritas Event 16" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0059 (1).jpg" alt="Caritas Event 17" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0062 (1).jpg" alt="Caritas Event 18" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0063.jpg" alt="Caritas Event 19" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0064 (2).jpg" alt="Caritas Event 20" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0065.jpg" alt="Caritas Event 21" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0066 (1).jpg" alt="Caritas Event 22" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0067.jpg" alt="Caritas Event 23" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0068.jpg" alt="Caritas Event 24" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0070 (1).jpg" alt="Caritas Event 25" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0072.jpg" alt="Caritas Event 26" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0073 (2).jpg" alt="Caritas Event 27" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

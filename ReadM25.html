@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM25.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Lenten Spiritual Programme 2024 / Lent with the Oppressed – Seeking
+          Justice
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Wednesday</span>
+            <span class="date">14 February 2024</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+
+          <!-- ===== Add PDF Download Link Here ===== -->
+          <div
+            style="text-align: center; margin-top: 10px; margin-bottom: 20px"
+          >
+            <a
+              href="pdf/download (13).pdf"
+              download
+              style="
+                display: inline-block;
+                padding: 10px 20px;
+                background: #ac0000;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 6px;
+                font-weight: bold;
+              "
+            >
+              CLICK HERE TO DOWNLOAD
+            </a>
+          </div>
+
+          <p class="caritas-text">
+            Caritas Sri Lanka, the Catholic National Commission for Justice,
+            Peace, and Human Development (SEDEC), has compiled this spiritual
+            booklet for Sunday reflections during Lent. The theme “Lent with the
+            Oppressed – Seeking Justice,” shows how it is important to care
+            about and understand the difficulties of marginalized communities,
+            and work actively to make things fair.
+            <br /><br />
+            The term “seeking” is commonly linked with many Bible verses that
+            talk about looking for God, wisdom, doing what’s right, or finding
+            the truth. In the Bible, when we talk about seeking, it usually
+            means actively and sincerely searching for something. For instance,
+            the scripture says, “Ask, and you’ll get it; look for it, and you’ll
+            find it; knock, and the door will open. If you ask, you’ll get; if
+            you seek, you’ll find; and if you knock, the door will open.” (Luke
+            11:09-10). People might not always know the truth, but God always
+            does and everything is clear to Him. Therefore, God invites us to go
+            towards Him for help, and seek Him for an answer.
+            <br /><br />
+            The Catholic Church’s teachings about justice come from her social
+            doctrine. This doctrine includes principles that help Catholics
+            understand social justice and truth. The Church highlights how
+            social justice is crucial and is seen as a key part of living
+            according to the Gospel. Talking about war widows in Sri Lanka and
+            the victims of the Easter Bomb attack, it means being committed to
+            understanding their difficulties and standing up for fairness on
+            their behalf. During Lent 2024, we want to invite Catholics in the
+            country to pray strongly for truth and justice for oppressed
+            communities. This can bring them healing and kindness.
+            <br /><br />
+            As part of Caritas Sri Lanka – SEDEC, I’m happy about the teamwork
+            we have put into seeking justice. The thoughts in this spiritual
+            booklet help us get ready for Lent. As we begin this spiritual
+            journey, let us support the oppressed so that justice can win over
+            injustice. Together, we can keep making a positive impact.
+            <br /><br />
+            A big thank you to all the Priests who shared Sunday reflections for
+            this booklet. May our journey for justice be a source of hope for
+            everyone.
+            <br /><br />
+            Rev. Fr. Luke Nelson Perera
+            <br /><br />
+            National Director
+            <br /><br />
+            Caritas Sri Lanka – SEDEC
+            <br /><br />
+            LEP 2024 – Sinhala Book
+            <br /><br />
+            LEP 2024 – Tamil Book
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM24.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Strengthening Bonds: Misereor’s Inspiring Visit to Caritas Sri Lanka
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Friday</span>
+            <span class="date">16 February 2024</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            Caritas Sri Lanka (CSL) was honoured to welcome Ms. Broeckmann
+            Corinna and Ms. Ulrike Weinspach, partners from Misereor, on the
+            13th of February 2024. The visit proved to be a momentous occasion
+            as these partners visit Sri Lanka after 15 years.
+            <br /><br />
+            The day commenced with a meeting that brought together CSL staff and
+            Misereor representatives, including the National Director of CSL,
+            Rev. Fr. Luke Nelson. With a short welcome note, Rev. Fr. Luke
+            Nelson set the tone with his opening remarks, expressing gratitude
+            for the longstanding partnership and the positive impact it has had
+            on communities served by CSL.
+            <br /><br />
+            As the meeting unfolded, CSL staff members had the opportunity to
+            introduce themselves and Mr. Priyantha, the Programme Manager, then
+            outlined the agenda for the day, providing a roadmap for the
+            discussions and presentations that followed. Ms. Broeckmann Corinna
+            Misereor Desk Officer for Caritas Sri Lanka and Ms. Ulrike
+            Weinspach, took the floor to introduce themselves, emphasizing the
+            collaborative spirit.
+            <br /><br />
+            The heart of the meeting lay in the presentations delivered by units
+            responsible for implementing Misereor-funded projects within CSL.
+            The Disaster Risk Reduction and Management (DRRM) unit, Ecological
+            Conservation and plantation people (ECPP) unit, and Sustainable
+            Peace and Justice (SP&J) unit had focused group meetings to showcase
+            the status of respective projects. The presentations have been
+            prepared to give comprehensive details of project implementation,
+            selected locations, objectives, outcomes, ongoing progress,
+            challenges faced and the necessary resolutions taken during project
+            implementation.
+            <br /><br />
+            The day was not limited to project-specific discussions. Finance
+            staff from CSL engaged in a meaningful dialogue with Misereor
+            partners, dissecting the financial aspects of the funded projects.
+            This exchange aimed to ensure transparency, accountability, and
+            efficient financial management for the projects that Misereor
+            generously supports. Misereor was keen to know about the
+            Safeguarding policies that are followed by Caritas Sri Lanka and
+            CSL’s CIMS Coordinator shared insights on that with the Misereor
+            partners.
+            <br /><br />
+            Throughout the day, the partners engaged in a series of discussions
+            that proved to be both informative and invaluable for the betterment
+            of CSL. The collaborative spirit and shared vision were tangible,
+            demonstrating the strength of the bond between Misereor and Caritas
+            Sri Lanka. During their stay in Sri Lanka, Misereor partners have
+            scheduled to visit Caritas HUDEC Jaffna, Caritas Setik Kandy and
+            Caritas Valvuthayam Mannar specifically to enter into deep
+            discussions with the project beneficiaries. They will also organize
+            a workshop for all the Misereor Partners in Sri Lanka on Impact
+            Monitoring and Fundraising in Kandy from 20th – 24th February 2024.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/IMG_0084 (1).jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0086.jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0091-1.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0096.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0097.jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0098.jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0100.jpg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0106.jpg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0107 (1).jpg" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0108 (1).jpg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0110-1.jpg" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0112.jpg" alt="Caritas Event 12" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0127.jpg" alt="Caritas Event 13" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0130.jpg" alt="Caritas Event 14" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0136.jpg" alt="Caritas Event 15" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>
