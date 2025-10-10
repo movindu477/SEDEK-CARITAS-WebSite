@@ -1425,56 +1425,89 @@ body {
 
 /* Modern & Futuristic Logo Slider - Dark Theme with White Logo Boxes */
 
-/* --- General Container Styles --- */
+/* ===== MODERN LOGO SLIDER SECTION ===== */
 .mainimage6 {
   text-align: center;
-  padding: 80px 50px; /* Increased padding for more elegance */
-  background: #0d1226; /* Deep, dark indigo/navy background */
+  padding: 100px 40px;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a0a0a 100%);
   overflow: hidden;
   position: relative;
-  border-radius: 16px; /* Slightly larger border-radius */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
-  border: 1px solid #1f2740; /* Subtle border for definition */
+  border-radius: 24px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 40px auto;
+  max-width: 1400px;
 }
 
-/* --- Typography Styles --- */
+/* Animated background elements */
+.mainimage6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(220, 38, 38, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(185, 28, 28, 0.1) 0%, transparent 50%);
+  animation: pulseGlow 8s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* --- Modern Typography Styles --- */
 .mainimage6 h1 {
-  font-size: 3rem; /* Slightly larger for impact */
-  font-weight: 800; /* Bolder for modern header */
-  margin-bottom: 20px;
-  color: #e6f0ff; /* Cool, bright white for contrast */
-  font-family: 'Poppins', sans-serif; /* A more modern, geometric font */
-  letter-spacing: 1.5px; /* Increased letter spacing for futuristic feel */
-  text-transform: uppercase;
-  text-shadow: 0 0 5px rgba(100, 149, 237, 0.3); /* Subtle glow */
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  background: linear-gradient(135deg, #ffffff 0%, #fecaca 50%, #dc2626 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  position: relative;
+  z-index: 2;
 }
 
 .mainimage6 p {
-  font-size: 1.15rem;
-  color: #a0b3d8; /* Light blue/grey for supporting text */
-  margin-bottom: 60px; /* More space below text */
+  font-size: 1.3rem;
+  color: #d1d5db;
+  margin-bottom: 70px;
   line-height: 1.7;
-  max-width: 800px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
 }
 
-/* --- Slider Core Styles --- */
+/* --- Modern Slider Container --- */
 .logo-slider {
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: 30px 0; /* More vertical padding */
+  padding: 40px 0;
+  position: relative;
+  z-index: 2;
 }
 
-/* --- Gradient Overlay Masks --- */
+/* --- Enhanced Gradient Overlay Masks --- */
 .logo-slider::before,
 .logo-slider::after {
   content: '';
   position: absolute;
   top: 0;
-  width: 150px; /* Wider fade-out */
+  width: 200px;
   height: 100%;
   z-index: 5;
   pointer-events: none;
@@ -1482,160 +1515,331 @@ body {
 
 .logo-slider::before {
   left: 0;
-  /* Fade from background color to transparent */
-  background: linear-gradient(90deg, #0d1226 0%, transparent 100%);
+  background: linear-gradient(90deg, 
+    rgba(10, 10, 10, 0.95) 0%, 
+    rgba(10, 10, 10, 0.8) 30%, 
+    transparent 100%);
 }
 
 .logo-slider::after {
   right: 0;
-  /* Fade from transparent to background color */
-  background: linear-gradient(270deg, #0d1226 0%, transparent 100%);
+  background: linear-gradient(270deg, 
+    rgba(10, 10, 10, 0.95) 0%, 
+    rgba(10, 10, 10, 0.8) 30%, 
+    transparent 100%);
 }
 
-/* --- Logo Track and Animation --- */
+/* --- Modern Logo Track and Animation --- */
 .logo-track {
   display: flex;
-  gap: 60px; /* Increased gap */
+  gap: 50px;
   width: max-content;
-  animation: scroll 65s linear infinite; /* Slower and smoother animation */
+  animation: smoothScroll 75s linear infinite;
   will-change: transform;
 }
 
-/* --- Individual Logo Item --- */
+/* Pause animation on hover */
+.logo-track:hover {
+  animation-play-state: paused;
+}
+
+/* --- WHITE Logo Item Design --- */
 .logo-item {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 35px;
-  background: #ffffff; /* Changed to WHITE */
-  border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.08); /* Lighter border for white background */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Adjusted shadow for white background */
-  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  min-width: 160px;
+  padding: 25px 40px;
+  background: #ffffff; /* WHITE background */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.15),
+    0 4px 20px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  min-width: 180px;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 
-/* Subtle inner glow for a futuristic panel effect (adjusted for white) */
+/* Animated border gradient for white boxes */
 .logo-item::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: -1px;
-  left: -1px;
-  right: -1px;
-  bottom: -1px;
-  border-radius: 12px;
-  background: linear-gradient(45deg, #e0e0e0, #f8f8f8); /* Subtle light gradient */
+  inset: 0;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.3), rgba(255, 255, 255, 0.2), rgba(185, 28, 28, 0.3));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
   opacity: 0;
   transition: opacity 0.4s ease;
-  z-index: -1;
 }
 
+/* Shine effect for white boxes */
+.logo-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(220, 38, 38, 0.08) 50%,
+    transparent 100%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.8s ease;
+}
+
+/* Hover Effects for white boxes */
 .logo-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25); /* More pronounced shadow on hover */
-  border-color: rgba(0, 0, 0, 0.15); /* Slightly darker border on hover */
+  transform: translateY(-8px) scale(1.05);
+  background: #ffffff;
+  border-color: rgba(220, 38, 38, 0.4);
+  box-shadow: 
+    0 20px 50px rgba(220, 38, 38, 0.25),
+    0 12px 40px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .logo-item:hover::before {
-  opacity: 0.1; /* Show subtle inner glow on hover */
+  opacity: 1;
 }
 
-/* --- Logo Image Styles --- */
+.logo-item:hover::after {
+  left: 100%;
+}
+
+/* --- Logo Image Styles - ORIGINAL COLORS PRESERVED --- */
 .logo-item img {
-  height: 55px;
+  height: 60px;
   width: auto;
   object-fit: contain;
-  /* Reverting to default filter or applying a slight desaturation if needed */
-  filter: none; /* No filter needed for white background to make logos pop naturally */
-  transition: all 0.4s ease;
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  position: relative;
+  z-index: 2;
+  /* No filters applied - logos keep their original colors */
 }
 
 .logo-item:hover img {
-  filter: brightness(110%); /* Slight brightness increase on hover */
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
 }
 
-/* --- Animation Keyframes --- */
-@keyframes scroll {
+/* --- Smooth Animation Keyframes --- */
+@keyframes smoothScroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(calc(-180px * 8 - 50px * 7)); /* Adjust based on item count */
   }
 }
 
-/* --- Responsive Adjustments --- */
+/* --- Responsive Design --- */
+
+/* Large Tablets */
+@media (max-width: 1200px) {
+  .mainimage6 {
+    padding: 80px 30px;
+    margin: 30px 20px;
+  }
+  
+  .mainimage6 h1 {
+    font-size: 3rem;
+  }
+  
+  .logo-item {
+    padding: 22px 35px;
+    min-width: 160px;
+  }
+  
+  .logo-item img {
+    height: 55px;
+  }
+}
+
+/* Tablets */
 @media (max-width: 1024px) {
   .mainimage6 h1 {
     font-size: 2.8rem;
   }
-  .logo-item {
-    padding: 18px 30px;
-    min-width: 140px;
+  
+  .mainimage6 p {
+    font-size: 1.2rem;
+    margin-bottom: 60px;
   }
+  
+  .logo-item {
+    padding: 20px 30px;
+    min-width: 150px;
+  }
+  
   .logo-item img {
     height: 50px;
   }
+  
   .logo-track {
-    gap: 50px;
+    gap: 40px;
+    animation-duration: 65s;
+  }
+  
+  .logo-slider::before,
+  .logo-slider::after {
+    width: 150px;
   }
 }
 
+/* Mobile Phones */
 @media (max-width: 768px) {
   .mainimage6 {
     padding: 60px 20px;
-    border-radius: 12px;
+    margin: 20px 15px;
+    border-radius: 20px;
   }
+  
   .mainimage6 h1 {
-    font-size: 2.2rem;
-    letter-spacing: 1px;
+    font-size: 2.3rem;
   }
+  
   .mainimage6 p {
-    font-size: 1.05rem;
-    margin-bottom: 40px;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
   }
+  
+  .logo-slider {
+    padding: 30px 0;
+  }
+  
   .logo-item {
-    padding: 15px 25px;
-    min-width: 120px;
+    padding: 18px 25px;
+    min-width: 130px;
+    border-radius: 14px;
   }
+  
   .logo-item img {
     height: 45px;
   }
+  
   .logo-track {
-    gap: 35px;
+    gap: 30px;
     animation-duration: 55s;
   }
+  
   .logo-slider::before,
   .logo-slider::after {
     width: 100px;
   }
 }
 
+/* Small Mobile Phones */
 @media (max-width: 480px) {
+  .mainimage6 {
+    padding: 50px 15px;
+    margin: 15px 10px;
+    border-radius: 16px;
+  }
+  
   .mainimage6 h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
+  
+  .mainimage6 p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  
   .logo-item {
-    padding: 12px 20px;
-    border-radius: 10px;
-    min-width: 100px;
+    padding: 15px 20px;
+    min-width: 110px;
+    border-radius: 12px;
   }
+  
   .logo-item img {
     height: 40px;
   }
+  
+  .logo-track {
+    gap: 25px;
+    animation-duration: 45s;
+  }
+  
   .logo-slider::before,
   .logo-slider::after {
     width: 70px;
   }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .mainimage6 h1 {
+    font-size: 1.8rem;
+  }
+  
+  .logo-item {
+    padding: 12px 18px;
+    min-width: 100px;
+  }
+  
+  .logo-item img {
+    height: 35px;
+  }
+  
   .logo-track {
-    gap: 25px;
-    animation-duration: 40s;
+    gap: 20px;
   }
 }
 
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .logo-item:hover {
+    transform: none;
+  }
+  
+  .logo-item:active {
+    transform: scale(0.95);
+    background: #f8f8f8;
+  }
+  
+  .logo-track:hover {
+    animation-play-state: running;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .logo-track {
+    animation: none;
+  }
+  
+  .logo-item {
+    transition: none;
+  }
+  
+  .logo-item:hover {
+    transform: none;
+  }
+  
+  .mainimage6::before {
+    animation: none;
+  }
+}
+
+/* High DPI Screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logo-item {
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+  }
+}
 
 
 
