@@ -119,23 +119,24 @@
 
 
 /* section2 style sheet  */
-/* Section 2 Styling */
+/* 🌟 Modern Section 2 Styling */
 .section2 {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 80px auto;
-  padding: 40px 20px;
+  padding: 60px 30px;
   text-align: center;
-  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+  background: linear-gradient(135deg, #0f0f0f, #1e1e1e);
   color: #f5f5f5;
-  border-radius: 18px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
   position: relative;
   overflow: hidden;
-  animation: fadeInUp 1s ease forwards;
   opacity: 0;
   transform: translateY(40px);
+  animation: fadeInUp 1.2s ease forwards;
 }
 
+/* Subtle rotating glow background */
 .section2::before {
   content: "";
   position: absolute;
@@ -143,37 +144,49 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at center, rgba(255, 0, 0, 0.15), transparent 70%);
-  animation: rotateBg 20s linear infinite;
+  background: radial-gradient(circle at center, rgba(255, 77, 77, 0.15), transparent 70%);
+  animation: rotateBg 25s linear infinite;
   z-index: 0;
 }
 
 .section2 h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin-bottom: 25px;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 30px;
   position: relative;
   z-index: 1;
   background: linear-gradient(90deg, #ff4d4d, #ff9966);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: fadeSlideDown 1.2s ease forwards;
 }
 
+/* Center paragraphs with max width for readability */
 .section2 p {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  margin-bottom: 18px;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin: 20px auto;
   color: #e0e0e0;
   position: relative;
   z-index: 1;
-  text-align: justify;
+  text-align: center;
+  max-width: 850px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 1s ease forwards;
 }
 
-.section2 p:last-child {
-  margin-bottom: 0;
+.section2 p:nth-of-type(1) {
+  animation-delay: 0.4s;
+}
+.section2 p:nth-of-type(2) {
+  animation-delay: 0.6s;
+}
+.section2 p:nth-of-type(3) {
+  animation-delay: 0.8s;
 }
 
-/* Fade-in animation */
+/* ✨ Animations */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -185,7 +198,28 @@
   }
 }
 
-/* Rotating soft light effect */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes rotateBg {
   0% {
     transform: rotate(0deg);
@@ -195,21 +229,21 @@
   }
 }
 
-/* Responsive styles */
+/* 📱 Responsive styles */
 @media (max-width: 768px) {
   .section2 {
     margin: 50px 15px;
-    padding: 30px 15px;
+    padding: 40px 20px;
   }
 
   .section2 h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .section2 p {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    text-align: left;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center;
   }
 }
 
@@ -219,6 +253,178 @@
   }
 
   .section2 p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+
+
+
+
+/* section3 style sheet */
+/* 🌟 Section 3 Styling */
+.section3 {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 50px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #111, #1c1c1c);
+  color: #f5f5f5;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.section3::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255, 77, 77, 0.1), transparent 70%);
+  animation: rotateBg 25s linear infinite;
+  z-index: 0;
+}
+
+.section3 h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg, #ff4d4d, #ff9966);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeSlideDown 1s ease forwards;
+}
+
+/* Timeline container */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Timeline items */
+.timeline-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 77, 77, 0.1);
+}
+
+/* Year */
+.year {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ff6666;
+  min-width: 65px;
+  text-align: left;
+}
+
+/* Names */
+.timeline-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #e0e0e0;
+  text-align: left;
+  flex: 1;
+}
+
+.timeline-item .role {
+  font-style: italic;
+  color: #ff9966;
+  font-weight: 500;
+}
+
+/* ✨ Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateBg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
+  .section3 {
+    margin: 50px 15px;
+    padding: 40px 15px;
+  }
+
+  .section3 h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    text-align: left;
+  }
+
+  .year {
+    min-width: auto;
+    font-size: 1rem;
+  }
+
+  .timeline-item p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section3 h1 {
+    font-size: 1.7rem;
+  }
+
+  .timeline-item p {
     font-size: 0.9rem;
   }
 }
