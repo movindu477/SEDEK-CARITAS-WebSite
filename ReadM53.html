@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM53.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          World Water Day 2023 Commemoration by Caritas Sri Lanka Diocesan
+          Network
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Monday</span>
+            <span class="date">12 June 2023</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            <b
+              >“Humanity still has the ability to work together to build our
+              common home”</b
+            >
+            <br /><br />
+            <b>– Pope Francis-</b>
+            <br /><br />
+            <b>Introduction</b>
+            <br /><br />
+            Water is one of the most important basic natural elements on which
+            the planet Earth is comprised of, as it constitutes 71% of the land
+            area. In addition, water is recognized as the giver and the source
+            of life, bestowing a prime position in the cycle of life due to its
+            high importance. Hence, the right to water and sanitation was
+            recognized as a human right by the UN general assembly in 2010. Not
+            only water is a core human right, but it is also indispensable for
+            our economies, ensuring food and energy security, promoting peace
+            and health, protecting nature, and combatting climate change.
+            Stepping Stone to Safeguarding Sri Lanka’s Natural Environment
+            Project (SSEP) is implemented by Caritas Sri Lanka in 2022 with the
+            ultimate goal of restoring and rebuilding the degraded environment
+            of Sri Lanka with community involvement. Restoring the existing
+            drinking water resources is one of the key areas that SSEP is
+            focusing on.
+            <br /><br />
+            Therefore, World Water Day was celebrated by Caritas network in many
+            parts of Sri Lanka in March 2023 under theme of ‘Water for a
+            sustainable world’. Caritas Diocesan Centers conducted several
+            awareness-creation activities such as cleanup campaigns, walks and
+            awareness sessions in March 2023 under SSEP, while highlighting the
+            importance of water and sanitation.
+            <br /><br />
+            <b>Colombo</b>
+            <br /><br />
+            Caritas Colombo – Seth Sarana organized a beach cleanup at Negombo
+            Wellaveediya on 22nd March 2023 under SSEP. It was a remarkable
+            event conducted by Seth Sarana collaborating with NGOs such as
+            UNHCR, Red Cross, and ‘Theppan Dhiwara-fishermen Society’. The SSEP
+            National Team also participated in this event. Members from
+            Wellaveediya fishing village where, Seth Sarana hopes to build an
+            environment group also volunteered at the event.
+            <br /><br />
+            Government agencies such as Negombo Environmental Police, Negombo
+            Municipal Council, Development Officers, PHIs, and Coastal
+            Conservation Department officials also gave their fullest support
+            and corporation in making this event a success. Rev. Fr. Gayan
+            Prashantha, the parish priest of Wellavidiya St. Sebastian Church
+            and Rev. Fr. Prasad Rangana, Assistant Director of the Caritas
+            Colombo Seth Sarana took the leadership of gathering the entire
+            program. Fr. Prasad Rangana did a small awareness session on ocean
+            pollution and how human activities are disturbing the nature of an
+            eco-system before the event gets started. Participants were provided
+            with gloves, trash bags, and other necessary equipment to ensure the
+            cleanup is conducted safely and in an efficient manner.
+            <br /><br />
+            <b>Mannar</b>
+            <br /><br />
+            Caritas- Valvuthayam restored an abandoned public drinking water
+            well at Southpar village under SSEP. This restored well was opened
+            for public use on 22nd March 2023 in line with the World Water Day
+            2023.
+            <br /><br />
+            In addition to emphasizing the theme of World water day 2023 ‘Water
+            for a Sustainable World’ a walk & an awareness session were
+            organized with Southpar Village Level Environmental Group (VLEG).
+            The main goal of this parade was to address the importance of water
+            in sustainable development & the challenges faced by the local
+            communities to get adequate drinking water.
+            <br /><br />
+            Mr. Balasingam Thyaparan ,Technical officer from the National
+            Irrigation Department, Mr. R. Rejiwoltan, Development officer from
+            Central Environmental Authority, Mr. Arunraj, Forest establishment
+            officer from the Department of Forest Resource and Management, Mr.
+            Riza Hampagae, Wildlife officer from Department of Wildlife
+            Conservation, GS of Southpar village, Development Officers and
+            Samurdhi Officers participated in this event under the leadership of
+            the Director of Caritas Valvuthayam Rev.Fr. Anton. A group of 40
+            participants from Southpar Village Level Environmental adult, youth
+            and children groups participated in this event.
+            <br /><br />
+            <b>Jaffna</b>
+            <br /><br />
+            The Diocese of Jaffna renovated and handed over a well to a primary
+            school in Navaly to fulfill their water needs in line with the World
+            Water Day commemoration. A parade was also organized with the active
+            participation of schoolchildren to address the importance of
+            safeguarding the environment and conserving water.
+            <br /><br />
+            Rev.Fr.Eugene Francis the Director of HUDEC Caritas Jaffna along
+            with the staff participated in the event. He explained to the
+            children the importance of World Water Day and how our life is
+            dependent on water for survival. Rev.Fr. J. B. Antonythas, the
+            parish priest of St. Peter’s Church Jaffna, Mr. P. Ramesh the
+            principal of J/Navaly St. Peter’s R.C.T.M School, Mrs. Yasotha
+            Uthayakumar, Divisional Secretariat Sandilipay and Mr .S.
+            Kajenthiren (PHI) participated in the event.
+            <br /><br />
+            <b>Vanni </b>
+            <br /><br />
+            Meanwhile, Caritas Vanni Hudec organized a beach clean-up campaign
+            at Mullaitivu Beach. A group of 120 members from Muzhankavil,
+            Ootruppulam, Vellappazham, Mulliyavazhai and Kichchirapuram Village
+            Level Environmental Groups participated in this event. A parade to
+            address the importance of conserving water for a sustainable life
+            took place from Mullaitivu Beach to Mulliyavazhai. In addition,
+            Caritas Vanni Hudec restored a public abandoned well and opened it
+            for public use on the same day under SSEP.
+            <br /><br />
+            <b>Batticaloa </b>
+            <br /><br />
+            Caritas Batticaloa EHED organized a cleanup campaign at Pillaiyaradi
+            lagoon area to address World Water Day. Rev. Fr. Jesudhasan Director
+            of Caritas EHED Batticaloa, Mr. U. Sivarajah the Assistant
+            Commissioner Municipal Council, Batticaloa, religious leaders along
+            with the Paalameenmadu Village level Environmental Group
+            participated in the event. In addition, the Diocese of Batticaloa
+            carried out a visibility campaign and displayed banners at several
+            places to raise awareness about the importance of water
+            conservation.
+            <br /><br />
+            <b>Chilaw</b>
+            <br /><br />
+            The Diocese of Chilaw also joined hands to commemorate the World
+            Water Day by conducting a beach cleanup at Katuneriya Beach. Rev.
+            Fr. Dilan Marius Fernando the Director of Caritas Chilaw along with
+            Caritas Chilaw staff and Katuneriya village level environmental
+            youth group members participated in the event.
+            <br /><br />
+            <b>Kandy</b>
+            <br /><br />
+            Caritas Kandy SETIK also addressed World Water Day on 22nd March
+            2023 by conducting a cleanup campaign at Panmure lakeside. ‘Malarum
+            Mottukal’ Village level environmental group from Panmure. Project
+            Coordinator from Caritas Kandy SETIK, Mrs. Dharshika along with
+            staff from Kandy SETIK participated in the event. Dharshika
+            addressed the importance of conserving natural water resources to
+            the public. A bill board was also established near the lake after
+            the cleanup campaign.
+            <br /><br />
+            <b>Conclusion</b>
+            <br /><br />
+            World Water Day is celebrated annually on the 22nd of March to
+            celebrate water and raise awareness on access to safe and clean
+            water. 40% of the world’s population is affected by water scarcity
+            due to over demand, mismanagement and the impact of the triple
+            crisis of climate change, biodiversity loss and pollution. Clean
+            drinking water is fundamental but it is also vital for sanitation
+            and hygiene. Therefore, raising awareness of the importance of water
+            consumption and conserving existing water resources is important to
+            ensure the good health of our future generations. These beach
+            cleanup programs will help to reduce ocean pollution and inspire
+            participants to make a sustainable difference in their daily
+            livelihood and attitudes in genral.
+            <br /><br />
+            2.2 billion people worldwide need regular access to clean water. So,
+            these cleanup programs are not only for the community around its
+            area but crucial for the whole world to reduce water pollution. By
+            working together, we can protect our water resources and ensure they
+            remain healthy and thriving. The once-littered and polluted oceans
+            can be transformed into a beautiful oasis of clean sand and
+            crystal-clear waters for generations if everyone joins hands on this
+            world water day.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/Cleaning-the-Panmur-Lake.jpg"
+              alt="Caritas Event 1"
+            />
+          </div>
+          <div class="gallery-item">
+            <img src="images/Cleaning-up-Programme.jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/f.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/iiiuu.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/Panmur-Lake-2.jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/q.jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/qqq.jpg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/s.jpg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/The-Happy-Faces-after-the-cleaning-activity.jpg"
+              alt="Caritas Event 9"
+            />
+          </div>
+          <div class="gallery-item">
+            <img src="images/The-work-force.jpg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/u.jpg" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-03-22-at-10.13.52.jpeg"
+              alt="Caritas Event 12"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-03-22-at-10.13.53-1.jpeg"
+              alt="Caritas Event 13"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-03-22-at-10.13.53.jpeg"
+              alt="Caritas Event 14"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-03-22-at-21.57.37-1.jpeg"
+              alt="Caritas Event 15"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-03-22-at-21.57.37.jpeg"
+              alt="Caritas Event 16"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-03-22-at-21.57.43-1.jpeg"
+              alt="Caritas Event 17"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-03-22-at-21.57.46.jpeg"
+              alt="Caritas Event 18"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-03-23-at-08.50.48.jpeg"
+              alt="Caritas Event 19"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-03-24-at-18.13.51.jpeg"
+              alt="Caritas Event 20"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-03-24-at-18.13.52-1.jpeg"
+              alt="Caritas Event 21"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-03-24-at-18.13.52.jpeg"
+              alt="Caritas Event 22"
+            />
+          </div>
+          <div class="gallery-item">
+            <img src="images/y.jpg" alt="Caritas Event 23" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/zz.jpg" alt="Caritas Event 24" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

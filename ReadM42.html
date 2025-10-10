@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM42.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          World Children’s Day Celebration in Athungoda Village, Puttalam:
+          Inverting Our Future with Love and Care”
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Wednesday</span>
+            <span class="date">18 October 2023</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            The 7th of October 2023 marked a day of celebration and togetherness
+            in Athungoda Village, Puttlam in the Diocese of Chilaw as the
+            community came together to celebrate World Children’s Day. This
+            year’s theme, “Inclusion, for every child” took centre stage,
+            emphasizing the crucial role children play in shaping the future.
+            Caritas Sri Lanka, dedicated to empowering communities, ensured that
+            this year’s celebration was inclusive, involving not just children
+            but the entire village.
+            <br /><br />
+            In his opening remarks, Rev. Fr. Luke Nelson, the National Director
+            of Caritas Sri Lanka, expressed the significance of this year’s
+            theme. He stated, “Our children are the architects of our future. By
+            nurturing and empowering them today, we are investing in a brighter,
+            more sustainable tomorrow. Investing our future means investing in
+            our children, and that is our mission.”
+            <br /><br />
+            Rev.Koswaththe shri Saddhaseela Thero in Athungoda Shri Isipathana
+            temple, Mrs Iresha Dilhani female sub-inspector of Puttlam Police
+            station, and HNB bank representatives took part in this session.
+            <br /><br />
+            The celebration commenced with two insightful sessions:
+            <br /><br />
+            <b>1st Session: Nourishing Our Children and Communities</b>
+            <br /><br />
+            The first session, led by Dr. D. D. Priyantha, addressed parents on
+            the significance of providing nutritious food to children. Dr
+            Priyantha’s talk focused on the importance of a nutritionally
+            balanced diet and encouraged families to promote organic home
+            gardening. This discussion was aligned with the program, “Ensuring
+            Family Nutrition, Stabilized Income, and Sustainable Food Security
+            for Farmer Households in Sri Lanka.” Parents were given valuable
+            insights into how to provide a healthy diet for their children and
+            promote sustainable food practices.
+            <br /><br />
+            <b>2nd Session: Fun and Joy for Children</b>
+            <br /><br />
+            The second session was dedicated to the children, ensuring they had
+            a day full of laughter and joy. The program included fun games,
+            interactive activities, and dancing that made the children beam with
+            happiness. This celebrated the essence of childhood and the need for
+            children to simply be children. This segment was a vibrant display
+            of love and care for the children of the Athungoda village,
+            emphasizing the significance of their happiness and well-being.
+            <br /><br />
+            Caritas Sri Lanka’s commitment to the well-being of the village was
+            evident throughout the celebration. Over 100 schoolchildren and 40
+            preschool children received educational materials, water bottles,
+            and lunch boxes, allowing them to embark on their educational
+            journeys with enthusiasm. Furthermore, Caritas Sri Lanka took a
+            significant step in financial empowerment by helping 100 school
+            children, open new bank accounts with an initial deposit of Rs.
+            1,000 each at HNB Bank.
+            <br /><br />
+            This was not all; as a testament to the unwavering support, Caritas
+            Sri Lanka, with generous funding from Caritas Korea and Caritas
+            Norway, distributed dry ration packs worth Rs. 5,000 each to the 200
+            families in Athungoda Village. This act of kindness, ensuring the
+            families’ stability and security, underlined Caritas Sri Lanka’s
+            dedication to uplifting communities and improving their quality of
+            life.
+            <br /><br />
+            In conclusion, the celebration of World Children’s Day in Athungoda
+            Village, Puttlam, on October 7, 2023, was an embodiment of the theme
+            – “Inclusion, for every child.” Caritas Sri Lanka’s commitment to
+            the well-being and future of not just the children but the entire
+            community left a heartwarming mark on this special day. CSL has sown
+            the seeds of a brighter future for Athungoda, and the village is on
+            its way to a more prosperous tomorrow.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.26.jpeg"
+              alt="Caritas Event 1"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.25-1.jpeg"
+              alt="Caritas Event 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.25.jpeg"
+              alt="Caritas Event 3"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.24-1.jpeg"
+              alt="Caritas Event 4"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.24.jpeg"
+              alt="Caritas Event 5"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.23.jpeg"
+              alt="Caritas Event 6"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.22.jpeg"
+              alt="Caritas Event 7"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.21.jpeg"
+              alt="Caritas Event 8"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.20.jpeg"
+              alt="Caritas Event 9"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.19-2.jpeg"
+              alt="Caritas Event 10"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.19-1.jpeg"
+              alt="Caritas Event 11"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.19.jpeg"
+              alt="Caritas Event 12"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.18.jpeg"
+              alt="Caritas Event 13"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.16.jpeg"
+              alt="Caritas Event 14"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.15.jpeg"
+              alt="Caritas Event 15"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.14.jpeg"
+              alt="Caritas Event 16"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.13.jpeg"
+              alt="Caritas Event 17"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.12.jpeg"
+              alt="Caritas Event 18"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.11.jpeg"
+              alt="Caritas Event 19"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.10-1.jpeg"
+              alt="Caritas Event 20"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-10-18-at-01.12.10.jpeg"
+              alt="Caritas Event 21"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

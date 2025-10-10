@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM57.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Environmental Management and Leadership Program for Youth at Caritas
+          Chilaw
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Wednesday</span>
+            <span class="date">19 April 2023</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            Caritas Sri Lanka (CSL) organized an Environmental Management and
+            Leadership Program for the youth in the Diocese of Chilaw under the
+            “Stepping Stone to Safeguarding Sri Lanka’s Natural Environment
+            project” (SSEP). SSEP is a project implemented by Caritas Sri Lanka
+            with the goal of creating an environmentally conscious community
+            through advocating and lobbying against all the severe environmental
+            issues that they face in their daily life. The physical environment
+            around us is the source of our life. Hence the project strives to
+            capacitate the local community to adapt and mitigate the adverse
+            consequences of climate change. A wide range of beneficiaries from
+            adults, youths and children are a part of this project.
+            <br /><br />
+            As a part of this journey to reach the ultimate goal of the SSEP,
+            several capacity-building programs for youths are taking place in
+            all the Districts in Sri Lanka with the funding support of Misereor.
+            With that note, this leadership program was organized by CSL to
+            capacitate the selected group of youths from Chilaw DC on leadership
+            as well as environmental management. It was a two-day workshop held
+            on the 29th and 30th of March at Caritas Chilaw – SEDEC. Mr. Sajeewa
+            Chamikara from MONLAR (Movement for Land and Agricultural Reform)
+            and Mr. Karunadasa Munagama, founder of ‘Mihithala Mithuro’
+            Environment Development Foundation took part in this workshop as
+            resource persons.
+            <br /><br />
+            Day 1 of the program focused mainly on building foundational
+            knowledge and skills related to leadership and ecological systems.
+            Day one was started with a common prayer by the Diocesan Director of
+            Chilaw, Rev Fr. Dilan Marius Fernando. Mr. Sajith Silva Head of the
+            Unit- ECPP (Ecological Conservation and Plantation People) at
+            Caritas Sri Lanka -SEDEC continued the program with an orientation
+            to the SSEP program. He illustrated the major project objectives and
+            responsibilities of youth in the care of our common home. Later, the
+            resource team was introduced to the participants.
+            <br /><br />
+            The participants were divided into 5 groups as the first step to
+            initiating the entire program. Each group was asked to assign a
+            leader and a writer. Mr. Munagama carried out a series of group
+            activities based on leadership skills, team building, team spirit,
+            and the importance of teamwork to the youth. Participants
+            enthusiastically participated in all the group activities. Later Mr.
+            Chamikara conducted a lecture and an interactive session on the
+            Ecological System Theory. During the session, he emphasized that we
+            human beings are also a part of the environment but we are not
+            allowed to control it. Through his explanation, he opened the eyes
+            of participants to look at the environment from a different
+            perspective. The youth were really engaged and asked multiple
+            questions and shared their thoughts with Mr. Chamikara. In the
+            evening, participants engaged in a variety of practical activities
+            aimed at reinforcing their learning.
+            <br /><br />
+            It is believed that a happy team builds happy products, so before
+            ending the day one session the participants were asked to
+            participate in the entertaining program which was inclusive of their
+            own performances. Most of the participants presented their talents
+            in front of the others and they mentioned that what they learnt
+            about leadership in the morning prompted them to come forward in
+            front of a crowd without hesitation.
+            <br /><br />
+            Day 2 of the program was focused on developing awareness about the
+            diversity of plants & animals in Sri Lanka’s natural environment and
+            exploring ways to create positive change in youths by actively
+            safeguarding their natural environment. The morning was begun with
+            an inspiring talk by Rev. Fr. Dilan Marius Fernando. He shared his
+            thoughts on environmental conservation and the role of the youth in
+            safeguarding the resources for future generations. He also provided
+            tips on how to advocate against environmental injustice.
+            <br /><br />
+            Later, Mr. Chamikara asked all the youth participants for a recap of
+            the previous day’s key learnings. Participants developed their own
+            action plans for presenting the learnings of day 01. All the groups
+            showed their creativity with their presentations. Some presented
+            learnings through flow charts while others through drama and
+            dialogue. One special arrangement of the presentations was that one
+            particular group did not use paper and pens for their presentation.
+            They explained in their presentation that those materials might be
+            thrown away as trash, and they did not want to promote the behavior
+            of this type, especially during a program like this. Mr. Chamikara
+            and Mr. Munagama appreciated the teamwork and presentations done by
+            all the groups.
+            <br /><br />
+            After the recap, Mr. Chamikara continued a lecture on endemic and
+            endangered animals and explained how human activities have
+            threatened the survival of those animals in particular. He further
+            mentioned to all the youth to take the lead on environmental issues
+            in their areas and always act as responsible citizens to conserve
+            our common home.
+            <br /><br />
+            The workshop gave a chance to create a network among the
+            participants. The organizing team believed that it would lead to the
+            formation of new relationships and collaborations while opening ways
+            for further impactful actions toward environmental sustainability.
+            <br /><br />
+            Overall, the Environmental Management and Leadership Program for
+            Youth was a tremendous success. The youth shared their feedback
+            about the program and intentions as to how they would use the gained
+            knowledge for environmentally friendly interventions in their
+            communities.
+            <br /><br />
+            Through the feedback, participants mentioned that they never had an
+            opportunity and chance before to learn about the life, leadership
+            and environmental protection in this manner. They promised that they
+            would share this knowledge with the villagers and will work together
+            to find sustainable solutions for the environmental issues they all
+            face.
+            <br /><br />
+            They also expressed their gratitude towards resource persons,
+            organizers and funding partners for imparting new knowledge on
+            environmental protection.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230329_033303897.MP_-1.jpg"
+              alt="Caritas Event 1"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230329_034402617-1.jpg"
+              alt="Caritas Event 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230329_034433172-1.jpg"
+              alt="Caritas Event 3"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230329_044320716.jpg"
+              alt="Caritas Event 4"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230329_052046825.jpg"
+              alt="Caritas Event 5"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230329_0811320592.jpg"
+              alt="Caritas Event 6"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230329_110530958.jpg"
+              alt="Caritas Event 7"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230329_151812255.jpg"
+              alt="Caritas Event 8"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230330_040132216.jpg"
+              alt="Caritas Event 9"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230330_041304579.jpg"
+              alt="Caritas Event 10"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230330_042014993.jpg"
+              alt="Caritas Event 11"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230330_043605343.PORTRAIT2.jpg"
+              alt="Caritas Event 12"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230330_051829071.jpg"
+              alt="Caritas Event 13"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230330_070003687.jpg"
+              alt="Caritas Event 14"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230330_070132059.jpg"
+              alt="Caritas Event 15"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230330_104356060.jpg"
+              alt="Caritas Event 16"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230330_115234788.jpg"
+              alt="Caritas Event 17"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230330_120056454.jpg"
+              alt="Caritas Event 18"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

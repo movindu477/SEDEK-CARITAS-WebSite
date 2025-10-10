@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM48.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Caritas Sri Lanka joins hands with the Malayaga Makkal Walk “Tracing
+          our roots to win our rights”
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Wednesday</span>
+            <span class="date">16 August 2023</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            The arrival of the first batch of Indian Origin Tamil Speaking workers took place from 1823 to 1824 as per historical evidences. These Indian Origin Tamil Speaking workers were brought from South India under a system of bonded labor by colonial rulers. Their purpose was to provide labor for the coffee plantations. These people had walked from Mannar to Matale and eventually settled down at Matale and the rest of the hill country. During this journey, more than 40,000 people had lost their lives. The journey claimed the lives of over 40,000 individuals due to a combination of challenges. The laborers encountered with wildlife, widespread illnesses, and various other hazardous circumstances along the way.
+            <br /><br />
+            Hence, the March or Walk was organized with the objective to commemorate this perilous journey and to reflect on the sufferings caused to them.  This created an awareness among the other ethnic communities in Sri Lanka regarding the Plantation community and the difficulties they faced for the past 200 years with no improvement in their lives.
+            <br /><br />
+            The NCC, NPC, USAID, PREDO, Uvasakthi, Paffrel, Monlar, NAFSO, Safe Foundation, Rajarata University Students Union, and Samadhanam organization along with other CSOs, NGOs and INGOs joined hands as one team to organize a “Walk” from Mannar to Matale to commemorate the 200-year arrival of the Plantation community to Sri Lanka along that road. On the way, there were gatherings at Thalaimannar, Thalaimannar to Pesalai, Pesalai to Mannar Town, Mannar Town to Murunkan, Murunkan to Madhu, Madhu, Madhu Junction to Cheddikulum, Cheddikulum to Medawachchiya, Medawachchiya, Medawachchiya to Mihintale, Mihintale to Tirappane, Tirappane to Kekirawa, Kekirawa to Dambulla, Dambulla, Dambulla to Nalanda, Nalanda to Matale.
+            <br /><br />
+            Caritas Sri Lanka-SEDEC has been in solidarity with the organizing committee on the journey, which was aimed at raising a basic level of understanding about the history, struggles, achievements, contribution, current socio-economic and political status, and aspirations of the Malaiyaha Tamil community, among the Sinhalese, Sri Lankan Tamils, Muslims and other fellow citizens. Caritas Sri Lankan regional partners namely Caritas Mannar-Valvuthayam, Caritas Anuradhapura- Sethsaviya and Caritas Kandy- SETIK hosted the walkers by providing them with meals and accommodation at some of the locations from Thalaimannar until Matale. It was heartwarming to observe the hard work and dedication put forward by our dioceses.
+            <br /><br />
+            The Walk had commenced on 28 July at Thalai Mannar and concluded at Matale on 12 August 2023 with the participation of 21 permanent walkers, which had gradually increased to 66 permanent walkers. There were around 2000 people joined the final day of the Walk until the e final event held at Matale. The permanent walkers and organizers were felicitated for their hard work and dedication towards the success of the walk. There was an oath ceremony held to state that all the organizations that were involved in the walk will stand united with the intention to gain equal citizenship rights for the Plantation community.
+            <br /><br />
+            The final event was concluded glamorously with the below-mentioned 11 appeals to the whole Sri Lankans:
+            <br /><br />
+            <h4 style="margin-top: 20px">Key Highlights from the Visit</h4>
+            <br/><br/>
+            <ol style="text-align: justify; margin-left: 20px">
+                <li>
+                    Appreciation of the plantation community’s contribution to the country’s economy and their history.
+                </li>
+                <br/><br/>
+                <li>
+                    Obtaining equal citizenship rights for the Plantation community as other communities in Sri Lanka
+                </li>
+                <br/><br/>
+                <li>
+                    Positive action on Education, Health and Social safety   measures   
+                </li>
+                <br/><br/>
+                <li>
+                    A living wage, protection and equivalent allowance for men and women workers
+                </li>
+                <br/><br/>
+                <li>
+                     Land and housing rights
+                </li>
+                <br/><br/>
+                <li>
+                    Equal use for Tamil Language
+                </li>
+                <br/><br/>
+                <li>
+                    Equal access to Government Services
+                </li>
+                <br/><br/>
+                <li>
+                    Differentiation of the plantation human settlements as new villages
+                </li>
+                <br/><br/>
+                <li>
+                    Domestic workers security
+                </li>
+                <br/><br/>
+                <li>
+                    Sustain the Malaiyaha cultural heritage
+                </li>
+                <br/><br/>
+                <li>
+                     Inclusive electoral system and power sharing that will give a meaningful role in governance at all tiers of government
+                </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-16-at-09.45.25.jpeg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-16-at-11.27.15.jpeg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-16-at-11.27.17-2.jpeg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-16-at-11.27.17.jpeg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-16-at-11.27.18-1.jpeg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-16-at-11.27.18.jpeg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-16-at-11.27.19.jpeg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-16-at-11.27.20-2.jpeg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-16-at-11.27.21.jpeg" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-10-at-19.36.59.jpeg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-11-at-06.51.45.jpeg" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-11-at-06.51.56.jpeg" alt="Caritas Event 12" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-11-at-06.51.59.jpeg" alt="Caritas Event 13" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-11-at-06.56.31.jpeg" alt="Caritas Event 14" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-11-at-07.02.23.jpeg" alt="Caritas Event 15" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-11-at-12.43.50.jpeg" alt="Caritas Event 16" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-11-at-12.44.19.jpeg" alt="Caritas Event 17" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-12-at-06.46.01.jpeg" alt="Caritas Event 18" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-12-at-06.46.03.jpeg" alt="Caritas Event 19" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-12-at-10.22.57.jpeg" alt="Caritas Event 20" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-12-at-10.22.56-1.jpeg" alt="Caritas Event 21" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-12-at-10.22.56.jpeg" alt="Caritas Event 22" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/WhatsApp-Image-2023-08-12-at-10.23.01.jpeg" alt="Caritas Event 23" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>
