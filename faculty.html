@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>Facilities & Services</title>
     <link rel="stylesheet" href="faculty.css" />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
@@ -126,7 +126,7 @@
     <!-- HERO SECTION -->
     <section class="hero">
       <img
-        src="images/photo-1730701878011-a423ec61c328.avif"
+        src="images/fac.avif"
         alt="Hero Image"
         class="mainimg"
       />
@@ -182,7 +182,7 @@
               </ul>
             </div>
           </div>
-
+<br><br><br>
           <!-- Additional Amenities Row -->
           <div class="venue-content amenities-row">
             <div class="venue-card amenities-card">
@@ -199,6 +199,26 @@
         </div>
       </div>
     </section>
+
+
+
+<script>
+  const animatedElements = document.querySelectorAll('.venue-card, .amenities-card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  animatedElements.forEach(el => observer.observe(el));
+</script>
+
+
+
   </body>
 
   <!-- Scroll to Top Button -->
