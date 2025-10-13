@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM73.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Mangrove Tree Planting Campaign organized by Caritas Jaffna – HUDEC
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Wednesday</span>
+            <span class="date">21 December 2022</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            Mangrove forests are unique eco-systems that have ecological,
+            biological, and socio-economic functions. These types of plants play
+            a vital role in maintaining the equilibrium of the eco-system and
+            ensure the stability of our world. Mangroves are nature’s
+            fundamental barrier against soil erosion, an ideal place for sea
+            plant growth, and a refuge for fish, and prawns which are essential
+            for the sustainability of our environment. One of the most vital
+            roles played by mangroves is creating a barrier between the land and
+            the sea which acts as a shield to protect the land from erosion,
+            especially in an island like Sri Lanka where the whole island is
+            surrounded by the coast.
+            <br /><br />
+            Coastal eco-systems in many parts of Sri Lanka is particularly
+            vulnerable to the impacts of climate change, with increased severity
+            of extreme weather events directly affecting the lives of millions
+            of people and damaging the eco-systems they rely on. Healthy coastal
+            eco-systems play a major role in helping coastal communities to
+            adapt to climate change impacts.
+            <br /><br />
+            At present, improper development activities and lack of awareness
+            among people regarding the importance of mangrove eco-systems have
+            negatively impacted on the sustainability of these eco-systems.
+            Hence, more attentions should be given to protect the mangrove
+            eco-systems and environmentally friendly development activities
+            should be promoted to conserve them.
+            <br /><br />
+            Mandativu is an island off the coast of the Jaffna peninsula in
+            Northern Province of Sri Lanka, located approximately south of the
+            city of Jaffna. This village is famous for fishing and agriculture.
+            A village level environmental group was formed in this village under
+            ‘Stepping Stone to Safeguarding Sri Lanka’s Natural Environment
+            Project’ (SSEP) which is a project based on climate justice,
+            implemented by Caritas Sri Lanka in all 13 Dioceses with the funding
+            support of Misereor.
+            <br /><br />
+            As per the request of this environmental group and as a small step
+            to conserve the mangrove eco-system, a mangrove tree planting
+            campaign was organized by Caritas Jaffna – HUDEC on 15th of November
+            2022 with the help of Sri Lankan Navy at Mandativu Lake Side. Nearly
+            100-110 mangrove trees were planted on this day.
+            <br /><br />
+            The entire staff of Caritas Jaffna -HUDEC along with the Director of
+            Caritas-Jaffna Rev. Fr. Eugene Francis, the SSEP team from Caritas
+            National Centre, Sri Lankan Navy along with the Commodore in charge
+            Jaffna District Mr. Dissanayaga, the Divisional Secretariat Velanai
+            Mr.Sivakaran, religious leaders, members of Mandativu environmental
+            Group and students from Mandativu Maha Vidyalayam participated in
+            this event.
+            <br /><br />
+            The programme started with prayers and the flag hoisting by the
+            Director of Caritas Jaffna and the Navy Commodore. The Director of
+            Caritas Jaffna stated why they had organized a mangrove tree
+            planting campaign especially in that area. He also emphasized the
+            responsibility of people in safeguarding those planted trees & the
+            surrounding environment for future generations during his speech.
+            The Manager of Ecological Conservation & Plantation People from
+            Caritas National Centre, Mr. Sajith Silva in his speech explained
+            the objectives & scope of project to the people while inviting the
+            people to join hands in protecting their natural surroundings as per
+            the request of the Holy Father in his recent encyclicals on caring
+            for the Mother Nature.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/69eeee58-74a5-4f6b-91d2-ce4a30bab00f.jpeg"
+              alt="Caritas Event 1"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/314005096_3431995227123742_7944975436532818676_n.jpg"
+              alt="Caritas Event 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/314962135_3431995263790405_2009271569107739946_n.jpg"
+              alt="Caritas Event 3"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/315456301_3431995073790424_7688863710118059365_n (1).jpg"
+              alt="Caritas Event 4"
+            />
+          </div>
+          <div class="gallery-item">
+            <img src="images/DSC_9774.jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/DSC_9803.jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/DSC_9817.jpg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/DSC_9825.jpg" alt="Caritas Event 8" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

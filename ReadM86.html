@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM86.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          ‘Lighting the lives of the Plantation People’- LLPP An Empowerment
+          Program to better the lives Of the people of the Plantation Community
+          in Sri Lanka
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Thursday</span>
+            <span class="date">05 May 2022</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            The Plantation Community in Sri Lanka mainly consists of the Indian
+            Origin Tamils who are presently known as the ‘Malayaga Tamils”
+            meaning Upcountry Tamils.
+            <br /><br />
+            As per the historical evidence, the arrival of the 1st batch of
+            Indian Origin Tamil Speaking workers happened from 1823 to 1824,
+            thus making 2023/2024 as the 200th years of their existence and
+            service in Sri Lanka with much hardships & challenges. They were
+            brought in from South India as bonded labourers by the colonial
+            masters to work on the coffee plantations.
+            <br /><br />
+            Since then, they have remained a marginalized community in the Sri
+            Lankan society and have faced challenges and hardships in addition
+            to the inhuman work conditions with which they have to work until
+            today. They have now become the most vulnerable ethnic community in
+            Sri Lanka according to many development indicators.
+            <br /><br />
+            They have been discriminated in sharing the opportunities as equal
+            citizens.
+            <br /><br />
+            Since January 2022, Caritas Sri Lanka (CSL) has launched a unique
+            Program of NETWORKING with all Civil Society Organizations(CSOs) who
+            render service to / among the Plantation Community in the Dioceses /
+            regions of Central, Uva, Sabaragamuwa, Wayamba & Western provinces
+            (11 Civil Districts in Sri Lanka) in order to voice together for the
+            grievances faced by this Community. Many sociologists and social /
+            civil workers identify this as a structural discrimination, which
+            has cornered them for centuries from the ordinary way of living
+            conditions, which enjoyed by the other Sri Lankans in the country.
+            <br /><br />
+            This project intervention is made possible with the generous support
+            by the Catholic Relief Services (CRS) of the United States of
+            America with an initial monitory help to start with the collective
+            efforts of Net working with CSOs.
+            <br /><br />
+            The Catholic National Commission for Justice, Peace & Human
+            Development has been endorsed to carry forward the initiative. Thus,
+            Caritas Sri Lanka jointly with its Diocesan counterparts are
+            implementing the programme. The Diocesan Directors with their able
+            staff members of the Diocesan centers (DCs) have been very
+            enthusiastic and got themselves involved in the above program since
+            it was introduced in January 2022.
+            <br /><br />
+            The project is designed to call upon all the Actors & Stakeholders
+            in the Government, Non-Governmental Organizations and the Civil
+            Society Organizations to join hands towards this worthy cause and
+            TOGETHER BECOMING ACTIVE PARTNERS in the life struggle of this
+            Community.
+            <br /><br />
+            <b
+              ><u
+                >The National Centre of CSL has successfully implemented the
+                following activities;</u
+              ></b
+            >
+            <br /><br />
+            <b>Brain Storming / Study Session – </b> conducted on Friday 23rd
+            April 2021 at Caritas Sri Lanka, on the lives & social issues of the
+            Plantation Community in Sri Lanka in view of the 200 years of their
+            arrival and existence in the country. <br /><br />
+            <b>Pre-Orientation Session –</b>a two day Pre-orientation Session
+            for the Diocesan Directors & the Diocesan Project Coordinators was
+            held in Nuwara Eliya on the 29th and 30th November 2021.The purpose
+            of the programmme was to give an orientation to the participants &
+            also to share information with data & statistics on the life &
+            social issues faced by the Plantation Community. <br /><br />
+            <b
+              >Orientation Sessions for the Staff members of the Diocesan
+              Centers (DC) –</b
+            >
+            Sessions were held on 4th January 2022 at Deniyaya Galle DC, 11th
+            January at Colombo DC, 24th of January at Badulla DC, 25th January
+            at Kandy DC and 8th February at Ratnapura DC. <br /><br />
+            <b>Awareness Sessions for Clergy & Religious –</b> conducted in the
+            Dioceses of Badulla on 24th and on 14th February in Galle to educate
+            them with information on the life & social issues of the Plantation
+            Community, so that they become more involved in the justice &
+            development issues of the plantation communities. <br /><br />
+            <b>Review meeting with the Diocesan Project Coordinators –</b> They
+            were called in for a Review Meeting on 08th of March to find out the
+            progress of work in their respective Dioceses. <br /><br />
+            <b
+              >Meeting with Auxiliary Bishop & a few Priests serving the
+              Plantation Community in the Archdiocese of Colombo –</b
+            >
+            This was held on 21st March 2022 at the Diocesan Center in Colombo.
+            Bishop Anton Ranjith & Priests present were updated on the Project &
+            its objectives along with the present realities among the Plantation
+            Community in Kalutara & Colombo Districts. <br /><br />
+            <b
+              >Orientation for the Staff Members of Caritas Sri Lanka – SEDEC
+              –</b
+            >
+            A brief orientation session was held on 28th of March 2022, so that
+            the Staff Members of the Program Units became aware of the special &
+            unique nature of this Programme towards this underprivileged
+            community and support the implementation of the same.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/IMG_20211129_112856.jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_20211129_151649.jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_20220208_1000084.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2022-03-08-at-20.28.37.jpeg"
+              alt="Caritas Event 4"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2022-03-30-at-09.32.201.jpeg"
+              alt="Caritas Event 5"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2022-03-30-at-09.32.20.jpeg"
+              alt="Caritas Event 6"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2022-04-20-at-3.41.44-PM.jpeg"
+              alt="Caritas Event 7"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2022-04-20-at-3.41.58-PM.jpeg"
+              alt="Caritas Event 8"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

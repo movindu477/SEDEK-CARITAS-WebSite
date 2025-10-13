@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM84.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Caritas Sri Lanka moves into an innovative strategy for communication
+          development
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Wednesday</span>
+            <span class="date">15 June 2022</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            Village Knowledge Centres (VKCs) are community-focussed to address
+            the needs of the community through various information technologies
+            and innovative ways. VKCs are village-level community institutions
+            located in common places, enabling farmers to access all their
+            knowledge requirements in the village.
+            <br /><br />
+            The concept addresses the strong disconnect between farmers and
+            knowledge holders underpinning the need for timely access to
+            required information and knowledge services through local knowledge
+            drivers in villages. Small-holder farmers / Family farmers in the
+            remote areas are in regular need of dynamic, scientific information
+            and knowledge on Agriculture and other areas to improve their
+            lifestyle.
+            <br /><br />
+            For the reason that the Village Knowledge Centre (VKC) is a fresh
+            concept in Sri Lanka, CSL made a lot of initiatives to aware and
+            establish VKCs in Sri Lanka. CSL collaborates with M.S.Swaminathan
+            Research Foundation (MSSRF) in India to improve the capacity of its
+            local field staff who are the part of Food Security Program in Sri
+            Lanka. MSSRF is one of the pioneer non-profit organizations in
+            India, which received the First World Food Prize in 1987. The
+            Foundation aims to accelerate the use of modern science and
+            technology for agricultural and rural development to improve the
+            lives and livelihoods of communities. MSSRF established more than 70
+            Village Knowledge Centres in India which addresses technological
+            options to resolve practical problems faced by rural populations in
+            agriculture, food, and nutrition.
+            <br /><br />
+            Mrs. (Dr.) Rengaluxmi and Dr. R. Rajkumar, Senior scientists from
+            MSSRF stepped forward to capacitate the CSL participants on various
+            VKC services and highlighted that the main purpose of the VKC is to
+            provide scientific and locale-specific information and knowledge
+            related to Climate Smart Agriculture, Animal Husbandry, Health and
+            Nutrition, Employment, Education and Government services.
+            <br /><br />
+            In addition, an exposure opportunity was initiated by CSL – SEDEC to
+            give space for the field-level staff of the Food Security program to
+            closely learn and discuss the ground reality to present the right /
+            demand-oriented VKC concept in their working areas.
+            <br /><br />
+            VKC helps farmer collectives to reach out the demand-driven content,
+            value-added information, and capacity building to address the
+            challenges of climate variabilities in Agriculture knowledge-sharing
+            initiatives on agroecology, marketing, animal husbandry, health,
+            education, government programs, and extension services, etc by using
+            Modern Information & Communication Technologies (ICT). Idealized
+            VKCs have a good association with local and regional markets.
+            <br /><br />
+            Principally, VKCs are equipped with a wide variety of Hard & soft
+            reading materials, a demonstration garden with traditional/modern
+            gardening elements to facilitate the exploration of dynamic
+            information necessary to the villagers based on their needs, and
+            equipped with new strategies to develop the technical knowledge of
+            the users using new Information & Communication technological media
+            such as Mobile based advisory services with government agricultural
+            instructors, video conferences, Phone-in programs, social media,
+            video-based learning, physical/digital plant clinics spots, Virtual
+            practical sessions, VKC based WhatsApp groups for digital services,
+            Access to digital market information, Access to digital
+            hydrometeorological information and E – Libraries, etc to
+            disseminate dynamic and static information and knowledge.
+            <br /><br />
+            Generally, VKCs are connected to governmental agrarian service
+            centres of particular geographical areas, which will be the main
+            hub, located at a central point. It will mobilize and process the
+            needed information/requirement of local farmers and delivers it to
+            the village resource persons (VRPs) in the form of reading materials
+            or in-person training. Trained village resource persons (VRPs) are
+            good at the management of modern ICT tools and will be in charge of
+            the VKCs at the village level.
+            <br /><br />
+            VKCs can be accessed by any locals irrespective of caste, class,
+            gender, and age. Need-based content creation (Pull content & Push
+            content) is periodically done based on the assessment of
+            well-maintained VKC logbooks and feedback books where users could
+            write their opinion to improve the services or trainings.
+            <br /><br />
+            Caritas Sri Lanka network strongly believes that the VKCs in Sri
+            Lanka will play a pivotal role in the future and develop their
+            training modules, audio, video, and text content for the identified
+            technologies and conduct capacity-building programs to address the
+            need of smallholder farmers.
+            <br /><br />
+            Caritas Sri Lanka hopes that these Village Knowledge Centres will
+            work with other stakeholders also in the future to create an optimal
+            platform to meet the needs-based requirements of its users.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/20211118_124856.jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/20211118_171124.jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20220105-WA0007.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20220105-WA0013.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20220419-WA0002.jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20220427-WA0031.jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20220607-WA0032.jpg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG-20220613-WA0037.jpg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG20211118171115.jpg" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG20220419102850.jpg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG20220419111844.jpg" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG20220429093636.jpg" alt="Caritas Event 12" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG20220429095107.jpg" alt="Caritas Event 13" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG20220613110226.jpg" alt="Caritas Event 14" />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2021-11-26-at-11.01.08-AM.jpeg"
+              alt="Caritas Event 15"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2021-11-26-at-11.01.10-AM-1.jpeg"
+              alt="Caritas Event 16"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

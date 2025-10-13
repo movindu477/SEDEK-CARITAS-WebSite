@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="RM65.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>Home / News</h1>
+      </div>
+    </section>
+
+    <div class="events-wrapper">
+      <!-- THE 1ST POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Friday, 13 January 2023
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">Holy Father Donates medicines to Sri Lanka</h2>
+
+        <div class="event-image">
+          <img src="images/IMG_6544-768x512 (1).jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          His Excellency Most Rev. Dr. Brian Udaigwe, the Apostolic Nunciature
+          and the diplomatic mission of the Holy See (Vatican) to Sri Lanka
+          handed over the medicines to Dr. Asela Gunawardena, Director General
+          of Health Services at the Ministry of Health today on Friday, the 13th
+          of January 2023 with the presence of directors and officers…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Ecological Conservation &
+            <br />Plantation People (EC&PP), <br />Latest News
+          </span>
+          <a href="ReadM69.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THE 2ND POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Wednesday, 11 January 2023
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Awareness session for Conference of Major Religious Superiors (CMRS)
+          on the Plight of Plantation Community and CSL’s intervention toward
+          Betterment of their Lives
+        </h2>
+
+        <div class="event-image">
+          <img
+            src="images/WhatsApp-Image-2023-01-09-at-15.18.53-768x432 (1).jpeg"
+            alt="Event photo"
+          />
+        </div>
+
+        <p class="event-desc">
+          An awareness session for the major Religious Superiors of the CMRS on
+          the social issues of the plantation community in Sri Lanka was held
+          Monday 28 November, 2022 at the Good shepherd Vocational Training
+          Centre at Bolawalana in Negombo. Rev. Fr. Luke Nelson, Director of
+          Caritas Sri Lanka- SEDEC (CSL) delivered a speech on plight of
+          plantation community…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Ecological Conservation <br />&
+            Plantation People (EC&PP), <br />Latest News
+          </span>
+          <a href="ReadM70.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THE 3RD POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Monday, 09 January 2023
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          “A small gesture of charity in the face of Hunger” Feeding Program by
+          Missionaries of Charity Sisters and Caritas Sri Lanka
+        </h2>
+
+        <div class="event-image">
+          <img
+            src="images/WhatsApp-Image-2023-01-09-at-15.18.53-768x432 (1).jpeg"
+            alt="Event photo"
+          />
+        </div>
+
+        <p class="event-desc">
+          “There is so much indifference in the face of suffering, May we
+          overcome indifference with concrete acts of charity” – Pope Francis
+          Background Sri Lanka is currently going through the worst economic
+          crisis since its independence in 1948. Years of economic
+          mismanagement, corruption, short-sighted policy making, and overall
+          lack of good governance left Sri Lanka…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Ecological Conservation &
+            <br />Plantation People (EC&PP), <br />Latest News
+          </span>
+          <a href="ReadM71.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THE 4TH POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Tuesday, 03 January 2023
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Catholic Relief Service Representative undertakes visit to Galle
+          Diocese in Sri Lanka
+        </h2>
+
+        <div class="event-image">
+          <img
+            src="images/WhatsApp-Image-2022-12-06-at-21.54.07-768x345 (1).jpeg"
+            alt="Event photo"
+          />
+        </div>
+
+        <p class="event-desc">
+          The Executive Director of Catholic Relief Services (CRS) Mr. Senthil
+          Kumar visited CODESEP ( Community Development Service for Plantation)
+          in the Ratnapura Dioceses on a fact-finding mission from 5th and 6th
+          December 2022. Rev. Fr. Luke Nelson , Director, Caritas Sri Lanka ,
+          Rev. Fr Lasantha Fonseka, Director ,Caritas Sed Galle and Rev. Fr.
+          Anthony…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Ecological Conservation &
+            <br />Plantation People (EC&PP), <br />Latest News
+          </span>
+          <a href="ReadM72.html" class="read-more">Read more</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

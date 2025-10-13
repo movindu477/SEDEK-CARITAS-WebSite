@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM65.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          Caritas Anuradhapura Youth Exposure Visit to Sinharaja Rainforest
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Thursday</span>
+            <span class="date">09 March 2023</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            Climate change is an inherent social issue that can upset anyone’s
+            life in countless ways. Climate change is causing different social,
+            economic, and public health issues on all the communities around the
+            world. Therefore, advocating for climate justice by the local
+            communities is the most essential solution to this worsening
+            scenario. On that note, ‘Stepping Stone to Safeguarding Sri Lanka’s
+            Natural Environment’ (SSEP) was implemented by Caritas Sri Lanka
+            (CSL) with the funding support of Misereor in January 2022.The goal
+            of the project is to advocate for solutions and to create awareness
+            especially, among the grassroots level communities who are affected
+            by the climate change environmental issues.
+            <br /><br />
+            As a first step of implementing SSEP in the entire island,
+            environmental adult, youth and children groups were formed by the 13
+            Dioceses of Caritas. 156 environmental groups were formed at the end
+            of 2022 with the goal of creating environmentally conscious adults,
+            youth and children under this project. SSEP is currently in its
+            second phase, and several development activities &
+            awareness-creation workshops are being undertaken by Caritas
+            Diocesan Centers in Sri Lanka. On that note, an educational exposure
+            tour to the Sinharaja rainforest was organized by Caritas
+            Anuradhapura for 50 members of the environmental youth groups and
+            another 10 members of the adult groups on the 5th & 6th of March
+            2023.
+            <br /><br />
+            Sri Lanka is an island nation, which exhibits a wide array of
+            ecosystems ranging from forest to agricultural, aquatic and marine
+            environments. Despite its small size, Sri Lanka exhibits remarkable
+            biological diversity and is considered to be the best bio diversity
+            hotspot in the Asian region in terms of species concentration.
+            Specific forest types including rainforests, dry zone monsoon
+            forests and arid thorn scrub forests characterize the several
+            climate zones that exist in the country. Hence, the Sinharaja
+            rainforest is the country’s last viable area of primary tropical
+            rainforest and a biodiversity hotspot, which is located in the
+            Southwest lowland wet zone within Sabaragamuwa & Southern Provinces
+            of Sri Lanka.
+            <br /><br />
+            The entire forest covers an area of 8,864 ha of primary and
+            secondary forests, which lies between the tributaries of the Kalu
+            Ganga in the North and the Gin Ganga in the South. Sinharaja forest
+            was accepted by UNESCO as a biosphere reserve in 1978. The forest is
+            made of 60% rare endemic trees and this forest is a home to many
+            endemic wildlife such as birds, mammals, many kinds of insects,
+            reptiles, rare amphibians and butterflies. Considering all the
+            ecological importance of the forest, UNESCO declared Sinharaja
+            forest as a UNESCO World Heritage in 1988 under the name of the
+            Sinharaja forest reserve. Sinharaja rainforest is the habitat for
+            rare and endangered species and an outstanding site for studying the
+            process of biological evolution.
+            <br /><br />
+            This educational exposure visit was organized for the youth to make
+            them aware of the best bio diversity hotspot available for Sri
+            Lankans and to educate them of the different ecosystems that exist
+            in the country. Rev.Fr. Bennette Mellawa the Director of Caritas
+            Anuradhapura took responsibility for the entire exposure tour. Mr.
+            Sujeewa Chamikara, a well-known environmentalist from MONLAR
+            (Movement for Land and Agricultural Reforms) joined in to educate
+            the participants.
+            <br /><br />
+            During the visit, he explained the importance of preserving the
+            ecosystems which has a direct impact on the lives of every living
+            being on earth. Mr. Chamikara took the lead role of guiding the
+            participants inside the forest and explained what participants
+            witnessed during their visit to the forest from organisms to the
+            ecosystems. A glimpse of the rain forest and the ecosystem with its
+            insects, reptiles, mammals etc, was introduced to the students with
+            their scientific names.
+            <br /><br />
+            He also instructed the participants not to make noise while in the
+            forest, as that would force the animals to move away from the
+            walking paths. The participants were divided into 05 groups to build
+            unity & responsibility among students during their 2-day exposure
+            tour. Each team had to mention their objectives of the visit and
+            share their ideas of the rainforest, ecosystems witnessed and
+            learned.
+            <br /><br />
+            Day one (05/03/2023) was a fulfilling day for all the participants.
+            The team entered the forest through the Pitadeniya entrance, which
+            is located about 15 km away from Deniyaya town in Galle district.
+            This entrance is also known as one of the most active entrances over
+            the years because of Kekuna Ella waterfall, Pathan Oya waterfall and
+            the hanging bridge in Pitadeniya Conservation Center. A journey of
+            14 Km which includes both walking & hiking, the participants took
+            nearly 08 hours to complete the journey. Students were able to see
+            many rare species such as ferns, endemic plants like hora, and
+            endemic vertebrates such as green pit viper, hump nosed lizard,
+            kangaroo lizard, black grizzled giant squirrel, endemic fish
+            varieties like Ceylonese Combtail, and many types of bird varieties.
+            They also witnessed many endemic invertebrates such as giant
+            earthworms, giant land snails, Sri Lankan giant millipedes, black
+            caterpillar, endemic leeches during their exposure visit inside the
+            forest on the day one.
+            <br /><br />
+            Mr. Chamikara helped the participants to identify variety of
+            reptiles, mammals, and birds. He also explained about special
+            adaptations that the wild animals gained over the years of evolution
+            to catch their prey and to live in highly dense forests. With regard
+            to the plants and trees, the environmentalist explained how trees
+            help the forest to maintain the stability of the ecosystem and he
+            also mentioned adaptations that some trees have gained to spread
+            their seeds and stratification of trees in a tropical rainforest.
+            Students were also able to experience natural fish therapy at Gal
+            Oruwa waterfall, Thattu waterfall and Pathan oya waterfall inside
+            the forest. It was a thrilling experience for many of them.
+            <br /><br />
+            Day two (06/03/2023) was an adventure visit. Students were taken to
+            the Deniyaya, Kurulugala entrance of the forest which is located
+            900m above the sea level via a safari ride nearly about 10 Km up in
+            the hill. Kurulugala entrance is one of the ideal places in
+            Sinharaja rainforest reserve for bird watching and butterfly
+            watching. A journey of 10 Km, which includes both hiking and
+            walking, took 5 hours to complete the exposure visit on day two.
+            Students were able to see some varieties of butterflies such as tree
+            nymph, small grass yellow butterfly, some varieties of birds such as
+            blue magpie, spot winged thrust, white faced starling, woodpecker,
+            caterpillars, rare varieties of monkeys, the smallest tree in the
+            forest which is known as ‘Vana raja’, ferns, a rare variety of rock,
+            and some mollusks.
+            <br /><br />
+            Mr. Chamikara also explained how his organization MONLAR campaigned
+            against the road expansion inside Sinharaja forest area at
+            ‘Gongala’. He further explained how such development work could
+            cause negative impacts on the forest eco systems. He said, “We
+            protested against the expansion mainly due to the fact that the
+            particular reserved forest area has the highest number of endemic
+            species; hence any development activity can disturb or destroy the
+            normal life of the entire eco-systems of the forest”. Furthermore,
+            he narrated why a forest like Sinharaja should be protected by all
+            of us, stressing the importance of conserving the wildlife and its
+            habitat. He said that we all have the responsibility to conserve the
+            entire island and its nature.
+            <br /><br />
+            With this, the entire exposure visit came to an end. The
+            participants thanked Fr. Benet, Mr. Chamika the environmentalist and
+            the Caritas Anuradhapura team for organizing such an eye opening
+            tour and said that they will never forget these 3 days in their
+            lives.
+          </p>
+        </div>
+      </div>
+
+      <!-- ====== YouTube Video Embed ====== -->
+      <div class="caritas-video">
+        <iframe
+          src="https://www.youtube.com/embed/_V_HaCbgwBE"
+          title="Sinharaja Rainforest Exposure Tour - Caritas Anuradhapura"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/IMG_0374 (2).jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0378.jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0404.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0425.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0511.jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_0514 (1).jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_20230306_122842.jpg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_20230306_124819.jpg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230304_153333180.jpg"
+              alt="Caritas Event 9"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230304_154956465.jpg"
+              alt="Caritas Event 10"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230305_053755398.jpg"
+              alt="Caritas Event 11"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230305_061058397.jpg"
+              alt="Caritas Event 12"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230305_071302323.PORTRAIT.jpg"
+              alt="Caritas Event 13"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/PXL_20230305_102010695.jpg"
+              alt="Caritas Event 14"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/WhatsApp-Image-2023-03-06-at-08.58.27.jpeg"
+              alt="Caritas Event 15"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

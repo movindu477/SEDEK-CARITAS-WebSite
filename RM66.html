@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="RM65.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>Home / News</h1>
+      </div>
+    </section>
+
+    <div class="events-wrapper">
+      <!-- THE 1ST POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Thursday, 30 March 2023
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">Donations to School Dental Services</h2>
+
+        <div class="event-image">
+          <img src="images/IMG_8372-768x512 (1).jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          On the request made to Caritas Sri Lanka – SEDEC by His Eminence
+          Cardinal Malcolm Ranjith, CSL-SEDEC donated dental material to be used
+          in Colombo school dental services, and the Oral Health Units, through
+          the Health Services in Colombo. Due to the scarcity of medicines in
+          the country, this donation will help in the screening…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Disaster Risk Reduction <br />
+            Management (DRRM), <br />Latest News
+          </span>
+          <a href="ReadM60.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THE 2ND POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Wednesday, 29 March 2023
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Invitation to the Media personnel to cooperate with the journey of
+          empowerment of the Plantation people.
+        </h2>
+
+        <div class="event-image">
+          <img src="images/IMG_8354-768x512 (1).jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          A discussion was held on 16th of March 2023 at the Caritas Sri Lanka,
+          SEDEC Auditorium to seek support and collaborations from the Colombo
+          based media institutions, to highlight the issues faced by the
+          plantation communities in Sri Lanka. In 2023/24, Sri Lankans would
+          remember and commemorate the 200 years of arrival of the plantation
+          community…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Ecological Conservation &
+            <br />Plantation People (EC&PP), <br />Latest News
+          </span>
+          <a href="ReadM61.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THE 3RD POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Monday, 20 March 2023
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          A STUDY SESSION ON THE 13TH AMENDMENT TO THE CONSTITUTION
+        </h2>
+
+        <div class="event-image">
+          <img src="images/IMG_7727-768x512.jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          Caritas Sri Lanka – SEDEC organized a study session on the 13th
+          amendment to the constitution on, which was conducted by Mr. Suren
+          Gnanaraj, Counsel – Attorney-at-Law with the participation of Rev.
+          Fathers and Catholic Nuns representing different congregations. The
+          program was facilitated by Rev. Fr. Bennette Mellawa, Director-
+          Caritas Anuradhapura who highlighted during the…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Latest News, Sustainable <br />Peace &
+            Justice (SP&J)
+          </span>
+          <a href="ReadM62.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THE 4TH POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Monday, 20 March 2023
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">Validation of the Plantation Research</h2>
+
+        <div class="event-image">
+          <img src="images/IMG_7970-Copy-768x512 (1).jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          Validation of the research on Challenges and Future Directions of
+          Children’s Education Rights in Plantation Communities of Sri Lanka was
+          held on 9th of March from 2.00pm to 5.00pm at the Caritas SEDEC upper
+          conference Hall. The research is one of the major activities under the
+          “Lighting the Lives of Plantation People” Program (LLPP) with…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Ecological Conservation &
+            <br />Plantation People (EC&PP), <br />Latest News
+          </span>
+          <a href="ReadM63.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THE 5TH POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Friday, 10 March 2023
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Educational Exposure tour with Environmental Children’s Group in
+          Mannar Diocese
+        </h2>
+
+        <div class="event-image">
+          <img src="images/DSCN9942-768x576 (1).jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          Three Village Level Environmental Children’s Groups (VLECGs) were
+          formed in selected villages under SSEP in Mannar District. A group of
+          155 children from VLECGs were taken for an educational exposure tour
+          on 13th February 2023. The main objective of this exposure visit is to
+          educate children about natural resources and the importance of
+          conserving natural…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Ecological Conservation &
+            <br />Plantation People (EC&PP), <br />Latest News
+          </span>
+          <a href="ReadM64.html" class="read-more">Read more</a>
+        </div>
+      </section>
+
+      <!-- THE 6TH POST -->
+      <section class="event-card fade-in">
+        <div class="event-header">
+          <span class="event-date">
+            <i class="fas fa-calendar-alt"></i>
+            Thursday, 09 March 2023
+          </span>
+          <span class="event-org">
+            <i class="fas fa-bell"></i>
+            Caritas Sri Lanka
+          </span>
+        </div>
+        <div class="divider"></div>
+
+        <h2 class="event-title">
+          Caritas Anuradhapura Youth Exposure Visit to Sinharaja Rainforest
+        </h2>
+
+        <div class="event-image">
+          <img src="images/IMG_0374-768x512 (1).jpg" alt="Event photo" />
+        </div>
+
+        <p class="event-desc">
+          Climate change is an inherent social issue that can upset anyone’s
+          life in countless ways. Climate change is causing different social,
+          economic, and public health issues on all the communities around the
+          world. Therefore, advocating for climate justice by the local
+          communities is the most essential solution to this worsening scenario.
+          On that note, ‘Stepping…
+        </p>
+        <div class="divider"></div>
+
+        <div class="event-footer">
+          <span class="event-tag">
+            <i class="fas fa-circle"></i> Ecological Conservation &
+            <br />Plantation People (EC&PP), <br />Latest News
+          </span>
+          <a href="ReadM65.html" class="read-more">Read more</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

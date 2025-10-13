@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM83.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>Caritas Sri Lanka commemorating the World Environmental Day</h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Wednesday</span>
+            <span class="date">20 July 2022</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            Caritas Sri Lanka (CSL) conducted a major cleanup and tree planting
+            Campaign Island wide to commemorate the World Environment Day on
+            05th of June 2022. Around 2000 adults, youth and children
+            participated in these events.
+            <br /><br />
+            The 2022 World Environment Day campaign under the theme, “Only One
+            Earth” calls for collective, transformative action on a global scale
+            to celebrate, protect and restore our planet. In Sri Lanka too, we
+            commemorated the day in all the 13 Dioceses covering the entire
+            island.
+            <br /><br />
+            There were cleanup campaigns at beaches, wetlands, marshy lands,
+            public places and religious places. CSL and its 13 Caritas Diocesan
+            Centers (DC) organized the cleanup campaigns. CSL National Centre
+            (NC) coordinated the overall events under the “Stepping Stone to
+            Safeguarding Sri Lanka’s Natural Environment Project” (SSEP) funded
+            by Misereor, a German Organization comes under the Catholic Bishops’
+            Conference, Germany. The summary of events organized by each
+            diocesan center is as follows:
+            <br /><br />
+            <b>Caritas Badulla</b> cleaned Badulla town areas with the
+            coordination of the members of the Municipal council. Apart from
+            this major event, village-level cleanup and shramadana campaigns
+            were organized. Around 300 people participated in these events.
+            <br /><br />
+            <b>Caritas Batticaloa</b> organized a cleanup campaign near the
+            Batticaloa Lagoon on the Environment day. The SSEP village level
+            group members and the staff of Caritas Batticaloa office
+            participated in this event. <br /><br />
+            <b>Caritas Jaffna</b> marked their Environmental Day commemoration
+            by cleaning Chaddy beach. Religious leaders, Government officers and
+            SSEP adult, youth group members along with Caritas staff of more
+            than 300 people were present on the day. <br /><br />
+            <b>Caritas Trincomalee</b> conducted a cleanup campaign in Subra
+            Public Park which is 2Km at length in Trincomalee. With the active
+            participation of the SSEP adult group, Youth group, and parish
+            members, the clean up campaign had been carried out. Further,
+            officers from the 22nd Army Brigade, the environment authority, the
+            MOH, and the Headquarters of the Police also participated. More than
+            300 people attended the event. <br /><br />
+            <b>Caritas Kandy</b> conducted a cleanup campaign at Delthota town
+            on the same day and 300 people participated in the event.
+            <br /><br />
+            <b>Caritas Vanni</b> completed their beach clean up campaign in
+            Mullaitivu with the generous support of the government officers,
+            <br /><br />
+            Environmental village group members, Caritas Active Civilian Youth
+            group members, children group members and catechists as well as the
+            youth of Mullaitivu parish. Around 150 members participated in that
+            event.
+            <br /><br />
+            <b>Caritas Mannar</b> commemorated the World Environmental Day with
+            a beach cleanup and a tree planting at the Keery beach. DS office
+            staff Urban council staff, Valvuthayam Caritas staff and SSEP group
+            members participated in that event. <br /><br />
+            <b>Caritas Anuradhapura</b> conducted the cleanup event on the
+            Nachchiduwa embankment, which is one of the most polluted tourist
+            places in Anuradhapura. SSEP youth groups, Caritas staff and
+            government officials participated in this event. <br /><br />
+            <b>Caritas Colombo</b> conducted the environmental day cleanup
+            campaign and tree planting event in Bopitiya. During that day, 100
+            trees were planted by the SSEP youth and conducted several
+            activities parallel to the Environmental Day. Around 350 SSEP group
+            members participated in this event. <br /><br />
+            <b>Caritas Chilaw</b> conducted a beach cleanup campaign at Induruwa
+            and Medawatta, while a tree planting campaign was conducted in
+            Nagaraja temple in Mahawewa. During that day, SSEP group members
+            cleaned the beach and surroundings near the Buddhist temple. The
+            group also planted trees in the temple garden. <br /><br />
+            <b>Caritas Galle</b> conducted a cleanup and tree-planting programme
+            at Deniyaya Fatna. Fatna is a tourist destination where
+            approximately 1000 people visit the famous Broos gala waterfall
+            (sliding stone) daily. Unfortunately, the visitors are polluting the
+            place. Around 150 SSEP members participated in this Environment Day
+            cleanup and planting campaign. <br /><br />
+            <b>Caritas Kurunegala </b> conducted the cleanup and tree planting
+            programme at Dikkele rain forest reserve in Pannala. Government
+            officers, Environmental village group members, Caritas Active
+            Civilian Youth, children group members, and catechists as well as
+            the youth of Kurunegala parish participated in the event.
+            <br /><br />
+            <b>Caritas Rathnapura</b> conducted a cleanup campaign to
+            commemorate the Environmental Day on 2nd July 2022 with the
+            Eheliyagoda Youth Group at Marabe Purana Rajamaha Viharaya.
+            Twenty-four members of the youth Group participated at the cleaning
+            campaign. The youth cleared one acre of land area, which belongs to
+            the temple. The land area cleared by the youth is to be developed as
+            a demonstration plot in future. Ven. Purijjala Pranchasara Thero
+            participated at this activity.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/003 (1).jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/004-2.jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/005-a.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/005 (1).jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/006 (1).jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/006a.jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/006b.jpg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/007 (1).jpg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/007a.jpg" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/008 (1).jpg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/008a.jpg" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/009 (1).jpg" alt="Caritas Event 12" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/009a.jpg" alt="Caritas Event 13" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0010 (1).jpg" alt="Caritas Event 14" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0010a.jpg" alt="Caritas Event 15" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0011 (1).jpg" alt="Caritas Event 16" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0011a.jpg" alt="Caritas Event 17" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0012 (1).jpg" alt="Caritas Event 18" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0012a.jpg" alt="Caritas Event 19" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0013 (1).jpg" alt="Caritas Event 20" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/0013a.jpg" alt="Caritas Event 21" />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/feb4c70f-a00a-4198-b1b0-bc12e4c8265e.jpg"
+              alt="Caritas Event 22"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

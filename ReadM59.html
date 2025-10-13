@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM59.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>
+          An Awareness Session for the Clergy of the Diocese of Kandy Diocese on
+          mission of the Catholic Church in the Emancipation of the Plantation
+          community in Sri Lanka
+        </h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Wednesday</span>
+            <span class="date">19 April 2023</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            An awareness session for clergy of the Diocese of Kandy was
+            conducted on 4th of April 2023 at the Fatima Retreat House Lewella,
+            Kandy with the aim of highlighting the social issues of the
+            Plantation community and the mission of the church leaders in
+            addressing the causes of structural discrimination that the
+            plantation community (Malaiyaga Tamils) have faced over the last 200
+            years in Sri Lanka.
+            <br /><br />
+            His Lordship Rt. Rev. Dr. Valence Mendis – the Bishop of Kandy
+            Diocese, Rev. Fr. Luke Nelson – National Director, Caritas Sri
+            Lanka, SEDEC, Rev. Fr. Desmond Perera – Director of SETIK, Rev. Fr.
+            Michael Rajendram – National Animator, for the LLPP program, Mr.
+            Sajith Silva – Unit Head of the Ecological Conservation and
+            Plantation Peoples Unit, Ms. Niranjani Roland and Ms. Vaishnave
+            Lavaneswaran- CSL staff and Mr. Muthulingam Periyasamy – Executive
+            Director for the Institute of Social Development and over 60 priests
+            including the priests from the Plantation community in the Diocese
+            of Kandy participated at the event.
+            <br /><br />
+            Rev. Fr. Desmond Perera moderated the program and explained the
+            objectives of the program.
+            <br /><br />
+            Rev. Fr. Luke Nelson, National Director, Caritas Sri Lanka, SEDEC
+            explained on the services and the current interventions of Caritas
+            Sri Lanka, SEDEC in addressing the social issues of the marginalized
+            communities in Sri Lanka.
+            <br /><br />
+            “We have understood the plight of the plantation community who live
+            in 6 Dioceses in Sri Lanka such as Kandy, Badulla, Ratnapura, Galle,
+            Colombo and Kurunegala and have launched the program called LLPP to
+            do more advocacy and lobbying to light the lives of the plantation
+            people. The program aims to address the 200 years of the hardship of
+            the plantation people and I know that Rev. Fr. Desmond play an
+            important role to address the issues of the plantation people in the
+            Kandy Diocese. I am grateful to the Catholic Relief Service (CRS)
+            for the support of this meaningful program. We are seeking your
+            valuable comments, suggestion and opinion to implement our program
+            more effectively,” said Rev. Fr. Nelson.
+            <br /><br />
+            Rev. Fr. Rajendram said that “Many people have a doubt as to who are
+            these Malayaga Tamils. This identity comes from the geographical
+            areas that they live and we like to proceed with that identity. They
+            face many social issues as they have not been included in the
+            national stream of education, health, livelihood, land and housing.
+            Therefore, they are unable to enjoy the rights like other citizens
+            of the country. He further stated that even though the plantation
+            people have contributed immensely for the national economy still
+            their contribution is not fully recognized and unfortunately they
+            are being discriminated of their basic human rights.
+            <br /><br />
+            Mr. Muthulingam Periyasamy, Executive Director of Institute of
+            Sustainable Development (ISD) explained on how the church could move
+            forward in addressing the rights of this oppressed community.
+            <br /><br />
+            “One of the founders of Liberation theology, had once said that the
+            duty of a Christian is to aid the poor and oppressed through the
+            involvement in the civic and political affairs. In the past history
+            many clergies in the Latin American countries worked for the
+            oppressed people” said Mr. Periyasamy.
+            <br /><br />
+            He further explained how he began his organization named ISD to work
+            for his own community.
+            <br /><br />
+            “I can remember once I have spoken to Fathers like Fr. Nandana
+            Manathunga, Fr. Firth on my interest to advocate for my own
+            plantation community and the policy makers on the issues faced by my
+            community. With the recommendation of Fr. Firth, I wrote a proposal
+            and got funds, that is how I started my organization and served my
+            society for the last 32 years. I have never given tangible things to
+            them, just advocacy and lobbying on the plight of the plantation
+            community to the policy makers to bring the changes in their living
+            conditions”.
+            <br /><br />
+            “During that period many of the Catholic and Christian Fathers were
+            involved in the development programs. I spoke with Fr. Paul Casperz
+            on advocacy and lobbying and he said we can’t come forward but we
+            will support your advocacy and lobbying work and he also said a day
+            should come where the church should focus on the breach of human
+            rights of the plantation community otherwise we can’t bring
+            sustainable changes,” said Mr. Periyasawmy.
+            <br /><br />
+            Mr. Periyaswamy in his speech highlighted further on followings;
+            <br /><br />
+            “The church should involve in the protection of the rights and
+            involve in advocacy. At present 169,000 line rooms and 30,000 small
+            sheds are existing in the plantation sector where these oppressed
+            people lived for 200 years. Each generation to generation, they live
+            in a 10 x 12-line house. In 169,000 line rooms, 250,000 families are
+            living at present until today, as they cannot extend the house.
+            <br /><br />
+            There are many universities in the Country. In the last two years,
+            1500 plantation students entered the Universities in the Arts
+            Faculty. There are so many doctors and teaching hospitals in the
+            country but in the plantation sector, we still have Estate Medical
+            Practioners. In 1972, the Land reform act was introduced with
+            several changes that occurred in the country but still the
+            plantation community is a landless community. Several times, we
+            lobby with the government but still we could not get a sustainable
+            solution for that. From 1998, we are lobbying for the inclusion of
+            the plantation community to the main stream.
+            <br /><br />
+            With the participation of the civil society members, we have already
+            prepared and presented an action plan to the policy makers on these
+            rights based issues. Therefore, as a church based organization you
+            all should continuously advocate and lobby with policy makers to
+            bring sustainable development to this marginalized and oppressed
+            community,” he further said.
+            <br /><br />
+            Later, the forum was opened for questions and answers.
+            <br /><br />
+            Rev. Fr. Satkunaraja, from the Loolkandura Estate in the Kandy
+            district, where the first tree was planted by James Taylor in 1986,
+            explained the present condition of the plantation people in his
+            parish.
+            <br /><br />
+            “The estate was closed down and it’s now like a jungle. The people
+            are unemployed, line houses remain as it is with poor sanitation
+            facilities. However, the people were not allowed to build a toilet,
+            no proper water supply. Children in the area of Lookandura had their
+            sport meet in the roads; still they live like slaves. This is the
+            plight of many tea plantation communities” said Fr. Satkunaraja.
+            <br /><br />
+            Mr. Muthulingam replied for these issues and said once a circular
+            was issued with regards to the plantation schools and emphasized
+            that every school should have 2 acres of land. The Estate should
+            give permission but the only requirement was that the principal has
+            to write and request the estate management on this regard.
+            <br /><br />
+            Fr. N. Abraham shared his opinion that due recognition should be
+            given to the plantation people who have served for this society. He
+            further said that“ Being a priest for 36 years, I have not done much
+            to my own community. As a community we should fight for our own
+            issues. It is not only Kandy Diocese but the Bishops Conference
+            should raise these issues and put pressure together then only we can
+            get tangible answers otherwise it will be an individual fight”
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/MG_8471.jpg" alt="Caritas Event 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8475.jpg" alt="Caritas Event 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8479.jpg" alt="Caritas Event 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8481.jpg" alt="Caritas Event 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8483.jpg" alt="Caritas Event 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8486.jpg" alt="Caritas Event 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8487.jpg" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8489.jpg" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8491.jpg" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8492.jpg" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8494.jpg" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8495.jpg" alt="Caritas Event 12" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8498.jpg" alt="Caritas Event 13" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8499.jpg" alt="Caritas Event 14" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8501.jpg" alt="Caritas Event 15" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8502.jpg" alt="Caritas Event 16" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8503.jpg" alt="Caritas Event 17" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8505.jpg" alt="Caritas Event 18" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8509.jpg" alt="Caritas Event 19" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8514.jpg" alt="Caritas Event 20" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8515.jpg" alt="Caritas Event 21" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8516.jpg" alt="Caritas Event 22" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8517.jpg" alt="Caritas Event 23" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8521.jpg" alt="Caritas Event 24" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8522.jpg" alt="Caritas Event 25" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8523.jpg" alt="Caritas Event 26" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8525.jpg" alt="Caritas Event 27" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8531.jpg" alt="Caritas Event 28" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8536.jpg" alt="Caritas Event 29" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8538.jpg" alt="Caritas Event 30" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8541.jpg" alt="Caritas Event 31" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8543.jpg" alt="Caritas Event 32" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8548.jpg" alt="Caritas Event 33" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8552.jpg" alt="Caritas Event 34" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8553.jpg" alt="Caritas Event 35" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/MG_8555.jpg" alt="Caritas Event 36" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>

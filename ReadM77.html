@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="ReadM77.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
+      </div>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">FR</button>
+        <button class="lang">ES</button>
+        <button class="lang active">EN</button>
+      </div>
+    </div>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href="whatwedo.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            What We Do
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li>
+              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+            </li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="latest.html">Latest News</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="#">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <!-- ===== HERO IMAGE ===== -->
+    <section class="hero">
+      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+      <div class="hero-text">
+        <h1>World Children’s Day Celebration</h1>
+      </div>
+    </section>
+
+    <section class="caritas-section">
+      <!-- Back Button (above the calendar & content section) -->
+      <div class="back-button fade-in-left">
+        <a href="javascript:history.back()" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span><< Back</span>
+        </a>
+      </div>
+
+      <!-- Left: Calendar and Right: Content Wrapper -->
+      <div class="caritas-container">
+        <!-- Left: Calendar -->
+        <div class="calendar-box fade-in-left">
+          <div class="calendar-date">
+            <span class="day">Friday</span>
+            <span class="date">14 October 2022</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="content-box fade-in-right">
+          <h2 class="caritas-title">Caritas Sri Lanka</h2>
+          <p class="caritas-text">
+            Caritas Chilaw and Colombo celebrated the World Children’s day 2022
+            with the Environmental Children Groups that they have formed under
+            ‘Stepping stone to safe guarding Sri Lanka’s Natural Environment’
+            project, (SSEP).
+            <br /><br />
+            <b>Colombo</b>
+            <br /><br />
+            Caritas Colombo Seth Sarana celebrated the Children’s day 2022 at
+            Muturajawela on 01st of October 2022. A group of 120 children from
+            Moratuwa, Weliveriya and Bopitiya Environmental Children Group
+            participated in this event. Rev.Fr. Lawrence Ramanayake, the
+            Director of Seth Sarana gave opening remarks at the event. In his
+            speech, he explained the importance of World Children’s day as well
+            as the responsibility that lies with children in protecting the
+            environment.
+            <br /><br />
+            Children were taken for an exposure tour to Muturajawela sanctuary
+            on that day. Muturajawela is a coastal wetland eco system located in
+            Gampaha District of Western Province Sri Lanka. Muturajawela marsh
+            land named as ‘Protected area for bio diversity conservation’ by the
+            wildlife Act 1989 and still it has not been declared as an
+            international RAMSAR site. The Muturajawela marshes are 3068
+            hectares in size and this is country’s largest saline coastal peat
+            bog. This marsh is prominent for its unique and highly diverse
+            eco-system and is listed as one of 12 priority wetlands in Sri
+            Lanka. Muturajawela is one of the main bio diversity hot spot in Sri
+            Lanka consisting wide array of endemic/ residence and common flora
+            and fauna species. This wetland is also the home to the largest peat
+            deposits in the island. This area is popular among local and foreign
+            travellers as ‘Muturajawela bird watching site’. Upon recognizing
+            the ecological significance of Muturajawela, the Government of Sri
+            Lanka declared the northern section of the marsh covering an area of
+            1777 hectares as a sanctuary in July 1996, under the Fauna and Flora
+            Protection Ordinance, which is administered by the department of
+            Wildlife Conservation.
+            <br /><br />
+            At present, the bio-diversity of Muturajawela is threatened by
+            un-planned development activities, growing human population and
+            pollution. Knowing the importance of Muturajawela, as a small step
+            to conserve the wetland, Caritas Colombo Seth Sarana has formed
+            Environmental adult, youth and children groups in Muturajawela under
+            SSEP. The main purpose of these environmental groups is to advocate
+            against the harmful human activities, which threaten the sustenance
+            of the eco-system there.
+            <br /><br />
+            During the exposure tour a special awareness session for the
+            children was conducted. The importance of the Muthurajawela
+            environmental eco system and how the wetland is serving its purpose
+            was the main objective of the session, explained by Mr. Dinusha
+            Nanayakara, Secretary of Archbishop’s committee to Protect
+            Muthurajawela Wetland. He also pointed out how the wetland is being
+            destroyed by people who are much more drawn by financial gains.
+            <br /><br />
+            As mangroves are part of eco system at Muthurajawela, he also
+            explained the ecological importance of mangrove trees and side
+            effects of destroying them.
+            <br /><br />
+            Mr. Samantha Perera who is an agriculturist and the founder of You
+            Tube channel ‘Ape Koratuwa’ conducted an awareness session on the
+            importance of local food and the importance of organic farming to
+            the children. He also explained how to prepare a healthy drink made
+            from local rice.
+            <br /><br />
+            An art competition was also conducted for the children after the
+            exposure tour to Muturajawela on what they had seen and observed.
+            <br /><br />
+            <b>Chilaw</b>
+            <br /><br />
+            Caritas Chilaw celebrated the Children’s day with Iranawila and
+            Madawatta environmental children’s group. 80 children and 22 youths
+            from environmental youth groups participated in this event. Children
+            were taken for an exposure tour to Anawilundawa bird sanctuary.
+            <br /><br />
+            Anawilundawa bird Sanctuary is situated in Puttalam District in
+            North Western Province of Sri Lanka. This Sanctuary is set out on
+            1397 hectares of forest land and comprises of nine tanks. These
+            tanks stores water for irrigation and cultivation which is also acts
+            as a natural habitat for water birds in addition to a few species of
+            threatened fish, amphibians, mammals and reptiles. The importance
+            and the uniqueness of the bird sanctuary is its immediate proximity
+            to three different eco-system which have vast distinctions and
+            characteristic. It is one of the six RAMSAR wetland mainly due to
+            its coast, the mangroves and the fresh water tanks. This unique
+            ecological setting has made it a favourable nesting and breeding
+            ground for hundred species of birds. The Anawilundawa Wetland is a
+            bird watchers’ heaven. Both resident and migratory bird species can
+            be seen throughout the year. The period from October to April is the
+            best time for getting a glimpse of many rare migratory birds.
+            <br /><br />
+            An awareness session on the importance of protecting the environment
+            and the responsibilities that a child has in protecting the
+            environment was the theme taken by Mr. Edmond Samaranayaka, a
+            psycho-social consultant who joined in as the resource person during
+            their exposure tour. He also shared with them a few techniques on
+            meditation with nature.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-section fade-in-up">
+        <h3 class="gallery-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/1ffaf0e2-443e-4a8a-8aa8-a08315d9221a.png"
+              alt="Caritas Event 1"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/4f98a513-3cea-4a0a-95e2-b32c65e610b8.png"
+              alt="Caritas Event 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/5fc86e4b-e67e-4acd-854e-f6e65e9ea19b.png"
+              alt="Caritas Event 3"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/030449e6-85cd-48d2-a871-7942319521f8.png"
+              alt="Caritas Event 4"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/195436ae-f35f-48a2-965b-72088705e7dc.png"
+              alt="Caritas Event 5"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/f3dbca8c-e43c-49e7-b20c-d73b5488f399.png"
+              alt="Caritas Event 6"
+            />
+          </div>
+          <div class="gallery-item">
+            <img src="images/001.png" alt="Caritas Event 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/002.png" alt="Caritas Event 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/003.png" alt="Caritas Event 9" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/004 (2).png" alt="Caritas Event 10" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/005.png" alt="Caritas Event 11" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/006.png" alt="Caritas Event 12" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/007.png" alt="Caritas Event 13" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+  </body>
+
+  <div class="footer">
+    <div class="lesftpanel">
+      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+      </p>
+    </div>
+
+    <div class="middlepanel">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Who We Are</a></li>
+        <li><a href="">Documentaries</a></li>
+        <li><a href="">Publications</a></li>
+        <li><a href="">Project Proposals</a></li>
+        <li><a href="">Donate</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rightpanel">
+      <h1>Newsletter subscription</h1>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+
+      <h1>Follow us</h1>
+      <div class="social-icons">
+        <a href=""><img src="images/youtube.png" alt="" /></a>
+        <a href=""><img src="images/instagram.png" alt="" /></a>
+        <a href=""><img src="images/facebook.png" alt="" /></a>
+      </div>
+
+      <p>Call us: 0094 11 2691885</p>
+      <br />
+      <p>
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka
+      </p>
+    </div>
+
+    <div class="underpanel">
+      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
+    </div>
+  </div>
+</html>
