@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Organization Structre</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="org.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Structure</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="org.css">
     <script src="index.js" defer></script>
-    <script src="org.js" defer></script>
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
-  </head>
-  <body>
-        <!-- NAVBAR -->
+  <!-- NAVBAR -->
   <div class="navbar">
     <!-- Top section -->
     <div class="topsection">
@@ -29,11 +20,12 @@
         <img src="images/mail.png" alt="Email Icon" />
         <p>sedec@caritaslk.org</p>
       </div>
-      <div class="language-selector">
-        <button class="lang">FR</button>
-        <button class="lang">ES</button>
-        <button class="lang active">EN</button>
-      </div>
+<div class="language-selector">
+  <button class="lang">සිං</button> <!-- Sinhala -->
+  <button class="lang">த</button>   <!-- Tamil -->
+  <button class="lang active">EN</button> <!-- English (active by default) -->
+</div>
+
     </div>
 
     <!-- Down section -->
@@ -129,118 +121,20 @@
       </ul>
     </div>
   </div>
+</head>
+<body>
+    
+      <!-- ===== HERO IMAGE ===== -->
+      <section class="hero">
+        <img
+          src="images/orgori.jpg"
+          alt="Contact"
+          class="mainimg"
+        />
+        <div class="hero-text">
+          <h1>Our Organization Structure</h1>
+        </div>
+      </section>
 
-    <!-- MAIN HERO IMAGE -->
-    <section class="hero">
-      <img src="images/org1.jpg" alt="Main Image" class="mainimg" />
-      <div class="hero-text">
-        <h1>ORGANIZATION STRUCTURE</h1>
-        <p>
-          Our journey began with a simple vision to create a place where passion
-          meets purpose. From humble beginnings, we have grown into a community
-          that values trust, dedication, and innovation. Every step of our story
-          is shaped by the people we serve and the commitment we carry to make a
-          difference. As we continue to grow, we invite you to be a part of this
-          journey, because our story is not just about us it’s about all of us,
-          together.
-        </p>
-      </div>
-    </section>
-
-    <!-- structure -->
-    <div class="struc">
-      <div class="upper">
-        <img src="images/struc1.png" alt="logo icons" />
-        <h1>Caritas Sri Lanka-SEDEC Organogram</h1>
-        <img src="images/logo2.png" alt="logo icons" />
-      </div>
-      <img
-        src="images/structure.png"
-        alt="Picture of Organization Structure"
-        class="popup-trigger"
-      />
-    </div>
-
-    <!-- Popup Modal -->
-    <div class="popup" id="popup">
-      <span class="close" id="closeBtn">&times;</span>
-      <img class="popup-content" id="popupImg" />
-    </div>
-    <script>
-      // Get elements
-      const popup = document.getElementById("popup");
-      const popupImg = document.getElementById("popupImg");
-      const triggerImg = document.querySelector(".popup-trigger");
-      const closeBtn = document.getElementById("closeBtn");
-
-      // Open Popup
-      triggerImg.addEventListener("click", () => {
-        popup.style.display = "block";
-        popupImg.src = triggerImg.src;
-      });
-
-      // Close Popup
-      closeBtn.addEventListener("click", () => {
-        popup.style.display = "none";
-      });
-
-      // Close when clicking outside image
-      popup.addEventListener("click", (e) => {
-        if (e.target === popup) {
-          popup.style.display = "none";
-        }
-      });
-    </script>
-  </body>
-
-  <div class="footer">
-    <div class="lesftpanel">
-      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
-      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
-      <p>
-        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
-        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
-      </p>
-    </div>
-
-    <div class="middlepanel">
-      <h1>Quick Links</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutus.html">Who We Are</a></li>
-        <li><a href="">Documentaries</a></li>
-        <li><a href="">Publications</a></li>
-        <li><a href="">Project Proposals</a></li>
-        <li><a href="">Donate</a></li>
-        <li><a href="">Contact Us</a></li>
-      </ul>
-    </div>
-
-    <div class="rightpanel">
-      <h1>Newsletter subscription</h1>
-      <div class="newsletter">
-        <input type="email" placeholder="Email Address" />
-        <button>Subscribe</button>
-      </div>
-
-      <h1>Follow us</h1>
-      <div class="social-icons">
-        <a href=""><img src="images/youtube.png" alt="" /></a>
-        <a href=""><img src="images/instagram.png" alt="" /></a>
-        <a href=""><img src="images/facebook.png" alt="" /></a>
-      </div>
-
-      <p>Call us: 0094 11 2691885</p>
-      <br />
-      <p>
-        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
-        Colombo 08, 00800 Sri Lanka
-      </p>
-    </div>
-
-    <div class="underpanel">
-      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
-      <a href=""><p>Solution by: Ceylon Innovation Services (PVT) LTD</p></a>
-    </div>
-  </div>
+</body>
 </html>
