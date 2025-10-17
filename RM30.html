@@ -295,8 +295,199 @@
       </div>
     </section>
 
-    <!-- Scroll to Top Button -->
-    <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+    <!-- Minimized Chatbot Button -->
+    <div class="chatbot-minimized" id="chatbotMinimized">
+        <div class="chatbot-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <span class="chatbot-text">Need help?</span>
+    </div>
+
+    <!-- Expanded Chatbot Panel -->
+    <div class="chatbot-expanded" id="chatbotExpanded">
+        <div class="chatbot-header">
+            <div class="header-left">
+                <div class="chatbot-avatar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="chatbot-info">
+                    <h3>AI Assistant</h3>
+                    <span class="status">Online</span>
+                </div>
+            </div>
+            <button class="close-btn" id="closeChatbot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="chatbot-body">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="message-content">
+                    <p>Hello there! 👋 How can I help you today?</p>
+                    <span class="message-time">12:00 PM</span>
+                </div>
+            </div>
+
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="message-content">
+                    <p>I can assist you with:</p>
+                    <ul class="quick-options">
+                        <li>Product information</li>
+                        <li>Technical support</li>
+                        <li>Account questions</li>
+                        <li>General inquiries</li>
+                    </ul>
+                    <span class="message-time">12:01 PM</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chatbot-footer">
+            <div class="input-container">
+                <input type="text" placeholder="Type your message..." class="message-input">
+                <button class="send-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+      // Chatbot functionality
+const chatbotMinimized = document.getElementById('chatbotMinimized');
+const chatbotExpanded = document.getElementById('chatbotExpanded');
+const closeChatbot = document.getElementById('closeChatbot');
+const messageInput = document.querySelector('.message-input');
+const sendBtn = document.querySelector('.send-btn');
+const chatBody = document.querySelector('.chatbot-body');
+
+// Toggle chatbot
+chatbotMinimized.addEventListener('click', () => {
+    chatbotExpanded.classList.add('active');
+});
+
+closeChatbot.addEventListener('click', () => {
+    chatbotExpanded.classList.remove('active');
+});
+
+// Send message function
+function sendMessage() {
+    const message = messageInput.value.trim();
+    if (message) {
+        // Add user message
+        addUserMessage(message);
+        
+        // Clear input
+        messageInput.value = '';
+        
+        // Simulate bot response
+        setTimeout(() => {
+            addBotMessage(getBotResponse(message));
+        }, 1000);
+    }
+}
+
+// Add user message to chat
+function addUserMessage(text) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'message user-message';
+    messageDiv.innerHTML = `
+        <div class="message-content">
+            <p>${text}</p>
+            <span class="message-time">${getCurrentTime()}</span>
+        </div>
+    `;
+    chatBody.appendChild(messageDiv);
+    scrollToBottom();
+}
+
+// Add bot message to chat
+function addBotMessage(text) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'message bot-message';
+    messageDiv.innerHTML = `
+        <div class="message-avatar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="message-content">
+            <p>${text}</p>
+            <span class="message-time">${getCurrentTime()}</span>
+        </div>
+    `;
+    chatBody.appendChild(messageDiv);
+    scrollToBottom();
+}
+
+// Get bot response based on user input
+function getBotResponse(input) {
+    const lowerInput = input.toLowerCase();
+    
+    if (lowerInput.includes('hello') || lowerInput.includes('hi') || lowerInput.includes('hey')) {
+        return "Hello! Nice to meet you! How can I assist you today?";
+    } else if (lowerInput.includes('help')) {
+        return "I'm here to help! You can ask me about our services, pricing, technical support, or anything else you'd like to know.";
+    } else if (lowerInput.includes('price') || lowerInput.includes('cost')) {
+        return "Our pricing starts at $29/month for the basic plan. We also have professional and enterprise plans. Would you like more details?";
+    } else if (lowerInput.includes('thank')) {
+        return "You're welcome! Is there anything else I can help you with?";
+    } else {
+        return "Thanks for your message! I'm an AI assistant trained to help with general inquiries. For specific questions, our support team would be happy to assist you further.";
+    }
+}
+
+// Get current time in HH:MM format
+function getCurrentTime() {
+    const now = new Date();
+    return now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+}
+
+// Scroll chat to bottom
+function scrollToBottom() {
+    chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+// Event listeners
+sendBtn.addEventListener('click', sendMessage);
+messageInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        sendMessage();
+    }
+});
+
+// Close chatbot when clicking outside
+document.addEventListener('click', (e) => {
+    if (!chatbotExpanded.contains(e.target) && !chatbotMinimized.contains(e.target) && chatbotExpanded.classList.contains('active')) {
+        chatbotExpanded.classList.remove('active');
+    }
+});
+
+// Add some initial bot messages when page loads
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        addBotMessage("Welcome! I'm your AI assistant. Feel free to ask me anything!");
+    }, 500);
+});
+    </script>
+
   </body>
 
   <div class="footer">
