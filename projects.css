@@ -128,10 +128,10 @@ body {
 
 
 
-/* ===== MODERN RECENT POSTS ===== */
+/* ===== MODERN RECENT POSTS (Light Theme) ===== */
 .recent-posts {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -143,9 +143,9 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 30%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(185, 28, 28, 0.08) 0%, transparent 50%);
+  background:
+    radial-gradient(circle at 20% 30%, rgba(254, 202, 202, 0.4) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(254, 202, 202, 0.3) 0%, transparent 50%);
   animation: pulseBackground 8s ease-in-out infinite;
   z-index: 1;
 }
@@ -166,10 +166,9 @@ body {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 50px;
-  background: linear-gradient(135deg, #ffffff 0%, #fecaca 50%, #dc2626 100%);
+  background: linear-gradient(135deg, #000000 0%, #dc2626 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
@@ -213,10 +212,10 @@ body {
 .card {
   flex: 0 0 280px;
   height: 320px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #fee2e2; /* light red */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid #fca5a5;
   border-radius: 16px;
   padding: 25px;
   position: relative;
@@ -235,7 +234,7 @@ body {
   inset: 0;
   border-radius: 16px;
   padding: 1.5px;
-  background: linear-gradient(135deg, rgba(220, 38, 38, 0.4), rgba(255, 255, 255, 0.1), rgba(185, 28, 28, 0.4));
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.4), rgba(0, 0, 0, 0.05), rgba(220, 38, 38, 0.4));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -257,7 +256,7 @@ body {
   background: linear-gradient(
     120deg,
     transparent 0%,
-    rgba(220, 38, 38, 0.1) 50%,
+    rgba(0, 0, 0, 0.05) 50%,
     transparent 100%
   );
   transform: skewX(-25deg);
@@ -270,11 +269,11 @@ body {
 
 .card:hover {
   transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: #fecaca;
+  border-color: #f87171;
   box-shadow: 
     0 15px 30px rgba(220, 38, 38, 0.15),
-    0 6px 20px rgba(0, 0, 0, 0.3);
+    0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Card Corner Accents */
@@ -330,7 +329,7 @@ body {
 .card-title {
   font-size: 1.1rem;
   line-height: 1.5;
-  color: #ffffff;
+  color: #111111;
   margin-bottom: 20px;
   flex-grow: 1;
   overflow: hidden;
@@ -340,9 +339,9 @@ body {
   font-weight: 600;
 }
 
-/* Modern READ MORE Button */
+/* Modern READ MORE Button (Black) */
 .read-more-btn {
-  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  background: #000000;
   color: #ffffff !important;
   padding: 10px 20px;
   font-weight: 600;
@@ -374,7 +373,7 @@ body {
 .read-more-btn:hover {
   transform: translateY(-2px);
   box-shadow: 
-    0 6px 15px rgba(220, 38, 38, 0.4),
+    0 6px 15px rgba(0, 0, 0, 0.4),
     0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -383,7 +382,7 @@ body {
 }
 
 .read-more-btn:focus {
-  outline: 2px solid #dc2626;
+  outline: 2px solid #000;
   outline-offset: 2px;
 }
 
@@ -418,12 +417,8 @@ body {
 }
 
 @keyframes infiniteScrollTablet {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-260px * 10 - 20px * 9));
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-260px * 10 - 20px * 9)); }
 }
 
 /* Tablets */
@@ -462,12 +457,8 @@ body {
 }
 
 @keyframes infiniteScrollMobile {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-240px * 10 - 18px * 9));
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-240px * 10 - 18px * 9)); }
 }
 
 /* Small Mobile Phones */
@@ -505,7 +496,6 @@ body {
     font-size: 0.8rem;
   }
   
-  /* Smaller corner accents for mobile */
   .card-corner-tl-h,
   .card-corner-br-h {
     width: 25px;
@@ -520,12 +510,8 @@ body {
 }
 
 @keyframes infiniteScrollSmallMobile {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-220px * 10 - 15px * 9));
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-220px * 10 - 15px * 9)); }
 }
 
 /* Extra Small Mobile Phones */
@@ -564,12 +550,8 @@ body {
 }
 
 @keyframes infiniteScrollXSmallMobile {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-200px * 10 - 12px * 9));
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-200px * 10 - 12px * 9)); }
 }
 
 /* Large Screens */
