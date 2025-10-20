@@ -127,29 +127,10 @@ body {
 
 
 
-/* ---------- Venue Container ---------- */
-.venue-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.venue-container:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 24px 60px rgba(0,0,0,0.12);
-}
-
-
-
-
 /* ---------- VENUE SECTION ---------- */
 .venue-section {
-  padding: 80px 20px;
-  background: #0a0a0a;
+  background: #ffffff;
+  padding: 60px 20px;
   color: #fff;
 }
 
@@ -159,31 +140,52 @@ body {
   text-align: center;
 }
 
+/* ---------- Top Image ---------- */
+.venue-top-image {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.venue-top-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.venue-top-image img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Header ---------- */
 .venue-header h2 {
   font-size: 2.6rem;
   margin-bottom: 12px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 .venue-header .tagline {
   font-size: 1.2rem;
-  color: #000000;
+  color: #333;
   max-width: 720px;
-  margin: 0 auto 50px;
+  margin: 0 auto 40px;
   line-height: 1.7;
 }
 
 /* ---------- Intro ---------- */
 .venue-intro p {
   font-size: 1.15rem;
-  background: linear-gradient(90deg, #0b0708, #d90429);
+  background: linear-gradient(90deg, #d90429, #0b0708);
   color: #fff;
   display: inline-block;
-  padding: 16px 28px;
+  padding: 14px 24px;
   border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-  margin-bottom: 60px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
   font-weight: 500;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -193,16 +195,17 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* ---------- Content Cards ---------- */
+/* ---------- Content Row ---------- */
 .venue-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 30px;
   align-items: start;
 }
 
+/* ---------- Venue Cards ---------- */
 .venue-card {
-  background: linear-gradient(90deg, #0b0708, #d90429);
+  background: linear-gradient(135deg, #d90429, #0b0708);
   border-radius: 20px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
   overflow: hidden;
@@ -210,7 +213,6 @@ body {
   text-align: left;
   display: flex;
   flex-direction: column;
-  height: 100%;
   color: #fff;
   opacity: 0;
   transform: translateY(40px);
@@ -224,35 +226,15 @@ body {
 
 .venue-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* ---------- Image Card ---------- */
-.image-card {
-  padding: 0;
-  border-radius: 20px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.image-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  transition: transform 0.5s ease;
-}
-
-.image-card img:hover {
-  transform: scale(1.05);
-}
-
-/* ---------- Details Card ---------- */
-.details-card h3 {
+/* ---------- Titles ---------- */
+.details-card h3,
+.amenities-card h3 {
   color: #fff;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   font-size: 1.5rem;
   font-weight: 600;
   display: inline-block;
@@ -260,16 +242,17 @@ body {
   padding-bottom: 4px;
 }
 
+/* ---------- Feature List ---------- */
 .feature-list {
   list-style: none;
   padding: 0;
-  margin-bottom: 30px;
+  margin: 0;
 }
 
 .feature-list li {
   position: relative;
-  padding-left: 36px;
-  margin-bottom: 16px;
+  padding-left: 32px;
+  margin-bottom: 14px;
   font-size: 1rem;
   color: #f9f9f9;
   font-weight: 500;
@@ -277,82 +260,32 @@ body {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.feature-list li:hover {
-  transform: translateX(4px);
-  color: #fff;
-}
-
 .feature-list li::before {
   content: "✔";
   position: absolute;
   left: 0;
   top: 0;
-  color: #fff;
+  color: #00ff88;
   font-weight: bold;
-  transform: scale(1.1);
-  transition: color 0.3s ease;
 }
 
-.feature-list li:hover::before {
-  color: #00ff6a;
+.feature-list li:hover {
+  transform: translateX(4px);
+  color: #ffffff;
 }
 
-/* ---------- Amenities ---------- */
-.amenities-card h3 {
-  color: #fff;
-  margin-top: 0;
-  margin-bottom: 24px;
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  padding-bottom: 4px;
-}
-
-.amenities-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 40px;
-  gap: 30px;
-}
-
-.amenities-card {
-  flex: 1 1 300px;
-  background: linear-gradient(90deg, #0b0708, #d90429);
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  color: #fff;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.amenities-card.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.amenities-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
-
-/* ---------- RESPONSIVE ---------- */
+/* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .venue-content {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
 
   .venue-card {
     text-align: center;
   }
 
-  .details-card h3 {
-    display: block;
+  .details-card h3,
+  .amenities-card h3 {
     text-align: center;
   }
 
