@@ -1,0 +1,122 @@
+/* ---------- BODY & GLOBAL ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #fff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  position: relative;
+  height: 620px; /* slightly reduced for better first-fold */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px; /* ✅ lift section slightly upwards */
+}
+
+.hero img.mainimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+  transition: transform 0.8s ease, filter 0.8s ease;
+  will-change: transform;
+}
+
+.hero:hover img.mainimg {
+  transform: scale(1.03);
+  filter: brightness(0.75);
+}
+
+.hero-text {
+  position: absolute;
+  top: 48%; /* ✅ slightly higher position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transform: translate(-50%, -40%) translateY(40px);
+  animation: heroFadeIn 1.2s ease forwards;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.7); /* ✅ clean shadow for readability */
+}
+
+.hero-text h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Animation ---------- */
+@keyframes heroFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%) translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) translateY(0);
+  }
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .hero {
+    height: 500px;
+    margin-top: -20px;
+  }
+
+  .hero-text {
+    top: 45%;
+    padding: 0 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text h4 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .hero {
+    height: 600px;
+    margin-top: -49px;
+  }
+
+  .hero-text {
+    max-width: 90%;
+    top: 42%;
+    padding: 0 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .hero-text h4 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
