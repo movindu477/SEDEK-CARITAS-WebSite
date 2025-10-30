@@ -420,3 +420,30 @@ function showInfo(item) {
   // Scroll into view smoothly
   infoBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+
+
+  // Get elements for ORG image
+  const modal = document.getElementById("imagePopup");
+  const img = document.getElementById("orgImage");
+  const modalImg = document.getElementById("popupImg");
+  const closeBtn = document.getElementsByClassName("close")[0];
+
+  // Show popup when image is clicked
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+
+  // Close popup when 'x' is clicked
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // Also close popup when clicking outside image
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+
