@@ -447,3 +447,190 @@ function showInfo(item) {
     }
   }
 
+//donate
+// Process Section Interactivity
+document.addEventListener('DOMContentLoaded', function() {
+    const steps = document.querySelectorAll('.step');
+    
+    // Step click functionality
+    steps.forEach(step => {
+        step.addEventListener('click', function() {
+            // Remove active class from all steps
+            steps.forEach(s => s.classList.remove('active'));
+            
+            // Add active class to clicked step
+            this.classList.add('active');
+            
+            // Add visual feedback
+            this.style.transform = 'translateY(-8px)';
+            setTimeout(() => {
+                this.style.transform = 'translateY(-5px)';
+            }, 150);
+            
+            // Show step information
+            showStepInfo(this);
+        });
+        
+        // Hover effects
+        step.addEventListener('mouseenter', function() {
+            if (!this.classList.contains('active')) {
+                this.style.transform = 'translateY(-3px)';
+            }
+        });
+        
+        step.addEventListener('mouseleave', function() {
+            if (!this.classList.contains('active')) {
+                this.style.transform = 'translateY(0)';
+            }
+        });
+    });
+    
+    // Function to show step information
+    function showStepInfo(step) {
+        const stepNumber = step.querySelector('.step-number').textContent;
+        const stepTitle = step.querySelector('h3').textContent;
+        const stepDescription = step.querySelector('p').textContent;
+        
+        console.log(`Step ${stepNumber} activated:`, {
+            title: stepTitle,
+            description: stepDescription
+        });
+        
+        // You can add additional functionality here
+        // For example, update a separate info panel or show modal
+    }
+    
+    // Auto-activate steps in sequence (optional)
+    function activateStepsSequentially() {
+        let index = 0;
+        const interval = setInterval(() => {
+            if (index < steps.length) {
+                // Remove active class from all steps
+                steps.forEach(s => s.classList.remove('active'));
+                
+                // Add active class to current step
+                steps[index].classList.add('active');
+                showStepInfo(steps[index]);
+                
+                index++;
+            } else {
+                clearInterval(interval);
+                
+                // Reset after completion
+                setTimeout(() => {
+                    steps.forEach(s => s.classList.remove('active'));
+                }, 3000);
+            }
+        }, 2000);
+    }
+    
+    // Uncomment the line below if you want steps to auto-activate on page load
+    // activateStepsSequentially();
+    
+    // Initialize first step as active
+    if (steps.length > 0) {
+        steps[0].classList.add('active');
+        showStepInfo(steps[0]);
+    }
+});
+
+// Add smooth scroll to process section
+function scrollToProcessSection() {
+    const section = document.querySelector('.infographic-section');
+    if (section) {
+        section.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'center'
+        });
+    }
+}
+
+//application form of donate
+// Application Form Section Interactivity
+document.addEventListener('DOMContentLoaded', function() {
+    const applicationLink = document.getElementById('applicationLink');
+    
+    if (applicationLink) {
+        // Add click tracking (optional - for analytics)
+        applicationLink.addEventListener('click', function(e) {
+            // You can add analytics tracking here
+            console.log('Application form link clicked');
+            
+            // Optional: Add loading state
+            this.classList.add('loading');
+            setTimeout(() => {
+                this.classList.remove('loading');
+            }, 2000);
+        });
+        
+        // Add hover effects
+        applicationLink.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-2px)';
+        });
+        
+        applicationLink.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    }
+    
+    // Add intersection observer for animation
+    const applicationSection = document.querySelector('.application-section');
+    if (applicationSection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, { threshold: 0.3 });
+        
+        observer.observe(applicationSection);
+    }
+});
+
+// Function to simulate form submission (if needed)
+function submitApplicationForm(formData) {
+    // This would be connected to your actual form submission
+    console.log('Submitting application form:', formData);
+    
+    // Show success message
+    showApplicationSuccess();
+}
+
+function showApplicationSuccess() {
+    // You can implement a success modal or message here
+    const successMessage = document.createElement('div');
+    successMessage.className = 'application-success';
+    successMessage.innerHTML = `
+        <div class="success-content">
+            <div class="success-icon">✅</div>
+            <h3>Application Submitted!</h3>
+            <p>Thank you for your application. We'll contact you within 24-48 hours.</p>
+            <button onclick="this.parentElement.parentElement.remove()">Close</button>
+        </div>
+    `;
+    
+    successMessage.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    `;
+    
+    successMessage.querySelector('.success-content').style.cssText = `
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        text-align: center;
+        max-width: 400px;
+        margin: 20px;
+    `;
+    
+    document.body.appendChild(successMessage);
+}

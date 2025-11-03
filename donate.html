@@ -1,142 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate Us</title>
-    <link rel="stylesheet" href="css/donate.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/donate.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <script src="js/index.js" defer></script>
 
-      <!-- NAVBAR -->
-  <div class="navbar">
-    <!-- Top section -->
-    <div class="topsection">
-      <div class="item">
-        <img src="images/phone-call.png" alt="Call Icon" />
-        <p>0094 11 2691885</p>
-      </div>
-      <div class="item">
-        <img src="images/mail.png" alt="Email Icon" />
-        <p>sedec@caritaslk.org</p>
-      </div>
-<div class="language-selector">
-  <button class="lang">සිං</button> <!-- Sinhala -->
-  <button class="lang">த</button>   <!-- Tamil -->
-  <button class="lang active">EN</button> <!-- English (active by default) -->
-</div>
-
-    </div>
-
-    <!-- Down section -->
-    <div class="downsection">
-      <div class="logos">
-        <img src="images/logo2.png" alt="Logo" width="40" />
-        <img src="images/logo3.png" alt="Logo" width="120" />
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <!-- Top section -->
+      <div class="topsection">
+        <div class="item">
+          <img src="images/phone-call.png" alt="Call Icon" />
+          <p>0094 11 2691885</p>
+        </div>
+        <div class="item">
+          <img src="images/mail.png" alt="Email Icon" />
+          <p>sedec@caritaslk.org</p>
+        </div>
+        <div class="language-selector">
+          <button class="lang">සිං</button>
+          <!-- Sinhala -->
+          <button class="lang">த</button>
+          <!-- Tamil -->
+          <button class="lang active">EN</button>
+          <!-- English (active by default) -->
+        </div>
       </div>
 
-      <!-- Mobile menu button -->
-      <button
-        class="mobile-menu-btn"
-        id="mobileMenuBtn"
-        aria-label="Open Menu"
-        aria-controls="navMenu"
-        aria-expanded="false"
-      >
-        <span></span><span></span><span></span>
-      </button>
+      <!-- Down section -->
+      <div class="downsection">
+        <div class="logos">
+          <img src="images/logo2.png" alt="Logo" width="40" />
+          <img src="images/logo3.png" alt="Logo" width="120" />
+        </div>
 
-      <!-- Main Nav -->
-      <ul id="navMenu" role="menubar">
-        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
-          ✕
+        <!-- Mobile menu button -->
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Open Menu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
         </button>
 
-        <li><a href="index.html">Home</a></li>
+        <!-- Main Nav -->
+        <ul id="navMenu" role="menubar">
+          <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+            ✕
+          </button>
 
-        <!-- Who We Are Dropdown -->
-        <li class="dropdown">
-          <a
-            href="aboutus.html"
-            class="dropdown-toggle"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >Who We Are</a
-          >
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="policies.html">Our Policies</a></li>
-            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
-            <li><a href="ourhistory.html">Our History</a></li>
-            <li><a href="org.html">Org Structure</a></li>
-            <li><a href="faculty.html">Facilities &amp; Services</a></li>
-          </ul>
-        </li>
+          <li><a href="index.html">Home</a></li>
 
-        <!-- What We Do Dropdown -->
-        <li class="dropdown">
-          <a
-            href="whatwedo.html"
-            class="dropdown-toggle"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            What We Do
-          </a>
-          <ul class="dropdown-menu" role="menu">
-            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
-            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
-            <li>
-              <a href="socialdoctrine.html">Social Doctrine of the Church</a>
-            </li>
-            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
-            <li>
-              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
-            </li>
-            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
-          </ul>
-        </li>
+          <!-- Who We Are Dropdown -->
+          <li class="dropdown">
+            <a
+              href="aboutus.html"
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Who We Are</a
+            >
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="policies.html">Our Policies</a></li>
+              <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+              <li><a href="ourhistory.html">Our History</a></li>
+              <li><a href="org.html">Org Structure</a></li>
+              <li><a href="faculty.html">Facilities &amp; Services</a></li>
+            </ul>
+          </li>
 
-        <!-- News Dropdown -->
-        <li class="dropdown">
-          <a
-            href="#"
-            class="dropdown-toggle"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >News</a
-          >
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="latest.html">Latest News</a></li>
-            <li><a href="stories.html">Success Stories</a></li>
-            <li><a href="documentaries.html">Documentaries</a></li>
-            <li><a href="publications.html">Publications</a></li>
-          </ul>
-        </li>
+          <!-- What We Do Dropdown -->
+          <li class="dropdown">
+            <a
+              href="whatwedo.html"
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              What We Do
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+              <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li>
+                <a href="whatwedo.html#guiding-prin">Guiding Principles</a>
+              </li>
+              <li>
+                <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+              </li>
+              <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+              <li>
+                <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+              </li>
+              <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+            </ul>
+          </li>
 
-        <li><a href="contact.html">Contact Us</a></li>
-        <li class="highlight"><a href="donate.html">DONATE</a></li>
-      </ul>
+          <!-- News Dropdown -->
+          <li class="dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >News</a
+            >
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="latest.html">Latest News</a></li>
+              <li><a href="stories.html">Success Stories</a></li>
+              <li><a href="documentaries.html">Documentaries</a></li>
+              <li><a href="publications.html">Publications</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact.html">Contact Us</a></li>
+          <li class="highlight"><a href="donate.html">DONATE</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-
-</head>
-<body>
-
-        <!-- HERO SECTION -->
+  </head>
+  <body>
+    <!-- HERO SECTION -->
     <section class="hero">
-      <img
-        src="images/donate.jpg"
-        alt="Hero Image"
-        class="mainimg"
-      />
+      <img src="images/donate.jpg" alt="Hero Image" class="mainimg" />
       <div class="hero-text">
         <h1>Support Our Mission</h1>
         <h4>Make a Difference Today</h4>
       </div>
     </section>
-    
-</body>
+
+    <!-- PROCESS SECTION -->
+    <section class="infographic-section">
+      <div class="infographic-container">
+        <!-- Left Column - Steps -->
+        <div class="steps-column">
+          <div class="step step-1">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>Step 01</h3>
+              <p>Initial planning and research phase</p>
+            </div>
+          </div>
+
+          <div class="step step-2">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3>Step 02</h3>
+              <p>Design and prototyping phase</p>
+            </div>
+          </div>
+
+          <div class="step step-3">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>Step 03</h3>
+              <p>Development and implementation</p>
+            </div>
+          </div>
+
+          <div class="step step-4">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3>Step 04</h3>
+              <p>Testing and deployment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLICATION FORM SECTION -->
+    <section class="application-section">
+      <div class="application-container">
+        <div class="application-header">
+          <h2>Application Form</h2>
+          <p>
+            Ready to make a difference? Complete our application form to get
+            started with your donation process and join us in our mission to
+            create positive change.
+          </p>
+        </div>
+
+        <div class="application-content">
+          <div class="application-info">
+            <div class="info-card">
+              <div class="info-icon">📝</div>
+              <h3>Simple Process</h3>
+              <p>
+                Our application form is designed to be quick and easy to
+                complete. It should take only 5-10 minutes of your time.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">🔒</div>
+              <h3>Secure & Private</h3>
+              <p>
+                Your information is protected with bank-level security. We
+                respect your privacy and never share your data.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">⏱️</div>
+              <h3>Quick Response</h3>
+              <p>
+                We process applications within 24-48 hours and will contact you
+                to confirm your donation details.
+              </p>
+            </div>
+          </div>
+
+          <div class="application-cta">
+            <div class="cta-card">
+              <h3>Start Your Donation Application Process Today</h3>
+              <p>
+                Begin your journey of making a positive impact by completing our
+                straightforward application form. We've designed the process to
+                be simple and efficient, guiding you through each step to ensure
+                your donation reaches those who need it most.
+              </p>
+
+              <div class="requirements">
+                <h4>What you'll need to complete the form:</h4>
+                <ul>
+                  <li>Personal identification details</li>
+                  <li>Contact information</li>
+                  <li>Payment method (credit card, bank transfer, etc.)</li>
+                  <li>Donation amount preference</li>
+                </ul>
+              </div>
+
+              <a
+                href="application-form.html"
+                class="application-btn"
+                id="applicationLink"
+              >
+                <span>Access Application Form</span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 12H19M19 12L12 5M19 12L12 19"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+
+              <div class="support-info">
+                <p>
+                  Need help?
+                  <a href="contact.html">Contact our support team</a> or call
+                  <strong>0094 11 2691885</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
