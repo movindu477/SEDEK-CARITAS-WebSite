@@ -313,7 +313,7 @@
 
 
 /* ==============================
-   DIOCESAN CENTRES – WHITE CARDS WITH BLACK SHADOWS & RED ACCENTS
+   DIOCESAN CENTRES – MODERN UNIFORM DESIGN
    ============================== */
 
 .diocesan-wrapper {
@@ -333,34 +333,48 @@
 .section-subtitle {
   text-align: center;
   font-size: 1.1rem;
-  color: #666;
+  color: #555;
   margin-bottom: 50px;
-  max-width: 600px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
 }
 
+/* Grid layout */
 .diocesan-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
 }
 
+/* Card Styling */
 .diocesan-card {
   position: relative;
-  background: #ffffff;
-  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255, 77, 77, 0.954), rgba(0, 0, 0, 0.842));
+  border-radius: 14px;
   padding: 32px 28px;
-  border: 1px solid #f0f0f0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transition: all 0.35s ease;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   overflow: hidden;
+  min-height: 420px; /* makes all boxes equal height */
+  backdrop-filter: blur(4px);
 }
 
-/* Subtle red corner indicators */
+/* Hover effect */
+.diocesan-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(255, 50, 50, 0.3);
+  border-color: #b32626;
+}
+
+/* Decorative red corners */
 .diocesan-card::before,
 .diocesan-card::after {
   content: "";
@@ -369,27 +383,21 @@
   height: 0;
   border-style: solid;
   opacity: 0.4;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .diocesan-card::before {
   top: 0;
   left: 0;
-  border-width: 20px 20px 0 0;
+  border-width: 18px 18px 0 0;
   border-color: #b32626 transparent transparent transparent;
 }
 
 .diocesan-card::after {
   bottom: 0;
   right: 0;
-  border-width: 0 0 20px 20px;
+  border-width: 0 0 18px 18px;
   border-color: transparent transparent #b32626 transparent;
-}
-
-.diocesan-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-  border-color: #ffe6e6;
 }
 
 .diocesan-card:hover::before,
@@ -397,13 +405,13 @@
   opacity: 0.8;
 }
 
+/* Title */
 .diocesan-card h2 {
-  color: #b32626;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  text-align: center;
-  position: relative;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 18px;
   font-weight: 600;
+  position: relative;
 }
 
 .diocesan-card h2::after {
@@ -411,108 +419,102 @@
   display: block;
   width: 50px;
   height: 2px;
-  background: #b32626;
-  margin: 12px auto 0;
+  background: #ff6b6b;
+  margin: 10px auto 0;
   border-radius: 1px;
 }
 
+/* Paragraphs */
 .diocesan-card p {
-  font-size: 15px;
-  color: #333;
+  font-size: 0.95rem;
+  color: #f1f1f1;
   line-height: 1.6;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .diocesan-card strong {
-  color: #b32626;
+  color: #000000;
   font-weight: 600;
 }
 
+/* Links inside card text */
 .diocesan-card a:not(.card-actions a) {
-  color:#000000;
+  color: #fff;
   text-decoration: none;
-  font-weight: 500;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
 }
 
 .diocesan-card a:not(.card-actions a):hover {
-  border-bottom: 1px solid #b32626;
+  border-bottom: 1px solid #ff6b6b;
 }
 
+/* Buttons (card actions) */
 .card-actions {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-top: 24px;
   flex-wrap: wrap;
+  margin-top: 24px;
 }
 
-/* Both buttons in red */
 .card-actions a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
   padding: 12px 28px;
-  background: #f85858;
+  background: linear-gradient(90deg, #ff4d4d, #b32626);
   color: #fff;
   border-radius: 6px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  border: 2px solid #ff8888;
-  text-align: center;
+  border: none;
 }
 
 .card-actions a:hover {
-  background: #921b1b;
-  border-color: #921b1b;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(179, 38, 38, 0.3);
+  box-shadow: 0 5px 14px rgba(255, 77, 77, 0.3);
 }
 
-.card-actions a:active {
-  transform: translateY(0);
-}
-
-/* Impact badge */
+/* Impact Badge */
 .impact-badge {
   display: inline-block;
-  padding: 4px 12px;
-  background: #fff5f5;
-  color: #b32626;
+  padding: 5px 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffcccc;
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 600;
-  margin: 5px 0;
-  border: 1px solid #ffcccc;
+  margin: 8px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Progress bar for fundraising goals */
+/* Progress bar (optional) */
 .progress-container {
+  width: 100%;
   margin: 15px 0;
 }
 
 .progress-label {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8px;
-  font-size: 0.9rem;
-  color: #666;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  color: #ddd;
 }
 
 .progress-bar {
   width: 100%;
   height: 6px;
-  background: #f0f0f0;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 3px;
   overflow: hidden;
 }
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #b32626, #ff6b6b);
+  background: linear-gradient(90deg, #ff4d4d, #ff9999);
   border-radius: 3px;
   transition: width 1s ease-in-out;
 }
@@ -523,20 +525,65 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 0.85rem;
-  color: #666;
+  color: #eee;
 }
 
 .trust-indicators i {
-  color: #b32626;
-  margin-right: 4px;
+  color: #ff6b6b;
 }
 
-
-/* Focus states for accessibility */
+/* Accessibility focus state */
 .card-actions a:focus {
-  outline: 2px solid #b32626;
-  outline-offset: 2px;
-  background: #921b1b;
+  outline: 2px solid #ff9999;
+  outline-offset: 3px;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .diocesan-card {
+    padding: 28px 22px;
+    min-height: 380px;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .diocesan-card h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .diocesan-card {
+    padding: 25px 20px;
+    min-height: 340px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .card-actions a {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
 }

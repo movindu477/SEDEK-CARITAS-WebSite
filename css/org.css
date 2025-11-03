@@ -116,61 +116,126 @@
   /* HERO SECTION ENS */
   
 
-/* Org Image starts */
+/* 🌐 Organization Image Container */
 .org-image {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px 0;
+  flex-wrap: wrap; /* allows proper wrapping on smaller screens */
 }
 
+/* 🖼️ Main Image Styling
 .mainimg {
   max-width: 90%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.3s ease;
-}
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+} */
 
 .mainimg:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Popup Styles */
+/* 💡 Popup Overlay */
 .popup {
-  display: none; /* Hidden by default */
+  display: none; /* hidden by default */
   position: fixed;
-  z-index: 999;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.8);
+  z-index: 9999;
+  inset: 0; /* shorthand for top/left/right/bottom: 0 */
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px); /* adds a modern blur effect */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto;
 }
 
+/* 🖼️ Enlarged Image */
 .popup-content {
-  margin: auto;
   display: block;
-  max-width: 80%;
-  max-height: 80%;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  animation: zoomIn 0.4s ease;
 }
 
+/* ❌ Close Button */
 .close {
   position: absolute;
-  top: 30px;
-  right: 45px;
+  top: 25px;
+  right: 35px;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 10000;
 }
 
 .close:hover {
-  color: #ccc;
+  color: #f1f1f1;
 }
 
-/* Org Image starts */
+/* ✨ Smooth Zoom Animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 1024px) {
+  .mainimg {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainimg {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .popup-content {
+    max-width: 95%;
+    max-height: 75vh;
+  }
+
+  .close {
+    font-size: 35px;
+    top: 20px;
+    right: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .org-image {
+    margin: 25px 0;
+  }
+
+  .mainimg {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .popup-content {
+    max-width: 100%;
+    max-height: 70vh;
+  }
+
+  .close {
+    font-size: 30px;
+    top: 15px;
+    right: 20px;
+  }
+}
