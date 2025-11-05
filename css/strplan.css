@@ -68,6 +68,8 @@ body {
   color: #000000;
 }
 
+
+
 /* Calendar Box */
 .calendar-box {
   flex: 1 1 250px;
@@ -93,6 +95,7 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
 }
+
 /* Content Box */
 .content-box {
   flex: 3 1 600px;
@@ -115,30 +118,52 @@ body {
   font-size: 1rem;
 }
 
+/* Gallery */
+.gallery-section {
+  text-align: center;
+  transform: translateY(50px);
+  opacity: 0;
+}
 
+.gallery-heading {
+  font-size: 1.6rem;
+  color: #ee7676;
+  margin-bottom: 30px;
+  position: relative;
+}
 
-/* YouTube Video Styling */
-.caritas-video {
-  margin: 40px auto;
-  max-width: 800px;
-  aspect-ratio: 16 / 9;
-  border-radius: 16px;
+.gallery-heading::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #ee7676;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
-.caritas-video:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-
-.caritas-video iframe {
+.gallery-item img {
   width: 100%;
   height: 100%;
-  border: none;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
 
 /* Animations */
 @keyframes fadeInLeft {
@@ -174,4 +199,3 @@ body {
   }
 }
 /* caritas section ENS */
-
