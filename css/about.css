@@ -473,7 +473,7 @@ body {
 :root {
     --primary: #000000;
     --secondary: #ff6b6b;
-    --dark: #0a0a0a;
+    --dark: #000000;
     --light: #ffffff;
     --radius: 16px;
     --radius-lg: 24px;
@@ -493,7 +493,7 @@ body {
 
 body {
     font-family: "Inter", "Segoe UI", Arial, sans-serif;
-    background-color: var(--dark);
+    background-color: #000000;
     color: var(--light);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
@@ -503,7 +503,7 @@ body {
 .team-section {
     text-align: center;
     padding: 100px 20px;
-    background: var(--dark);
+    background: #000000;
     position: relative;
     overflow: hidden;
 }
@@ -620,6 +620,59 @@ body {
     opacity: 0.85;
 }
 
+/* ================= MODERN EMAIL STYLING ================= */
+.team-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-email::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.team-email:hover::before {
+    left: 100%;
+}
+
+.team-email:hover {
+    color: #ffffff;
+    background: rgba(255, 107, 107, 0.15);
+    border-color: rgba(255, 107, 107, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.2);
+}
+
+.team-email svg {
+    width: 16px;
+    height: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.team-email:hover svg {
+    opacity: 1;
+}
+
 /* ================= TEAM INFO ================= */
 .team-info {
     flex: 1;
@@ -660,6 +713,11 @@ body {
     .team-info p {
         text-align: center;
     }
+    
+    .team-email {
+        font-size: 0.95rem;
+        padding: 7px 14px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -685,8 +743,37 @@ body {
         font-size: 1.3rem;
     }
     
+    .team-image .role {
+        font-size: 0.9rem;
+    }
+    
     .team-info p {
         font-size: 1rem;
+    }
+    
+    .team-email {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .team-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .team-card img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .team-image h3 {
+        font-size: 1.2rem;
+    }
+    
+    .team-email {
+        font-size: 0.85rem;
+        padding: 5px 10px;
     }
 }
 
@@ -702,6 +789,11 @@ body {
     }
 }
 
+/* Staggered animation for cards */
+.team-card:nth-child(1).visible { transition-delay: 0.1s; }
+.team-card:nth-child(2).visible { transition-delay: 0.2s; }
+.team-card:nth-child(3).visible { transition-delay: 0.3s; }
+.team-card:nth-child(4).visible { transition-delay: 0.4s; }
 
 
 
@@ -712,35 +804,42 @@ body {
 /* team section style sheet */
 /* ================= VARIABLES ================= */
 :root {
-    --primary: #000000;
+    --primary: #0f0f0f;
     --secondary: #e63946;
-    --dark: #0a0a0a;
-    --light: #ffffff;
+    --light: #f1faee;
+    --dark: #1d3557;
     --radius: 12px;
-    --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
-    --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.25);
-    --transition: all 0.4s ease;
+    --transition: all 0.3s ease;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
-    font-family: "Inter", "Segoe UI", Arial, sans-serif;
-    background-color: var(--dark);
-    color: var(--light);
+    background-color: #f8f9fa;
+    color: #333;
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
 }
+
 .staff-section {
-    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
     position: relative;
     overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .staff-section::before {
     content: '';
     position: absolute;
@@ -750,6 +849,7 @@ body {
     height: 1px;
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
 }
+
 .staff-section h2 {
     font-size: 2.8rem;
     font-weight: 800;
@@ -758,44 +858,58 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 .staff-section > p {
     font-size: 1.2rem;
     color: var(--light);
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
     opacity: 0.9;
 }
+
 .staff-container {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
 }
+
 .staff-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 25px;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
 .staff-row.visible {
     opacity: 1;
     transform: translateY(0);
 }
+
 .staff-member {
     text-align: center;
-    padding: 25px 20px;
+    padding: 25px 15px;
     background: rgba(255, 255, 255, 0.03);
     border-radius: var(--radius);
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 380px;
+    justify-content: space-between;
 }
+
 .staff-member::before {
     content: '';
     position: absolute;
@@ -807,21 +921,26 @@ body {
     transform: scaleX(0);
     transition: transform 0.4s ease;
 }
+
 .staff-member:hover {
     transform: translateY(-8px);
     background: rgba(255, 255, 255, 0.06);
     box-shadow: var(--shadow-lg);
 }
+
 .staff-member:hover::before {
     transform: scaleX(1);
 }
+
 .image-container {
     position: relative;
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     margin: 0 auto 20px;
     border-radius: 50%;
+    flex-shrink: 0;
 }
+
 .image-container .red-border {
     position: absolute;
     top: -4px;
@@ -832,6 +951,7 @@ body {
     border-radius: 50%;
     animation: pulse 2s infinite;
 }
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.4);
@@ -843,6 +963,7 @@ body {
         box-shadow: 0 0 0 0 rgba(230, 57, 70, 0);
     }
 }
+
 .staff-member img {
     width: 100%;
     height: 100%;
@@ -852,33 +973,79 @@ body {
     position: relative;
     z-index: 1;
     transition: var(--transition);
+    filter: grayscale(20%);
 }
+
 .staff-member:hover img {
     transform: scale(1.05);
+    filter: grayscale(0%);
 }
+
 .staff-member h3 {
     font-size: 1.1rem;
     font-weight: 600;
     margin: 15px 0 8px;
     color: var(--light);
     line-height: 1.4;
+    width: 100%;
 }
-.staff-member span {
-    font-weight: 500;
-    color: var(--secondary);
+
+.staff-member .position {
+    font-weight: 600;
+    color: #a8dadc;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.staff-member .department {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    width: 100%;
+}
+
+.staff-member .email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--light);
+    text-decoration: none;
     font-size: 0.9rem;
-    display: block;
-    line-height: 1.5;
+    padding: 8px 16px;
+    background: rgba(230, 57, 70, 0.2);
+    border-radius: 30px;
+    transition: var(--transition);
+    margin-top: auto;
+    width: auto;
 }
+
+.staff-member .email-link:hover {
+    background: rgba(230, 57, 70, 0.4);
+    transform: translateY(-2px);
+}
+
+.staff-member .email-link i {
+    font-size: 0.8rem;
+}
+
+/* Responsive styles */
 @media (max-width: 1200px) {
     .staff-row {
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
     }
+    
+    .staff-member {
+        min-height: 370px;
+    }
 }
+
 @media (max-width: 900px) {
     .staff-section {
-        padding: 80px 20px;
+        padding: 60px 20px;
     }
     
     .staff-section h2 {
@@ -891,31 +1058,42 @@ body {
     }
     
     .image-container {
-        width: 160px;
-        height: 160px;
+        width: 130px;
+        height: 130px;
+    }
+    
+    .staff-member {
+        min-height: 350px;
+        padding: 20px 15px;
     }
 }
+
 @media (max-width: 768px) {
     .staff-container {
-        gap: 40px;
+        gap: 30px;
     }
     
     .staff-section > p {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         font-size: 1.1rem;
     }
+    
+    .staff-member {
+        min-height: 340px;
+    }
 }
+
 @media (max-width: 600px) {
     .staff-row {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 25px;
         max-width: 400px;
         margin: 0 auto;
     }
     
     .image-container {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
     
     .staff-section h2 {
@@ -925,25 +1103,42 @@ body {
     .staff-section > p {
         font-size: 1rem;
     }
+    
+    .staff-member {
+        min-height: 320px;
+        padding: 20px 15px;
+    }
 }
+
 @media (max-width: 480px) {
     .staff-section {
-        padding: 60px 15px;
+        padding: 50px 15px;
     }
     
     .image-container {
-        width: 140px;
-        height: 140px;
+        width: 110px;
+        height: 110px;
     }
     
     .staff-member h3 {
         font-size: 1rem;
     }
     
-    .staff-member span {
-        font-size: 0.85rem;
+    .staff-member .position {
+        font-size: 0.9rem;
+    }
+    
+    .staff-member .department {
+        font-size: 0.8rem;
+    }
+    
+    .staff-member {
+        min-height: 300px;
+        padding: 18px 12px;
     }
 }
+
+/* Reduced motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
     .staff-row {
         transition: none;
