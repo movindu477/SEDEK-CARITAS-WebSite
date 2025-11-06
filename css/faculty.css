@@ -122,124 +122,98 @@ body {
 }
 
 
-
-
-
-
-
+/* ---------- VENUE SECTION ---------- */
 /* ---------- VENUE SECTION ---------- */
 .venue-section {
-  background: #ffffff;
-  padding: 60px 20px;
-  color: #fff;
+  background: #fafafa;
+  padding: 80px 20px;
+  color: #333;
+  font-family: "Inter", Arial, sans-serif;
 }
 
-.venue-wrapper {
-  max-width: 1200px;
-  margin: auto;
+.venue-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.venue-header {
   text-align: center;
+  margin-bottom: 60px;
 }
 
-/* ---------- Top Image ---------- */
-.venue-top-image {
-  width: 100%;
-  border-radius: 20px;
-  overflow: hidden;
-  margin-bottom: 40px;
-}
-
-.venue-top-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
-
-.venue-top-image img:hover {
-  transform: scale(1.05);
-}
-
-/* ---------- Header ---------- */
 .venue-header h2 {
   font-size: 2.6rem;
-  margin-bottom: 12px;
+  color: #ac0000;
   font-weight: 700;
-  color: #000;
+  margin-bottom: 10px;
 }
 
 .venue-header .tagline {
   font-size: 1.2rem;
-  color: #333;
-  max-width: 720px;
-  margin: 0 auto 40px;
+  color: #444;
   line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
-/* ---------- Intro ---------- */
-.venue-intro p {
-  font-size: 1.15rem;
-  background: linear-gradient(90deg, #d90429, #0b0708);
-  color: #fff;
-  display: inline-block;
-  padding: 14px 24px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-  margin-bottom: 50px;
-  font-weight: 500;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+/* ---------- Individual Venue Blocks ---------- */
+.venue-block {
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.venue-intro p:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+.venue-block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
-/* ---------- Content Row ---------- */
+.venue-title {
+  font-size: 1.8rem;
+  color: #ac0000;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.venue-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* ---------- Content Layout ---------- */
 .venue-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  align-items: start;
 }
 
-/* ---------- Venue Cards ---------- */
 .venue-card {
-  background: linear-gradient(135deg, #d90429, #0b0708);
-  border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  padding: 30px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.venue-card.animate {
-  opacity: 1;
-  transform: translateY(0);
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 25px 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .venue-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
 }
 
-/* ---------- Titles ---------- */
-.details-card h3,
-.amenities-card h3 {
-  color: #fff;
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
+.venue-card h4 {
+  color: #ac0000;
+  font-size: 1.3rem;
   font-weight: 600;
-  display: inline-block;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  padding-bottom: 4px;
+  border-bottom: 2px solid #f2dede;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
 }
 
 /* ---------- Feature List ---------- */
@@ -251,27 +225,27 @@ body {
 
 .feature-list li {
   position: relative;
-  padding-left: 32px;
-  margin-bottom: 14px;
-  font-size: 1rem;
-  color: #f9f9f9;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  color: #444;
   font-weight: 500;
-  line-height: 1.65;
-  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .feature-list li::before {
-  content: "✔";
+  content: "✓";
   position: absolute;
   left: 0;
   top: 0;
-  color: #00ff88;
+  color: #00b894;
   font-weight: bold;
 }
 
-.feature-list li:hover {
-  transform: translateX(4px);
-  color: #ffffff;
+/* ---------- Note ---------- */
+.note {
+  margin-top: 10px;
+  font-style: italic;
+  color: #777;
+  font-size: 0.95rem;
 }
 
 /* ---------- Responsive ---------- */
@@ -280,17 +254,8 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .venue-card {
-    text-align: center;
-  }
-
-  .details-card h3,
-  .amenities-card h3 {
-    text-align: center;
-  }
-
-  .feature-list li {
-    text-align: left;
+  .venue-block {
+    padding: 40px 25px;
   }
 }
 
@@ -301,11 +266,144 @@ body {
 
   .venue-header .tagline {
     font-size: 1rem;
-    margin-bottom: 30px;
   }
 
-  .venue-intro p {
-    font-size: 1rem;
-    padding: 12px 20px;
+  .venue-card {
+    padding: 20px;
+  }
+
+  .venue-title {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* OTHER SECTION CODE Why Choose Caritas Sri Lanka? - Caritas Sri Lanka – Booking Terms & Conditions */
+/* Caritas Info Section */
+.caritas-info {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background: #f9fafc;
+}
+
+.info-card {
+  background: #ffffff;
+  padding: 50px 60px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  max-width: 850px;
+  width: 100%;
+  color: #2d3748;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+}
+
+/* Headings */
+.info-card h1 {
+  font-size: 2rem;
+  color: #ac0000;
+  text-align: center;
+  margin: 30px 0 10px;
+  font-weight: 800;
+}
+
+.info-card h4 {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #2d3748;
+  font-weight: 700;
+  border-left: 5px solid #ac0000;
+  padding-left: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.highlight-text {
+  background: #fff4f4;
+  padding: 15px 20px;
+  border-left: 4px solid #ac0000;
+  border-radius: 8px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+/* Lists */
+.info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-card li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.info-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00b894;
+  font-weight: bold;
+}
+
+/* Stay Section */
+.stay-section {
+  margin-top: 20px;
+  background: #f8f9fa;
+  padding: 20px 25px;
+  border-radius: 12px;
+  border-left: 4px solid #ac0000;
+}
+
+.why-stay {
+  text-align: center;
+  margin: 30px 0;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Terms Section */
+.terms {
+  background: #fff8f8;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid #f7564a;
+  margin-top: 30px;
+}
+
+.terms h4 {
+  color: #ac0000;
+  margin-bottom: 15px;
+}
+
+.terms li {
+  color: #666;
+  padding-left: 25px;
+}
+
+@media (max-width: 768px) {
+  .info-card {
+    padding: 30px 25px;
+  }
+
+  .info-card h1 {
+    font-size: 1.6rem;
+  }
+
+  .info-card h4 {
+    font-size: 1.2rem;
   }
 }

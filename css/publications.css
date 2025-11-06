@@ -1,0 +1,584 @@
+/* ---------- BODY & GLOBAL ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #fff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  position: relative;
+  height: 620px; /* slightly reduced for better first-fold */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px; /* ✅ lift section slightly upwards */
+}
+
+.hero img.mainimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+  transition: transform 0.8s ease, filter 0.8s ease;
+  will-change: transform;
+}
+
+.hero:hover img.mainimg {
+  transform: scale(1.03);
+  filter: brightness(0.75);
+}
+
+.hero-text {
+  position: absolute;
+  top: 48%; /* ✅ slightly higher position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transform: translate(-50%, -40%) translateY(40px);
+  animation: heroFadeIn 1.2s ease forwards;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.7); /* ✅ clean shadow for readability */
+}
+
+.hero-text h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Animation ---------- */
+@keyframes heroFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%) translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) translateY(0);
+  }
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .hero {
+    height: 500px;
+    margin-top: -20px;
+  }
+
+  .hero-text {
+    top: 45%;
+    padding: 0 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text h4 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .hero {
+    height: 600px;
+    margin-top: -49px;
+  }
+
+  .hero-text {
+    max-width: 90%;
+    top: 42%;
+    padding: 0 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .hero-text h4 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+
+/* ===== MODERN ARCHIVES SECTION ===== */
+.archives-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.archives-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(185, 28, 28, 0.08) 0%, transparent 50%);
+  animation: pulseBackground 8s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes pulseBackground {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.archives-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 50px;
+  background: linear-gradient(135deg, #ffffff 0%, #fecaca 50%, #dc2626 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+/* Grid container for years */
+.archives-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Year Container */
+.year-container {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  cursor: pointer;
+  min-height: 70px;
+  background: transparent;
+  backdrop-filter: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Stagger animation for year containers */
+.year-container:nth-child(1) { animation-delay: 0.1s; }
+.year-container:nth-child(2) { animation-delay: 0.15s; }
+.year-container:nth-child(3) { animation-delay: 0.2s; }
+.year-container:nth-child(4) { animation-delay: 0.25s; }
+.year-container:nth-child(5) { animation-delay: 0.3s; }
+.year-container:nth-child(6) { animation-delay: 0.35s; }
+.year-container:nth-child(7) { animation-delay: 0.4s; }
+.year-container:nth-child(8) { animation-delay: 0.45s; }
+.year-container:nth-child(9) { animation-delay: 0.5s; }
+.year-container:nth-child(10) { animation-delay: 0.55s; }
+.year-container:nth-child(11) { animation-delay: 0.6s; }
+.year-container:nth-child(12) { animation-delay: 0.65s; }
+
+/* Open state styling */
+.year-container.open {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 15px 35px rgba(220, 38, 38, 0.15),
+    0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect for closed containers */
+.year-container:not(.open):hover {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-color: rgba(220, 38, 38, 0.3);
+  box-shadow: 
+    0 10px 25px rgba(220, 38, 38, 0.1),
+    0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Shimmer effect */
+.year-container:not(.open)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg, 
+    transparent 0%, 
+    rgba(220, 38, 38, 0.1) 50%, 
+    transparent 100%
+  );
+  transform: skewX(-25deg);
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+
+.year-container:not(.open):hover::before {
+  left: 125%;
+  opacity: 1;
+}
+
+/* Enhanced hover for open containers */
+.year-container.open:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 20px 40px rgba(220, 38, 38, 0.2),
+    0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Year Header */
+.year-header {
+  padding: 22px 30px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+  user-select: none;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.year-container.open .year-header {
+  background: rgba(220, 38, 38, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Arrow indicator */
+.year-header::after {
+  content: '▼';
+  position: absolute;
+  right: 25px;
+  transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.year-container.open .year-header::after {
+  transform: rotate(180deg);
+  color: #dc2626;
+}
+
+/* Months List */
+.months-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.year-container.open .months-list {
+  max-height: 600px;
+}
+
+.months-list li {
+  padding: 16px 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  color: #e5e7eb;
+  opacity: 0;
+  transform: translateY(-15px);
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.months-list li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(220, 38, 38, 0.08) 50%,
+    transparent 100%
+  );
+  transform: skewX(-25deg);
+  transition: all 0.6s ease;
+}
+
+.months-list li:hover::before {
+  left: 100%;
+}
+
+/* Click feedback for month items */
+.months-list li:active {
+  transform: translateY(0) scale(0.98);
+  background: rgba(220, 38, 38, 0.1);
+  transition: all 0.1s ease;
+}
+
+.year-container.open .months-list li {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* Stagger animation for month items */
+.year-container.open .months-list li:nth-child(1) { transition-delay: 0.05s; }
+.year-container.open .months-list li:nth-child(2) { transition-delay: 0.08s; }
+.year-container.open .months-list li:nth-child(3) { transition-delay: 0.11s; }
+.year-container.open .months-list li:nth-child(4) { transition-delay: 0.14s; }
+.year-container.open .months-list li:nth-child(5) { transition-delay: 0.17s; }
+.year-container.open .months-list li:nth-child(6) { transition-delay: 0.2s; }
+.year-container.open .months-list li:nth-child(7) { transition-delay: 0.23s; }
+.year-container.open .months-list li:nth-child(8) { transition-delay: 0.26s; }
+.year-container.open .months-list li:nth-child(9) { transition-delay: 0.29s; }
+.year-container.open .months-list li:nth-child(10) { transition-delay: 0.32s; }
+.year-container.open .months-list li:nth-child(11) { transition-delay: 0.35s; }
+.year-container.open .months-list li:nth-child(12) { transition-delay: 0.38s; }
+
+.months-list li:hover {
+  background: rgba(255, 255, 255, 0.05);
+  padding-left: 35px;
+  color: #ffffff;
+  border-left: 3px solid #dc2626;
+}
+
+/* Navigation loading state */
+.months-list li.navigating {
+  pointer-events: none;
+  background: rgba(220, 38, 38, 0.15);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.months-list li.navigating::after {
+  content: '...';
+  position: absolute;
+  right: 30px;
+  animation: loadingDots 1.5s infinite;
+  color: #dc2626;
+}
+
+/* Smooth close animation */
+.year-container:not(.open) .months-list li {
+  transition: all 0.2s ease !important;
+  opacity: 0;
+  transform: translateY(-15px);
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loadingDots {
+  0%, 20% { content: '.'; }
+  40% { content: '..'; }
+  60%, 100% { content: '...'; }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .archives-section {
+    padding: 60px 20px;
+  }
+  
+  .archives-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .archives-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .year-header {
+    padding: 20px 25px;
+    font-size: 1.3rem;
+  }
+  
+  .months-list li {
+    padding: 14px 25px;
+  }
+  
+  .months-list li:hover {
+    padding-left: 30px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  .archives-section {
+    padding: 50px 15px;
+  }
+  
+  .archives-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .archives-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .year-container {
+    min-height: 65px;
+  }
+  
+  .year-header {
+    padding: 18px 20px;
+    font-size: 1.2rem;
+  }
+  
+  .year-header::after {
+    right: 20px;
+  }
+  
+  .months-list li {
+    padding: 14px 20px;
+    font-size: 0.95rem;
+  }
+  
+  .months-list li:hover {
+    padding-left: 25px;
+  }
+}
+
+/* Small Mobile Phones */
+@media (max-width: 480px) {
+  .archives-section {
+    padding: 40px 12px;
+  }
+  
+  .archives-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+  
+  .year-header {
+    padding: 16px 18px;
+    font-size: 1.1rem;
+  }
+  
+  .months-list li {
+    padding: 12px 18px;
+    font-size: 0.9rem;
+  }
+  
+  .months-list li:hover {
+    padding-left: 22px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .archives-section {
+    padding: 30px 10px;
+  }
+  
+  .archives-title {
+    font-size: 1.6rem;
+  }
+  
+  .year-header {
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+  
+  .months-list li {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .year-container:not(.open):hover {
+    transform: none;
+  }
+  
+  .year-container:not(.open):active {
+    transform: scale(0.98);
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .months-list li:hover {
+    padding-left: 30px;
+    background: rgba(255, 255, 255, 0.03);
+  }
+  
+  .months-list li:active {
+    background: rgba(220, 38, 38, 0.15);
+    transform: scale(0.98);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .year-container,
+  .months-list li,
+  .year-header::after,
+  .archives-section::before {
+    transition: none;
+    animation: none;
+  }
+  
+  .year-container {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .months-list li {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .year-container.open .months-list {
+    max-height: none;
+  }
+}

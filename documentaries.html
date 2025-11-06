@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="css/documentaries.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js" defer></script>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <!-- Top section -->
+      <div class="topsection">
+        <div class="item">
+          <img src="images/phone-call.png" alt="Call Icon" />
+          <p>0094 11 2691885</p>
+        </div>
+        <div class="item">
+          <img src="images/mail.png" alt="Email Icon" />
+          <p>sedec@caritaslk.org</p>
+        </div>
+        <div class="language-selector">
+          <button class="lang">සිං</button>
+          <!-- Sinhala -->
+          <button class="lang">த</button>
+          <!-- Tamil -->
+          <button class="lang active">EN</button>
+          <!-- English (active by default) -->
+        </div>
+      </div>
+
+      <!-- Down section -->
+      <div class="downsection">
+        <div class="logos">
+          <img src="images/logo2.png" alt="Logo" width="40" />
+          <img src="images/logo3.png" alt="Logo" width="120" />
+        </div>
+
+        <!-- Mobile menu button -->
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Open Menu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- Main Nav -->
+        <ul id="navMenu" role="menubar">
+          <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+            ✕
+          </button>
+
+          <li><a href="index.html">Home</a></li>
+
+          <!-- Who We Are Dropdown -->
+          <li class="dropdown">
+            <a
+              href="aboutus.html"
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Who We Are</a
+            >
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="policies.html">Our Policies</a></li>
+              <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+              <li><a href="ourhistory.html">Our History</a></li>
+              <li><a href="org.html">Org Structure</a></li>
+              <li><a href="faculty.html">Facilities &amp; Services</a></li>
+            </ul>
+          </li>
+
+          <!-- What We Do Dropdown -->
+          <li class="dropdown">
+            <a
+              href="whatwedo.html"
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              What We Do
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+              <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li>
+                <a href="whatwedo.html#guiding-prin">Guiding Principles</a>
+              </li>
+              <li>
+                <a href="socialdoctrine.html">Social Doctrine of the Church</a>
+              </li>
+              <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+              <li>
+                <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+              </li>
+              <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+              <li><a href="strplan.html">Stratergic Plan</a></li>
+            </ul>
+          </li>
+
+          <!-- News Dropdown -->
+          <li class="dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >News</a
+            >
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="AR.html">Annual Reports</a></li>
+              <li><a href="documentaries.html">Documentaries</a></li>
+              <li><a href="publications.html">Publications</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact.html">Contact Us</a></li>
+          <li class="highlight"><a href="donate.html">DONATE</a></li>
+        </ul>
+      </div>
+    </div>
+  </head>
+  <body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <img src="images/donate.jpg" alt="Hero Image" class="mainimg" />
+      <div class="hero-text">
+        <h1>NewsLetters</h1>
+      </div>
+    </section>
+
+    <!-- ===== Newsletters ===== -->
+    <section class="archives-section">
+      <h2 class="archives-title">NewsLetters</h2>
+
+      <div class="archives-container">
+        <!-- 2025 -->
+        <div class="year-container">
+          <div class="year-header" onclick="toggleYear(this)">2025</div>
+
+          <ul class="months-list">
+            <li onclick="window.open('pdf/NL JUNE 2025.PDF', '_blank')">
+              June 2025
+            </li>
+            <li onclick="window.open('pdf/NL MAY 2025.pdf', '_blank')">
+              May 2025
+            </li>
+            <li onclick="window.open('pdf/NL APRIL 2025.pdf', '_blank')">
+              April 2025
+            </li>
+            <li onclick="window.open('pdf/NL March 2025.pdf', '_blank')">
+              March 2025
+            </li>
+            <li onclick="window.open('pdf/NL FEB 2025.pdf', '_blank')">
+              February 2025
+            </li>
+            <li onclick="window.open('pdf/NL Jan 2025.pdf', '_blank')">
+              January 2025
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2024 -->
+        <div class="year-container">
+          <div class="year-header" onclick="toggleYear(this)">2024</div>
+
+          <ul class="months-list">
+            <li
+              onclick="window.open('pdf/CSL NEWLETTER - April to March 2024.pdf', '_blank')"
+            >
+              April - March 2024
+            </li>
+            <li
+              onclick="window.open('pdf/CSL Newsletter - May to August 2024.pdf', '_blank')"
+            >
+              May - August 2024
+            </li>
+            <li
+              onclick="window.open('pdf/Newsletter - Sept to Dec. 2024.pdf', '_blank')"
+            >
+              September - December 2024
+            </li>
+            <li
+              onclick="window.open('pdf/Newsletter (Jan - Apr 2024).pdf', '_blank')"
+            >
+              January - April 2024
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2022 -->
+        <div class="year-container">
+          <div class="year-header" onclick="toggleYear(this)">2022</div>
+
+          <ul class="months-list">
+            <li
+              onclick="window.open('pdf/Newsletter jan - mar 2022.pdf', '_blank')"
+            >
+              January - March 2022
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2021 -->
+        <div class="year-container">
+          <div class="year-header" onclick="toggleYear(this)">2021</div>
+
+          <ul class="months-list">
+            <li
+              onclick="window.open('pdf/Newsletter jan- june 2021.pdf', '_blank')"
+            >
+              January - June 2021
+            </li>
+            <li
+              onclick="window.open('pdf/Newsletter july - dec 2021.pdf', '_blank')"
+            >
+              July - December 2021
+            </li>
+          </ul>
+        </div>
+        <!-- Add more years similarly -->
+      </div>
+    </section>
+
+    <script>
+      function toggleYear(element) {
+        const yearContainer = element.parentElement;
+        const isOpen = yearContainer.classList.contains("open");
+
+        // Close all other open years
+        document
+          .querySelectorAll(".year-container.open")
+          .forEach((container) => {
+            if (container !== yearContainer) {
+              container.classList.remove("open");
+            }
+          });
+
+        // Toggle current year
+        yearContainer.classList.toggle("open");
+
+        // Add smooth scrolling for better UX
+        if (!isOpen) {
+          setTimeout(() => {
+            yearContainer.scrollIntoView({
+              behavior: "smooth",
+              block: "nearest",
+            });
+          }, 300);
+        }
+      }
+
+      // Add click event for month items to handle navigation with loading state
+      document.addEventListener("DOMContentLoaded", function () {
+        const monthItems = document.querySelectorAll(".months-list li");
+
+        monthItems.forEach((item) => {
+          item.addEventListener("click", function (e) {
+            const href = this.getAttribute("onclick");
+            if (href && href.includes("window.location.href")) {
+              // Extract URL from onclick attribute
+              const url = href.match(/'([^']+)'/)[1];
+
+              // Add loading state
+              this.classList.add("navigating");
+
+              // Navigate after a short delay for visual feedback
+              setTimeout(() => {
+                window.location.href = url;
+              }, 300);
+
+              e.preventDefault();
+            }
+          });
+        });
+
+        // Auto-open the current year (2025)
+        const currentYear = document.querySelector(
+          ".year-container:first-child"
+        );
+        if (currentYear) {
+          setTimeout(() => {
+            currentYear.classList.add("open");
+          }, 1000);
+        }
+      });
+    </script>
+  </body>
+</html>

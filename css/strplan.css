@@ -301,7 +301,7 @@ h1{font-size:20px;margin-bottom:12px;text-align:center}
 
 
 table{width:100%;border-collapse:collapse;table-layout:fixed}
-thead{background:linear-gradient(90deg,var(--accent),#1e88e5);color:#fff}
+thead{background:linear-gradient(90deg,var(--accent),#ee7676);color:#fff}
 thead th{padding:18px 16px;text-align:center;font-weight:700;font-size:15px}
 
 
@@ -348,7 +348,7 @@ table {
 }
 
 th {
-  background-color: #1565c0; /* blue header */
+  background-color: #ee7676; /* blue header */
   color: white; /* white text */
   text-align: center;
   padding: 12px;
