@@ -724,6 +724,58 @@ body {
 
 
 
+/* ---------- WELCOME SECTION ---------- */
+.welcome-section {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 80px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container {
+  max-width: 900px;
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.welcome-container h2 {
+  font-size: 2rem;
+  color: #004b23; /* Deep green tone for Caritas identity */
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.welcome-container p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 40px 25px;
+  }
+
+  .welcome-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .welcome-container p {
+    font-size: 1rem;
+  }
+}
 
 
 
