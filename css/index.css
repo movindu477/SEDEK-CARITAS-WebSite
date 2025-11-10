@@ -750,7 +750,7 @@ body {
 
 .welcome-container h2 {
   font-size: 2rem;
-  color: #004b23; /* Deep green tone for Caritas identity */
+  color: #000000; /* Deep green tone for Caritas identity */
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.3;

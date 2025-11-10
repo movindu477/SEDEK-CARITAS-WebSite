@@ -142,22 +142,34 @@
           <div class="year-header" onclick="toggleYear(this)">2025</div>
 
           <ul class="months-list">
-            <li onclick="window.open('pdf/NL JUNE 2025.PDF', '_blank')">
+            <li
+              onclick="downloadPDF('pdf/NL JUNE 2025.PDF', 'Newsletter June 2025')"
+            >
               June 2025
             </li>
-            <li onclick="window.open('pdf/NL MAY 2025.pdf', '_blank')">
+            <li
+              onclick="downloadPDF('pdf/NL MAY 2025.pdf', 'Newsletter May 2025')"
+            >
               May 2025
             </li>
-            <li onclick="window.open('pdf/NL APRIL 2025.pdf', '_blank')">
+            <li
+              onclick="downloadPDF('pdf/NL APRIL 2025.pdf', 'Newsletter April 2025')"
+            >
               April 2025
             </li>
-            <li onclick="window.open('pdf/NL March 2025.pdf', '_blank')">
+            <li
+              onclick="downloadPDF('pdf/NL March 2025.pdf', 'Newsletter March 2025')"
+            >
               March 2025
             </li>
-            <li onclick="window.open('pdf/NL FEB 2025.pdf', '_blank')">
+            <li
+              onclick="downloadPDF('pdf/NL FEB 2025.pdf', 'Newsletter February 2025')"
+            >
               February 2025
             </li>
-            <li onclick="window.open('pdf/NL Jan 2025.pdf', '_blank')">
+            <li
+              onclick="downloadPDF('pdf/NL Jan 2025.pdf', 'Newsletter January 2025')"
+            >
               January 2025
             </li>
           </ul>
@@ -169,22 +181,22 @@
 
           <ul class="months-list">
             <li
-              onclick="window.open('pdf/CSL NEWLETTER - April to March 2024.pdf', '_blank')"
+              onclick="downloadPDF('pdf/CSL NEWLETTER - April to March 2024.pdf', 'Newsletter April to March 2024')"
             >
               April - March 2024
             </li>
             <li
-              onclick="window.open('pdf/CSL Newsletter - May to August 2024.pdf', '_blank')"
+              onclick="downloadPDF('pdf/CSL Newsletter - May to August 2024.pdf', 'Newsletter May to August 2024')"
             >
               May - August 2024
             </li>
             <li
-              onclick="window.open('pdf/Newsletter - Sept to Dec. 2024.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Newsletter - Sept to Dec. 2024.pdf', 'Newsletter September to December 2024')"
             >
               September - December 2024
             </li>
             <li
-              onclick="window.open('pdf/Newsletter (Jan - Apr 2024).pdf', '_blank')"
+              onclick="downloadPDF('pdf/Newsletter (Jan - Apr 2024).pdf', 'Newsletter January to April 2024')"
             >
               January - April 2024
             </li>
@@ -197,7 +209,7 @@
 
           <ul class="months-list">
             <li
-              onclick="window.open('pdf/Newsletter jan - mar 2022.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Newsletter jan - mar 2022.pdf', 'Newsletter January to March 2022')"
             >
               January - March 2022
             </li>
@@ -210,12 +222,12 @@
 
           <ul class="months-list">
             <li
-              onclick="window.open('pdf/Newsletter jan- june 2021.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Newsletter jan- june 2021.pdf', 'Newsletter January to June 2021')"
             >
               January - June 2021
             </li>
             <li
-              onclick="window.open('pdf/Newsletter july - dec 2021.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Newsletter july - dec 2021.pdf', 'Newsletter July to December 2021')"
             >
               July - December 2021
             </li>
@@ -224,6 +236,17 @@
         <!-- Add more years similarly -->
       </div>
     </section>
+
+    <!-- Download Progress Notification -->
+    <div class="download-progress" id="downloadProgress">
+      <i class="fa-solid fa-download"></i>
+      <div>
+        <span id="downloadMessage">Downloading...</span>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </div>
 
     <script>
       function toggleYear(element) {
@@ -287,6 +310,66 @@
           }, 1000);
         }
       });
+
+      // Download PDF function
+      function downloadPDF(pdfPath, reportName) {
+        // Show download progress
+        const downloadProgress = document.getElementById("downloadProgress");
+        const downloadMessage = document.getElementById("downloadMessage");
+        const progressFill = document.getElementById("progressFill");
+
+        downloadMessage.textContent = `Downloading ${reportName}...`;
+        downloadProgress.classList.add("show");
+
+        // Simulate download progress
+        let progress = 0;
+        const interval = setInterval(() => {
+          progress += Math.random() * 10;
+          if (progress >= 100) {
+            progress = 100;
+            clearInterval(interval);
+
+            // Update message when download is complete
+            downloadMessage.textContent = `Downloaded ${reportName}!`;
+
+            // Hide progress after completion
+            setTimeout(() => {
+              downloadProgress.classList.remove("show");
+              // Reset progress bar
+              setTimeout(() => {
+                progressFill.style.width = "0%";
+              }, 300);
+            }, 1500);
+
+            // Trigger actual file download
+            triggerDownload(pdfPath, reportName);
+          }
+          progressFill.style.width = `${progress}%`;
+        }, 200);
+      }
+
+      // Function to trigger actual file download
+      function triggerDownload(pdfPath, fileName) {
+        // Create a temporary anchor element
+        const link = document.createElement("a");
+        link.href = pdfPath;
+        link.download = fileName + ".pdf";
+
+        // Append to the document
+        document.body.appendChild(link);
+
+        // Trigger the download
+        link.click();
+
+        // Clean up
+        document.body.removeChild(link);
+      }
+
+      // Alternative download method for browsers that block the above method
+      function alternativeDownload(pdfPath, fileName) {
+        // Open in new tab as fallback
+        window.open(pdfPath, "_blank");
+      }
     </script>
 
     <!-- Minimized Chatbot Button -->

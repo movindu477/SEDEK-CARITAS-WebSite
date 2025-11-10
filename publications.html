@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Publicatiions</title>
-    <link rel="stylesheet" href="css/AR.css" />
+    <title>Publications</title>
+    <link rel="stylesheet" href="css/publications.css" />
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <!-- NAVBAR -->
     <div class="navbar">
@@ -123,6 +127,7 @@
       </div>
     </div>
   </head>
+
   <body>
     <!-- HERO SECTION -->
     <section class="hero">
@@ -134,114 +139,136 @@
 
     <!-- ===== Publications ===== -->
     <section class="archives-section">
+      <h1 class="archives-title">Publications</h1>
       <div class="archives-container">
-        <!-- 2025 -->
+        <!-- Publications Container -->
         <div class="year-container">
           <div class="year-header" onclick="toggleYear(this)">Publications</div>
 
           <ul class="months-list">
-            <li onclick="window.open('pdf/Tsunami Book - WEB.pdf', '_blank')">
+            <li
+              onclick="downloadPDF('pdf/Tsunami Book - WEB.pdf', 'Tsunami Book - WEB')"
+            >
               Tsunami Book - WEB
             </li>
             <li
-              onclick="window.open('pdf/Religious Amity Training Module Tamil.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Religious Amity Training Module Tamil.pdf', 'Religious Amity Training Module Tamil')"
             >
               Religious Amity Training Module Tamil
             </li>
             <li
-              onclick="window.open('pdf/Rights to Education - Plantation Research Book (English).pdf', '_blank')"
+              onclick="downloadPDF('pdf/Rights to Education - Plantation Research Book (English).pdf', 'Rights to Education - Plantation Research Book (English)')"
             >
               Rights to Education - Plantation Research Book (English)
             </li>
-            <li onclick="window.open('pdf/SMU BOOKLET - final.pdf', '_blank')">
+            <li
+              onclick="downloadPDF('pdf/SMU BOOKLET - final.pdf', 'SMU BOOKLET - final')"
+            >
               SMU BOOKLET - final
             </li>
-            <li onclick="window.open('pdf/Peace Book.pdf', '_blank')">
+            <li onclick="downloadPDF('pdf/Peace Book.pdf', 'Peace Book')">
               Peace Book
             </li>
             <li
-              onclick="window.open('pdf/Religious Amity Training Module - Sinhala.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Religious Amity Training Module - Sinhala.pdf', 'Religious Amity Training Module - Sinhala')"
             >
               Religious Amity Training Module - Sinhala
             </li>
             <li
-              onclick="window.open('pdf/Food Security booklet - 2017.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Food Security booklet - 2017.pdf', 'Food Security booklet - 2017')"
             >
               Food Security booklet - 2017
             </li>
             <li
-              onclick="window.open('pdf/Culture and Identity-Caritas SEDEC.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Culture and Identity-Caritas SEDEC.pdf', 'Culture and Identity-Caritas SEDEC')"
             >
               Culture and Identity-Caritas SEDEC
             </li>
-            <li onclick="window.open('pdf/CSL HISTORY BOOK.pdf', '_blank')">
+            <li
+              onclick="downloadPDF('pdf/CSL HISTORY BOOK.pdf', 'CSL HISTORY BOOK')"
+            >
               CSL HISTORY BOOK
             </li>
             <li
-              onclick="window.open('pdf/After the Storm - Book (WEB).pdf', '_blank')"
+              onclick="downloadPDF('pdf/After the Storm - Book (WEB).pdf', 'After the Storm - Book (WEB)')"
             >
               After the Storm - Book (WEB)
             </li>
             <li
-              onclick="window.open('pdf/Country Profile - WEB.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Country Profile - WEB.pdf', 'Country Profile - WEB')"
             >
               Country Profile - WEB
             </li>
-            <li onclick="window.open('pdf/SWM Leaflet-back.pdf', '_blank')">
+            <li
+              onclick="downloadPDF('pdf/SWM Leaflet-back.pdf', 'SWM Leaflet-back')"
+            >
               SWM Leaflet-back
             </li>
-            <li onclick="window.open('pdf/SWM Leaflet-Front.pdf', '_blank')">
+            <li
+              onclick="downloadPDF('pdf/SWM Leaflet-Front.pdf', 'SWM Leaflet-Front')"
+            >
               SWM Leaflet-Front
             </li>
             <li
-              onclick="window.open('pdf/Research Book on Plantation - Tamil.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Research Book on Plantation - Tamil.pdf', 'Research Book on Plantation - Tamil')"
             >
               Research Book on Plantation - Tamil
             </li>
             <li
-              onclick="window.open('pdf/Research Book on Plantation - Sinhala.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Research Book on Plantation - Sinhala.pdf', 'Research Book on Plantation - Sinhala')"
             >
               Research Book on Plantation - Sinhala
             </li>
             <li
-              onclick="window.open('pdf/Annual Report 2013-2014.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Annual Report 2013-2014.pdf', 'Annual Report 2013-2014')"
             >
               Annual Report 2013-2014
             </li>
             <li
-              onclick="window.open('pdf/CSL STRATEGIC PLAN 2018-20.pdf', '_blank')"
+              onclick="downloadPDF('pdf/CSL STRATEGIC PLAN 2018-20.pdf', 'CSL STRATEGIC PLAN 2018-20')"
             >
               CSL STRATEGIC PLAN 2018-20
             </li>
             <li
-              onclick="window.open('pdf/Migration Booklet - SINHALA.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Migration Booklet - SINHALA.pdf', 'Migration Booklet - SINHALA')"
             >
-              Food Security booklet - 2017
+              Migration Booklet - SINHALA
             </li>
             <li
-              onclick="window.open('pdf/Migration Booklet - TAMIL.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Migration Booklet - TAMIL.pdf', 'Migration Booklet - TAMIL')"
             >
               Migration Booklet - TAMIL
             </li>
             <li
-              onclick="window.open('pdf/Migration english LEAFLET.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Migration english LEAFLET pdf.pdf', 'Migration English LEAFLET')"
             >
               Migration English LEAFLET
             </li>
             <li
-              onclick="window.open('pdf/Migration SINHALA Leaflet - DC.pdf', '_blank')"
+              onclick="downloadPDF('pdf/Migration SINHALA Leaflet - DC.pdf', 'Migration SINHALA Leaflet - DC')"
             >
               Migration SINHALA Leaflet - DC
             </li>
             <li
-              onclick="window.open('pdf/MIgration tamil LEAFLET.pdf', '_blank')"
+              onclick="downloadPDF('pdf/MIgration tamil LEAFLET pdf.pdf', 'Migration Tamil LEAFLET')"
             >
-              MIgration tamil LEAFLET
+              Migration Tamil LEAFLET
             </li>
           </ul>
         </div>
       </div>
     </section>
+
+    <!-- Download Progress Notification -->
+    <div class="download-progress" id="downloadProgress">
+      <i class="fa-solid fa-download"></i>
+      <div>
+        <span id="downloadMessage">Downloading...</span>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </div>
 
     <script>
       function toggleYear(element) {
@@ -305,6 +332,66 @@
           }, 1000);
         }
       });
+
+      // Download PDF function
+      function downloadPDF(pdfPath, reportName) {
+        // Show download progress
+        const downloadProgress = document.getElementById("downloadProgress");
+        const downloadMessage = document.getElementById("downloadMessage");
+        const progressFill = document.getElementById("progressFill");
+
+        downloadMessage.textContent = `Downloading ${reportName}...`;
+        downloadProgress.classList.add("show");
+
+        // Simulate download progress
+        let progress = 0;
+        const interval = setInterval(() => {
+          progress += Math.random() * 10;
+          if (progress >= 100) {
+            progress = 100;
+            clearInterval(interval);
+
+            // Update message when download is complete
+            downloadMessage.textContent = `Downloaded ${reportName}!`;
+
+            // Hide progress after completion
+            setTimeout(() => {
+              downloadProgress.classList.remove("show");
+              // Reset progress bar
+              setTimeout(() => {
+                progressFill.style.width = "0%";
+              }, 300);
+            }, 1500);
+
+            // Trigger actual file download
+            triggerDownload(pdfPath, reportName);
+          }
+          progressFill.style.width = `${progress}%`;
+        }, 200);
+      }
+
+      // Function to trigger actual file download
+      function triggerDownload(pdfPath, fileName) {
+        // Create a temporary anchor element
+        const link = document.createElement("a");
+        link.href = pdfPath;
+        link.download = fileName + ".pdf";
+
+        // Append to the document
+        document.body.appendChild(link);
+
+        // Trigger the download
+        link.click();
+
+        // Clean up
+        document.body.removeChild(link);
+      }
+
+      // Alternative download method for browsers that block the above method
+      function alternativeDownload(pdfPath, fileName) {
+        // Open in new tab as fallback
+        window.open(pdfPath, "_blank");
+      }
     </script>
   </body>
 

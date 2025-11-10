@@ -1158,7 +1158,7 @@ function showInfo(item) {
     <hr>
     <div class="info-footer" style="text-align: justify;">
       <span class="info-category">${entry.category}</span>
-      <a href="${entry.readMoreLink}" class="read-more-btn">READ MORE</a>
+      
     </div>
   `;
   infoBox.appendChild(container);

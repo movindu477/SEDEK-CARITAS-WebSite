@@ -400,6 +400,55 @@ body {
   transform: translateY(-15px);
 }
 
+/* Download Progress Animation */
+.download-progress {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+  border-radius: 16px;
+  padding: 16px 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transform: translateX(150%);
+  transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #1a1a1a;
+  font-weight: 600;
+  max-width: 350px;
+}
+
+.download-progress.show {
+  transform: translateX(0);
+}
+
+.download-progress i {
+  color: #dc2626;
+  font-size: 1.3rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(220, 38, 38, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #dc2626, #b91c1c);
+  width: 0%;
+  transition: width 0.4s ease;
+  border-radius: 2px;
+}
+
 /* Animation Keyframes */
 @keyframes fadeInUp {
   from {
@@ -448,6 +497,12 @@ body {
   .months-list li:hover {
     padding-left: 30px;
   }
+  
+  .download-progress {
+    top: 15px;
+    right: 15px;
+    max-width: 320px;
+  }
 }
 
 /* Mobile Phones */
@@ -487,6 +542,18 @@ body {
   .months-list li:hover {
     padding-left: 25px;
   }
+  
+  .download-progress {
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    max-width: none;
+    transform: translateY(-150%);
+  }
+  
+  .download-progress.show {
+    transform: translateY(0);
+  }
 }
 
 /* Small Mobile Phones */
@@ -512,6 +579,10 @@ body {
   
   .months-list li:hover {
     padding-left: 22px;
+  }
+  
+  .download-progress {
+    padding: 14px 16px;
   }
 }
 
@@ -563,7 +634,8 @@ body {
   .year-container,
   .months-list li,
   .year-header::after,
-  .archives-section::before {
+  .archives-section::before,
+  .download-progress {
     transition: none;
     animation: none;
   }

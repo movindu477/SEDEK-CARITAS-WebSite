@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="css/strplan.css" />
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/index.js" defer></script>
-    <!-- Favicon -->
+    <!-- Favicon 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />-->
   </head>
 
   <!-- NAVBAR -->
@@ -1805,13 +1805,13 @@
         >
 
         <div
-          class="table-wrap"
+          class="data-container"
           role="region"
           aria-label="Community challenges table"
         >
-          <div class="lead"></div>
-          <table>
-            <thead>
+          <div class="table-intro"></div>
+          <table class="data-table">
+            <thead class="data-header">
               <tr>
                 <th scope="col">Region</th>
                 <th scope="col">District/Area</th>
@@ -1821,38 +1821,33 @@
                 <th scope="col">Living Standards</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="data-body">
               <tr>
                 <td>
                   <ul>
-                    <li>Western Region</li>
+                    <li class="region-name">Western Region</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Colombo</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
-                    <li>0.80</li>
+                    <li class="hdi-high">0.80</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Good facilities, low mortality</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>High tertiary access, strong ICT</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>High income, secure housing</li>
@@ -1862,38 +1857,29 @@
             </tbody>
 
             <!-- SECOND ROW -->
-            <tbody>
+            <tbody class="data-body">
               <tr>
-                <td>
-                  <ul>
-                    <li></li>
-                  </ul>
-                </td>
-
+                <td class="empty-cell">-</td>
                 <td>
                   <ul>
                     <li>Kurunegala</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
-                    <li>~0.688</li>
+                    <li class="hdi-medium">~0.688</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Malnutrition, under-resourced hospitals</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>School dropouts, weak vocational training</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Seasonal farming, low incomes</li>
@@ -1903,38 +1889,29 @@
             </tbody>
 
             <!-- THIRD ROW -->
-            <tbody>
+            <tbody class="data-body">
               <tr>
-                <td>
-                  <ul>
-                    <li></li>
-                  </ul>
-                </td>
-
+                <td class="empty-cell">-</td>
                 <td>
                   <ul>
                     <li>Anuradhapura</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
-                    <li>~0.669</li>
+                    <li class="hdi-medium">~0.669</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>CKDu prevalence, poor maternal health</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Low secondary education</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Informal economy, land tenure issues</li>
@@ -1944,38 +1921,29 @@
             </tbody>
 
             <!-- FOURTH ROW -->
-            <tbody>
+            <tbody class="data-body">
               <tr>
-                <td>
-                  <ul>
-                    <li></li>
-                  </ul>
-                </td>
-
+                <td class="empty-cell">-</td>
                 <td>
                   <ul>
                     <li>Chilaw</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
-                    <li>~0.667</li>
+                    <li class="hdi-medium">~0.667</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Inadequate health access, coastal diseases</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Poor digital access, low school retention</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Fishing-agriculture economy, indebtedness</li>
@@ -1985,38 +1953,33 @@
             </tbody>
 
             <!-- FIFTH ROW -->
-            <tbody>
+            <tbody class="data-body">
               <tr>
                 <td>
                   <ul>
-                    <li>Plantation Region</li>
+                    <li class="region-name">Plantation Region</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Nuwara Eliya, Badulla, Kandy, Matale, Ratnapura</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
-                    <li><0.70</li>
+                    <li class="hdi-low"><0.70</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Chronic illness, malnutrition, poor maternal care</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>High dropouts, poor ICT & vocational training</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Line housing, daily wages, landlessness, debt</li>
@@ -2026,38 +1989,33 @@
             </tbody>
 
             <!-- SIXTH ROW -->
-            <tbody>
+            <tbody class="data-body">
               <tr>
                 <td>
                   <ul>
-                    <li>North & East Region</li>
+                    <li class="region-name">North & East Region</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Jaffna</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
-                    <li>~Mid 0.70s</li>
+                    <li class="hdi-medium">~Mid 0.70s</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Moderate access, better than other northern areas</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Higher infrastructure, but rural gaps persist</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Relatively better income and services</li>
@@ -2067,38 +2025,29 @@
             </tbody>
 
             <!-- SEVENTH ROW -->
-            <tbody>
+            <tbody class="data-body">
               <tr>
-                <td>
-                  <ul>
-                    <li></li>
-                  </ul>
-                </td>
-
+                <td class="empty-cell">-</td>
                 <td>
                   <ul>
                     <li>Mannar</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
-                    <li><0.72</li>
+                    <li class="hdi-low"><0.72</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>High poverty, limited health services</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Low retention, education inequality</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Agriculture/fishing-based, land disputes</li>
@@ -2107,39 +2056,30 @@
               </tr>
             </tbody>
 
-            <!-- EIGTH ROW -->
-            <tbody>
+            <!-- EIGHTH ROW -->
+            <tbody class="data-body">
               <tr>
-                <td>
-                  <ul>
-                    <li></li>
-                  </ul>
-                </td>
-
+                <td class="empty-cell">-</td>
                 <td>
                   <ul>
                     <li>Kilinochchi & Mullaitivu</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
-                    <li>< 0.72</li>
+                    <li class="hdi-low">< 0.72</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>High malnutrition, poor access to secondary care</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Early dropouts, trauma-affected youth</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Fragile economy, high poverty, mine-affected lands</li>
@@ -2149,38 +2089,29 @@
             </tbody>
 
             <!-- NINTH ROW -->
-            <tbody>
+            <tbody class="data-body">
               <tr>
-                <td>
-                  <ul>
-                    <li></li>
-                  </ul>
-                </td>
-
+                <td class="empty-cell">-</td>
                 <td>
                   <ul>
                     <li>Batticaloa & Trincomalee</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
-                    <li>~0.72</li>
+                    <li class="hdi-medium">~0.72</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Health gaps in rural/conflict-affected areas</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>Segregated schools, low access in remote areas</li>
                   </ul>
                 </td>
-
                 <td>
                   <ul>
                     <li>
@@ -2828,6 +2759,2496 @@
           Promote civic engagement to reduce unsafe migration and increase local
           opportunity.
         </p>
+
+        <h4>THEMATIC AREA, STRATEGIC GOAL AND ACTIONS</h4>
+        <p class="caritas-text">
+          A clear thematic focus is essential for Caritas Sri Lanka to ensure
+          strategic clarity, measurable impact, and efficient resource
+          allocation in addressing complex social challenges. The seven thematic
+          areas collectively identified with multistakeholder participation
+          reflect CSL’s commitment to holistic, rights-based development
+          grounded in faith and justice. This focus allows CSL to operate with
+          conflict sensitivity, uphold the Do No Harm principle, and promote
+          inclusive, community-led solutions, ensuring its interventions are
+          both contextually relevant and transformative across diverse and
+          vulnerable populations.
+          <br /><br />
+          <b>1.Thematic Area : Human Development and Social Inclusion</b>
+          <br /><br />
+          <b>Overall Strategic Goal:</b>
+          <br /><br />
+          Promote holistic development through inclusive education, sustainable
+          livelihoods, and equitable health services, empowering marginalized
+          communities for resilience, dignity, and social inclusion.
+          <br /><br />
+          1.1. Thematic Area: Quality Education
+          <br /><br />
+          Strategic Goal:
+          <br /><br />
+          Ensure inclusive, equitable education and reduce dropouts by enhancing
+          access, quality, life skills, and digital tools for vulnerable
+          communities.
+        </p>
+
+        <h4>Strategic Actions:</h4>
+        <ol style="text-align: justify; margin-left: 20px">
+          <li>
+            Promote school enrollment and retention through scholarships,
+            mid-day meals, and community engagement, especially for marginalized
+            and rural children.
+          </li>
+          <br /><br />
+          <li>
+            Improve educational infrastructure, teaching resources, and ICT
+            tools to support digital learning and reduce rural-urban educational
+            disparities.
+          </li>
+          <br /><br />
+          <li>
+            Train teachers in modern pedagogy, inclusive education, and
+            emotional wellbeing to ensure child-friendly learning environments.
+          </li>
+          <br /><br />
+          <li>
+            Provide vocational education and life skills for out-of-school youth
+            to enhance employability and reduce dependency.
+          </li>
+          <br /><br />
+          <li>
+            Organize civic education and leadership training to promote
+            responsible citizenship and peacebuilding among youth.
+          </li>
+          <br /><br />
+          <li>
+            Conduct awareness programs for parents on responsible parenting,
+            child rights, and importance of continuing education.
+          </li>
+          <br /><br />
+        </ol>
+
+        <p class="caritas-text">
+          1.2. Thematic Area: Livelihood & Economic Empowerment
+          <br /><br />
+          Strategic Goal:
+          <br /><br />
+          Empower vulnerable communities economically by promoting
+          entrepreneurship, skills training, financial access, and inclusive
+          market linkages for sustainable development.
+        </p>
+
+        <h4>Strategic Actions:</h4>
+        <ol style="text-align: justify; margin-left: 20px">
+          <li>
+            Offer vocational training and certification for youth, women, and
+            persons with disabilities to build market-relevant skills.
+          </li>
+          <br /><br />
+          <li>
+            Promote community-based savings groups, cooperatives, and financial
+            literacy to improve resilience and access to capital.
+          </li>
+          <br /><br />
+          <li>
+            Facilitate microfinance and seed funding to support startups, MSMEs,
+            and home-based enterprises.
+          </li>
+          <br /><br />
+          <li>
+            Link local producers to markets, encouraging value-added production,
+            branding, and business development services.
+          </li>
+          <br /><br />
+          <li>
+            Advocate for gender-inclusive economic policies and equal access to
+            resources for women and marginalized groups.
+          </li>
+          <br /><br />
+          <li>
+            Introduce eco-friendly livelihood models like organic farming,
+            aquaculture, and green enterprises that align with climate goals.
+          </li>
+        </ol>
+
+        <p class="caritas-text">
+          1.3. Thematic Area: Health & Nutrition
+          <br /><br />
+          Strategic Goal:
+          <br /><br />
+          Improve holistic wellbeing through inclusive healthcare, nutrition
+          security, clean water access, and community resilience to disease and
+          trauma.
+        </p>
+
+        <h4>Strategic Actions:</h4>
+        <ol style="text-align: justify; margin-left: 20px">
+          <li>
+            Strengthen rural and estate healthcare systems with mobile clinics,
+            maternal care, and essential health services.
+          </li>
+          <br /><br />
+          <li>
+            Promote nutrition-sensitive agriculture and dietary diversity to
+            address malnutrition, especially in children and pregnant women.
+          </li>
+          <br /><br />
+          <li>
+            Increase WASH access through safe drinking water, latrine
+            construction, and hygiene promotion in schools and households.
+          </li>
+          <br /><br />
+          <li>
+            Offer psychosocial support for trauma-affected individuals, focusing
+            on war survivors, children, and caregivers.
+          </li>
+          <br /><br />
+          <li>
+            Organize mental health awareness and early detection programs in
+            schools, communities, and among returnees.
+          </li>
+          <br /><br />
+          <li>
+            Campaign for policy reform to ensure affordable, quality healthcare
+            in underserved and conflict-affected areas.
+          </li>
+        </ol>
+
+        <p class="caritas-text">
+          2. Thematic Area: Environmental Protection & Climate Change Adaptation
+          <br /><br />
+          Strategic Goal:
+          <br /><br />
+          Enhance community resilience and environmental sustainability by
+          promoting climate-smart practices, biodiversity conservation, and
+          disaster preparedness.
+        </p>
+
+        <h4>Strategic Actions:</h4>
+        <ol style="text-align: justify; margin-left: 20px">
+          <li>
+            Support reforestation, agroforestry, and protection of native
+            biodiversity to combat deforestation and land degradation.
+          </li>
+          <br /><br />
+          <li>
+            Promote climate-smart agriculture, organic farming, and reduced
+            chemical use to enhance ecological and food resilience.
+          </li>
+          <br /><br />
+          <li>
+            Improve solid waste management and promote circular economy
+            practices to reduce pollution and protect public health.
+          </li>
+          <br /><br />
+          <li>
+            Raise community awareness on environmental conservation, climate
+            risks, and the need for sustainable lifestyles.
+          </li>
+          <br /><br />
+          <li>
+            Build household and community capacity to adopt renewable energy
+            solutions and energy-efficient technologies.
+          </li>
+          <br /><br />
+          <li>
+            Collaborate with local governments to enforce environmental
+            regulations and prevent illegal resource exploitation.
+          </li>
+        </ol>
+
+        <p class="caritas-text">
+          3. Thematic Area: Disaster Risk Reduction & Anticipatory Action
+          <br /><br />
+          Strategic Goal:
+          <br /><br />
+          Strengthen community preparedness and adaptive capacity through risk
+          reduction planning, early warning systems, and coordinated emergency
+          response mechanisms.
+        </p>
+
+        <h4>Strategic Actions:</h4>
+        <ol style="text-align: justify; margin-left: 20px">
+          <li>
+            Develop localized early warning systems and communication networks
+            to ensure timely alerts during disasters.
+          </li>
+          <br />
+          <li>
+            Train communities in disaster preparedness, first aid, and safe
+            evacuation protocols through simulations and drills.
+          </li>
+          <br />
+          <li>
+            Establish and maintain community emergency supply hubs with
+            essentials for flood, drought, and cyclone response.
+          </li>
+          <br />
+          <li>
+            Create local disaster response teams and equip them with tools for
+            effective and immediate action.
+          </li>
+          <br />
+          <li>
+            Develop and institutionalize anticipatory action plans using risk
+            mapping and seasonal forecasts.
+          </li>
+          <br />
+          <li>
+            Secure emergency relief funds and advocate for post-disaster
+            recovery frameworks prioritizing vulnerable groups.
+          </li>
+        </ol>
+
+        <p class="caritas-text">
+          4. Thematic Area: Peacebuilding, Justice & Social Cohesion
+          <br /><br />
+          Strategic Goal:
+          <br /><br />
+          Build a just and peaceful society by addressing conflict legacies,
+          promoting inclusive dialogue, and protecting human rights for all.
+        </p>
+
+        <h4>Strategic Actions:</h4>
+        <ol style="text-align: justify; margin-left: 20px">
+          <li>
+            Facilitate community peace dialogues, targeting inter-religious and
+            inter-ethnic understanding and trust-building.
+          </li>
+          <br />
+          <li>
+            Provide legal aid and human rights education to empower citizens,
+            especially victims of war and violence.
+          </li>
+          <br />
+          <li>
+            Promote civic engagement and train youth and women in participatory
+            governance and leadership.
+          </li>
+          <br />
+          <li>
+            Support trauma healing and reintegration programs for war-affected
+            individuals, detainees, and survivors of violence.
+          </li>
+          <br />
+          <li>
+            Launch national campaigns to raise awareness on peace, justice, and
+            reconciliation across schools and communities.
+          </li>
+          <br />
+          <li>
+            Advocate for inclusive policies addressing land issues, minority
+            rights, and transitional justice mechanisms.
+          </li>
+        </ol>
+
+        <p class="caritas-text">
+          5. Thematic Area: Safe Migration & Reintegration
+          <br /><br />
+          Strategic Goal:
+          <br /><br />
+          Promote safe, informed migration and reintegration through education,
+          legal protection, and economic empowerment for returnees and their
+          families.
+        </p>
+
+        <h4>Strategic Actions:</h4>
+        <ol style="text-align: justify; margin-left: 20px">
+          <li>
+            Conduct awareness campaigns on safe migration pathways, legal
+            rights, and risks for potential migrants and families.
+          </li>
+          <br />
+          <li>
+            Provide pre-departure training on financial literacy, contract
+            awareness, and cultural adaptation.
+          </li>
+          <br />
+          <li>
+            Establish reintegration programs offering job training, psychosocial
+            support, and income generation for returnees.
+          </li>
+          <br />
+          <li>
+            Build networks of legal aid providers and community counselors to
+            assist with rights violations and abuse cases.
+          </li>
+          <br />
+          <li>
+            Advocate for stronger national migration policies and regional
+            cooperation for labor rights and protection.
+          </li>
+          <br />
+          <li>
+            Empower women and youth through skills training and
+            entrepreneurship, reducing migration pressure from economic
+            hardship.
+          </li>
+        </ol>
+
+        <b
+          >In addition to Caritas Sri Lanka's thematic interventions, the
+          crosscutting and mainstreaming areas include:</b
+        >
+        <ul style="text-align: justify; margin-left: 20px">
+          <li>Permanent Shelter</li>
+          <br />
+          <li>Health, Water & Sanitation</li>
+          <br />
+          <li>Youth Development</li>
+          <br />
+          <li>Gender Equality and Women’s Empowerment</li>
+          <br />
+          <li>Capacity Building & Institutional Strengthening</li>
+          <br />
+          <li>Community Participation & Social Inclusion</li>
+          <br />
+          <li>Human Rights & Protection</li>
+          <br />
+          <li>Good Governance & Accountability</li>
+          <br />
+          <li>Environmental Sustainability</li>
+          <br />
+          <li>Do No Harm & Conflict Sensitivity</li>
+        </ul>
+
+        <h1 style="text-align: center">Thematic Narration</h1>
+
+        <p class="caritas-text">
+          <strong
+            >Quality Education – Building Foundations for Dignity and
+            Inclusion</strong
+          ><br /><br />
+          In Sri Lanka’s war-affected Northern and Eastern provinces, education
+          remains a vital pillar for rebuilding communities and breaking cycles
+          of poverty. Decades of conflict severely disrupted schooling, leaving
+          many children out of school due to destroyed infrastructure, teacher
+          shortages, economic hardship, and psychosocial trauma. These factors
+          are worsened by parental migration and poverty, especially affecting
+          girls and children from vulnerable families. Without access to quality
+          education, these children face limited opportunities and risk falling
+          into exploitative situations. Additionally, inadequate transportation
+          and language barriers further isolate remote communities, hindering
+          equitable access.<br /><br />
+          CSL promotes comprehensive education programs that support school
+          rehabilitation, teacher training, psychosocial care, and the
+          integration of life skills, peace education, and leadership
+          development. By emphasizing value-based education, CSL nurtures moral
+          and civic responsibility among youth, preparing them as future leaders
+          in their communities.<br /><br />
+          This approach helps children grow not only academically but also as
+          responsible citizens capable of contributing to peace and development.
+          Through these efforts, CSL aims to break poverty cycles and create
+          inclusive communities where children have equal chances to succeed,
+          fostering long-term social transformation and community resilience.<br /><br />
+
+          <strong
+            >Livelihood & Economic Empowerment – Restoring Dignity and
+            Resilience</strong
+          ><br /><br />
+          Post-war economic recovery in Sri Lanka’s North and East remains
+          fragile, with many communities facing limited livelihood options and
+          persistent poverty. Displacement, fractured markets, and social
+          exclusion have left war widows, returnees, youth, and women especially
+          vulnerable. Access to capital, vocational training, and sustainable
+          income-generating opportunities is scarce, trapping many in cycles of
+          dependency. Climate change and environmental degradation also threaten
+          traditional agriculture and fisheries, compounding economic
+          vulnerabilities.<br /><br />
+          CSL’s livelihood programs address these challenges by providing
+          vocational training aligned with market demands, microfinance support,
+          cooperative enterprise development, and climate-smart agricultural
+          practices. These interventions enable marginalized groups to build
+          sustainable livelihoods, reduce economic vulnerability, and strengthen
+          social cohesion. By fostering entrepreneurship and cooperative models,
+          CSL helps communities create collective economic strength, enhancing
+          bargaining power and resilience.<br /><br />
+          By fostering self-reliance and community empowerment, CSL helps
+          restore hope and economic dignity. Their inclusive approach builds
+          resilient economies that can withstand shocks, supporting broader
+          peace and development goals. Ultimately, economic empowerment
+          strengthens families’ ability to meet basic needs and invest in the
+          future.
+
+          <strong>Health & Nutrition – Promoting Holistic Wellbeing</strong
+          ><br /><br />
+          Health challenges in Sri Lanka’s conflict-affected and impoverished
+          regions remain acute. High rates of malnutrition, chronic diseases,
+          mental health issues, and poor access to clean water and sanitation
+          threaten vulnerable populations. The war’s legacy, combined with
+          poverty and environmental stressors, contributes to physical and
+          psychosocial distress, especially among women, children, and
+          returnees. Malnutrition affects child development and increases
+          susceptibility to illness, while mental health remains largely
+          unaddressed due to stigma and limited services.<br /><br />
+          CSL’s health outreach prioritizes holistic care encompassing medical
+          services, nutrition-sensitive interventions, WASH improvements, and
+          trauma-informed psychosocial support. Mobile clinics, health
+          education, and community-based counseling help address immediate needs
+          while promoting long-term wellbeing. Nutrition-sensitive agriculture
+          and home gardening initiatives improve food security and dietary
+          diversity in vulnerable households.<br /><br />
+          By tackling physical health alongside mental and emotional care, CSL
+          strengthens community resilience and human flourishing. Improved
+          health outcomes and increased awareness empower communities to
+          overcome vulnerabilities and build a foundation for sustainable
+          development and dignity.<br /><br />
+
+          <strong
+            >Environmental Protection & Climate Resilience – Sustaining
+            Livelihoods and Ecosystems</strong
+          ><br /><br />
+          Sri Lanka faces escalating environmental challenges including climate
+          change impacts, deforestation, and pollution. These issues
+          disproportionately affect poor rural and estate communities dependent
+          on natural resources. Crop failures, water scarcity, and environmental
+          degradation threaten food security and livelihoods, deepening poverty.
+          Unsustainable land use and poor waste management exacerbate ecosystem
+          decline, with long-term consequences for biodiversity and human
+          health.<br /><br />
+          CSL works with local communities to promote environmental stewardship
+          through reforestation, organic farming, renewable energy use, waste
+          reduction, and climate adaptation training. These initiatives restore
+          ecosystems while supporting eco-friendly income generation and
+          resilience. Emphasizing local knowledge and participatory approaches,
+          CSL fosters a sense of ownership and responsibility for sustainable
+          natural resource management.<br /><br />
+          By empowering communities to manage natural resources sustainably, CSL
+          helps safeguard livelihoods and enhances climate preparedness. This
+          integrated approach fosters a healthier environment and more secure
+          futures, especially for marginalized populations vulnerable to
+          ecological shocks.<br /><br />
+
+          <strong
+            >Disaster Risk Reduction & Anticipatory Action – Building Community
+            Resilience</strong
+          ><br /><br />
+          Sri Lanka’s vulnerability to natural disasters—floods, droughts,
+          landslides, and pandemics—exposes poor communities to recurrent shocks
+          that disrupt livelihoods and deepen poverty. Inadequate infrastructure
+          and limited emergency preparedness exacerbate the risks faced by
+          rural, estate, and coastal populations. The growing frequency and
+          severity of disasters linked to climate change highlight the urgency
+          of proactive resilience-building.<br /><br />
+          CSL prioritizes disaster risk reduction by establishing community
+          disaster management committees, early warning systems, preparedness
+          planning, and sustainable natural resource management. These proactive
+          measures enhance community capacity to respond to emergencies with
+          strength and dignity. Training local leaders and promoting inclusive
+          participation ensure that vulnerable groups, including women and
+          children, are actively involved in risk reduction.<br /><br />
+          Shifting from reactive aid to anticipatory action, CSL’s approach
+          reduces disaster losses and accelerates recovery. Strengthening local
+          leadership and resilience ensures that vulnerable families are better
+          protected and can maintain stability amid crises.<br /><br />
+
+          <strong
+            >Peacebuilding, Justice & Social Cohesion – Healing and Inclusive
+            Development</strong
+          ><br /><br />
+          Despite the end of Sri Lanka’s civil war in 2009, social wounds
+          persist, particularly in the North and East. Ethnic tensions, land
+          disputes, lack of accountability, and exclusion from governance hinder
+          reconciliation and development. Marginalized groups—including women,
+          youth, and minorities—face barriers to justice and participation,
+          while issues like domestic violence and political radicalization
+          threaten social stability.<br /><br />
+          CSL’s peacebuilding work fosters dialogue, trauma-informed
+          psychosocial support, legal empowerment, and civic engagement to
+          promote nonviolence and social cohesion. By facilitating inter-ethnic
+          and interreligious communication and empowering local leaders, CSL
+          helps communities heal and rebuild trust. Initiatives include peace
+          education in schools and support for victim advocacy groups.<br /><br />
+          These efforts contribute to more inclusive governance and stronger
+          justice systems, enabling marginalized groups to actively participate
+          in shaping their futures. The goal is a reconciled society where
+          diversity is respected and peace is sustained, laying the foundation
+          for lasting development.
+
+          <strong>Health & Nutrition – Promoting Holistic Wellbeing</strong
+          ><br /><br />
+          Health challenges in Sri Lanka’s conflict-affected and impoverished
+          regions remain acute. High rates of malnutrition, chronic diseases,
+          mental health issues, and poor access to clean water and sanitation
+          threaten vulnerable populations. The war’s legacy, combined with
+          poverty and environmental stressors, contributes to physical and
+          psychosocial distress, especially among women, children, and
+          returnees. Malnutrition affects child development and increases
+          susceptibility to illness, while mental health remains largely
+          unaddressed due to stigma and limited services.<br /><br />
+          CSL’s health outreach prioritizes holistic care encompassing medical
+          services, nutrition-sensitive interventions, WASH improvements, and
+          trauma-informed psychosocial support. Mobile clinics, health
+          education, and community-based counseling help address immediate needs
+          while promoting long-term wellbeing. Nutrition-sensitive agriculture
+          and home gardening initiatives improve food security and dietary
+          diversity in vulnerable households.<br /><br />
+          By tackling physical health alongside mental and emotional care, CSL
+          strengthens community resilience and human flourishing. Improved
+          health outcomes and increased awareness empower communities to
+          overcome vulnerabilities and build a foundation for sustainable
+          development and dignity.<br /><br />
+
+          <strong
+            >Environmental Protection & Climate Resilience – Sustaining
+            Livelihoods and Ecosystems</strong
+          ><br /><br />
+          Sri Lanka faces escalating environmental challenges including climate
+          change impacts, deforestation, and pollution. These issues
+          disproportionately affect poor rural and estate communities dependent
+          on natural resources. Crop failures, water scarcity, and environmental
+          degradation threaten food security and livelihoods, deepening poverty.
+          Unsustainable land use and poor waste management exacerbate ecosystem
+          decline, with long-term consequences for biodiversity and human
+          health.<br /><br />
+          CSL works with local communities to promote environmental stewardship
+          through reforestation, organic farming, renewable energy use, waste
+          reduction, and climate adaptation training. These initiatives restore
+          ecosystems while supporting eco-friendly income generation and
+          resilience. Emphasizing local knowledge and participatory approaches,
+          CSL fosters a sense of ownership and responsibility for sustainable
+          natural resource management.<br /><br />
+          By empowering communities to manage natural resources sustainably, CSL
+          helps safeguard livelihoods and enhances climate preparedness. This
+          integrated approach fosters a healthier environment and more secure
+          futures, especially for marginalized populations vulnerable to
+          ecological shocks.<br /><br />
+
+          <strong
+            >Disaster Risk Reduction & Anticipatory Action – Building Community
+            Resilience</strong
+          ><br /><br />
+          Sri Lanka’s vulnerability to natural disasters—floods, droughts,
+          landslides, and pandemics—exposes poor communities to recurrent shocks
+          that disrupt livelihoods and deepen poverty. Inadequate infrastructure
+          and limited emergency preparedness exacerbate the risks faced by
+          rural, estate, and coastal populations. The growing frequency and
+          severity of disasters linked to climate change highlight the urgency
+          of proactive resilience-building.<br /><br />
+          CSL prioritizes disaster risk reduction by establishing community
+          disaster management committees, early warning systems, preparedness
+          planning, and sustainable natural resource management. These proactive
+          measures enhance community capacity to respond to emergencies with
+          strength and dignity. Training local leaders and promoting inclusive
+          participation ensure that vulnerable groups, including women and
+          children, are actively involved in risk reduction.<br /><br />
+          Shifting from reactive aid to anticipatory action, CSL’s approach
+          reduces disaster losses and accelerates recovery. Strengthening local
+          leadership and resilience ensures that vulnerable families are better
+          protected and can maintain stability amid crises.<br /><br />
+
+          <strong
+            >Peacebuilding, Justice & Social Cohesion – Healing and Inclusive
+            Development</strong
+          ><br /><br />
+          Despite the end of Sri Lanka’s civil war in 2009, social wounds
+          persist, particularly in the North and East. Ethnic tensions, land
+          disputes, lack of accountability, and exclusion from governance hinder
+          reconciliation and development. Marginalized groups—including women,
+          youth, and minorities—face barriers to justice and participation,
+          while issues like domestic violence and political radicalization
+          threaten social stability.<br /><br />
+          CSL’s peacebuilding work fosters dialogue, trauma-informed
+          psychosocial support, legal empowerment, and civic engagement to
+          promote nonviolence and social cohesion. By facilitating inter-ethnic
+          and interreligious communication and empowering local leaders, CSL
+          helps communities heal and rebuild trust. Initiatives include peace
+          education in schools and support for victim advocacy groups.<br /><br />
+          These efforts contribute to more inclusive governance and stronger
+          justice systems, enabling marginalized groups to actively participate
+          in shaping their futures. The goal is a reconciled society where
+          diversity is respected and peace is sustained, laying the foundation
+          for lasting development.<br /><br />
+
+          <strong
+            >Safe Migration & Reintegration – Protecting Migrants and
+            Strengthening Families</strong
+          ><br /><br />
+          Migration for work is a significant socio-economic factor in Sri
+          Lanka, yet many migrants—especially women—face unsafe conditions,
+          exploitation, and family separation. Returnees often encounter stigma,
+          trauma, and economic hardship without adequate reintegration support.
+          Children left behind face emotional and educational challenges.<br /><br />
+          CSL’s programs address these challenges by providing pre-departure
+          education, legal awareness, and community-based support to promote
+          safe migration practices. They also assist returnees with livelihood
+          training, psychosocial counseling, and access to social protection
+          services. Advocacy efforts focus on improving legal frameworks and
+          ethical recruitment practices.<br /><br />
+          By raising awareness, advocating for migrant rights, and supporting
+          sustainable reintegration, CSL reduces vulnerabilities associated with
+          migration. This holistic approach helps families maintain unity,
+          rebuild economic stability, and enhances community resilience,
+          contributing to safer, more dignified migration experiences.<br /><br />
+
+          <strong>Conclusion</strong><br /><br />
+          Caritas Sri Lanka’s work across these thematic areas responds directly
+          to the multifaceted challenges faced by poor and marginalized
+          communities, especially in post-conflict and vulnerable regions. By
+          integrating education, livelihood, health, environment, disaster
+          preparedness, peacebuilding, and migration support, CSL promotes
+          holistic, sustainable development rooted in dignity and empowerment.
+          These interventions address immediate needs and systemic barriers,
+          fostering resilience, social inclusion, and hope. CSL’s comprehensive
+          approach advances its vision of integral human development and a just
+          society where all can flourish with dignity, security, and
+          opportunity.
+        </p>
+
+        <h4>Target Communities of Caritas Sri Lanka (CSL)</h4>
+        <ul style="text-align: justify; margin-left: 20px">
+          <li>Internally Displaced Persons (IDPs)</li>
+          <br />
+          <li>Women-Headed Households</li>
+          <br />
+          <li>War-Affected Communities</li>
+          <br />
+          <li>Migrant Workers and Families</li>
+          <br />
+          <li>Families Living in Poverty</li>
+          <br />
+          <li>Children from Vulnerable Backgrounds</li>
+          <br />
+          <li>Elderly Persons in Need</li>
+          <br />
+          <li>People with Disabilities</li>
+          <br />
+          <li>Chronically Ill Individuals and Their Families</li>
+          <br />
+          <li>Youth in Marginalized Areas</li>
+          <br />
+          <li>Ethnic and Religious Minorities</li>
+          <br />
+          <li>Disaster-Affected Communities</li>
+          <br />
+          <li>Psychologically Distressed Individuals</li>
+          <br />
+          <li>Women and Girls Facing Gender-Based Violence</li>
+          <br />
+          <li>Environmentally Affected Communities</li>
+          <br />
+          <li>Plantation Workers</li>
+          <br />
+          <li>Fishermen and Coastal Communities</li>
+        </ul>
+
+        <div
+          class="data-container"
+          role="region"
+          aria-label="Target communities and interventions table"
+        >
+          <div class="table-intro"></div>
+          <table class="data-table">
+            <thead class="data-header">
+              <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Specific Target Community</th>
+                <th scope="col">Special Focus / Intervention</th>
+              </tr>
+            </thead>
+            <tbody class="data-body">
+              <!-- Conflict-Affected -->
+              <tr>
+                <td rowspan="3"><strong>Conflict-Affected</strong></td>
+                <td>Internally Displaced Persons (IDPs)</td>
+                <td>
+                  Resettlement, housing, psychosocial support, livelihood
+                  restoration
+                </td>
+              </tr>
+              <tr>
+                <td>War-Affected Families and Communities</td>
+                <td>
+                  Trauma healing, reconciliation, peacebuilding, community
+                  rebuilding
+                </td>
+              </tr>
+              <tr>
+                <td>Ex-combatants and their families</td>
+                <td>
+                  Reintegration support, vocational training, psychosocial care
+                </td>
+              </tr>
+
+              <!-- Women & Gender -->
+              <tr>
+                <td rowspan="3"><strong>Women & Gender</strong></td>
+                <td>Women-Headed Households</td>
+                <td>
+                  Livelihood empowerment, leadership training, food and medical
+                  aid
+                </td>
+              </tr>
+              <tr>
+                <td>Women & Girls Facing Gender-Based Violence</td>
+                <td>
+                  Protection services, counseling, legal aid, community
+                  awareness
+                </td>
+              </tr>
+              <tr>
+                <td>Rural and Conflict-Affected Women</td>
+                <td>
+                  Economic empowerment (e.g., organic farming, market access)
+                </td>
+              </tr>
+
+              <!-- Children & Youth at risk -->
+              <tr>
+                <td rowspan="3"><strong>Children & Youth at risk</strong></td>
+                <td>Children from Poor or Displaced Families</td>
+                <td>
+                  Educational support, psychosocial care, nutrition programs
+                </td>
+              </tr>
+              <tr>
+                <td>School Dropouts and At-Risk Youth</td>
+                <td>
+                  Vocational training, awareness programs, youth leadership
+                  development
+                </td>
+              </tr>
+              <tr>
+                <td>Children Affected by Conflict or Migration</td>
+                <td>
+                  Trauma counseling, reintegration support, child protection
+                  activities
+                </td>
+              </tr>
+
+              <!-- Elderly & Differently Abled -->
+              <tr>
+                <td rowspan="2">
+                  <strong>Elderly & Differently Abled</strong>
+                </td>
+                <td>Elderly Persons Living in Poverty</td>
+                <td>
+                  Medical assistance, social inclusion, basic needs support
+                </td>
+              </tr>
+              <tr>
+                <td>Persons with Disabilities</td>
+                <td>
+                  Accessibility, inclusion in education and employment,
+                  community support
+                </td>
+              </tr>
+
+              <!-- Economic Vulnerability -->
+              <tr>
+                <td rowspan="6"><strong>Economic Vulnerability</strong></td>
+                <td>Fisher People / Coastal Communities</td>
+                <td>
+                  Livelihood support (fishing gear, boats), disaster resilience,
+                  alternative income options
+                </td>
+              </tr>
+              <tr>
+                <td>Plantation Workers / Estate Sector Families</td>
+                <td>
+                  Housing, health, sanitation, education access, labor rights
+                  advocacy
+                </td>
+              </tr>
+              <tr>
+                <td>Families Below the Poverty Line</td>
+                <td>
+                  Food aid, livelihood development, health and education
+                  assistance
+                </td>
+              </tr>
+              <tr>
+                <td>Families with Chronically Ill Members</td>
+                <td>
+                  Financial assistance for medicine, hospital visits, food
+                  support
+                </td>
+              </tr>
+              <tr>
+                <td>Large Families with Single Income</td>
+                <td>
+                  Food relief, education aid, sustainable income generation
+                </td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+
+              <!-- Migration-Affected -->
+              <tr>
+                <td rowspan="2"><strong>Migration-Affected</strong></td>
+                <td>Migrant Workers and Returnees</td>
+                <td>
+                  Reintegration support, family counseling, economic recovery
+                  assistance
+                </td>
+              </tr>
+              <tr>
+                <td>Families of Migrants (especially women-led)</td>
+                <td>
+                  Psycho-social support, livelihood aid, awareness of rights and
+                  services
+                </td>
+              </tr>
+
+              <!-- Disaster-Affected -->
+              <tr>
+                <td><strong>Disaster-Affected</strong></td>
+                <td>Flood/Landslide/Drought Victims</td>
+                <td>
+                  Emergency relief, shelter, WASH (Water, Sanitation, Hygiene),
+                  disaster preparedness training
+                </td>
+              </tr>
+
+              <!-- Psychosocial Needs -->
+              <tr>
+                <td rowspan="2"><strong>Psychosocial Needs</strong></td>
+                <td>Psychologically Distressed Individuals</td>
+                <td>
+                  Professional counseling, befriending programs, community
+                  mental health outreach
+                </td>
+              </tr>
+              <tr>
+                <td>Children Facing Emotional Trauma</td>
+                <td>
+                  Child-focused trauma support, safe spaces, parental education
+                </td>
+              </tr>
+
+              <!-- Ethnic/Religious Minorities -->
+              <tr>
+                <td rowspan="2">
+                  <strong>Ethnic/Religious Minorities</strong>
+                </td>
+                <td>Tamil, Muslim, and Other Minority Communities</td>
+                <td>
+                  Peacebuilding, interreligious dialogue, economic inclusion,
+                  protection from discrimination
+                </td>
+              </tr>
+              <tr>
+                <td>Youth & Peacebuilding</td>
+                <td>
+                  Dialogue forums, youth peace clubs, intercultural exchange
+                </td>
+              </tr>
+
+              <!-- Environmental Vulnerability -->
+              <tr>
+                <td rowspan="2">
+                  <strong>Environmental Vulnerability</strong>
+                </td>
+                <td>Communities Facing Environmental Degradation</td>
+                <td>
+                  Sustainable farming, environmental education, climate
+                  adaptation projects
+                </td>
+              </tr>
+              <tr>
+                <td>Farmers in Climate-Affected Zones</td>
+                <td>
+                  Organic farming training, ecological restoration, access to
+                  green markets
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div
+          class="data-container"
+          role="region"
+          aria-label="Target communities, descriptions, and major interventions"
+        >
+          <h3>Target Communities, Descriptions and Major Interventions</h3>
+          <table class="data-table">
+            <thead class="data-header">
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Type of Affected Community</th>
+                <th scope="col">Details</th>
+                <th scope="col">Major Interventions</th>
+              </tr>
+            </thead>
+            <tbody class="data-body">
+              <tr>
+                <td>1</td>
+                <td><strong>Internally Displaced Persons (IDPs)</strong></td>
+                <td>Displaced due to civil conflict or natural disasters.</td>
+                <td>
+                  Resettlement, housing, livelihood support, education
+                  assistance.
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><strong>Women-Headed Households</strong></td>
+                <td>
+                  Widows, single mothers, or women solely managing their
+                  families.
+                </td>
+                <td>
+                  Livelihood programs, women's empowerment, direct relief aid.
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><strong>War-Affected Communities</strong></td>
+                <td>
+                  Communities affected by Sri Lanka's civil war, mainly in
+                  Northern and Eastern provinces.
+                </td>
+                <td>
+                  Peacebuilding, psychosocial care, rehabilitation, economic
+                  assistance.
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><strong>Migrant Workers and Families</strong></td>
+                <td>
+                  Sri Lankan migrants working abroad through unregulated
+                  channels, facing exploitation, trafficking, abuse, or wage
+                  theft.
+                </td>
+                <td>
+                  Emergency aid, reintegration support, legal/advocacy services.
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><strong>Families Living in Poverty</strong></td>
+                <td>
+                  Poor families in urban, rural, and estate sectors facing
+                  economic challenges.
+                </td>
+                <td>
+                  Food aid, income generation programs, education and healthcare
+                  support.
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><strong>Children from Vulnerable Backgrounds</strong></td>
+                <td>
+                  Children affected by poverty, displacement, or conflict.
+                </td>
+                <td>
+                  Educational support, psychosocial care, child protection
+                  services.
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td><strong>Elderly Persons in Need</strong></td>
+                <td>
+                  Poor and neglected elderly without income or family support.
+                </td>
+                <td>
+                  Food packages, medical assistance, community-based elderly
+                  care.
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td><strong>People with Disabilities</strong></td>
+                <td>
+                  Individuals with physical or mental disabilities, often
+                  marginalized.
+                </td>
+                <td>
+                  Inclusive education, mobility aids, livelihood and community
+                  inclusion programs.
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>
+                  <strong>Chronically Ill Individuals and Families</strong>
+                </td>
+                <td>
+                  Families with members suffering from long-term illnesses like
+                  cancer, Thalassemia, or kidney disease.
+                </td>
+                <td>
+                  Financial aid for treatment, transport, nutritional and basic
+                  needs.
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td><strong>Psychologically Distressed Individuals</strong></td>
+                <td>
+                  Adults and children traumatized by conflict, displacement, or
+                  personal loss.
+                </td>
+                <td>
+                  Mental health services, trauma counseling, referral to
+                  specialized care.
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td><strong>Youth in Marginalized Areas</strong></td>
+                <td>
+                  Young people in post-conflict, rural, or underdeveloped
+                  regions.
+                </td>
+                <td>
+                  Skills development, peacebuilding, leadership and career
+                  guidance programs.
+                </td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td><strong>Ethnic and Religious Minorities</strong></td>
+                <td>
+                  Minority groups like Tamils, Muslims, etc., facing
+                  marginalization.
+                </td>
+                <td>
+                  Peace and inclusion programs, interfaith dialogue, livelihood
+                  support.
+                </td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td><strong>Disaster-Affected Communities</strong></td>
+                <td>
+                  Victims of natural disasters (floods, landslides, droughts)
+                  and human-made disasters.
+                </td>
+                <td>
+                  Immediate relief, shelter, livelihood restoration, disaster
+                  preparedness training.
+                </td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>
+                  <strong>Women and Girls Facing Gender-Based Violence</strong>
+                </td>
+                <td>
+                  Survivors of domestic violence, sexual abuse, or exploitation.
+                </td>
+                <td>
+                  Counseling, legal support, shelter, empowerment and awareness
+                  campaigns.
+                </td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td><strong>Environmentally Affected Communities</strong></td>
+                <td>
+                  Communities impacted by deforestation, pollution, or
+                  climate-related changes.
+                </td>
+                <td>
+                  Eco-friendly agriculture, reforestation, disaster risk
+                  reduction, climate adaptation initiatives.
+                </td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td><strong>Fishermen and Coastal Communities</strong></td>
+                <td>
+                  Communities dependent on fishing, vulnerable to climate change
+                  and natural disasters.
+                </td>
+                <td>
+                  Sustainable fishing programs, early warning systems,
+                  infrastructure recovery, alternative livelihoods.
+                </td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td><strong>Plantation Workers</strong></td>
+                <td>
+                  Laborers in tea, rubber, and other estates, often living in
+                  poor conditions.
+                </td>
+                <td>
+                  Housing, education, health care, rights awareness, livelihood
+                  diversification.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="caritas-text">
+          <strong
+            >Analysis of CSL’s Strategic Alignment with National Development
+            Plans</strong
+          ><br /><br />
+          Caritas Sri Lanka (CSL), as a responsible civil society actor, is not
+          a political entity nor a recipient of IMF funding. However, in its
+          strategic planning, CSL seeks coherence with national development
+          priorities to meaningfully contribute to the country’s recovery
+          process. This alignment does not imply obligation, but rather reflects
+          CSL’s commitment to promoting ethical, inclusive development. It also
+          strengthens the strategic plan’s relevance and provides a focused
+          framework for effective programming and coherent fundraising
+          support.<br /><br />
+          Sri Lanka’s IMF-led economic restructuring under the Extended Fund
+          Facility (EFF) represents a pivotal moment in its recovery from the
+          severe economic crisis. Centered on debt restructuring, fiscal
+          consolidation, governance reforms, and foreign currency stabilization,
+          the initiative seeks to restore macroeconomic stability and foster
+          sustainable growth. However, the reform process must be sensitive to
+          the needs of the country’s most vulnerable populations, ensuring that
+          economic recovery does not come at the cost of social justice and
+          equity.<br /><br />
+          In this transformative context, Caritas Sri Lanka (CSL), as a national
+          faith-based organization committed to integral human development, is
+          already aligned in its development strategies with the priorities of
+          the economic restructuring. With a long-standing grassroots presence,
+          thematic expertise, and a mission rooted in human dignity, CSL can
+          help ensure that the restructuring process translates into inclusive
+          and people-centered development. The strategic plan takes this into
+          consideration in order to strategize its future project planning which
+          take into consideration the national priorities.<br /><br />
+
+          <strong>Strategic Alignment with IMF Priorities</strong><br /><br />
+          CSL’s rights-based, community-driven strategic approach is directly in
+          coherence with the priorities of the IMF program which emphasizes
+          targeted social protection, transparent governance, and inclusive
+          development to cushion the social impact of economic reforms. Its role
+          is not only supportive but catalytic—amplifying state-led initiatives
+          and advocating for equitable resource allocation, particularly for
+          marginalized communities at risk of being left behind during fiscal
+          consolidation.<br /><br />
+
+          <strong>Responding to the Needs of Vulnerable Groups</strong
+          ><br /><br />
+          Caritas Sri Lanka’s programming reaches a wide spectrum of vulnerable
+          groups, including internally displaced persons, war-affected families,
+          women-headed households, persons with disabilities, migrant workers
+          and returnees, ethnic and religious minorities, and communities
+          affected by environmental degradation and poverty. These populations
+          are among those most exposed to the consequences of austerity
+          measures, making CSL’s interventions vital in buffering negative
+          impacts.
+        </p>
+
+        <p class="caritas-text">
+          <strong>CSL Thematic Focus and National Goals Coherence</strong
+          ><br /><br />
+
+          <strong>Promoting Quality Education:</strong> As public spending
+          tightens, access to quality education becomes more fragile especially
+          in rural, estate, and conflict-affected areas. CSL addresses this
+          through scholarships, supplementary learning programs, and
+          psychosocial support, ensuring continuity in education for children
+          from disadvantaged backgrounds and reinforcing the IMF’s call to
+          protect essential public services.<br /><br />
+
+          <strong>Livelihood and Economic Empowerment:</strong> Economic
+          uncertainty has intensified joblessness and income insecurity. CSL’s
+          livelihood programs, including microenterprise development, vocational
+          training, and financial literacy—particularly targeting women, youth,
+          coastal and plantation workers—support household resilience and align
+          with the IMF’s objective of productive fiscal spending and economic
+          diversification.<br /><br />
+
+          <strong>Health and Nutrition:</strong> Budgetary constraints risk
+          diminishing healthcare access. CSL addresses this by delivering
+          community-based health and nutrition interventions for chronically ill
+          individuals, malnourished children, pregnant women, and the
+          elderly—ensuring continuity of essential care where state services may
+          fall short.<br /><br />
+
+          <strong>Environmental Protection and Climate Resilience:</strong>
+          Through initiatives such as sustainable farming, reforestation, water
+          conservation, and eco-education, CSL contributes to climate adaptation
+          and environmental stewardship. These programs align with national
+          priorities like the Clean Sri Lanka initiative and with the IMF’s
+          long-term sustainability goals.<br /><br />
+
+          <strong
+            >Disaster Risk Reduction (DRR) and Anticipatory Action:</strong
+          >
+          In times of fiscal tightening, disaster recovery becomes more
+          challenging. CSL builds local capacity for preparedness and response,
+          reducing future recovery costs and safeguarding lives and livelihoods
+          through early warning systems, community risk assessments, and
+          resilience-building programs.<br /><br />
+
+          <strong>Peacebuilding, Justice, and Social Cohesion:</strong> Social
+          and economic inequalities risk fueling unrest, particularly in
+          post-conflict regions. CSL promotes reconciliation, interfaith
+          dialogue, and civic participation, helping build trust in
+          institutions.<br /><br />
+
+          <strong>Safe Migration and Reintegration:</strong> Given the rise in
+          labor migration, CSL provides legal aid, reintegration services, and
+          skills training for returnees and migrant families. This ensures that
+          remittances, a key pillar of Sri Lanka’s foreign earnings, translate
+          into long-term local development.<br /><br />
+
+          <strong>Strengthening Social Protection Mechanisms</strong>
+          <br /><br />
+          Caritas Sri Lanka supports the development of more inclusive and
+          effective safety nets by:
+        </p>
+
+        <ul style="text-align: justify; margin-left: 20px">
+          <li>
+            Identifying and prioritizing the most vulnerable beneficiaries
+            through community-based assessments;
+          </li>
+          <br />
+          <li>
+            Monitoring outreach and effectiveness of public welfare programs;
+          </li>
+          <br />
+          <li>
+            Offering technical support for improving policy responsiveness;
+          </li>
+          <br />
+          <li>
+            Providing data and feedback loops to inform real-time policy
+            adjustments.
+          </li>
+        </ul>
+
+        <p class="caritas-text">
+          This grassroots approach enhances the targeting, adequacy, and
+          transparency of social welfare systems, reinforcing the IMF’s goal of
+          minimizing the social cost of fiscal reforms.
+        </p>
+        <br /><br />
+
+        <strong>Promoting Multi-Stakeholder Collaboration</strong><br /><br />
+        CSL can facilitate meaningful Public-Private-People Partnerships (PPPPs)
+        that bring together government, civil society, faith-based institutions,
+        and the private sector. These inclusive partnerships can co-design and
+        implement sustainable solutions in areas such as education, health,
+        environment, and livelihoods. By encouraging participatory approaches,
+        CSL helps promote accountability, local ownership, and long-term impact
+        in development efforts.<br /><br />
+
+        <strong>Catalyzing Inclusive and Ethical Recovery</strong><br /><br />
+        As Sri Lanka undertakes critical structural reforms, Caritas Sri Lanka
+        (CSL), a responsible and respected faith-based development organization,
+        is well-positioned to play a key role in advancing the national agenda.
+        With a well-articulated vision and mission rooted in Catholic Social
+        Teaching and a longstanding community presence, CSL helps ensure the
+        recovery process is inclusive and ethically grounded. Guided by justice,
+        dignity, and solidarity, its people-centered strategic framework
+        supports economic stability, social cohesion, resilience, and inclusion.
+        By aligning its thematic priorities with both national development goals
+        and international frameworks such as those of the IMF, CSL positions
+        itself as a strategic partner in building a recovery that is not only
+        economically viable but also socially just, inclusive, and
+        human-centered.<br /><br />
+
+        <i
+          >Monitoring, Evaluation, and Learning (MEL) Framework: Caritas Sri
+          Lanka – Strategic Plan 2026–2030</i
+        ><br /><br />
+        The Monitoring, Evaluation, and Learning (MEL) framework ensures that
+        Caritas Sri Lanka (CSL) remains accountable to communities, donors, and
+        partners while practising a culture of adaptive learning, evidence-based
+        planning, and continuous improvement. This framework is structured to
+        capture progress across CSL’s strategic thematic areas while emphasizing
+        participatory approaches and contextual responsiveness.<br /><br />
+
+        <h4>Key Features of CSL MEL Framework:</h4>
+        <ul style="text-align: justify; margin-left: 20px">
+          <li>
+            <strong>Faith-Informed:</strong> Rooted in the principles of human
+            dignity, compassion, and justice, MEL in CSL serves both
+            accountability and mission integrity.
+          </li>
+          <br />
+          <li>
+            <strong>Strategic Coherence:</strong> Each thematic area is linked
+            directly to CSL’s strategic objectives and the national/global
+            development context.
+          </li>
+          <br />
+          <li>
+            <strong>Results-Oriented:</strong> Indicators are measurable,
+            time-bound (where applicable), and outcome-focused.
+          </li>
+          <br />
+          <li>
+            <strong>Participatory:</strong> Emphasizes stakeholder involvement
+            in assessment tools to ensure relevance and ownership.
+          </li>
+          <br />
+          <li>
+            <strong>Evidence-Based:</strong> Decisions are guided by data,
+            contextual insights, and qualitative feedback.
+          </li>
+          <br />
+          <li>
+            <strong>Adaptive:</strong> Learning mechanisms are structured,
+            flexible, and responsive to emerging challenges, opportunities, and
+            policy advocacy.
+          </li>
+        </ul>
+
+        <div
+          class="data-container"
+          role="region"
+          aria-label="Strategic objectives, outcome indicators, assessment tools, evaluation methods, and learning mechanisms"
+        >
+          <table class="data-table">
+            <thead class="data-header">
+              <tr>
+                <th scope="col">Strategic Objective</th>
+                <th scope="col">Key Outcome Indicators</th>
+                <th scope="col">Participatory Assessment Tools</th>
+                <th scope="col">Impact Evaluation Methods</th>
+                <th scope="col">Learning &amp; Adaptation Mechanisms</th>
+              </tr>
+            </thead>
+            <tbody class="data-body">
+              <tr>
+                <td>
+                  Ensure inclusive, equitable, and quality education, especially
+                  for marginalized communities
+                </td>
+                <td>
+                  - School enrolment & attendance rates<br />
+                  - Improvement in learning outcomes<br />
+                  - % of teachers demonstrating enhanced competencies
+                </td>
+                <td>
+                  - Participatory school assessments<br />
+                  - Parent-teacher reviews<br />
+                  - Student learning journals
+                </td>
+                <td>
+                  - Baseline & endline academic evaluations<br />
+                  - Literacy/numeracy sampling
+                </td>
+                <td>
+                  - Annual education learning forums<br />
+                  - Teacher peer exchange programs<br />
+                  - Curriculum adaptations based on learning data
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Strengthen household economic resilience through sustainable
+                  livelihoods
+                </td>
+                <td>
+                  - % increase in household income<br />
+                  - Number of sustainable jobs created<br />
+                  - Business sustainability rate at 12 months
+                </td>
+                <td>
+                  - Participatory rural appraisals<br />
+                  - Livelihood scorecards<br />
+                  - Beneficiary case studies
+                </td>
+                <td>
+                  - Outcome mapping<br />
+                  - Cost-benefit analyses<br />
+                  - Case-based evaluations
+                </td>
+                <td>
+                  - Local market learning exchanges<br />
+                  - Livelihood clinics<br />
+                  - Program iteration based on lessons learned
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Promote improved nutrition and community health outcomes
+                </td>
+                <td>
+                  - Reduction in malnutrition (stunting/wasting)<br />
+                  - % accessing essential health services<br />
+                  - Health knowledge improvement scores
+                </td>
+                <td>
+                  - Community health scorecards<br />
+                  - Nutrition tracking logs<br />
+                  - Focus groups (mothers/caregivers)
+                </td>
+                <td>
+                  - Longitudinal health tracking<br />
+                  - Cohort-based health evaluations
+                </td>
+                <td>
+                  - Diocesan health learning reviews<br />
+                  - Mobile health campaign insights<br />
+                  - Seasonal program adaptations
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Enhance ecological stewardship and community climate
+                  resilience
+                </td>
+                <td>
+                  - Area restored/reforested (hectares)<br />
+                  - % adoption of sustainable practices<br />
+                  - # of climate mitigation measures implemented
+                </td>
+                <td>
+                  - Eco-mapping with communities<br />
+                  - Farmer Field Schools<br />
+                  - Feedback from environmental audits
+                </td>
+                <td>
+                  - Ecological monitoring (multi-season)<br />
+                  - Resilience index analysis
+                </td>
+                <td>
+                  - Climate resilience labs<br />
+                  - Practitioner forums<br />
+                  - Program redesign based on environmental trends
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Build preparedness and reduce community vulnerability to
+                  disasters
+                </td>
+                <td>
+                  - # of DRR plans developed/updated<br />
+                  - Readiness and simulation scores<br />
+                  - # of trained community DRR volunteers
+                </td>
+                <td>
+                  - Simulation debriefs<br />
+                  - Participatory risk mapping<br />
+                  - DRR committee evaluations
+                </td>
+                <td>
+                  - Real-time event analysis<br />
+                  - Post-disaster recovery assessments
+                </td>
+                <td>
+                  - After-action reviews (AARs)<br />
+                  - Seasonal risk meetings<br />
+                  - Integration of indigenous/local knowledge
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Strengthen interethnic, interfaith understanding and social
+                  cohesion
+                </td>
+                <td>
+                  - # of dialogue events held<br />
+                  - Perception scores on trust/tolerance<br />
+                  - % of community engaging in peacebuilding
+                </td>
+                <td>
+                  - Community storytelling<br />
+                  - Dialogue feedback tools<br />
+                  - Peace mapping exercises
+                </td>
+                <td>
+                  - Outcome harvesting<br />
+                  - Narrative analysis<br />
+                  - Social cohesion perception surveys
+                </td>
+                <td>
+                  - Annual peace learning forums<br />
+                  - Interfaith collaboration reviews<br />
+                  - Conflict sensitivity adaptations
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Ensure safe, dignified, and informed migration and
+                  reintegration
+                </td>
+                <td>
+                  - # of migrants receiving services<br />
+                  - % of successful reintegrations<br />
+                  - Client satisfaction with legal/psychosocial support
+                </td>
+                <td>
+                  - Consultations with migrant groups<br />
+                  - Reintegration satisfaction surveys<br />
+                  - Legal aid client feedback tools
+                </td>
+                <td>
+                  - Tracer studies of returnees<br />
+                  - Exploitation risk assessments<br />
+                  - Reintegration outcome analysis
+                </td>
+                <td>
+                  - Migration program learning reviews<br />
+                  - Trend analysis of legal cases<br />
+                  - Policy briefs & advocacy strategy updates
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Cross-Thematic MEL Mechanisms</h4>
+        <p class="caritas-text">
+          To ensure strategic coherence and knowledge integration across
+          thematic areas, CSL will adopt the following system-wide MEL
+          mechanisms:
+        </p>
+
+        <div
+          class="data-container"
+          role="region"
+          aria-label="Cross-thematic MEL mechanisms"
+        >
+          <table class="data-table">
+            <thead class="data-header">
+              <tr>
+                <th scope="col" colspan="2" style="text-align: center">
+                  Cross-Thematic MEL Mechanisms
+                </th>
+              </tr>
+              <tr>
+                <th scope="col">Component</th>
+                <th scope="col">Mechanism</th>
+              </tr>
+            </thead>
+            <tbody class="data-body">
+              <tr>
+                <td><strong>Data Management</strong></td>
+                <td>
+                  Centralized digital MEL dashboard with real-time data tracking
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Accountability</strong></td>
+                <td>
+                  Community feedback and complaint response mechanisms (CRM)
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Capacity Building</strong></td>
+                <td>
+                  MEL capacity strengthening for diocesan teams and community
+                  actors
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Learning</strong></td>
+                <td>
+                  Annual national learning forum with diocesan MEL focal points
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Adaptation</strong></td>
+                <td>
+                  Quarterly strategic review cycles with evidence-based
+                  adjustments
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Documentation</strong></td>
+                <td>
+                  Thematic case studies and synthesis reports to inform practice
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Strategic Integration by Caritas Sri Lanka (CSL)</h4>
+        <p class="caritas-text">
+          CSL’s strategic plan is not just responsive but deeply rooted in
+          Catholic identity while also being globally and nationally aligned.
+        </p>
+
+        <ul style="text-align: justify; margin-left: 20px">
+          <li>
+            CST forms the moral and theological backbone of CSL’s strategy.
+          </li>
+          <br />
+          <li>
+            The Vision and Mission drive the operationalization of this theology
+            into real action, particularly for vulnerable groups.
+          </li>
+          <br />
+          <li>
+            SDGs offer a universal development framework, which CSL localizes
+            through faith-inspired and community-based responses.
+          </li>
+          <br />
+          <li>
+            Alignment with National Restructuring ensures policy relevance and
+            positions CSL as a civil society actor that supports inclusive,
+            ethical national recovery.
+          </li>
+        </ul>
+
+        <div
+          class="data-container"
+          role="region"
+          aria-label="Strategic Integration Matrix – Caritas Sri Lanka (CSL)"
+        >
+          <table class="data-table">
+            <thead class="data-header">
+              <tr>
+                <th scope="col" colspan="5" style="text-align: center">
+                  Strategic Integration Matrix – Caritas Sri Lanka (CSL)
+                </th>
+              </tr>
+              <tr>
+                <th scope="col">Strategic Element</th>
+                <th scope="col">Alignment with CSL Vision &amp; Mission</th>
+                <th scope="col">
+                  Integration with Catholic Social Teaching (CST)
+                </th>
+                <th scope="col">Convergence with SDGs</th>
+                <th scope="col">
+                  Alignment with Sri Lanka’s National Restructuring
+                </th>
+              </tr>
+            </thead>
+            <tbody class="data-body">
+              <tr>
+                <td><strong>Effectiveness</strong></td>
+                <td>
+                  Drive the operationalization of this theology into real action
+                </td>
+                <td>Moral and theological backbone of CSL’s strategy</td>
+                <td>
+                  Localisation of universal development framework through
+                  faith-inspired and community-based responses
+                </td>
+                <td>
+                  Ensures policy relevance and positions CSL as a civil society
+                  actor that supports inclusive, ethical national recovery
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong
+                    >1. Strategic Pillars (IHD, Charity, Empowerment,
+                    Peace)</strong
+                  >
+                </td>
+                <td>
+                  Express the Gospel mission to heal, humanize, and transform
+                  society
+                </td>
+                <td>
+                  Rooted in core CST values: human dignity, solidarity, option
+                  for the poor, subsidiarity, stewardship (DCE, FT, RN)
+                </td>
+                <td>SDG 1, 3, 4, 5, 8, 10, 13, 16</td>
+                <td>
+                  Provide ethical grounding for inclusive reforms; supports
+                  community resilience
+                </td>
+              </tr>
+              <tr>
+                <td><strong>2. Vision and Mission</strong></td>
+                <td>
+                  Clearly states goals of justice, peace, dignity, inclusion,
+                  and sustainability
+                </td>
+                <td>
+                  Inspired by CST’s theological foundations – love, justice,
+                  inclusion
+                </td>
+                <td>SDG 16 (Peace &amp; Justice), SDG 17 (Partnerships)</td>
+                <td>
+                  Promotes social cohesion, inclusion, and ethical development
+                  in recovery context
+                </td>
+              </tr>
+              <tr>
+                <td><strong>3. Thematic Areas</strong></td>
+                <td>
+                  Fulfills mission to empower the marginalized through holistic
+                  action
+                </td>
+                <td>
+                  Promotes rights-based, people-centered development in line
+                  with CST
+                </td>
+                <td>Covers wide SDG range (1, 3, 4, 8, 10, 13, 16)</td>
+                <td>
+                  Direct response to structural vulnerabilities exposed by
+                  reforms
+                </td>
+              </tr>
+              <tr>
+                <td><strong>4. Quality Education</strong></td>
+                <td>Supports children from vulnerable backgrounds</td>
+                <td>
+                  Education as a tool for human dignity and empowerment (CST:
+                  Formation of the Person)
+                </td>
+                <td>SDG 4 – Quality Education</td>
+                <td>
+                  Ensures continued access to education despite austerity
+                  pressures
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>5. Livelihood &amp; Economic Empowerment</strong>
+                </td>
+                <td>
+                  Builds resilience and economic justice for the poor and women
+                </td>
+                <td>
+                  Emphasizes dignity of work, just wages, and economic
+                  participation (RN, CiV)
+                </td>
+                <td>SDG 1 – No Poverty; SDG 8 – Decent Work</td>
+                <td>
+                  Aligns with diversification and productive fiscal spending
+                </td>
+              </tr>
+              <tr>
+                <td><strong>6. Health &amp; Nutrition</strong></td>
+                <td>
+                  Community-based care reflects mission of compassion and
+                  solidarity
+                </td>
+                <td>
+                  Care for life and dignity of the sick and vulnerable (DCE, CST
+                  on Healthcare)
+                </td>
+                <td>SDG 3 – Good Health &amp; Well-being</td>
+                <td>
+                  Supplements state health services impacted by fiscal
+                  consolidation
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong
+                    >7. Environmental Protection &amp; Climate
+                    Adaptation</strong
+                  >
+                </td>
+                <td>
+                  Environmental stewardship as part of mission to sustain life
+                  and dignity
+                </td>
+                <td>
+                  Rooted in Laudato Si’ – care for creation, ecological justice
+                </td>
+                <td>SDG 13 – Climate Action; SDG 15 – Life on Land</td>
+                <td>
+                  Aligns with national climate priorities and IMF sustainability
+                  goals
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong
+                    >8. Disaster Risk Reduction &amp; Anticipatory
+                    Action</strong
+                  >
+                </td>
+                <td>
+                  Builds resilient communities and safeguards the vulnerable
+                </td>
+                <td>
+                  Promotes protection of life, human dignity in crises (DCE, CST
+                  on disaster ethics)
+                </td>
+                <td>
+                  SDG 11 – Sustainable Communities; SDG 13 – Climate Action
+                </td>
+                <td>
+                  Reduces cost of disaster recovery, strengthens community
+                  preparedness
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong
+                    >9. Peacebuilding, Justice &amp; Social Cohesion</strong
+                  >
+                </td>
+                <td>Core to CSL’s vision of a just and harmonious society</td>
+                <td>
+                  CST calls for reconciliation, bridge-building (FT, DCE, 2 Cor
+                  5:18)
+                </td>
+                <td>SDG 16 – Peace, Justice, Strong Institutions</td>
+                <td>
+                  Supports national reconciliation; prevents social unrest from
+                  inequality
+                </td>
+              </tr>
+              <tr>
+                <td><strong>10. Safe Migration &amp; Reintegration</strong></td>
+                <td>
+                  Protects families, upholds dignity, ensures reintegration
+                </td>
+                <td>Human rights of migrants upheld by CST (DCE, FT)</td>
+                <td>SDG 10 – Reduced Inequalities; SDG 8 – Economic Growth</td>
+                <td>
+                  Addresses socio-economic pressures linked to migration and
+                  remittance dependency
+                </td>
+              </tr>
+              <tr>
+                <td><strong>11. Social Protection</strong></td>
+                <td>
+                  Mission-driven action to uplift and protect marginalized
+                  groups
+                </td>
+                <td>
+                  CST advocates for prioritizing the poor and vulnerable (Option
+                  for the Poor)
+                </td>
+                <td>Cross-cutting impact across multiple SDGs</td>
+                <td>
+                  Supports IMF’s goal of targeted, transparent, and adequate
+                  safety nets
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>12. Multi-Stakeholder Partnerships (PPPPs)</strong>
+                </td>
+                <td>
+                  Synodal approach: dialogue, participation, and unity in
+                  mission
+                </td>
+                <td>
+                  CST principle of subsidiarity – engage local actors in
+                  development
+                </td>
+                <td>SDG 17 – Partnerships for the Goals</td>
+                <td>
+                  Strengthens governance, accountability, and development impact
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="caritas-text">
+          <b>Conclusion</b>
+          <br /><br />
+          Caritas Sri Lanka’s strategic plan is a comprehensive and
+          mission-driven framework rooted in Catholic Social Teaching, aligned
+          with its Vision and Mission, and responsive to national economic
+          recovery efforts. Integrating the Sustainable Development Goals, it
+          reflects the Gospel’s call to love, serve, and seek justice. More than
+          operational, the plan is theological—emphasizing love as a
+          transformative force. CSL positions itself as a collaborative,
+          prophetic actor, committed to humanizing, healing, and transforming
+          communities. In a post-war, economically challenged context, CSL
+          ensures no one is left behind, embodying the Church’s mission to be a
+          faith-based agent of change and hope.
+          <br /><br />
+          The foundational integration of Catholic Social Teaching is evident
+          across all aspects of CSL’s strategic plan. Drawing from encyclicals
+          such as <i>Rerum Novarum, Deus Caritas Est, Fratelli Tutti,</i> and
+          <i>Laudato Si’</i>the plan prioritizes human dignity, the preferential
+          option for the poor, solidarity, and stewardship of creation. The four
+          strategic pillars—Integral Human Development, Charity, Empowerment,
+          and Peace translate CST into action. These are not abstract values but
+          guiding principles for rights-based, community-oriented, and
+          spiritually grounded programming. <br /><br />
+          Caritas Sri Lanka’s (CSL) strategic plan reflects its vision of a
+          “just and harmonious Sri Lankan society driven by Gospel values,” with
+          a strong focus on inclusion, equity, and transformation. Grounded in
+          Catholic Social Teaching, it empowers marginalized communities—such as
+          war-affected families, women-headed households, and persons with
+          disabilities—through grassroots engagement, embodying the Gospel call
+          to serve the vulnerable.
+          <br /><br />
+          The plan aligns closely with the United Nations Sustainable
+          Development Goals (SDGs), addressing key areas such as Quality
+          Education (SDG 4), Livelihoods (SDGs 1 & 8), Health (SDG 3), Climate
+          Action (SDG 13), and Peacebuilding (SDG 16). By contextualizing global
+          goals within its faith-based mission, CSL bridges local impact with
+          broader development frameworks.
+          <br /><br />
+          Although CSL is neither a political entity nor a direct recipient of
+          IMF support, its strategic plan aligns closely with Sri Lanka’s
+          national economic restructuring priorities, including fiscal
+          responsibility, targeted social protection, and inclusive development.
+          By offering scholarships, community health services, and livelihood
+          assistance, CSL helps to bridge essential service gaps created by
+          budget reductions. These efforts are especially vital for vulnerable
+          populations in rural and post-conflict regions. This localized,
+          needs-based response reflects the Catholic Social Teaching principle
+          of subsidiarity—empowering communities at the grassroots while
+          contributing to broader national progress.
+          <br /><br />
+          CSL addresses safe migration, disaster preparedness, and climate
+          resilience, contributing to long-term stability and sustainable
+          development. Its reintegration and environmental programs support both
+          family welfare and national resilience strategies. Through
+          multi-stakeholder collaboration and public-private-people partnerships
+          (PPPPs), CSL fosters shared responsibility and inclusive dialogue.
+          This approach reflects Pope Francis’ synodal call to unity,
+          discernment, and listening, positioning CSL as a transformative and
+          credible civil society partner in Sri Lanka’s development journey.
+          <br /><br />
+          In conclusion, CSL’s strategic plan is a model of integrated,
+          values-driven planning. It effectively unites CST, Gospel-centered
+          mission, global development goals, and national priorities into a
+          unified approach that prioritizes dignity, justice, and
+          sustainability. As Sri Lanka undergoes economic restructuring, CSL
+          stands as a prophetic witness—ensuring that recovery is not only
+          economically sound but ethically grounded and socially inclusive. The
+          strategic plan document is not only a guide for organizational
+          programming but also a theologically rooted, socially responsive, and
+          ethically grounded roadmap for transformative change in Sri Lankan
+          Society.
+        </p>
+
+        <div
+          class="data-container"
+          role="region"
+          aria-label="SWOT Analysis – Caritas Sri Lanka (CSL)"
+        >
+          <h3
+            style="
+              text-align: center;
+              color: #2c3e50;
+              margin: 25px 0 30px;
+              font-weight: 600;
+              font-size: 1.5rem;
+            "
+          >
+            END OF DOCUMENT
+          </h3>
+
+          <table class="data-table">
+            <thead class="data-header">
+              <tr>
+                <th scope="col">Strengths</th>
+                <th scope="col">Weaknesses</th>
+                <th scope="col">Opportunities</th>
+                <th scope="col">Threats</th>
+              </tr>
+            </thead>
+            <tbody class="data-body">
+              <tr>
+                <!-- Strengths -->
+                <td>
+                  <strong>Identity:</strong>
+                  <ul>
+                    <li>Catholic identity and long-standing history</li>
+                    <li>
+                      Being a Member Organisation in the international network
+                      of Caritas
+                    </li>
+                  </ul>
+
+                  <strong>Recognition:</strong>
+                  <ul>
+                    <li>Credibility in society</li>
+                    <li>Global recognition through CIMS Certification</li>
+                    <li>Strong relationships with stakeholders</li>
+                    <li>Well-established CBOs, SHGs & federations</li>
+                  </ul>
+
+                  <strong>Legalities:</strong>
+                  <ul>
+                    <li>
+                      Operating under CBCSL, NPO & legal recognition under the
+                      Parliament Act
+                    </li>
+                  </ul>
+
+                  <strong>Values:</strong>
+                  <ul>
+                    <li>Catholic teachings</li>
+                    <li>Inter-religious relationships</li>
+                    <li>People-oriented approach</li>
+                    <li>Committed and dedicated staff</li>
+                    <li>Alignment with values of CBCSL, FABC, CI</li>
+                  </ul>
+
+                  <strong>Systems and Policies:</strong>
+                  <ul>
+                    <li>Clear organizational structure</li>
+                    <li>Island-wide CSL network of 13 DCs</li>
+                    <li>Comprehensive Strategic Plan</li>
+                    <li>Swift response mechanism to community needs</li>
+                    <li>
+                      Practising 27 organisational policies across the country
+                    </li>
+                  </ul>
+
+                  <strong>Infrastructure:</strong>
+                  <ul>
+                    <li>Good infrastructure facilities</li>
+                    <li>Strong fixed assets & human resources</li>
+                  </ul>
+
+                  <strong>Finance:</strong>
+                  <ul>
+                    <li>Reliable funding partners</li>
+                    <li>
+                      Network of DC centres (potential for financial support)
+                    </li>
+                  </ul>
+
+                  <strong>Human Resources:</strong>
+                  <ul>
+                    <li>Committed, qualified, and experienced staff</li>
+                    <li>Well-defined organizational hierarchy</li>
+                    <li>Strong governing body</li>
+                  </ul>
+
+                  <strong>Programs:</strong>
+                  <ul>
+                    <li>Holistic project intervention</li>
+                    <li>Diverse portfolio for development projects</li>
+                    <li>Effective outreach through CBO, SHG, VKC, VGC</li>
+                  </ul>
+
+                  <strong>Collaboration:</strong>
+                  <ul>
+                    <li>
+                      Strong relationships with Caritas and non-Caritas donors
+                    </li>
+                    <li>Deep engagement with stakeholders</li>
+                    <li>Robust network of DC centres</li>
+                  </ul>
+
+                  <strong>Capacity Building – Strengths:</strong>
+                  <ul>
+                    <li>
+                      <strong>Qualified staff</strong>
+                      <p>
+                        The presence of qualified staff helps in ensuring the
+                        organization has the necessary skill set to train others
+                        and effectively implement programs.
+                      </p>
+                    </li>
+                    <li>
+                      <strong>Well-established CBOs, SHGs & federations</strong>
+                      <p>
+                        The established community-based organizations (CBOs),
+                        self-help groups (SHGs), and federations contribute to
+                        capacity building at the grassroots level, strengthening
+                        local leadership and sustainability.
+                      </p>
+                    </li>
+                    <li>
+                      <strong>Holistic project intervention</strong>
+                      <p>
+                        The ability to take a holistic approach to project
+                        interventions helps in building the capacity of both
+                        staff and the community through integrated development
+                        efforts.
+                      </p>
+                    </li>
+                    <li>
+                      <strong
+                        >Diverse portfolio for development projects</strong
+                      >
+                      <p>
+                        A diverse range of projects helps in building a broad
+                        skill set among staff, enhancing their ability to manage
+                        and implement different types of development work.
+                      </p>
+                    </li>
+                    <li>
+                      <strong>Strategic Plan</strong>
+                      <p>
+                        A well-defined strategic plan supports capacity building
+                        by providing a framework for growth, staff development,
+                        and clear goals aligned with organizational growth.
+                      </p>
+                    </li>
+                  </ul>
+                </td>
+
+                <!-- Weaknesses -->
+                <td>
+                  <strong>Identity:</strong>
+                  <ul>
+                    <li>Limited visibility</li>
+                    <li>Minimal media presence and exposure</li>
+                    <li>Weak marketing and branding efforts</li>
+                    <li>Resistance to adapting to new changes</li>
+                    <li>
+                      Insufficient engagement with prospective funding partners
+                    </li>
+                  </ul>
+
+                  <strong>Recognition:</strong>
+                  <ul>
+                    <li>
+                      Absence of local fundraising or income generation
+                      strategies
+                    </li>
+                    <li>Inadequate resource sharing among DCs</li>
+                    <li>Limited local contribution</li>
+                    <li>Insufficient resources for marginalized groups</li>
+                    <li>Absence of a clear advocacy strategy</li>
+                    <li>Restricted advocacy involvement</li>
+                  </ul>
+
+                  <strong>Legalities:</strong>
+                  <ul>
+                    <li>Insufficient safeguarding mechanisms</li>
+                    <li>No emergency preparedness plan</li>
+                    <li>Financial instability</li>
+                  </ul>
+
+                  <strong>Values - Policies:</strong>
+                  <ul>
+                    <li>Missing gender policy</li>
+                    <li>Outdated policies</li>
+                    <li>
+                      Insufficient capacity-building opportunities for staff
+                    </li>
+                    <li>Absence of a fundraising strategy</li>
+                    <li>Policy gaps</li>
+                    <li>Missing organizational database</li>
+                  </ul>
+
+                  <strong>Systems:</strong>
+                  <ul>
+                    <li>No dedicated MEAL unit</li>
+                    <li>
+                      Inadequate staff transition documentation at DC level
+                    </li>
+                    <li>
+                      Underutilization of new management tools and digital
+                      technologies
+                    </li>
+                    <li>Financial sustainability issues</li>
+                    <li>Shortage of qualified staff</li>
+                    <li>High staff turnover</li>
+                    <li>
+                      Directors' transitions without sufficient continuity
+                    </li>
+                  </ul>
+
+                  <strong>Infrastructure:</strong>
+                  <ul>
+                    <li>Inadequate infrastructure in some DCs</li>
+                    <li>No centralized resource pool in place</li>
+                  </ul>
+
+                  <strong>Finance:</strong>
+                  <ul>
+                    <li>Decline in financial support</li>
+                    <li>Inconsistent due diligence regarding salary grids</li>
+                    <li>
+                      Salary constraints and shortage of professional staff
+                    </li>
+                    <li>Insufficient funding for marginalized groups</li>
+                    <li>
+                      Absence of local fundraising or income generation
+                      strategies
+                    </li>
+                    <li>Inadequate resource sharing among DCs</li>
+                    <li>Limited local contribution</li>
+                    <li>Insufficient resources for marginalized groups</li>
+                  </ul>
+
+                  <strong>Human Resources:</strong>
+                  <ul>
+                    <li>
+                      Absence of specialized teams for project development and
+                      fundraising
+                    </li>
+                    <li>High turnover of trained staff</li>
+                    <li>Shortage of qualified personnel</li>
+                    <li>Insufficient volunteer support</li>
+                    <li>
+                      Inability to recruit well-trained staff passionate about
+                      social service
+                    </li>
+                  </ul>
+
+                  <strong>Programs:</strong>
+                  <ul>
+                    <li>Sustainability challenges in project implementation</li>
+                    <li>No program quality database</li>
+                    <li>Absence of a clear advocacy strategy</li>
+                    <li>Restricted advocacy involvement</li>
+                  </ul>
+
+                  <strong>Collaboration:</strong>
+                  <ul>
+                    <li>Inadequate resource sharing across DCs</li>
+                    <li>
+                      Limited collaboration in local fundraising or income
+                      generation activities
+                    </li>
+                  </ul>
+
+                  <strong>Technology & Tools:</strong>
+                  <ul>
+                    <li>
+                      Insufficient utilization of management tools and digital
+                      technologies
+                    </li>
+                    <li>
+                      Limited advocacy through mass media and social media
+                      platforms
+                    </li>
+                  </ul>
+
+                  <strong>Capacity Building – Weaknesses:</strong>
+                  <ul>
+                    <li>
+                      <strong
+                        >Lack of periodical capacity-building training for
+                        staff</strong
+                      >
+                      <p>
+                        There is a gap in offering regular and structured
+                        capacity-building programs, leading to a lack of skill
+                        development among staff.
+                      </p>
+                    </li>
+                    <li>
+                      <strong
+                        >Inadequate specialized teams for project development
+                        and fundraising</strong
+                      >
+                      <p>
+                        The absence of a dedicated team for these areas limits
+                        the organization's ability to build internal expertise
+                        and raise funds effectively.
+                      </p>
+                    </li>
+                    <li>
+                      <strong>Capacitated staff turnover</strong>
+                      <p>
+                        High turnover among trained staff leads to a loss of
+                        developed capacity and experience, hindering
+                        organizational growth and consistency.
+                      </p>
+                    </li>
+                    <li>
+                      <strong
+                        >No dedicated focus on developing well-trained staff
+                        with a passion for social service</strong
+                      >
+                      <p>
+                        The organization is not prioritizing the recruitment of
+                        individuals who are both skilled and passionate about
+                        the social impact, which affects long-term effectiveness
+                        and program delivery.
+                      </p>
+                    </li>
+                    <li>
+                      <strong
+                        >Lack of capacity-building tools and
+                        methodologies</strong
+                      >
+                      <p>
+                        The absence of structured approaches or tools for
+                        continuous development of staff and programs further
+                        undermines the ability to create a skilled workforce
+                        that can drive sustainable projects.
+                      </p>
+                    </li>
+                  </ul>
+                </td>
+
+                <!-- Opportunities -->
+                <td>
+                  <strong>Collaboration & Networking:</strong>
+                  <ul>
+                    <li>
+                      Provincial and district-level networking with other
+                      stakeholders
+                    </li>
+                    <li>Facilitation partners (CI, CA, DC)</li>
+                    <li>
+                      Possibilities for collaboration with government schemes in
+                      the development sector
+                    </li>
+                    <li>Chance for local and foreign partnerships</li>
+                    <li>Sharing of resources among DCs</li>
+                    <li>
+                      Healthy relationships with NGOs & like-minded
+                      organizations
+                    </li>
+                    <li>International and local Caritas network</li>
+                    <li>Networking with government and religious leaders</li>
+                  </ul>
+
+                  <strong>Recognition & Identity:</strong>
+                  <ul>
+                    <li>Recognition as a church organization</li>
+                    <li>MO (Member Organization) status</li>
+                    <li>Strong accountability</li>
+                  </ul>
+
+                  <strong>Technology & Innovation:</strong>
+                  <ul>
+                    <li>Availability of new technology</li>
+                    <li>Access to CIMS tools & resources in Baobab</li>
+                  </ul>
+
+                  <strong>Capacity Building & Development:</strong>
+                  <ul>
+                    <li>Capacity building programs</li>
+                    <li>International exposure and training for staff</li>
+                    <li>
+                      Local and international exposure to community development
+                    </li>
+                  </ul>
+
+                  <strong>Sustainability & Global Focus:</strong>
+                  <ul>
+                    <li>
+                      Growing global focus on sustainability & climate action
+                    </li>
+                    <li>Alignment with Sustainable Development Goals (SDGs)</li>
+                    <li>Global trends supporting inclusive development</li>
+                  </ul>
+
+                  <strong>Advocacy & Influence:</strong>
+                  <ul>
+                    <li>Opportunities for advocacy & lobbying</li>
+                    <li>Support from inter-religious leaders</li>
+                  </ul>
+
+                  <strong>Geographical & Structural Opportunities:</strong>
+                  <ul>
+                    <li>Geographical and social structure of Sri Lanka</li>
+                    <li>Presence of government-led development projects</li>
+                    <li>Potential for long-term sustainable projects</li>
+                  </ul>
+
+                  <strong>Leadership & Governance:</strong>
+                  <ul>
+                    <li>Secondary leadership development opportunities</li>
+                  </ul>
+                </td>
+
+                <!-- Threats -->
+                <td>
+                  <strong>External Environment & Policy:</strong>
+                  <ul>
+                    <li>
+                      Government policies on NGOs: Changes in government
+                      policies could affect the organization's ability to
+                      operate or access support.
+                    </li>
+                    <li>
+                      National regulatory changes: Shifts in national laws or
+                      regulations could introduce new challenges for the
+                      organization’s activities.
+                    </li>
+                    <li>
+                      Political disruptions/interference: Political instability
+                      or interference may hinder program execution or create
+                      obstacles in operations.
+                    </li>
+                    <li>
+                      Geopolitics: International geopolitical factors may affect
+                      funding, partnerships, and the organization’s ability to
+                      operate globally.
+                    </li>
+                    <li>
+                      Some government acts and decisions: Specific actions or
+                      policies from the government could disrupt organizational
+                      operations or limit its scope of activities.
+                    </li>
+                    <li>
+                      New donor policies: Changes in donor policies could affect
+                      funding or shift priorities away from the organization's
+                      needs.
+                    </li>
+                  </ul>
+
+                  <strong>Economic Factors:</strong>
+                  <ul>
+                    <li>
+                      Economic instability of the country: General economic
+                      instability can reduce available funding and resources for
+                      development programs.
+                    </li>
+                    <li>
+                      Inflation: Rising inflation may increase operational
+                      costs, making it harder to implement programs effectively.
+                    </li>
+                    <li>
+                      Economic crisis & exchange rates: Economic downturns and
+                      volatile exchange rates can have a negative impact on
+                      funding and international operations.
+                    </li>
+                    <li>
+                      Donor fatigue due to the global crisis: A decrease in
+                      donor support due to the broader global economic or social
+                      crises could limit funding opportunities.
+                    </li>
+                    <li>
+                      Competition for donor funding: Increased competition among
+                      organizations for limited donor funding can make securing
+                      resources more difficult.
+                    </li>
+                    <li>
+                      Lack of funding for priority areas: Limited donor interest
+                      or support in critical areas could hinder the
+                      organization’s ability to focus on essential initiatives.
+                    </li>
+                  </ul>
+
+                  <strong>Social & Cultural:</strong>
+                  <ul>
+                    <li>
+                      Misconception of conversions: There may be public
+                      misunderstandings or suspicion about the organization's
+                      religious affiliation, potentially hindering its
+                      credibility and support.
+                    </li>
+                    <li>
+                      Suspicion on social work carried out by CSL:
+                      Misunderstandings or mistrust of the social work performed
+                      by the organization could undermine public support and
+                      stakeholder relationships.
+                    </li>
+                    <li>
+                      Religious extremism: Religious intolerance or extremism
+                      could create social tensions or pose threats to the
+                      organization’s work, especially in sensitive areas.
+                    </li>
+                    <li>
+                      Dependency mentality: Communities or stakeholders may
+                      develop a dependency mentality, reducing their willingness
+                      to engage in self-sufficiency or contribute to
+                      initiatives.
+                    </li>
+                  </ul>
+
+                  <strong>Operational & Security Risks:</strong>
+                  <ul>
+                    <li>
+                      Cyber attack/system down: Vulnerabilities in technology
+                      systems can result in disruptions, data breaches, or loss
+                      of critical information.
+                    </li>
+                    <li>
+                      Natural/man-made disasters: Environmental or human-made
+                      disasters can disrupt operations, damage infrastructure,
+                      and limit the ability to deliver services effectively.
+                    </li>
+                  </ul>
+
+                  <strong>Other Risks:</strong>
+                  <ul>
+                    <li>
+                      Sudden closure of projects: Unforeseen circumstances may
+                      lead to the abrupt end of ongoing projects, affecting
+                      beneficiaries and the organization’s reputation.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
