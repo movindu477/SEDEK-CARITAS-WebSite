@@ -1,80 +1,193 @@
-/* navbar function */
+/* ================= NAVBAR FUNCTIONALITY ================= */
 document.addEventListener('DOMContentLoaded', function () {
+  // Navbar elements
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
   const navMenu = document.getElementById("navMenu");
   const closeMenu = document.getElementById("closeMenu");
   const dropdownItems = document.querySelectorAll("#navMenu .dropdown");
   const isMobile = () => window.matchMedia("(max-width: 640px)").matches;
 
+  // Menu functions
   function openMenu() {
-    navMenu.classList.add("active");
-    mobileMenuBtn.setAttribute("aria-expanded", "true");
+    if (navMenu) {
+      navMenu.classList.add("active");
+    }
+    if (mobileMenuBtn) {
+      mobileMenuBtn.setAttribute("aria-expanded", "true");
+    }
     document.body.style.overflow = "hidden";
   }
 
   function closeMenuFn() {
-    navMenu.classList.remove("active");
-    mobileMenuBtn.setAttribute("aria-expanded", "false");
+    if (navMenu) {
+      navMenu.classList.remove("active");
+    }
+    if (mobileMenuBtn) {
+      mobileMenuBtn.setAttribute("aria-expanded", "false");
+    }
     document.body.style.overflow = "";
-    dropdownItems.forEach(d => d.classList.remove("active"));
-  }
-
-  mobileMenuBtn.addEventListener("click", openMenu);
-  closeMenu.addEventListener("click", closeMenuFn);
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && navMenu.classList.contains("active")) closeMenuFn();
-  });
-
-  dropdownItems.forEach(item => {
-    const toggleLink = item.querySelector("a.dropdown-toggle");
-    let tappedOnce = false; // Track double tap on mobile
-    toggleLink.addEventListener("click", (e) => {
-      if (isMobile()) {
-        if (!item.classList.contains("active") && !tappedOnce) {
-          e.preventDefault(); // stop navigation
-          item.classList.add("active");
-          tappedOnce = true;
-          setTimeout(() => tappedOnce = false, 1000);
-        } else {
-          window.location.href = toggleLink.getAttribute("href");
-        }
+    
+    // Close all dropdowns
+    dropdownItems.forEach(d => {
+      d.classList.remove("active");
+      const dropdownMenu = d.querySelector('.dropdown-menu');
+      if (dropdownMenu) {
+        dropdownMenu.style.maxHeight = '0';
       }
     });
+  }
+
+  // Mobile menu toggle
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener("click", openMenu);
+  }
+
+  if (closeMenu) {
+    closeMenu.addEventListener("click", closeMenuFn);
+  }
+
+  // Escape key to close menu
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && navMenu && navMenu.classList.contains("active")) {
+      closeMenuFn();
+    }
+  });
+
+  // Handle dropdown interactions
+  dropdownItems.forEach(item => {
+    const toggleLink = item.querySelector("a.dropdown-toggle");
+    const dropdownMenu = item.querySelector('.dropdown-menu');
+    
+    if (!toggleLink) return;
+
+    if (isMobile()) {
+      // Mobile behavior - toggle dropdown with smooth animation
+      toggleLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // Close other dropdowns
+        dropdownItems.forEach(otherItem => {
+          if (otherItem !== item && otherItem.classList.contains("active")) {
+            otherItem.classList.remove("active");
+            const otherMenu = otherItem.querySelector('.dropdown-menu');
+            if (otherMenu) {
+              otherMenu.style.maxHeight = '0';
+            }
+          }
+        });
+        
+        // Toggle current dropdown
+        if (item.classList.contains("active")) {
+          item.classList.remove("active");
+          if (dropdownMenu) {
+            dropdownMenu.style.maxHeight = '0';
+          }
+        } else {
+          item.classList.add("active");
+          if (dropdownMenu) {
+            // Calculate height for smooth animation
+            dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + 'px';
+          }
+        }
+      });
+    } else {
+      // Desktop behavior - hover
+      item.addEventListener("mouseenter", () => {
+        item.classList.add("active");
+      });
+      
+      item.addEventListener("mouseleave", () => {
+        item.classList.remove("active");
+      });
+    }
+
+    // Close dropdown when clicking on submenu items (mobile)
     item.querySelectorAll(".dropdown-menu a").forEach(subLink => {
       subLink.addEventListener("click", () => {
-        if (isMobile()) closeMenuFn();
+        if (isMobile()) {
+          // Small delay to allow the click event to complete
+          setTimeout(() => {
+            closeMenuFn();
+          }, 100);
+        }
       });
     });
   });
 
+  // Close menu when clicking outside (mobile)
   document.addEventListener("click", (e) => {
-    if (isMobile() && navMenu.classList.contains("active")) {
+    if (isMobile() && navMenu && navMenu.classList.contains("active")) {
       const inside = e.target.closest("#navMenu") || e.target.closest("#mobileMenuBtn");
       if (!inside) closeMenuFn();
     }
   });
 
+  // Handle window resize
   window.addEventListener("resize", () => {
     if (!isMobile()) {
       document.body.style.overflow = "";
-      navMenu.classList.remove("active");
-      dropdownItems.forEach(d => d.classList.remove("active"));
+      if (navMenu) {
+        navMenu.classList.remove("active");
+      }
+      dropdownItems.forEach(d => {
+        d.classList.remove("active");
+        const dropdownMenu = d.querySelector('.dropdown-menu');
+        if (dropdownMenu) {
+          dropdownMenu.style.maxHeight = '';
+        }
+      });
+    } else {
+      // Reset dropdown heights on mobile when resizing
+      dropdownItems.forEach(d => {
+        const dropdownMenu = d.querySelector('.dropdown-menu');
+        if (d.classList.contains("active") && dropdownMenu) {
+          dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + 'px';
+        }
+      });
     }
   });
 
-  // ===== Carousel / Horizontal Scroll for Recent Posts =====
+  // Close dropdowns when clicking on non-dropdown menu items
+  document.querySelectorAll('#navMenu > li:not(.dropdown) > a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (isMobile()) {
+        closeMenuFn();
+      }
+    });
+  });
+
+  // ================= CAROUSEL / HORIZONTAL SCROLL =================
   const wrapper = document.querySelector('.cards');
   const btnLeft = document.querySelector('.scroll-btn.left');
   const btnRight = document.querySelector('.scroll-btn.right');
 
   if (wrapper && btnLeft && btnRight) {
     const scrollAmount = 320; // adjust according to card width + gap
+    
     btnRight.addEventListener('click', () => {
-      wrapper.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      wrapper.scrollBy({ 
+        left: scrollAmount, 
+        behavior: 'smooth' 
+      });
     });
+    
     btnLeft.addEventListener('click', () => {
-      wrapper.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      wrapper.scrollBy({ 
+        left: -scrollAmount, 
+        behavior: 'smooth' 
+      });
+    });
+
+    // Optional: Add keyboard navigation
+    wrapper.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        wrapper.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        wrapper.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      }
     });
   }
 });
