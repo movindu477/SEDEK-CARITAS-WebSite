@@ -3,255 +3,375 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our History</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/applications.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/ourhistory.css" />
     <script src="js/index.js" defer></script>
+    <!-- Favicon 
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />-->
+  </head>
 
-    <!-- NAVBAR -->
-    <div class="navbar">
-      <!-- Top section -->
-      <div class="topsection">
-        <div class="item">
-          <img src="images/phone-call.png" alt="Call Icon" />
-          <p>0094 11 2691885</p>
-        </div>
-        <div class="item">
-          <img src="images/mail.png" alt="Email Icon" />
-          <p>sedec@caritaslk.org</p>
-        </div>
-        <div class="language-selector">
-          <button class="lang">සිං</button>
-          <!-- Sinhala -->
-          <button class="lang">த</button>
-          <!-- Tamil -->
-          <button class="lang active">EN</button>
-          <!-- English (active by default) -->
-        </div>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <!-- Top section -->
+    <div class="topsection">
+      <div class="item">
+        <img src="images/phone-call.png" alt="Call Icon" />
+        <p>0094 11 2691885</p>
       </div>
-
-      <!-- Down section -->
-      <div class="downsection">
-        <div class="logos">
-          <img src="images/logo2.png" alt="Logo" width="40" />
-          <img src="images/logo3.png" alt="Logo" width="120" />
-        </div>
-
-        <!-- Mobile menu button -->
-        <button
-          class="mobile-menu-btn"
-          id="mobileMenuBtn"
-          aria-label="Open Menu"
-          aria-controls="navMenu"
-          aria-expanded="false"
-        >
-          <span></span><span></span><span></span>
-        </button>
-
-        <!-- Main Nav -->
-        <ul id="navMenu" role="menubar">
-          <button class="close-menu" id="closeMenu" aria-label="Close Menu">
-            ✕
-          </button>
-
-          <li><a href="index.html">Home</a></li>
-
-          <!-- Who We Are Dropdown -->
-          <li class="dropdown">
-            <a
-              href="aboutus.html"
-              class="dropdown-toggle"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Who We Are</a
-            >
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="aboutus.html">About Us</a></li>
-              <li><a href="policies.html">Our Policies</a></li>
-              <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
-              <li><a href="ourhistory.html">Our History</a></li>
-              <li><a href="org.html">Org Structure</a></li>
-              <li><a href="faculty.html">Facilities &amp; Services</a></li>
-            </ul>
-          </li>
-
-          <!-- What We Do Dropdown -->
-          <li class="dropdown">
-            <a
-              href="whatwedo.html"
-              class="dropdown-toggle"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              What We Do
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <!-- ✅ Always load whatwedo.html and jump to the correct section -->
-              <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li>
-                <a href="whatwedo.html#guiding-prin">Guiding Principles</a>
-              </li>
-              <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
-              <li>
-                <a href="whatwedo.html#Intervention">Modes of Intervention</a>
-              </li>
-              <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
-              <li><a href="strplan.html">Stratergic Plan</a></li>
-            </ul>
-          </li>
-
-          <!-- News Dropdown -->
-          <li class="dropdown">
-            <a
-              href="#"
-              class="dropdown-toggle"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >News</a
-            >
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="AR.html">Annual Reports</a></li>
-              <li><a href="documentaries.html">Documentaries</a></li>
-              <li><a href="publications.html">Publications</a></li>
-            </ul>
-          </li>
-
-          <li><a href="contact.html">Contact Us</a></li>
-          <li class="highlight"><a href="donate.html">DONATE</a></li>
-        </ul>
+      <div class="item">
+        <img src="images/mail.png" alt="Email Icon" />
+        <p>sedec@caritaslk.org</p>
+      </div>
+      <div class="language-selector">
+        <button class="lang">සිං</button>
+        <!-- Sinhala -->
+        <button class="lang">த</button>
+        <!-- Tamil -->
+        <button class="lang active">EN</button>
+        <!-- English (active by default) -->
       </div>
     </div>
-  </head>
+
+    <!-- Down section -->
+    <div class="downsection">
+      <div class="logos">
+        <img src="images/logo2.png" alt="Logo" width="40" />
+        <img src="images/logo3.png" alt="Logo" width="120" />
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open Menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main Nav -->
+      <ul id="navMenu" role="menubar">
+        <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+          ✕
+        </button>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Who We Are Dropdown -->
+        <li class="dropdown">
+          <a
+            href="aboutus.html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >About Us</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+            <li><a href="ourhistory.html">Our History</a></li>
+            <li><a href="org.html">Org Structure</a></li>
+            <li><a href="faculty.html">Facilities &amp; Services</a></li>
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li>
+              <a
+                href="whatwedo.html"
+                class="dropdown-toggle"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                What We Do
+              </a>
+            </li>
+            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+            <li>
+              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+            </li>
+            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+            <li><a href="strplan.html">Stratergic Plan</a></li>
+          </ul>
+        </li>
+
+        <!-- What We Do Dropdown -->
+        <li class="dropdown">
+          <a
+            href=".html"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Get involved
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
+            <li><a href="Internship.html">Internship</a></li>
+            <li><a href="Volunteer.html">Volunteer</a></li>
+            <li><a href="Vacancies.html">Vacancies</a></li>
+            <li><a href="FundRasis.html">Fund Raise</a></li>
+            <li><a href="advocates.html">Advocates</a></li>
+            <li><a href="applications.html">Applications</a></li>
+          </ul>
+        </li>
+
+        <!-- News Dropdown -->
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >News</a
+          >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="AR.html">Annual Reports</a></li>
+            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="highlight"><a href="donate.html">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+
   <body>
-    <!-- ===== HERO IMAGE ===== -->
+    <!-- HERO SECTION -->
     <section class="hero">
-      <img src="images/his.jpg" alt="Contact" class="mainimg" />
+      <img src="images/donate.jpg" alt="Hero Image" class="mainimg" />
       <div class="hero-text">
-        <h1>Our History</h1>
+        <h1>Application</h1>
+        <h4>Apply today</h4>
       </div>
     </section>
 
-    <section class="section2">
-      <h1>Building lives and improving standards since 1968</h1>
-      <p>
-        It was the noble vision of His Eminence Thomas Cardinal Cooray, to set
-        up a Social and Economic Centre to empower marginalized communities to
-        access their fundamental rights.
-      </p>
-      <br />
-      <p>
-        This task was later entrusted to Fr. Joe Fernando in 1956. Fr. Joe’s
-        decision to implement the bishops mandate was largely influenced by his
-        experience and dynamism where he ventured out as a young parish priest
-        to influence the fisherfolk to seek integral development in the early
-        1940s. As a result, Fr. Joe started a Co-operative Fishermen’s
-        Association at Sea Street.
-      </p>
-      <br />
-      <p>
-        Having being granted the privilege to attend the University of St.
-        Francis Xavier in Antigonish, Nova Scotia, Canada and having earned a
-        degree in Social Development, Fr. Joe was convinced that a genuine
-        people-oriented and people-sustained movement was the most effective
-        method to inspire individuals to actively strive for growth.
-      </p>
-      <br />
-      <p>
-        Later in 1956, Fr. James Morris of Catholic Relief Services proposed to
-        establish a relief service in Sri Lanka to facilitate progressive
-        actions. Simultaneously, Fr. Lucian Schmidt, then Vicar General of
-        Colombo, suggested expanding the Sea Street experience to the whole
-        island. These recommendations were presented to His Eminence Thomas
-        Cardinal Cooray, who was in Rome at the time, to consider setting up an
-        institution for social development in Sri Lanka.
-      </p>
-      <br />
-      <p>
-        As a result, SEDEC was founded in 1968. Established by Fr. Joe, the
-        organization’s operational tasks were inspired by
-        <i>Populorum Progressio</i>.
-      </p>
-      <br />
-      <p>
-        With 58 years of dedicated service to the nation, Caritas, Sri Lanka –
-        SEDEC has developed into becoming one of the largest and most regarded
-        humanitarian organizations in Sri Lanka. Its work centred around
-        Integral Human Development has spread out to thirteen Diocesan Centres
-        across the twelve Catholic Dioceses of Sri Lanka. Caritas Sri Lanka –
-        SEDEC has consistently led humanitarian emergency responses during
-        periods of adverse conditions in the country. Especially during the
-        Tsunami catastrophe in December 2004. SEDEC also implement initiatives
-        that promote inter-ethnic dialogue, mainly concerning the prolonged
-        internal conflict between the North and the East.
-      </p>
-    </section>
+    <!-- INTERNSHIP FORM -->
+    <section class="application-section">
+      <div class="application-container">
+        <div class="application-header">
+          <h2>Internship Application Form</h2>
+          <p>
+            Ready to make a difference? Complete our application form to get
+            started with your internship and join us in creating positive
+            change.
+          </p>
+        </div>
 
-    <!-- ===== Section 3: Directors / Administrators ===== -->
-    <section class="section3">
-      <h1>Directors / Administrators</h1>
+        <div class="application-content">
+          <div class="application-info">
+            <div class="info-card">
+              <div class="info-icon">📝</div>
+              <h3>Simple Process</h3>
+              <p>
+                Our form is quick and easy to complete. It should take only 5–10
+                minutes of your time.
+              </p>
+            </div>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <span class="year">1968 - 1974</span>
-          <p>Rev. Fr. Joe Fernando (Founding Director)</p>
-        </div>
-        <div class="timeline-item">
-          <span class="year">1974 - 1976</span>
-          <p>Rev. Fr. Lucian Schmidt</p>
-        </div>
-        <div class="timeline-item">
-          <span class="year">1976 - 1981</span>
-          <p>Mr. Basil Illangakoon</p>
-        </div>
-        <div class="timeline-item">
-          <span class="year">1981 - 1983</span>
-          <p>Rev. Fr. Vianney Fernando</p>
-        </div>
-        <div class="timeline-item">
-          <span class="year">1983 - 1986</span>
-          <p>Rev. Fr. Vincent Dep</p>
-        </div>
-        <div class="timeline-item">
-          <span class="year">1986 - 1990</span>
-          <p>Rev. Fr. Peter Charles</p>
-        </div>
-        <div class="timeline-item">
-          <span class="year">1990 - 1991</span>
-          <p>Rev. Fr. Camillus</p>
-        </div>
-        <div class="timeline-item">
-          <span class="year">1991 - 1995</span>
-          <p>Rev. Fr. Oswald Firth</p>
-        </div>
-        <div class="timeline-item">
-          <span class="year">1995 - 2001</span>
-          <p>Rev. Fr. Joseph Devarajah</p>
-        </div>
-        <div class="timeline-item">
-          <span class="year">2001 - 2009</span>
-          <p>Rev. Fr. Damian Fernando</p>
-        </div>
-        <div class="timeline-item">
-          <span class="year">2009 -2016</span>
-          <p>Rev. Fr. George Sigamoney</p>
-        </div>
-        <div class="timeline-item">
-          <span class="year">2016 - 2017</span>
-          <p>Rev. Fr. Shanthi Kumar Weliwita</p>
-        </div>
-        <div class="timeline-item">
-          <span class="year">2017 - 2022</span>
-          <p>Rev. Fr. Mahendra Gunetilleke</p>
-        </div>
-        <div class="timeline-item">
-          <span class="year">2022 - Present</span>
-          <p>Rev. Fr. Luke Nelson Perera (Present National Director)</p>
+            <div class="info-card">
+              <div class="info-icon">🔒</div>
+              <h3>Secure & Private</h3>
+              <p>
+                Your information is fully protected and never shared with third
+                parties.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">⏱️</div>
+              <h3>Quick Response</h3>
+              <p>
+                We process applications within 24–48 hours and will contact you
+                soon after submission.
+              </p>
+            </div>
+          </div>
+
+          <div class="application-cta">
+            <div class="cta-card">
+              <h3>Start Your Internship Application Today</h3>
+              <p>
+                Begin your journey of making an impact by completing our short
+                application form. We’ve designed it to be simple and efficient,
+                guiding you step by step.
+              </p>
+
+              <div class="requirements">
+                <h4>What you'll need:</h4>
+                <ul>
+                  <li>Personal identification details</li>
+                  <li>Contact information</li>
+                  <li>Education details</li>
+                  <li>Updated Resume</li>
+                  <li>Skills and Experience</li>
+                </ul>
+              </div>
+
+              <!-- ===== PDF Download Button ===== -->
+              <div
+                style="
+                  text-align: center;
+                  margin-top: 10px;
+                  margin-bottom: 15px;
+                "
+              >
+                <a
+                  href="pdf/Internship Application Form (1).pdf"
+                  download
+                  class="application-btn"
+                >
+                  <span>DOWNLOAD</span>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 5V19M12 19L5 12M12 19L19 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="support-info">
+                <p>
+                  Need help?
+                  <a href="contact.html">Contact our support team</a> or call
+                  <strong>+26 45 89 235</strong>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Minimized Chatbot Button -->
+    <!-- Volunteer application FORM SECTION -->
+    <section class="application-section">
+      <div class="application-container">
+        <div class="application-header">
+          <h2>Volunteer Application Form</h2>
+          <p>
+            Ready to make a difference? Complete our application form to get
+            started with your donation process and join us in our mission to
+            create positive change.
+          </p>
+        </div>
+
+        <div class="application-content">
+          <div class="application-info">
+            <div class="info-card">
+              <div class="info-icon">📝</div>
+              <h3>Simple Process</h3>
+              <p>
+                Our application form is designed to be quick and easy to
+                complete. It should take only 5-10 minutes of your time.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">🔒</div>
+              <h3>Secure & Private</h3>
+              <p>
+                Your information is protected with bank-level security. We
+                respect your privacy and never share your data.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">⏱️</div>
+              <h3>Quick Response</h3>
+              <p>
+                We process applications within 24-48 hours and will contact you
+                to confirm your donation details.
+              </p>
+            </div>
+          </div>
+
+          <div class="application-cta">
+            <div class="cta-card">
+              <h3>Start Your Donation Application Process Today</h3>
+              <p>
+                Begin your journey of making a positive impact by completing our
+                straightforward application form. We've designed the process to
+                be simple and efficient, guiding you through each step to ensure
+                your donation reaches those who need it most.
+              </p>
+
+              <div class="requirements">
+                <h4>What you'll need to complete the form:</h4>
+                <ul>
+                  <li>Personal identification details</li>
+                  <li>Contact information</li>
+                  <li>Education details</li>
+                  <li>Updated Resume</li>
+                  <li>Skills and Experience</li>
+                </ul>
+              </div>
+
+              <!-- ===== PDF Download Button ===== -->
+              <div
+                style="
+                  text-align: center;
+                  margin-top: 10px;
+                  margin-bottom: 20px;
+                "
+              >
+                <a
+                  href="pdf/Volunteer application form.pdf"
+                  download
+                  class="application-btn"
+                >
+                  <span>CLICK HERE TO DOWNLOAD</span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 5V19M12 19L5 12M12 19L19 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="support-info">
+                <p>
+                  Need help?
+                  <a href="contact.html">Contact our support team</a> or call
+                  <strong>+26 45 89 235</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- Minimized Chatbot Button -->
     <div class="chatbot-minimized" id="chatbotMinimized">
       <div class="chatbot-icon">
         <svg

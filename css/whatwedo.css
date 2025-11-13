@@ -239,28 +239,17 @@ body {
   display: inline-block;
 }
 
+/* Removed underline */
 .section-title::after {
   content: '';
-  display: block;
-  width: 100px;
-  height: 4px;
-  background: linear-gradient(90deg, #dc2626, #f87171);
-  margin: 20px auto 0;
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2);
-  transform: scaleX(0);
-  animation: expandLine 1s ease 0.8s forwards;
-}
-
-@keyframes expandLine {
-  to { transform: scaleX(1); }
+  display: none;
 }
 
 .section-subtitle {
   font-size: 1.25rem;
   line-height: 1.8;
-  color: #000000;
-  font-weight: 600;
+  color: #111111; /* Darker text */
+  font-weight: 700; /* Bold text */
   margin-bottom: 50px;
   max-width: 800px;
   margin-left: auto;
@@ -269,6 +258,23 @@ body {
   animation: fadeInUp 1s ease 0.5s forwards;
 }
 
+/* Strong text inside subtitle should be solid bold */
+.section-subtitle strong {
+  font-weight: 800;
+  color: #111111 !important; /* solid dark color */
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+}
+
+/* Emphasis text inside subtitle should also be dark */
+.section-subtitle .emphasis {
+  font-weight: 700;
+  color: #111111 !important; /* solid dark color */
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+}
+
+
 .section-subtitle .highlight {
   font-weight: 700;
   background: linear-gradient(135deg, #dc2626, #f87171);
@@ -276,17 +282,6 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   position: relative;
-}
-
-.section-subtitle .highlight::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, #dc2626, #f87171);
-  border-radius: 2px;
 }
 
 .focus-list {
@@ -386,104 +381,37 @@ body {
 
 /* ---------- RESPONSIVE FOCUS SECTION ---------- */
 @media (max-width: 1024px) {
-  .integrated-focus {
-    padding: 100px 20px;
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
-  }
-  
-  .section-subtitle {
-    font-size: 1.15rem;
-  }
+  .integrated-focus { padding: 100px 20px; }
+  .section-title { font-size: 2.5rem; }
+  .section-subtitle { font-size: 1.15rem; }
 }
 
 @media (max-width: 768px) {
-  .integrated-focus {
-    padding: 80px 20px;
-  }
-  
-  .integrated-focus .container {
-    padding: 50px 35px;
-  }
-
-  .section-title {
-    font-size: 2.2rem;
-  }
-
-  .section-subtitle {
-    font-size: 1.1rem;
-  }
-  
-  .focus-list li {
-    padding: 20px 20px 20px 60px;
-    font-size: 1.05rem;
-  }
-  
-  .focus-list .bullet {
-    left: 20px;
-    width: 28px;
-    height: 28px;
-  }
+  .integrated-focus { padding: 80px 20px; }
+  .integrated-focus .container { padding: 50px 35px; }
+  .section-title { font-size: 2.2rem; }
+  .section-subtitle { font-size: 1.1rem; }
+  .focus-list li { padding: 20px 20px 20px 60px; font-size: 1.05rem; }
+  .focus-list .bullet { left: 20px; width: 28px; height: 28px; }
 }
 
 @media (max-width: 480px) {
-  .integrated-focus {
-    padding: 60px 15px;
-  }
-
-  .integrated-focus .container {
-    padding: 40px 25px;
-    border-radius: 20px;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .section-subtitle {
-    font-size: 1rem;
-    margin-bottom: 35px;
-  }
-
-  .focus-list li {
-    font-size: 0.95rem;
-    padding: 18px 18px 18px 55px;
-    margin-bottom: 20px;
-  }
-
-  .focus-list .bullet {
-    width: 24px;
-    height: 24px;
-    left: 18px;
-  }
-  
-  .focus-list .bullet::before {
-    font-size: 0.8rem;
-  }
+  .integrated-focus { padding: 60px 15px; }
+  .integrated-focus .container { padding: 40px 25px; border-radius: 20px; }
+  .section-title { font-size: 1.8rem; }
+  .section-subtitle { font-size: 1rem; margin-bottom: 35px; }
+  .focus-list li { font-size: 0.95rem; padding: 18px 18px 18px 55px; margin-bottom: 20px; }
+  .focus-list .bullet { width: 24px; height: 24px; left: 18px; }
+  .focus-list .bullet::before { font-size: 0.8rem; }
 }
 
 @media (max-width: 360px) {
-  .integrated-focus .container {
-    padding: 30px 20px;
-  }
-  
-  .section-title {
-    font-size: 1.6rem;
-  }
-  
-  .focus-list li {
-    padding: 15px 15px 15px 50px;
-    font-size: 0.9rem;
-  }
-  
-  .focus-list .bullet {
-    width: 22px;
-    height: 22px;
-    left: 15px;
-  }
+  .integrated-focus .container { padding: 30px 20px; }
+  .section-title { font-size: 1.6rem; }
+  .focus-list li { padding: 15px 15px 15px 50px; font-size: 0.9rem; }
+  .focus-list .bullet { width: 22px; height: 22px; left: 15px; }
 }
+
 
 /* ---- GUIDING PRINCIPLES SECTION ---- */
 .principles {
@@ -517,6 +445,11 @@ body {
   margin-right: auto;
 }
 
+.subtitle strong {
+  font-weight: 700;      /* bold */
+  color: #000000;        /* black */
+}
+
 .subtitle span {
   color: #b33a3a;
   font-weight: 600;
@@ -544,23 +477,13 @@ body {
 }
 
 @keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 @keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .card:nth-child(2) { animation-delay: 0.2s; }
@@ -610,86 +533,35 @@ body {
 
 /* ---------- RESPONSIVE PRINCIPLES ---------- */
 @media (max-width: 1024px) {
-  .title {
-    font-size: 2.4rem;
-  }
-  
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-  }
+  .title { font-size: 2.4rem; }
+  .grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
 }
 
 @media (max-width: 768px) {
-  .principles {
-    padding: 50px 20px;
-  }
-  
-  .title {
-    font-size: 2rem;
-  }
-  
-  .subtitle {
-    font-size: 1rem;
-  }
-  
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .card {
-    padding: 25px 20px;
-  }
-  
-  .card h3 {
-    font-size: 1.2rem;
-  }
-  
-  .card p {
-    font-size: 0.9rem;
-  }
+  .principles { padding: 50px 20px; }
+  .title { font-size: 2rem; }
+  .subtitle { font-size: 1rem; }
+  .grid { grid-template-columns: 1fr; gap: 20px; }
+  .card { padding: 25px 20px; }
+  .card h3 { font-size: 1.2rem; }
+  .card p { font-size: 0.9rem; }
 }
 
 @media (max-width: 480px) {
-  .principles {
-    padding: 40px 15px;
-  }
-  
-  .title {
-    font-size: 1.8rem;
-  }
-  
-  .subtitle {
-    font-size: 0.95rem;
-  }
-  
-  .card {
-    padding: 20px 18px;
-  }
-  
-  .number {
-    height: 40px;
-    width: 40px;
-    font-size: 1rem;
-    top: -15px;
-    left: -15px;
-  }
+  .principles { padding: 40px 15px; }
+  .title { font-size: 1.8rem; }
+  .subtitle { font-size: 0.95rem; }
+  .card { padding: 20px 18px; }
+  .number { height: 40px; width: 40px; font-size: 1rem; top: -15px; left: -15px; }
 }
 
 @media (max-width: 360px) {
-  .title {
-    font-size: 1.6rem;
-  }
-  
-  .grid {
-    gap: 15px;
-  }
-  
-  .card {
-    padding: 18px 15px;
-  }
+  .title { font-size: 1.6rem; }
+  .grid { gap: 15px; }
+  .card { padding: 18px 15px; }
 }
+
+
 
 /* ===== Strategic Priorities ===== */
 .strategic-priorities {
