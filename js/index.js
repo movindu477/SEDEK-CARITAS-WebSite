@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
   const navMenu = document.getElementById("navMenu");
   const closeMenu = document.getElementById("closeMenu");
-  const dropdownItems = document.querySelectorAll("#navMenu .dropdown");
   const isMobile = () => window.matchMedia("(max-width: 640px)").matches;
 
   // Menu functions
@@ -27,13 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     document.body.style.overflow = "";
     
-    // Close all dropdowns
-    dropdownItems.forEach(d => {
-      d.classList.remove("active");
-      const dropdownMenu = d.querySelector('.dropdown-menu');
-      if (dropdownMenu) {
-        dropdownMenu.style.maxHeight = '0';
-      }
+    // Close all submenus
+    document.querySelectorAll('.dropdown-submenu.active').forEach(item => {
+      item.classList.remove("active");
     });
   }
 
@@ -53,108 +48,67 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Handle dropdown interactions
-  dropdownItems.forEach(item => {
-    const toggleLink = item.querySelector("a.dropdown-toggle");
-    const dropdownMenu = item.querySelector('.dropdown-menu');
-    
-    if (!toggleLink) return;
-
-    if (isMobile()) {
-      // Mobile behavior - toggle dropdown with smooth animation
-      toggleLink.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        
-        // Close other dropdowns
-        dropdownItems.forEach(otherItem => {
-          if (otherItem !== item && otherItem.classList.contains("active")) {
-            otherItem.classList.remove("active");
-            const otherMenu = otherItem.querySelector('.dropdown-menu');
-            if (otherMenu) {
-              otherMenu.style.maxHeight = '0';
-            }
-          }
-        });
-        
-        // Toggle current dropdown
-        if (item.classList.contains("active")) {
-          item.classList.remove("active");
-          if (dropdownMenu) {
-            dropdownMenu.style.maxHeight = '0';
-          }
-        } else {
-          item.classList.add("active");
-          if (dropdownMenu) {
-            // Calculate height for smooth animation
-            dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + 'px';
-          }
+  // SUBMENU TOGGLE FUNCTIONALITY
+  document.querySelectorAll('.dropdown-submenu .submenu-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      const submenuParent = this.closest('.dropdown-submenu');
+      
+      // Close all other submenus
+      document.querySelectorAll('.dropdown-submenu').forEach(otherSubmenu => {
+        if (otherSubmenu !== submenuParent) {
+          otherSubmenu.classList.remove('active');
         }
-      });
-    } else {
-      // Desktop behavior - hover
-      item.addEventListener("mouseenter", () => {
-        item.classList.add("active");
       });
       
-      item.addEventListener("mouseleave", () => {
-        item.classList.remove("active");
-      });
-    }
-
-    // Close dropdown when clicking on submenu items (mobile)
-    item.querySelectorAll(".dropdown-menu a").forEach(subLink => {
-      subLink.addEventListener("click", () => {
-        if (isMobile()) {
-          // Small delay to allow the click event to complete
-          setTimeout(() => {
-            closeMenuFn();
-          }, 100);
-        }
-      });
+      // Toggle current submenu
+      submenuParent.classList.toggle('active');
     });
   });
 
+  // Close submenu when clicking on submenu links
+  document.querySelectorAll('.dropdown-submenu .submenu a').forEach(link => {
+    link.addEventListener('click', function() {
+      if (isMobile()) {
+        setTimeout(() => {
+          closeMenuFn();
+        }, 100);
+      } else {
+        this.closest('.dropdown-submenu').classList.remove('active');
+      }
+    });
+  });
+
+  // Close submenus when clicking outside (desktop)
+  document.addEventListener('click', function(e) {
+    if (!isMobile()) {
+      if (!e.target.closest('.dropdown-submenu')) {
+        document.querySelectorAll('.dropdown-submenu.active').forEach(submenu => {
+          submenu.classList.remove('active');
+        });
+      }
+    }
+  });
+
   // Close menu when clicking outside (mobile)
-  document.addEventListener("click", (e) => {
+  document.addEventListener('click', function(e) {
     if (isMobile() && navMenu && navMenu.classList.contains("active")) {
-      const inside = e.target.closest("#navMenu") || e.target.closest("#mobileMenuBtn");
-      if (!inside) closeMenuFn();
+      if (!e.target.closest("#navMenu") && !e.target.closest("#mobileMenuBtn")) {
+        closeMenuFn();
+      }
     }
   });
 
   // Handle window resize
-  window.addEventListener("resize", () => {
-    if (!isMobile()) {
-      document.body.style.overflow = "";
-      if (navMenu) {
-        navMenu.classList.remove("active");
-      }
-      dropdownItems.forEach(d => {
-        d.classList.remove("active");
-        const dropdownMenu = d.querySelector('.dropdown-menu');
-        if (dropdownMenu) {
-          dropdownMenu.style.maxHeight = '';
-        }
-      });
-    } else {
-      // Reset dropdown heights on mobile when resizing
-      dropdownItems.forEach(d => {
-        const dropdownMenu = d.querySelector('.dropdown-menu');
-        if (d.classList.contains("active") && dropdownMenu) {
-          dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + 'px';
-        }
+  window.addEventListener('resize', function() {
+    if (!isMobile() && navMenu) {
+      navMenu.classList.remove("active");
+      document.querySelectorAll('.dropdown-submenu.active').forEach(submenu => {
+        submenu.classList.remove('active');
       });
     }
-  });
-
-  // Close dropdowns when clicking on non-dropdown menu items
-  document.querySelectorAll('#navMenu > li:not(.dropdown) > a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (isMobile()) {
-        closeMenuFn();
-      }
-    });
   });
 
   // ================= CAROUSEL / HORIZONTAL SCROLL =================
@@ -163,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const btnRight = document.querySelector('.scroll-btn.right');
 
   if (wrapper && btnLeft && btnRight) {
-    const scrollAmount = 320; // adjust according to card width + gap
+    const scrollAmount = 320;
     
     btnRight.addEventListener('click', () => {
       wrapper.scrollBy({ 
@@ -179,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
 
-    // Optional: Add keyboard navigation
     wrapper.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowRight') {
         e.preventDefault();

@@ -62,7 +62,7 @@
 
         <li><a href="index.html">Home</a></li>
 
-        <!-- Who We Are Dropdown -->
+        <!-- About Us Dropdown -->
         <li class="dropdown">
           <a
             href="aboutus.html"
@@ -72,32 +72,77 @@
             >About Us</a
           >
           <ul class="dropdown-menu" role="menu">
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="policies.html">Our Policies</a></li>
-            <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
-            <li><a href="ourhistory.html">Our History</a></li>
-            <li><a href="org.html">Organisation Structure</a></li>
-            <li><a href="faculty.html">Facilities &amp; Services</a></li>
-            <!-- ✅ Always load whatwedo.html and jump to the correct section -->
-            <li>
+            <!-- About Us Submenu -->
+            <li class="dropdown-submenu">
+              <a
+                href="aboutus.html"
+                class="submenu-toggle"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Who we are
+                <span class="dropdown-arrow">▼</span>
+              </a>
+              <ul class="dropdown-menu submenu" role="menu">
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="policies.html">Our Policies</a></li>
+                <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+                <li><a href="ourhistory.html">Our History</a></li>
+                <li><a href="org.html">Organisation Structure</a></li>
+                <li><a href="faculty.html">Facilities &amp; Services</a></li>
+              </ul>
+            </li>
+
+            <!-- What We Do Submenu -->
+            <li class="dropdown-submenu">
               <a
                 href="whatwedo.html"
-                class="dropdown-toggle"
+                class="submenu-toggle"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
                 What We Do
+                <span class="dropdown-arrow">▼</span>
+              </a>
+              <ul class="dropdown-menu submenu" role="menu">
+                <li><a href="whatwedo.html">What We Do Overview</a></li>
+                <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li>
+                  <a href="whatwedo.html#guiding-prin">Guiding Principles</a>
+                </li>
+                <li>
+                  <a href="whatwedo.html#Str-Prio">Strategic Priorities</a>
+                </li>
+                <li>
+                  <a href="whatwedo.html#Intervention">Modes of Intervention</a>
+                </li>
+                <li>
+                  <a href="whatwedo.html#Sec-Sep">Sector Specialization</a>
+                </li>
+                <li><a href="strplan.html">Strategic Plan</a></li>
+              </ul>
+            </li>
+
+            <!-- What We Do Submenu -->
+            <li class="dropdown-submenu">
+              <a
+                href="whatwedo.html"
+                class="submenu-toggle"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Vacancies/Careers
+                <span class="dropdown-arrow">▼</span>
+              </a>
+                <ul class="dropdown-menu submenu" role="menu">
+                  <li><a href=".html">Internships</a></li>
+                  <li><a href=".html">Vollunteer</a></li>
+                  <li><a href=".html">Current Opportunities</a></li>
+                  <li><a href=".html">Applications</a></li>
+                </ul>
               </a>
             </li>
-            <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
-            <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
-            <li>
-              <a href="whatwedo.html#Intervention">Modes of Intervention</a>
-            </li>
-            <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
-            <li><a href="strplan.html">Stratergic Plan</a></li>
           </ul>
         </li>
 
@@ -113,12 +158,9 @@
           </a>
           <ul class="dropdown-menu" role="menu">
             <!-- ✅ Always load whatwedo.html and jump to the correct section -->
-            <li><a href="Internship.html">Internship</a></li>
-            <li><a href="Volunteer.html">Volunteer</a></li>
-            <li><a href="Vacancies.html">Vacancies</a></li>
+            <li><a href="Internship.html">Parntership</a></li>
             <li><a href="FundRasis.html">Fund Raise</a></li>
             <li><a href="advocates.html">Advocates</a></li>
-            <li><a href="applications.html">Applications</a></li>
           </ul>
         </li>
 
@@ -129,12 +171,28 @@
             class="dropdown-toggle"
             aria-haspopup="true"
             aria-expanded="false"
-            >Stay Informed</a
           >
+            Stay Informed
+          </a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="AR.html">Annual Reports</a></li>
-            <li><a href="documentaries.html">Documentaries</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
             <li><a href="publications.html">Publications</a></li>
+            <li><a href="newsletters.html">Newsletters</a></li>
+            <!-- What We Do Submenu -->
+            <li class="dropdown-submenu">
+              <a
+                href="whatwedo.html"
+                class="submenu-toggle"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Our Impact
+                <span class="dropdown-arrow">▼</span>
+              </a>
+              <ul class="dropdown-menu submenu" role="menu">
+                <li><a href="AR.html">Annual Reports</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
 
@@ -280,6 +338,7 @@
       </div>
     </div>
 
+
     <div class="map-section">
       <!-- Map Left -->
       <div class="map-container">
@@ -291,12 +350,10 @@
 
         <!-- Diocese Dots -->
         <div
-          class="diocese-dot"
-          style="top: 5%; left: 23%"
-          data-name="Caritas Jaffna – HUDEC (Human Development Centre)"
-          data-info="The Diocese of Jaffna serves the northern region with a rich cultural and spiritual heritage."
-          data-link="dioceses/jaffna.html"
+      class="diocese-dot"
+      style="top: 5%; left: 23%"
         ></div>
+
 
         <div
           class="diocese-dot"
@@ -424,7 +481,7 @@
           <div class="recent-post">
             <h2>Annual Report 2024</h2>
             <p>Our latest annual report showcasing achievements and impact</p>
-            <a href="AR.html" class="read-more-btn">Read Report</a>
+            <a href="AR.html" class="read-more-btn">Read Now</a>
           </div>
 
           <!-- Recent Post 2 -->
@@ -432,7 +489,7 @@
             <h2>Research Publication Q3</h2>
             <p>Latest findings and insights from our research team</p>
             <a href="publications.html" class="read-more-btn"
-              >View Publication</a
+              >Read Now</a
             >
           </div>
 
@@ -440,7 +497,7 @@
           <div class="recent-post">
             <h2>Community Documentary</h2>
             <p>Featured documentary on community impact initiatives</p>
-            <a href="documentaries.html" class="read-more-btn">Watch Now</a>
+            <a href="documentaries.html" class="read-more-btn">Read Now</a>
           </div>
         </div>
       </div>
@@ -599,7 +656,28 @@
       </div>
     </div>
 
+<!-- Donate Section -->
+<!-- Donate Section -->
+<section class="donate-section">
+  <div class="donate-container">
+    <div class="donate-content">
+      <h2 class="donate-title">Donate Now</h2>
+      <p class="donate-description">
+        Your generous donations help us continue our work in supporting communities, 
+        providing education, healthcare, and humanitarian aid across Sri Lanka. 
+        Every contribution makes a difference in someone's life.
+      </p>
+      <div class="donate-options">
+        <a href="donate.html" class="donate-btn primary">Donate</a>
+        <a href="donate.html" class="donate-btn secondary">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- <br /> -->
+     <br />
+     <br />
 
     <!-- Minimized Chatbot Button -->
     <div class="chatbot-minimized" id="chatbotMinimized">
@@ -922,6 +1000,12 @@
         <a href="https://www.youtube.com/@caritassrilanka5709"
           ><img src="images/youtube.png" alt="YouTube Icon"
         /></a>
+        <a href="https://www.youtube.com/@caritassrilanka5709"
+          ><img src="images/R.png" alt="YouTube Icon"
+        /></a>
+        <a href="https://www.youtube.com/@caritassrilanka5709"
+          ><img src="images/OIrrrrP.jpg" alt="YouTube Icon"
+        /></a>
         <a
           href="https://www.instagram.com/caritas_sri_lanka?igsh=MWdlcGFzanhtb3A0&utm_source=qr"
           ><img src="images/instagram.png" alt="Instagram Icon"
@@ -938,12 +1022,13 @@
         /></a>
       </div>
 
-      <p>Call us: 0094 11 2691885</p>
-      <br />
+      <p>Call us: sedec@caritaslk.org</p>
+
       <p>
-        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road, P.O box: 1681,
-        Colombo 08, 00800 Sri Lanka
+        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road 
       </p>
+      <p>P.O box: 1681,
+        Colombo 08, 00800 Sri Lanka</p>
     </div>
 
     <div class="underpanel">
