@@ -56,7 +56,11 @@ document.addEventListener('DOMContentLoaded', function () {
       });
       
       // Toggle current dropdown
-      dropdown.classList.toggle('active');
+      if (!isActive) {
+          dropdown.classList.add('active');
+      } else {
+          dropdown.classList.remove('active');
+      }
   }
 
   // Mobile menu toggle
@@ -111,26 +115,101 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 
-  // Desktop hover functionality
+  // Desktop hover functionality - IMPROVED
   if (!isMobile()) {
-      // Add hover events for desktop
+      let hoverTimeouts = new Map();
+      const HOVER_DELAY = 100;
+
+      // Add hover events for main dropdowns
       document.querySelectorAll('.dropdown').forEach(dropdown => {
           dropdown.addEventListener('mouseenter', function() {
+              clearTimeout(hoverTimeouts.get(this));
               this.classList.add('active');
           });
           
-          dropdown.addEventListener('mouseleave', function() {
-              this.classList.remove('active');
+          dropdown.addEventListener('mouseleave', function(e) {
+              const relatedTarget = e.relatedTarget;
+              const timeoutId = setTimeout(() => {
+                  if (!this.contains(relatedTarget)) {
+                      this.classList.remove('active');
+                  }
+              }, HOVER_DELAY);
+              hoverTimeouts.set(this, timeoutId);
           });
       });
 
+      // Add hover events for dropdown menus
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+          menu.addEventListener('mouseenter', function() {
+              const dropdown = this.closest('.dropdown');
+              if (dropdown) {
+                  clearTimeout(hoverTimeouts.get(dropdown));
+                  dropdown.classList.add('active');
+              }
+          });
+          
+          menu.addEventListener('mouseleave', function(e) {
+              const relatedTarget = e.relatedTarget;
+              const dropdown = this.closest('.dropdown');
+              
+              if (dropdown) {
+                  const timeoutId = setTimeout(() => {
+                      if (!dropdown.contains(relatedTarget)) {
+                          dropdown.classList.remove('active');
+                      }
+                  }, HOVER_DELAY);
+                  hoverTimeouts.set(dropdown, timeoutId);
+              }
+          });
+      });
+
+      // Add hover events for submenus
       document.querySelectorAll('.dropdown-submenu').forEach(submenu => {
           submenu.addEventListener('mouseenter', function() {
+              clearTimeout(hoverTimeouts.get(this));
               this.classList.add('active');
           });
           
-          submenu.addEventListener('mouseleave', function() {
-              this.classList.remove('active');
+          submenu.addEventListener('mouseleave', function(e) {
+              const relatedTarget = e.relatedTarget;
+              const timeoutId = setTimeout(() => {
+                  if (!this.contains(relatedTarget)) {
+                      this.classList.remove('active');
+                  }
+              }, HOVER_DELAY);
+              hoverTimeouts.set(this, timeoutId);
+          });
+      });
+
+      // Add hover events for submenu menus
+      document.querySelectorAll('.submenu').forEach(menu => {
+          menu.addEventListener('mouseenter', function() {
+              const submenu = this.closest('.dropdown-submenu');
+              if (submenu) {
+                  clearTimeout(hoverTimeouts.get(submenu));
+                  submenu.classList.add('active');
+              }
+          });
+          
+          menu.addEventListener('mouseleave', function(e) {
+              const relatedTarget = e.relatedTarget;
+              const submenu = this.closest('.dropdown-submenu');
+              
+              if (submenu) {
+                  const timeoutId = setTimeout(() => {
+                      if (!submenu.contains(relatedTarget)) {
+                          submenu.classList.remove('active');
+                      }
+                  }, HOVER_DELAY);
+                  hoverTimeouts.set(submenu, timeoutId);
+              }
+          });
+      });
+
+      // Clear all timeouts when mouse enters navbar
+      navbar.addEventListener('mouseenter', () => {
+          hoverTimeouts.forEach((timeout, element) => {
+              clearTimeout(timeout);
           });
       });
   }
@@ -160,7 +239,9 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!isMobile() && navMenu) {
           // Reset mobile menu state on desktop
           navMenu.classList.remove("active");
-          mobileMenuBtn.classList.remove("active");
+          if (mobileMenuBtn) {
+              mobileMenuBtn.classList.remove("active");
+          }
           document.querySelectorAll('.dropdown.active, .dropdown-submenu.active').forEach(item => {
               item.classList.remove('active');
           });
