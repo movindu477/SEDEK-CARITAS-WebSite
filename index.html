@@ -1,874 +1,714 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <script src="js/index.js" defer></script>
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="js/index.js" defer></script>
+  <!-- Favicon -->
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" /> -->
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="icon" href="favicon.png" />
+</head>
 
 <!-- NAVBAR -->
 <div class="navbar" id="navbar">
   <!-- Top section -->
   <div class="topsection">
-      <div class="item">
-          <img src="images/phone-call.png" alt="Call Icon" />
-          <p>0094 11 2691885</p>
-      </div>
-      <div class="item">
-          <img src="images/mail.png" alt="Email Icon" />
-          <p>sedec@caritaslk.org</p>
-      </div>
-      <div class="language-selector">
-          <button class="lang">සිං</button>
-          <button class="lang">த</button>
-          <button class="lang active">EN</button>
-      </div>
+    <div class="item">
+      <img src="images/phone-call.png" alt="Call Icon" />
+      <p>+94 112 691 885</p>
+    </div>
+    <div class="item">
+      <img src="images/mail.png" alt="Email Icon" />
+      <p>sedec@caritaslk.org</p>
+    </div>
+    <div class="language-selector">
+      <button class="lang">සිං</button>
+      <button class="lang">த</button>
+      <button class="lang active">EN</button>
+    </div>
   </div>
 
   <!-- Down section -->
   <div class="downsection">
-      <div class="logos">
-          <img src="images/logo3.png" alt="Logo" width="120" />
-      </div>
+    <div class="logos">
+      <img src="images/logo3.png" alt="Logo" width="120" />
+    </div>
 
-      <!-- Mobile menu button -->
-      <button
-          class="mobile-menu-btn"
-          id="mobileMenuBtn"
-          aria-label="Open Menu"
-          aria-controls="navMenu"
-          aria-expanded="false"
-      >
-          <span></span><span></span><span></span>
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu" aria-controls="navMenu"
+      aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Main Nav -->
+    <ul id="navMenu" role="menubar">
+      <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+        ✕
       </button>
 
-      <!-- Main Nav -->
-      <ul id="navMenu" role="menubar">
-          <button class="close-menu" id="closeMenu" aria-label="Close Menu">
-              ✕
-          </button>
+      <li><a href="index.html">Home</a></li>
 
-          <li><a href="index.html">Home</a></li>
-
-          <!-- About Us Dropdown -->
-          <li class="dropdown">
-              <a
-                  href="aboutus.html"
-                  class="dropdown-toggle"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-              >
-                  About Us
-                  <span class="dropdown-arrow">▼</span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                  <!-- About Us Submenu -->
-                  <li class="dropdown-submenu">
-                      <a
-                          href="#"
-                          class="submenu-toggle"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                      >
-                          Who we are
-                          <span class="dropdown-arrow">▼</span>
-                      </a>
-                      <ul class="submenu" role="menu">
-                          <li><a href="aboutus.html">About Us</a></li>
-                          <li><a href="policies.html">Our Policies</a></li>
-                          <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
-                          <li><a href="ourhistory.html">Our History</a></li>
-                          <li><a href="org.html">Organisation Structure</a></li>
-                          <li><a href="faculty.html">Facilities &amp; Services</a></li>
-                      </ul>
-                  </li>
-
-                  <!-- What We Do Submenu -->
-                  <li class="dropdown-submenu">
-                      <a
-                          href="#"
-                          class="submenu-toggle"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                      >
-                          What We Do
-                          <span class="dropdown-arrow">▼</span>
-                      </a>
-                      <ul class="submenu" role="menu">
-                          <li><a href="whatwedo.html">What We Do Overview</a></li>
-                          <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
-                          <li><a href="projects.html">Projects</a></li>
-                          <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
-                          <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
-                          <li><a href="whatwedo.html#Intervention">Modes of Intervention</a></li>
-                          <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
-                          <li><a href="strplan.html">Strategic Plan</a></li>
-                      </ul>
-                  </li>
-
-                  <!-- Vacancies/Careers Submenu -->
-                  <li class="dropdown-submenu">
-                      <a
-                          href="#"
-                          class="submenu-toggle"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                      >
-                          Vacancies/Careers
-                          <span class="dropdown-arrow">▼</span>
-                      </a>
-                      <ul class="submenu" role="menu">
-                          <li><a href="internships.html">Internships</a></li>
-                          <li><a href="volunteer.html">Volunteer</a></li>
-                          <li><a href="opportunities.html">Current Opportunities</a></li>
-                          <li><a href="applications.html">Applications</a></li>
-                      </ul>
-                  </li>
-              </ul>
+      <!-- About Us Dropdown -->
+      <li class="dropdown">
+        <a href="aboutus.html" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          About Us
+          <span class="dropdown-arrow">▼</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <!-- About Us Submenu -->
+          <li class="dropdown-submenu">
+            <a href="#" class="submenu-toggle" aria-haspopup="true" aria-expanded="false">
+              Who we are
+              <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="submenu" role="menu">
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="policies.html">Our Policies</a></li>
+              <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+              <li><a href="ourhistory.html">Our History</a></li>
+              <li><a href="org.html">Organisation Structure</a></li>
+              <li><a href="faculty.html">Facilities &amp; Services</a></li>
+            </ul>
           </li>
 
-          <!-- Get Involved Dropdown -->
-          <li class="dropdown">
-              <a
-                  href="#"
-                  class="dropdown-toggle"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-              >
-                  Get involved
-                  <span class="dropdown-arrow">▼</span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                  <li><a href="partnership.html">Partnership</a></li>
-                  <li><a href="fundraise.html">Fund Raise</a></li>
-                  <li><a href="advocates.html">Advocates</a></li>
-              </ul>
+          <!-- What We Do Submenu -->
+          <li class="dropdown-submenu">
+            <a href="#" class="submenu-toggle" aria-haspopup="true" aria-expanded="false">
+              What We Do
+              <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="submenu" role="menu">
+              <li><a href="whatwedo.html">What We Do Overview</a></li>
+              <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+              <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+              <li><a href="whatwedo.html#Intervention">Modes of Intervention</a></li>
+              <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+              <li><a href="strplan.html">Strategic Plan</a></li>
+            </ul>
           </li>
 
-          <!-- Stay Informed Dropdown -->
-          <li class="dropdown">
-              <a
-                  href="#"
-                  class="dropdown-toggle"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-              >
-                  Stay Informed
-                  <span class="dropdown-arrow">▼</span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                  <li><a href="blogs.html">Blogs</a></li>
-                  <li><a href="publications.html">Publications</a></li>
-                  <li><a href="newsletters.html">Newsletters</a></li>
-                  <!-- Our Impact Submenu -->
-                  <li class="dropdown-submenu">
-                      <a
-                          href="#"
-                          class="submenu-toggle"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                      >
-                          Our Impact
-                          <span class="dropdown-arrow">▼</span>
-                      </a>
-                      <ul class="submenu" role="menu">
-                          <li><a href="annual-reports.html">Annual Reports</a></li>
-                      </ul>
-                  </li>
-              </ul>
+          <!-- Vacancies/Careers Submenu -->
+          <li class="dropdown-submenu">
+            <a href="#" class="submenu-toggle" aria-haspopup="true" aria-expanded="false">
+              Vacancies/Careers
+              <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="submenu" role="menu">
+              <li><a href="internships.html">Internships</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="opportunities.html">Current Opportunities</a></li>
+              <li><a href="applications.html">Applications</a></li>
+            </ul>
           </li>
+        </ul>
+      </li>
 
-          <li><a href="contact.html">Contact Us</a></li>
-          <li class="highlight"><a href="donate.html">DONATE</a></li>
-      </ul>
+      <!-- Get Involved Dropdown -->
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          Get involved
+          <span class="dropdown-arrow">▼</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="partnership.html">Partnership</a></li>
+          <li><a href="fundraise.html">Fund Raise</a></li>
+          <li><a href="advocates.html">Advocates</a></li>
+        </ul>
+      </li>
+
+      <!-- Stay Informed Dropdown -->
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          Stay Informed
+          <span class="dropdown-arrow">▼</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="newsletters.html">Newsletters</a></li>
+          <!-- Our Impact Submenu -->
+          <li class="dropdown-submenu">
+            <a href="#" class="submenu-toggle" aria-haspopup="true" aria-expanded="false">
+              Our Impact
+              <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="submenu" role="menu">
+              <li><a href="annual-reports.html">Annual Reports</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact Us</a></li>
+      <li class="highlight"><a href="donate.html">DONATE</a></li>
+    </ul>
   </div>
-</div>  </div>
+</div>
+</div>
 
 
-  <body>
-    <div class="mainimage1">
-      <div class="imggal">
-        <img src="images/mainori.avif" alt="Picture of children" />
-        <img src="images/mainimg2.jpg" alt="Image 2" />
-        <img src="images/mainimg3.jpg" alt="Image 3" />
-        <img src="images/mainimg4.jpg" alt="Image 4" />
+<body>
+  <div class="mainimage1">
+    <div class="imggal">
+      <!-- <img src="images/mainori.avif" alt="Picture of children" /> -->
+      <!-- <img src="images/mainimg2.jpg" alt="Image 2" /> -->
+      <!-- <img src="images/mainimg3.jpg" alt="Image 3" /> -->
+      <!-- <img src="images/mainimg4.jpg" alt="Image 4" /> -->
+      <img src="images/WhatsApp Image 2025-12-02 at 09.37.47 (1).jpeg" alt="Image 1" />
+      <img src="images/WhatsApp Image 2025-12-02 at 09.37.46 (2).jpeg" alt="Image 2" />
+      <img src="images/WhatsApp Image 2025-12-02 at 09.52.21 (2).jpeg" alt="Image 3" />
+      <img src="images/WhatsApp Image 2025-12-01 at 15.08.06.jpeg" alt="Image 4" />
+    </div>
+    <div class="overlay"></div>
+    <div class="texts" id="welcome-section">
+      <h1>
+        Welcome to Caritas Sri Lanka, <strong>SEDEC</strong>. Join us in our
+        journey towards making a difference in communities across the nation.
+      </h1>
+      <h1>
+        Empowering communities through
+        <strong>sustainable development</strong> and humanitarian assistance
+        for a better tomorrow.
+      </h1>
+      <h1>
+        Building resilient communities with
+        <strong>compassion and dedication</strong> through our various
+        outreach programs.
+      </h1>
+      <h1>
+        Together we can create <strong>lasting change</strong> and bring hope
+        to those who need it most.
+      </h1>
+    </div>
+    <div class="scroll-indicator" onclick="myscroll();" style="cursor: pointer;">
+      <span>Scroll to explore</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- WELCOME SECTION -->
+  <section class="welcome-section">
+    <div class="welcome-container">
+      <h2>Welcome to Caritas Sri Lanka, SEDEC</h2>
+      <p>
+        Join us in our journey towards fostering compassion, empowering
+        communities, and creating sustainable solutions to improve lives
+        across Sri Lanka.
+      </p>
+    </div>
+  </section>
+
+  <div class="mainimage2">
+    <div class="box">
+      <div class="cursorimg">
+        <img src="images/mainimage1.avif" alt="" />
       </div>
-      <div class="overlay"></div>
-      <div class="texts">
-        <h1>
-          Welcome to Caritas Sri Lanka, <strong>SEDEC</strong>. Join us in our
-          journey towards making a difference in communities across the nation.
-        </h1>
-        <h1>
-          Empowering communities through
-          <strong>sustainable development</strong> and humanitarian assistance
-          for a better tomorrow.
-        </h1>
-        <h1>
-          Building resilient communities with
-          <strong>compassion and dedication</strong> through our various
-          outreach programs.
-        </h1>
-        <h1>
-          Together we can create <strong>lasting change</strong> and bring hope
-          to those who need it most.
-        </h1>
+      <img src="images/people.png" alt="People icon" />
+      <h1>STRATEGIC PLAN</h1>
+      <p>2022 - 2025</p>
+    </div>
+
+    <div class="box">
+      <div class="cursorimg">
+        <img src="images/mainimage2.avif" alt="" />
       </div>
-      <div class="scroll-indicator">
-        <span>Scroll to explore</span>
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path d="M12 5v14M5 12l7 7 7-7" />
-        </svg>
+      <img src="images/heart.png" alt="Heart icon" />
+      <h1>CURRENT PROJECTS</h1>
+      <p>National, Regional and Diocesan</p>
+    </div>
+
+    <div class="box">
+      <div class="cursorimg">
+        <img src="images/mainimage3.avif" alt="" />
+      </div>
+      <img src="images/usd-circle.png" alt="Donation icon" />
+      <h1>MAKE A DONATION</h1>
+      <p>Be a Part of the Change</p>
+    </div>
+  </div>
+
+  <section class="impact-section">
+    <h2>Your support has helped:</h2>
+    <div class="impact-cards">
+      <div class="impact-box">
+        <img src="images/agenda.png" alt="Education Icon" />
+        <h3><span class="count" data-target="836927">0</span> people</h3>
+        <p>Gain access to education</p>
+      </div>
+      <div class="impact-box">
+        <img src="images/health.png" alt="Health Icon" />
+        <h3><span class="count" data-target="106812">0</span> people</h3>
+        <p>Gain access to improved health services</p>
+      </div>
+      <div class="impact-box">
+        <img src="images/leaves.png" alt="Food Icon" />
+        <h3><span class="count" data-target="71291">0</span> people</h3>
+        <p>With improved food security</p>
+      </div>
+      <div class="impact-box">
+        <img src="images/water-drop.png" alt="Water Icon" />
+        <h3><span class="count" data-target="84091">0</span> people</h3>
+        <p>Gain access to drinking water</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="mainimage3">
+    <!-- Left content -->
+    <div class="content">
+      <div class="heading">
+        <h1>WELCOME TO <span>SEDEC</span></h1>
+      </div>
+      <p>
+        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops’
+        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+        a confederation of 162 Catholic relief, development, and social
+        service organizations present in 200 countries and territories.
+        <br /><br />
+        Our national centre is located in the Archdiocese of Colombo, Sri
+        Lanka’s capital city. Our vision is radiated to the far corners of the
+        island through 13 Diocesan Centres. Caritas Sri Lanka-SEDEC is also
+        the national secretariat of the National Catholic Commission for
+        Justice Peace and Human Development.
+      </p>
+    </div>
+    <div class="image-container">
+      <img src="images/mainimag.jpg" alt="Picture of two children" />
+      <h1 class="overlay-heading"><span>CARITAS SRI LANKA</span></h1>
+    </div>
+  </div>
+
+
+  <div class="map-section">
+    <!-- Map Left -->
+    <div class="map-container">
+      <img src="images/lankamap.png" alt="Sri Lanka Map" class="srilanka-map" />
+
+      <!-- Diocese Dots -->
+      <div class="diocese-dot" style="top: 5%; left: 23%"></div>
+
+
+      <div class="diocese-dot" style="top: 22%; left: 18%" data-name="Caritas Mannar – HUDEC (Human Development Centre)"
+        data-info="Mannar Diocese is known for its strong faith communities and service initiatives."
+        data-link="dioceses/mannar.html"></div>
+
+      <div class="diocese-dot" style="top: 31%; left: 69%"
+        data-name="Caritas Trincomalee – EHED (Eastern Human & Economic Development Centre)"
+        data-info="Trincomalee Diocese has deep roots in education and interfaith dialogue."
+        data-link="dioceses/trincomalee.html"></div>
+
+      <div class="diocese-dot" style="top: 57%; left: 15%" data-name="Caritas Chilaw – Janasetha"
+        data-info="Chilaw Diocese is vibrant with youth and parish-centered missions." data-link="dioceses/chilaw.html">
+      </div>
+
+      <div class="diocese-dot" style="top: 37%; left: 38%" data-name="Caritas Anuradhapura – Seth Sarana"
+        data-info="Anuradhapura Diocese is home to a mix of ancient history and faith."
+        data-link="dioceses/anuradhapura.html"></div>
+
+      <div class="diocese-dot" style="top: 58%; left: 36%" data-name="Caritas Kurunegala – Seth Yahana"
+        data-info="Kurunegala Diocese emphasizes community outreach and pastoral care."
+        data-link="dioceses/kurunegala.html"></div>
+
+      <div class="diocese-dot" style="top: 62%; left: 48%" data-name="Caritas Kandy – Sethmini"
+        data-info="Kandy Diocese blends cultural diversity with a strong faith tradition."
+        data-link="dioceses/kandy.html"></div>
+
+      <div class="diocese-dot" style="top: 71%; left: 61%" data-name="Caritas Badulla – SETHMABIMBI"
+        data-info="Badulla Diocese is known for its mountainous beauty and pastoral care."
+        data-link="dioceses/badulla.html"></div>
+
+      <div class="diocese-dot" style="top: 78%; left: 39%" data-name="Caritas Ratnapura – Sethmini"
+        data-info="Ratnapura Diocese serves communities in the gem-rich region." data-link="dioceses/ratnapura.html">
+      </div>
+
+      <div class="diocese-dot" style="top: 93%; left: 30%" data-name="Caritas Galle – Seth Sevana"
+        data-info="Galle Diocese has a strong coastal presence with active parishes." data-link="dioceses/galle.html">
+      </div>
+
+      <div class="diocese-dot" style="top: 71%; left: 16%" data-name="Caritas Colombo – Seth Sarana"
+        data-info="Colombo Archdiocese is the heart of Catholicism in Sri Lanka." data-link="dioceses/colombo.html">
+      </div>
+
+      <div class="diocese-dot" style="top: 52%; left: 87%"
+        data-name="Caritas Batticaloa – EHED (Eastern Human & Economic Development Centre)"
+        data-info="Colombo Archdiocese is the heart of Catholicism in Sri Lanka." data-link="dioceses/colombo.html">
+      </div>
+
+      <div class="diocese-dot" style="top: 27%; left: 42%" data-name="Caritas Vanni – HUDEC (Human Development Centre)"
+        data-info="Colombo Archdiocese is the heart of Catholicism in Sri Lanka." data-link="dioceses/colombo.html">
+      </div>
+
+      <!-- Popup Box -->
+      <div id="popup" class="popup-box">
+        <h3 id="popup-title"></h3>
+        <p id="popup-text"></p>
+        <a id="popup-btn" href="#" target="_blank">
+          <button>Find Out More</button>
+        </a>
       </div>
     </div>
 
-    <!-- WELCOME SECTION -->
-    <section class="welcome-section">
-      <div class="welcome-container">
-        <h2>Welcome to Caritas Sri Lanka, SEDEC</h2>
-        <p>
-          Join us in our journey towards fostering compassion, empowering
-          communities, and creating sustainable solutions to improve lives
-          across Sri Lanka.
-        </p>
-      </div>
-    </section>
-
-    <div class="mainimage2">
-      <div class="box">
-        <div class="cursorimg">
-          <img src="images/mainimage1.avif" alt="" />
-        </div>
-        <img src="images/people.png" alt="People icon" />
-        <h1>STRATEGIC PLAN</h1>
-        <p>2022 - 2025</p>
-      </div>
-
-      <div class="box">
-        <div class="cursorimg">
-          <img src="images/mainimage2.avif" alt="" />
-        </div>
-        <img src="images/heart.png" alt="Heart icon" />
-        <h1>CURRENT PROJECTS</h1>
-        <p>National, Regional and Diocesan</p>
-      </div>
-
-      <div class="box">
-        <div class="cursorimg">
-          <img src="images/mainimage3.avif" alt="" />
-        </div>
-        <img src="images/usd-circle.png" alt="Donation icon" />
-        <h1>MAKE A DONATION</h1>
-        <p>Be a Part of the Change</p>
-      </div>
+    <!-- Text Right -->
+    <div class="map-text">
+      <h1>Our Network</h1>
+      <p>
+        Discover the 13 Catholic dioceses of Sri Lanka, each with its own
+        unique history, traditions, and contributions to the faithful
+        communities across the island. Click on the red dots to learn more
+        about each diocese.
+      </p>
     </div>
+  </div>
 
-    <section class="impact-section">
-      <h2>Your support has helped:</h2>
-      <div class="impact-cards">
-        <div class="impact-box">
-          <img src="images/agenda.png" alt="Education Icon" />
-          <h3><span class="count" data-target="836927">0</span> people</h3>
-          <p>Gain access to education</p>
+  <div class="mainimage5">
+    <div class="content">
+      <h1>Recent Publications & Documents</h1>
+      <div class="recent-posts-container">
+        <!-- Recent Post 1 -->
+        <div class="recent-post">
+          <h2>Annual Report 2024</h2>
+          <p>Our latest annual report showcasing achievements and impact</p>
+          <a href="AR.html" class="read-more-btn">Read Now</a>
         </div>
-        <div class="impact-box">
-          <img src="images/health.png" alt="Health Icon" />
-          <h3><span class="count" data-target="106812">0</span> people</h3>
-          <p>Gain access to improved health services</p>
+
+        <!-- Recent Post 2 -->
+        <div class="recent-post">
+          <h2>Research Publication Q3</h2>
+          <p>Latest findings and insights from our research team</p>
+          <a href="publications.html" class="read-more-btn">Read Now</a>
         </div>
-        <div class="impact-box">
-          <img src="images/leaves.png" alt="Food Icon" />
-          <h3><span class="count" data-target="71291">0</span> people</h3>
-          <p>With improved food security</p>
-        </div>
-        <div class="impact-box">
-          <img src="images/water-drop.png" alt="Water Icon" />
-          <h3><span class="count" data-target="84091">0</span> people</h3>
-          <p>Gain access to drinking water</p>
-        </div>
-      </div>
-    </section>
 
-    <div class="mainimage3">
-      <!-- Left content -->
-      <div class="content">
-        <div class="heading">
-          <h1>WELCOME TO <span>SEDEC</span></h1>
-        </div>
-        <p>
-          Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops’
-          Conference of Sri Lanka and is affiliated to Caritas Internationalis,
-          a confederation of 162 Catholic relief, development, and social
-          service organizations present in 200 countries and territories.
-          <br /><br />
-          Our national centre is located in the Archdiocese of Colombo, Sri
-          Lanka’s capital city. Our vision is radiated to the far corners of the
-          island through 13 Diocesan Centres. Caritas Sri Lanka-SEDEC is also
-          the national secretariat of the National Catholic Commission for
-          Justice Peace and Human Development.
-        </p>
-      </div>
-      <div class="image-container">
-        <img src="images/mainimag.jpg" alt="Picture of two children" />
-        <h1 class="overlay-heading"><span>CARITAS SRI LANKA</span></h1>
-      </div>
-    </div>
-
-
-    <div class="map-section">
-      <!-- Map Left -->
-      <div class="map-container">
-        <img
-          src="images/lankamap.png"
-          alt="Sri Lanka Map"
-          class="srilanka-map"
-        />
-
-        <!-- Diocese Dots -->
-        <div
-      class="diocese-dot"
-      style="top: 5%; left: 23%"
-        ></div>
-
-
-        <div
-          class="diocese-dot"
-          style="top: 22%; left: 18%"
-          data-name="Caritas Mannar – HUDEC (Human Development Centre)"
-          data-info="Mannar Diocese is known for its strong faith communities and service initiatives."
-          data-link="dioceses/mannar.html"
-        ></div>
-
-        <div
-          class="diocese-dot"
-          style="top: 31%; left: 69%"
-          data-name="Caritas Trincomalee – EHED (Eastern Human & Economic Development Centre)"
-          data-info="Trincomalee Diocese has deep roots in education and interfaith dialogue."
-          data-link="dioceses/trincomalee.html"
-        ></div>
-
-        <div
-          class="diocese-dot"
-          style="top: 57%; left: 15%"
-          data-name="Caritas Chilaw – Janasetha"
-          data-info="Chilaw Diocese is vibrant with youth and parish-centered missions."
-          data-link="dioceses/chilaw.html"
-        ></div>
-
-        <div
-          class="diocese-dot"
-          style="top: 37%; left: 38%"
-          data-name="Caritas Anuradhapura – Seth Sarana"
-          data-info="Anuradhapura Diocese is home to a mix of ancient history and faith."
-          data-link="dioceses/anuradhapura.html"
-        ></div>
-
-        <div
-          class="diocese-dot"
-          style="top: 58%; left: 36%"
-          data-name="Caritas Kurunegala – Seth Yahana"
-          data-info="Kurunegala Diocese emphasizes community outreach and pastoral care."
-          data-link="dioceses/kurunegala.html"
-        ></div>
-
-        <div
-          class="diocese-dot"
-          style="top: 62%; left: 48%"
-          data-name="Caritas Kandy – Sethmini"
-          data-info="Kandy Diocese blends cultural diversity with a strong faith tradition."
-          data-link="dioceses/kandy.html"
-        ></div>
-
-        <div
-          class="diocese-dot"
-          style="top: 71%; left: 61%"
-          data-name="Caritas Badulla – SETHMABIMBI"
-          data-info="Badulla Diocese is known for its mountainous beauty and pastoral care."
-          data-link="dioceses/badulla.html"
-        ></div>
-
-        <div
-          class="diocese-dot"
-          style="top: 78%; left: 39%"
-          data-name="Caritas Ratnapura – Sethmini"
-          data-info="Ratnapura Diocese serves communities in the gem-rich region."
-          data-link="dioceses/ratnapura.html"
-        ></div>
-
-        <div
-          class="diocese-dot"
-          style="top: 93%; left: 30%"
-          data-name="Caritas Galle – Seth Sevana"
-          data-info="Galle Diocese has a strong coastal presence with active parishes."
-          data-link="dioceses/galle.html"
-        ></div>
-
-        <div
-          class="diocese-dot"
-          style="top: 71%; left: 16%"
-          data-name="Caritas Colombo – Seth Sarana"
-          data-info="Colombo Archdiocese is the heart of Catholicism in Sri Lanka."
-          data-link="dioceses/colombo.html"
-        ></div>
-
-        <div
-          class="diocese-dot"
-          style="top: 52%; left: 87%"
-          data-name="Caritas Batticaloa – EHED (Eastern Human & Economic Development Centre)"
-          data-info="Colombo Archdiocese is the heart of Catholicism in Sri Lanka."
-          data-link="dioceses/colombo.html"
-        ></div>
-
-        <div
-          class="diocese-dot"
-          style="top: 27%; left: 42%"
-          data-name="Caritas Vanni – HUDEC (Human Development Centre)"
-          data-info="Colombo Archdiocese is the heart of Catholicism in Sri Lanka."
-          data-link="dioceses/colombo.html"
-        ></div>
-
-        <!-- Popup Box -->
-        <div id="popup" class="popup-box">
-          <h3 id="popup-title"></h3>
-          <p id="popup-text"></p>
-          <a id="popup-btn" href="#" target="_blank">
-            <button>Find Out More</button>
-          </a>
-        </div>
-      </div>
-
-      <!-- Text Right -->
-      <div class="map-text">
-        <h1>Our Network</h1>
-        <p>
-          Discover the 13 Catholic dioceses of Sri Lanka, each with its own
-          unique history, traditions, and contributions to the faithful
-          communities across the island. Click on the red dots to learn more
-          about each diocese.
-        </p>
-      </div>
-    </div>
-
-    <div class="mainimage5">
-      <div class="content">
-        <h1>Recent Publications & Documents</h1>
-        <div class="recent-posts-container">
-          <!-- Recent Post 1 -->
-          <div class="recent-post">
-            <h2>Annual Report 2024</h2>
-            <p>Our latest annual report showcasing achievements and impact</p>
-            <a href="AR.html" class="read-more-btn">Read Now</a>
-          </div>
-
-          <!-- Recent Post 2 -->
-          <div class="recent-post">
-            <h2>Research Publication Q3</h2>
-            <p>Latest findings and insights from our research team</p>
-            <a href="publications.html" class="read-more-btn"
-              >Read Now</a
-            >
-          </div>
-
-          <!-- Recent Post 3 -->
-          <div class="recent-post">
-            <h2>Community Documentary</h2>
-            <p>Featured documentary on community impact initiatives</p>
-            <a href="documentaries.html" class="read-more-btn">Read Now</a>
-          </div>
+        <!-- Recent Post 3 -->
+        <div class="recent-post">
+          <h2>Community Documentary</h2>
+          <p>Featured documentary on community impact initiatives</p>
+          <a href="documentaries.html" class="read-more-btn">Read Now</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="mainimage9">
-      <h1>PRIORITY SECTORS</h1>
-      <div class="sectors">
-        <div class="sector1">
-          <h1>Sector 1</h1>
-          <img src="images/sector1.jpg" alt="Sector 1" />
-          <p>FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE</p>
-          <div class="content-overlay">
-            <h2>Sector 1</h2>
-            <p>
-              FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE. Learn more about
-              our initiatives in this sector.
-            </p>
-          </div>
+  <div class="mainimage9">
+    <h1>PRIORITY SECTORS</h1>
+    <div class="sectors">
+      <div class="sector1">
+        <h1>Sector 1</h1>
+        <img src="images/sector1.jpg" alt="Sector 1" />
+        <p>FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE</p>
+        <div class="content-overlay">
+          <h2>Sector 1</h2>
+          <p>
+            FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE. Learn more about
+            our initiatives in this sector.
+          </p>
         </div>
+      </div>
 
-        <div class="sector1">
-          <h1>Sector 2</h1>
-          <img src="images/sector2.avif" alt="Sector 2" />
-          <p>FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE</p>
-          <div class="content-overlay">
-            <h2>Sector 2</h2>
-            <p>
-              FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE. Learn more about
-              our initiatives in this sector.
-            </p>
-          </div>
+      <div class="sector1">
+        <h1>Sector 2</h1>
+        <img src="images/sector2.avif" alt="Sector 2" />
+        <p>FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE</p>
+        <div class="content-overlay">
+          <h2>Sector 2</h2>
+          <p>
+            FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE. Learn more about
+            our initiatives in this sector.
+          </p>
         </div>
+      </div>
 
-        <div class="sector1">
-          <h1>Sector 3</h1>
-          <img src="images/sector3.avif" alt="Sector 3" />
-          <p>FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE</p>
-          <div class="content-overlay">
-            <h2>Sector 3</h2>
-            <p>
-              FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE. Learn more about
-              our initiatives in this sector.
-            </p>
-          </div>
+      <div class="sector1">
+        <h1>Sector 3</h1>
+        <img src="images/sector3.avif" alt="Sector 3" />
+        <p>FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE</p>
+        <div class="content-overlay">
+          <h2>Sector 3</h2>
+          <p>
+            FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE. Learn more about
+            our initiatives in this sector.
+          </p>
         </div>
+      </div>
 
-        <div class="sector1">
-          <h1>Sector 4</h1>
-          <img src="images/sector4.avif" alt="Sector 4" />
-          <p>FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE</p>
-          <div class="content-overlay">
-            <h2>Sector 4</h2>
-            <p>
-              FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE. Learn more about
-              our initiatives in this sector.
-            </p>
-          </div>
+      <div class="sector1">
+        <h1>Sector 4</h1>
+        <img src="images/sector4.avif" alt="Sector 4" />
+        <p>FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE</p>
+        <div class="content-overlay">
+          <h2>Sector 4</h2>
+          <p>
+            FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE. Learn more about
+            our initiatives in this sector.
+          </p>
         </div>
+      </div>
 
-        <div class="sector1">
-          <h1>Sector 5</h1>
-          <img src="images/sector5.avif" alt="Sector 5" />
-          <p>FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE</p>
-          <div class="content-overlay">
-            <h2>Sector 5</h2>
-            <p>
-              FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE. Learn more about
-              our initiatives in this sector.
-            </p>
-          </div>
+      <div class="sector1">
+        <h1>Sector 5</h1>
+        <img src="images/sector5.avif" alt="Sector 5" />
+        <p>FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE</p>
+        <div class="content-overlay">
+          <h2>Sector 5</h2>
+          <p>
+            FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE. Learn more about
+            our initiatives in this sector.
+          </p>
         </div>
+      </div>
 
-        <div class="sector1">
-          <h1>Sector 6</h1>
-          <img src="images/sector6.avif" alt="Sector 6" />
-          <p>FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE</p>
-          <div class="content-overlay">
-            <h2>Sector 6</h2>
-            <p>
-              FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE. Learn more about
-              our initiatives in this sector.
-            </p>
-          </div>
+      <div class="sector1">
+        <h1>Sector 6</h1>
+        <img src="images/sector6.avif" alt="Sector 6" />
+        <p>FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE</p>
+        <div class="content-overlay">
+          <h2>Sector 6</h2>
+          <p>
+            FOSTER SUSTAINED DIALOGUE FOR JUSTICE AND PEACE. Learn more about
+            our initiatives in this sector.
+          </p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="mainimage8">
-      <div class="overlay">
-        <h1>Upcoming Events/Speial Programmes</h1>
-        <p>Currently there are no upcoming events</p>
-      </div>
+  <!-- <div class="mainimage8">
+    <div class="overlay">
+      <h1>Upcoming Events/Speial Programmes</h1>
+      <p>Currently there are no upcoming events</p>
     </div>
+  </div> -->
 
-    <div class="mainimage6">
-      <h1>OUR PARTNERS</h1>
-      <p>Working together for a better tomorrow</p>
+  <div class="mainimage6">
+    <h1>OUR PARTNERS</h1>
+    <p>Working together for a better tomorrow</p>
 
-      <div class="logo-grid">
-        <!-- First row (logos 1-6) -->
-        <div class="logo-item">
-          <img src="images/partner1.png" alt="Partner 1" />
-        </div>
-        <div class="logo-item">
-          <img src="images/partner2.png" alt="Partner 2" />
-        </div>
-        <div class="logo-item">
-          <img src="images/partner3.png" alt="Partner 3" />
-        </div>
-        <div class="logo-item">
-          <img src="images/partner4.png" alt="Partner 4" />
-        </div>
-        <div class="logo-item">
-          <img src="images/partner5.png" alt="Partner 5" />
-        </div>
-        <div class="logo-item">
-          <img src="images/partner6.png" alt="Partner 6" />
-        </div>
-
-        <!-- Second row (logos 7-12) -->
-        <div class="logo-item">
-          <img src="images/partner7.png" alt="Partner 7" />
-        </div>
-        <div class="logo-item">
-          <img src="images/partner8.png" alt="Partner 8" />
-        </div>
-        <div class="logo-item">
-          <img src="images/partner9.png" alt="Partner 9" />
-        </div>
-        <div class="logo-item">
-          <img src="images/partner10.png" alt="Partner 10" />
-        </div>
-        <div class="logo-item">
-          <img src="images/partner11.png" alt="Partner 11" />
-        </div>
-        <div class="logo-item">
-          <img src="images/partner12.png" alt="Partner 12" />
-        </div>
-
-        <!-- Third row (logos 13-16) -->
-        <div class="logo-item">
-          <img src="images/partner16.png" alt="Partner 16" />
-        </div>
-        <div class="logo-item">
-          <img src="images/partner17.png" alt="Partner 17" />
-        </div>
-        <div class="logo-item">
-          <img src="images/partner18.png" alt="Partner 18" />
-        </div>
-        <div class="logo-item">
-          <img src="images/partner19.png" alt="Partner 19" />
-        </div>
-        <div class="logo-item empty-slot"></div>
-        <div class="logo-item empty-slot"></div>
+    <div class="logo-grid">
+      <!-- First row (logos 1-6) -->
+      <div class="logo-item">
+        <img src="images/partner1.png" alt="Partner 1" />
       </div>
-    </div>
+      <div class="logo-item">
+        <img src="images/partner2.png" alt="Partner 2" />
+      </div>
+      <div class="logo-item">
+        <img src="images/partner3.png" alt="Partner 3" />
+      </div>
+      <div class="logo-item">
+        <img src="images/partner4.png" alt="Partner 4" />
+      </div>
+      <div class="logo-item">
+        <img src="images/partner5.png" alt="Partner 5" />
+      </div>
+      <div class="logo-item">
+        <img src="images/partner6.png" alt="Partner 6" />
+      </div>
 
-<!-- Donate Section -->
-<!-- Donate Section -->
+      <!-- Second row (logos 7-12) -->
+      <div class="logo-item">
+        <img src="images/partner7.png" alt="Partner 7" />
+      </div>
+      <div class="logo-item">
+        <img src="images/partner8.png" alt="Partner 8" />
+      </div>
+      <div class="logo-item">
+        <img src="images/partner9.png" alt="Partner 9" />
+      </div>
+      <div class="logo-item">
+        <img src="images/partner10.png" alt="Partner 10" />
+      </div>
+      <div class="logo-item">
+        <img src="images/partner11.png" alt="Partner 11" />
+      </div>
+      <div class="logo-item">
+        <img src="images/partner12.png" alt="Partner 12" />
+      </div>
+
+      <!-- Third row (logos 13-16) -->
+      <div class="logo-item">
+        <img src="images/partner16.png" alt="Partner 16" />
+      </div>
+      <div class="logo-item">
+        <img src="images/partner17.png" alt="Partner 17" />
+      </div>
+      <div class="logo-item">
+        <img src="images/partner18.png" alt="Partner 18" />
+      </div>
+      <div class="logo-item">
+        <img src="images/partner19.png" alt="Partner 19" />
+      </div>
+      <div class="logo-item empty-slot"></div>
+      <div class="logo-item empty-slot"></div>
+    </div>
+  </div>
+
+  <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+    <!-- Donate Section -->
     <section class="donate-section">
-        <h1 class="donate-title">Donate Now</h1>
-        <p class="donate-description">
-            Your generous contribution helps us continue our mission to make a positive impact in our community. 
-            Every donation, no matter the size, brings us one step closer to achieving our goals and creating lasting change.
-        </p>
-        <div class="button-container">
-            <a href="donate.html" class="donate-button">Donate Now</a>
-            <button class="learn-button">Learn More</button>
-        </div>
-    </section>
-
-    <!-- <br /> -->
-     <br />
-     <br />
-
-    <!-- Minimized Chatbot Button -->
-    <div class="chatbot-minimized" id="chatbotMinimized">
-      <div class="chatbot-icon">
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+      <h1 class="donate-title">Donate Now</h1>
+      <p class="donate-description">
+        Your generous contribution helps us continue our mission to make a positive impact in our community.
+        Every donation, no matter the size, brings us one step closer to achieving our goals and creating lasting
+        change.
+      </p>
+      <div class="button-container">
+        <a href="donate.html" class="donate-button">Donate Now</a>
+        <button class="learn-button">Learn More</button>
       </div>
-      <span class="chatbot-text">Need help?</span>
+    </section>
+  </div>
+
+  <!-- <br /> -->
+  <br />
+  <br />
+
+  <!-- Minimized Chatbot Button -->
+  <div class="chatbot-minimized" id="chatbotMinimized">
+    <div class="chatbot-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+    <span class="chatbot-text">Need help?</span>
+  </div>
+
+  <!-- Expanded Chatbot Panel -->
+  <div class="chatbot-expanded" id="chatbotExpanded">
+    <div class="chatbot-header">
+      <div class="header-left">
+        <div class="chatbot-avatar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="chatbot-info">
+          <h3>AI Assistant</h3>
+          <span class="status">Online</span>
+        </div>
+      </div>
+      <button class="close-btn" id="closeChatbot">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
     </div>
 
-    <!-- Expanded Chatbot Panel -->
-    <div class="chatbot-expanded" id="chatbotExpanded">
-      <div class="chatbot-header">
-        <div class="header-left">
-          <div class="chatbot-avatar">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <div class="chatbot-info">
-            <h3>AI Assistant</h3>
-            <span class="status">Online</span>
-          </div>
-        </div>
-        <button class="close-btn" id="closeChatbot">
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+    <div class="chatbot-body">
+      <div class="message bot-message">
+        <div class="message-avatar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M18 6L6 18M6 6L18 18"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+              d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="message-content">
+          <p>Hello there! 👋 How can I help you today?</p>
+          <span class="message-time">12:00 PM</span>
+        </div>
+      </div>
+
+      <div class="message bot-message">
+        <div class="message-avatar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="message-content">
+          <p>I can assist you with:</p>
+          <ul class="quick-options">
+            <li>Product information</li>
+            <li>Technical support</li>
+            <li>Account questions</li>
+            <li>General inquiries</li>
+          </ul>
+          <span class="message-time">12:01 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chatbot-footer">
+      <div class="input-container">
+        <input type="text" placeholder="Type your message..." class="message-input" />
+        <button class="send-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
       </div>
-
-      <div class="chatbot-body">
-        <div class="message bot-message">
-          <div class="message-avatar">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <div class="message-content">
-            <p>Hello there! 👋 How can I help you today?</p>
-            <span class="message-time">12:00 PM</span>
-          </div>
-        </div>
-
-        <div class="message bot-message">
-          <div class="message-avatar">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <div class="message-content">
-            <p>I can assist you with:</p>
-            <ul class="quick-options">
-              <li>Product information</li>
-              <li>Technical support</li>
-              <li>Account questions</li>
-              <li>General inquiries</li>
-            </ul>
-            <span class="message-time">12:01 PM</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="chatbot-footer">
-        <div class="input-container">
-          <input
-            type="text"
-            placeholder="Type your message..."
-            class="message-input"
-          />
-          <button class="send-btn">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
     </div>
-    <script>
-      // Chatbot functionality
-      const chatbotMinimized = document.getElementById("chatbotMinimized");
-      const chatbotExpanded = document.getElementById("chatbotExpanded");
-      const closeChatbot = document.getElementById("closeChatbot");
-      const messageInput = document.querySelector(".message-input");
-      const sendBtn = document.querySelector(".send-btn");
-      const chatBody = document.querySelector(".chatbot-body");
+  </div>
+  <script>
+    // Chatbot functionality
+    const chatbotMinimized = document.getElementById("chatbotMinimized");
+    const chatbotExpanded = document.getElementById("chatbotExpanded");
+    const closeChatbot = document.getElementById("closeChatbot");
+    const messageInput = document.querySelector(".message-input");
+    const sendBtn = document.querySelector(".send-btn");
+    const chatBody = document.querySelector(".chatbot-body");
 
-      // Toggle chatbot
-      chatbotMinimized.addEventListener("click", () => {
-        chatbotExpanded.classList.add("active");
-      });
+    // Toggle chatbot
+    chatbotMinimized.addEventListener("click", () => {
+      chatbotExpanded.classList.add("active");
+    });
 
-      closeChatbot.addEventListener("click", () => {
-        chatbotExpanded.classList.remove("active");
-      });
+    closeChatbot.addEventListener("click", () => {
+      chatbotExpanded.classList.remove("active");
+    });
 
-      // Send message function
-      function sendMessage() {
-        const message = messageInput.value.trim();
-        if (message) {
-          // Add user message
-          addUserMessage(message);
+    // Send message function
+    function sendMessage() {
+      const message = messageInput.value.trim();
+      if (message) {
+        // Add user message
+        addUserMessage(message);
 
-          // Clear input
-          messageInput.value = "";
+        // Clear input
+        messageInput.value = "";
 
-          // Simulate bot response
-          setTimeout(() => {
-            addBotMessage(getBotResponse(message));
-          }, 1000);
-        }
+        // Simulate bot response
+        setTimeout(() => {
+          addBotMessage(getBotResponse(message));
+        }, 1000);
       }
+    }
 
-      // Add user message to chat
-      function addUserMessage(text) {
-        const messageDiv = document.createElement("div");
-        messageDiv.className = "message user-message";
-        messageDiv.innerHTML = `
+    // Add user message to chat
+    function addUserMessage(text) {
+      const messageDiv = document.createElement("div");
+      messageDiv.className = "message user-message";
+      messageDiv.innerHTML = `
         <div class="message-content">
             <p>${text}</p>
             <span class="message-time">${getCurrentTime()}</span>
         </div>
     `;
-        chatBody.appendChild(messageDiv);
-        scrollToBottom();
-      }
+      chatBody.appendChild(messageDiv);
+      scrollToBottom();
+    }
 
-      // Add bot message to chat
-      function addBotMessage(text) {
-        const messageDiv = document.createElement("div");
-        messageDiv.className = "message bot-message";
-        messageDiv.innerHTML = `
+    // Add bot message to chat
+    function addBotMessage(text) {
+      const messageDiv = document.createElement("div");
+      messageDiv.className = "message bot-message";
+      messageDiv.innerHTML = `
         <div class="message-avatar">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -879,147 +719,144 @@
             <span class="message-time">${getCurrentTime()}</span>
         </div>
     `;
-        chatBody.appendChild(messageDiv);
-        scrollToBottom();
+      chatBody.appendChild(messageDiv);
+      scrollToBottom();
+    }
+
+    // Get bot response based on user input
+    function getBotResponse(input) {
+      const lowerInput = input.toLowerCase();
+
+      if (
+        lowerInput.includes("hello") ||
+        lowerInput.includes("hi") ||
+        lowerInput.includes("hey")
+      ) {
+        return "Hello! Nice to meet you! How can I assist you today?";
+      } else if (lowerInput.includes("help")) {
+        return "I'm here to help! You can ask me about our services, pricing, technical support, or anything else you'd like to know.";
+      } else if (
+        lowerInput.includes("price") ||
+        lowerInput.includes("cost")
+      ) {
+        return "Our pricing starts at $29/month for the basic plan. We also have professional and enterprise plans. Would you like more details?";
+      } else if (lowerInput.includes("thank")) {
+        return "You're welcome! Is there anything else I can help you with?";
+      } else {
+        return "Thanks for your message! I'm an AI assistant trained to help with general inquiries. For specific questions, our support team would be happy to assist you further.";
       }
+    }
 
-      // Get bot response based on user input
-      function getBotResponse(input) {
-        const lowerInput = input.toLowerCase();
-
-        if (
-          lowerInput.includes("hello") ||
-          lowerInput.includes("hi") ||
-          lowerInput.includes("hey")
-        ) {
-          return "Hello! Nice to meet you! How can I assist you today?";
-        } else if (lowerInput.includes("help")) {
-          return "I'm here to help! You can ask me about our services, pricing, technical support, or anything else you'd like to know.";
-        } else if (
-          lowerInput.includes("price") ||
-          lowerInput.includes("cost")
-        ) {
-          return "Our pricing starts at $29/month for the basic plan. We also have professional and enterprise plans. Would you like more details?";
-        } else if (lowerInput.includes("thank")) {
-          return "You're welcome! Is there anything else I can help you with?";
-        } else {
-          return "Thanks for your message! I'm an AI assistant trained to help with general inquiries. For specific questions, our support team would be happy to assist you further.";
-        }
-      }
-
-      // Get current time in HH:MM format
-      function getCurrentTime() {
-        const now = new Date();
-        return now.toLocaleTimeString("en-US", {
-          hour: "2-digit",
-          minute: "2-digit",
-          hour12: true,
-        });
-      }
-
-      // Scroll chat to bottom
-      function scrollToBottom() {
-        chatBody.scrollTop = chatBody.scrollHeight;
-      }
-
-      // Event listeners
-      sendBtn.addEventListener("click", sendMessage);
-      messageInput.addEventListener("keypress", (e) => {
-        if (e.key === "Enter") {
-          sendMessage();
-        }
+    // Get current time in HH:MM format
+    function getCurrentTime() {
+      const now = new Date();
+      return now.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true,
       });
+    }
 
-      // Close chatbot when clicking outside
-      document.addEventListener("click", (e) => {
-        if (
-          !chatbotExpanded.contains(e.target) &&
-          !chatbotMinimized.contains(e.target) &&
-          chatbotExpanded.classList.contains("active")
-        ) {
-          chatbotExpanded.classList.remove("active");
-        }
-      });
+    // Scroll chat to bottom
+    function scrollToBottom() {
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
 
-      // Add some initial bot messages when page loads
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          addBotMessage(
-            "Welcome! I'm your AI assistant. Feel free to ask me anything!"
-          );
-        }, 500);
-      });
-    </script>
-  </body>
+    // Event listeners
+    sendBtn.addEventListener("click", sendMessage);
+    messageInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        sendMessage();
+      }
+    });
 
-  <div class="footer">
-    <div class="lesftpanel">
-      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
-      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
-      <p>
-        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
-        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
-      </p>
-    </div>
+    // Close chatbot when clicking outside
+    document.addEventListener("click", (e) => {
+      if (
+        !chatbotExpanded.contains(e.target) &&
+        !chatbotMinimized.contains(e.target) &&
+        chatbotExpanded.classList.contains("active")
+      ) {
+        chatbotExpanded.classList.remove("active");
+      }
+    });
 
-    <div class="middlepanel">
-      <h1>Quick Links</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutus.html">Who We Are</a></li>
-        <li><a href="documentaries.html">Documentaries</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
+    // Add some initial bot messages when page loads
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        addBotMessage(
+          "Welcome! I'm your AI assistant. Feel free to ask me anything!"
+        );
+      }, 500);
+    });
+  </script>
+  <script>
+    function myscroll() {
+      window.scrollTo({ top: 750, behavior: 'smooth' });
+    }
+  </script>
+</body>
 
-    <div class="rightpanel">
-      <h1>Newsletter subscription</h1>
-      <div class="newsletter">
-        <input type="email" placeholder="Email Address" />
-        <button>Subscribe</button>
-      </div>
-
-      <h1>Follow us</h1>
-      <div class="social-icons">
-        <a href="https://www.youtube.com/@caritassrilanka5709"
-          ><img src="images/youtube.png" alt="YouTube Icon"
-        /></a>
-        <a href="https://www.youtube.com/@caritassrilanka5709"
-          ><img src="images/R.png" alt="YouTube Icon"
-        /></a>
-        <a href="https://www.youtube.com/@caritassrilanka5709"
-          ><img src="images/OIrrrrP.jpg" alt="YouTube Icon"
-        /></a>
-        <a
-          href="https://www.instagram.com/caritas_sri_lanka?igsh=MWdlcGFzanhtb3A0&utm_source=qr"
-          ><img src="images/instagram.png" alt="Instagram Icon"
-        /></a>
-        <a href="https://www.facebook.com/share/17ArcWYhqH/?mibextid=wwXIfr"
-          ><img src="images/facebook.png" alt="Facebook Icon"
-        /></a>
-        <a href="http://www.linkedin.com/in/caritas-sri-lanka-SEDEC"
-          ><img src="images/linkedin.png" alt="Linkedin Icon"
-        /></a>
-        <a
-          href=" https://www.tiktok.com/@caritassrilankasedec?_t=ZS-90arFvva1pc&_r=1"
-          ><img src="images/video.png" alt="Tiktok Icon"
-        /></a>
-      </div>
-
-      <p>Call us: sedec@caritaslk.org</p>
-
-      <p>
-        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road 
-      </p>
-      <p>P.O box: 1681,
-        Colombo 08, 00800 Sri Lanka</p>
-    </div>
-
-    <div class="underpanel">
-      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
-      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
-    </div>
+<div class="footer">
+  <div class="lesftpanel">
+    <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+    <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+    <p>
+      Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+      Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+    </p>
   </div>
+
+  <div class="middlepanel">
+    <h1>Quick Links</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">Who We Are</a></li>
+      <li><a href="documentaries.html">Documentaries</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div class="rightpanel">
+    <h1>Newsletter subscription</h1>
+    <div class="newsletter">
+      <input type="email" placeholder="Email Address" />
+      <button>Subscribe</button>
+    </div>
+
+    <h1>Follow us</h1>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@caritassrilanka5709"><img src="images/youtube.png" alt="YouTube Icon" /></a>
+      <a href="https://wa.me/+94704734322"><img src="images/R.png" alt="YouTube Icon" /></a>
+      <!-- <a href="https://www.youtube.com/@caritassrilanka5709"><img src="images/OIrrrrP.jpg" alt="YouTube Icon" /></a> -->
+      <a href="https://www.instagram.com/caritas_sri_lanka?igsh=MWdlcGFzanhtb3A0&utm_source=qr"><img
+          src="images/instagram.png" alt="Instagram Icon" /></a>
+      <a href="https://www.facebook.com/share/17ArcWYhqH/?mibextid=wwXIfr"><img src="images/facebook.png"
+          alt="Facebook Icon" /></a>
+      <a href="http://www.linkedin.com/in/caritas-sri-lanka-SEDEC"><img src="images/linkedin.png"
+          alt="Linkedin Icon" /></a>
+      <a href=" https://www.tiktok.com/@caritassrilankasedec?_t=ZS-90arFvva1pc&_r=1"><img src="images/video.png"
+          alt="Tiktok Icon" /></a>
+    </div>
+
+    <p>E-mail - sedec@caritaslk.org</p>
+
+    <p>
+      Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road
+    </p>
+    <p>P.O box: 1681,
+      Colombo 08, 00800 Sri Lanka</p>
+  </div>
+
+</div>
+<div class="underpanel" style="text-align: center;">
+  <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+  <a href="https://ceyloninnovation.com/">
+    <p>Developed by: Ceylon Innovation Services (PVT) LTD</p>
+  </a>
+</div>
+
+
 </html>

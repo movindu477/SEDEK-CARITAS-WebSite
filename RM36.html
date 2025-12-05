@@ -1,601 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="css/RM36.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <script src="js/index.js" defer></script>
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  </head>
 
-  <!-- NAVBAR -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="css/RM36.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="js/index.js" defer></script>
+  <!-- Favicon -->
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" /> -->
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="icon" href="favicon.png" />
+</head>
+
+<!-- NAVBAR -->
 <div class="navbar" id="navbar">
   <!-- Top section -->
   <div class="topsection">
-      <div class="item">
-          <img src="images/phone-call.png" alt="Call Icon" />
-          <p>0094 11 2691885</p>
-      </div>
-      <div class="item">
-          <img src="images/mail.png" alt="Email Icon" />
-          <p>sedec@caritaslk.org</p>
-      </div>
-      <div class="language-selector">
-          <button class="lang">සිං</button>
-          <button class="lang">த</button>
-          <button class="lang active">EN</button>
-      </div>
+    <div class="item">
+      <img src="images/phone-call.png" alt="Call Icon" />
+      <p>+94 112 691 885</p>
+    </div>
+    <div class="item">
+      <img src="images/mail.png" alt="Email Icon" />
+      <p>sedec@caritaslk.org</p>
+    </div>
+    <div class="language-selector">
+      <button class="lang">සිං</button>
+      <button class="lang">த</button>
+      <button class="lang active">EN</button>
+    </div>
   </div>
 
   <!-- Down section -->
   <div class="downsection">
-      <div class="logos">
-          <img src="images/logo3.png" alt="Logo" width="120" />
-      </div>
-
-      <!-- Mobile menu button -->
-      <button
-          class="mobile-menu-btn"
-          id="mobileMenuBtn"
-          aria-label="Open Menu"
-          aria-controls="navMenu"
-          aria-expanded="false"
-      >
-          <span></span><span></span><span></span>
-      </button>
-
-      <!-- Main Nav -->
-      <ul id="navMenu" role="menubar">
-          <button class="close-menu" id="closeMenu" aria-label="Close Menu">
-              ✕
-          </button>
-
-          <li><a href="index.html">Home</a></li>
-
-          <!-- About Us Dropdown -->
-          <li class="dropdown">
-              <a
-                  href="aboutus.html"
-                  class="dropdown-toggle"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-              >
-                  About Us
-                  <span class="dropdown-arrow">▼</span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                  <!-- About Us Submenu -->
-                  <li class="dropdown-submenu">
-                      <a
-                          href="#"
-                          class="submenu-toggle"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                      >
-                          Who we are
-                          <span class="dropdown-arrow">▼</span>
-                      </a>
-                      <ul class="submenu" role="menu">
-                          <li><a href="aboutus.html">About Us</a></li>
-                          <li><a href="policies.html">Our Policies</a></li>
-                          <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
-                          <li><a href="ourhistory.html">Our History</a></li>
-                          <li><a href="org.html">Organisation Structure</a></li>
-                          <li><a href="faculty.html">Facilities &amp; Services</a></li>
-                      </ul>
-                  </li>
-
-                  <!-- What We Do Submenu -->
-                  <li class="dropdown-submenu">
-                      <a
-                          href="#"
-                          class="submenu-toggle"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                      >
-                          What We Do
-                          <span class="dropdown-arrow">▼</span>
-                      </a>
-                      <ul class="submenu" role="menu">
-                          <li><a href="whatwedo.html">What We Do Overview</a></li>
-                          <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
-                          <li><a href="projects.html">Projects</a></li>
-                          <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
-                          <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
-                          <li><a href="whatwedo.html#Intervention">Modes of Intervention</a></li>
-                          <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
-                          <li><a href="strplan.html">Strategic Plan</a></li>
-                      </ul>
-                  </li>
-
-                  <!-- Vacancies/Careers Submenu -->
-                  <li class="dropdown-submenu">
-                      <a
-                          href="#"
-                          class="submenu-toggle"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                      >
-                          Vacancies/Careers
-                          <span class="dropdown-arrow">▼</span>
-                      </a>
-                      <ul class="submenu" role="menu">
-                          <li><a href="internships.html">Internships</a></li>
-                          <li><a href="volunteer.html">Volunteer</a></li>
-                          <li><a href="opportunities.html">Current Opportunities</a></li>
-                          <li><a href="applications.html">Applications</a></li>
-                      </ul>
-                  </li>
-              </ul>
-          </li>
-
-          <!-- Get Involved Dropdown -->
-          <li class="dropdown">
-              <a
-                  href="#"
-                  class="dropdown-toggle"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-              >
-                  Get involved
-                  <span class="dropdown-arrow">▼</span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                  <li><a href="partnership.html">Partnership</a></li>
-                  <li><a href="fundraise.html">Fund Raise</a></li>
-                  <li><a href="advocates.html">Advocates</a></li>
-              </ul>
-          </li>
-
-          <!-- Stay Informed Dropdown -->
-          <li class="dropdown">
-              <a
-                  href="#"
-                  class="dropdown-toggle"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-              >
-                  Stay Informed
-                  <span class="dropdown-arrow">▼</span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                  <li><a href="blogs.html">Blogs</a></li>
-                  <li><a href="publications.html">Publications</a></li>
-                  <li><a href="newsletters.html">Newsletters</a></li>
-                  <!-- Our Impact Submenu -->
-                  <li class="dropdown-submenu">
-                      <a
-                          href="#"
-                          class="submenu-toggle"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                      >
-                          Our Impact
-                          <span class="dropdown-arrow">▼</span>
-                      </a>
-                      <ul class="submenu" role="menu">
-                          <li><a href="annual-reports.html">Annual Reports</a></li>
-                      </ul>
-                  </li>
-              </ul>
-          </li>
-
-          <li><a href="contact.html">Contact Us</a></li>
-          <li class="highlight"><a href="donate.html">DONATE</a></li>
-      </ul>
-  </div>
-</div>  </div>
-
-  <body>
-    <!-- ===== HERO IMAGE ===== -->
-    <section class="hero">
-      <img src="images/OIP.webp" alt="Contact" class="mainimg" />
-      <div class="hero-text">
-        <h1>
-          Kumari from Thalawa, Anuradhapura empowered through the Food Security
-          program of Caritas Sri Lanka.
-        </h1>
-      </div>
-    </section>
-
-    <section class="caritas-section">
-      <!-- Back Button (above the calendar & content section) -->
-      <div class="back-button fade-in-left">
-        <a href="javascript:history.back()" class="back-link">
-          <i class="fas fa-arrow-left"></i>
-          <span><< Back</span>
-        </a>
-      </div>
-
-      <!-- Left: Calendar and Right: Content Wrapper -->
-      <div class="caritas-container">
-        <!-- Left: Calendar -->
-        <div class="calendar-box fade-in-left">
-          <div class="calendar-date">
-            <span class="day">Wednesday</span>
-            <span class="date">04 December 2024</span>
-          </div>
-        </div>
-
-        <!-- Right: Content -->
-        <div class="content-box fade-in-right">
-          <h2 class="caritas-title">Caritas Sri Lanka</h2>
-          <p class="caritas-text">
-            Caritas Sri Lanka – SEDEC in collaboration with its network, is
-            implementing a Food Security program titled
-            <b
-              ><i
-                >“Improving Rural Livelihoods, Enhancing Food Security, and
-                Building Climate Resilience in Sri Lanka.”</i
-              ></b
-            >This initiative is spearheaded by Rev. Fr. Luke Nelson Perera,
-            National Director of Caritas Sri Lanka – SEDEC, with support from
-            Caritas Norway. The program aims to improve food security for 26,200
-            subsistence farming households, including marginalized urban and
-            rural communities in select villages across Sri Lanka. It
-            specifically targets vulnerable groups such as war widows, women,
-            youth, persons with disabilities, and 32,500 schoolchildren,
-            equipping them with knowledge of sustainable agricultural practices
-            and home gardening. Additionally, the program focuses on 13,000
-            mothers of preschool children, working to safeguard their children
-            from malnutrition by 2028. Already, the program has fostered
-            significant positive change in rural communities across Sri Lanka.
-            Below, we share one such inspiring story of transformation.
-            <br /><br />
-            My name is R.A. Kumarika Ranaweera, and I am 48 years old. I live in
-            a village called Sumudugama, located in the Thalawa Divisional
-            Secretariat Division of Anuradhapura. I am a mother of two children,
-            and together with my husband, we lead a very happy family life.
-            <br /><br />
-            In 2023, Caritas Anuradhapura – Sethsaviya introduced the Food
-            Security Program to our village. This initiative, supported by
-            Caritas Norway, is being implemented by Caritas Sri Lanka’s network
-            across all 25 administrative districts in Sri Lanka. Through this
-            program, Caritas Anuradhapura provided us with valuable training in
-            sustainable home gardening practices, with a focus on composting
-            without chemical additives. The goal was to ensure a toxin-free and
-            sustainable food supply for our households. We learned how to
-            prepare compost using the “Jeewakotuwa” method and the Pit method,
-            as well as how to create natural pest repellents (such as Magoza
-            leaf extraction, Gliricidia leaf extraction, and garlic solution)
-            and liquid fertilizers. Additionally, we were taught how to select
-            and prepare a Home garden that is resilient to Sri Lanka’s changing
-            climate.
-            <br /><br />
-            As part of the program, we received traditional seeds, poly bags,
-            and micro-sprinkler irrigation systems from Caritas Anuradhapura.
-            Agronomists, agricultural instructors, and Caritas Food Security
-            staff provided expert guidance throughout the process. Exposure
-            visits to an agronomist’s home garden sparked great interest among
-            us, where we learned practical Home gardening techniques, such as
-            proper pruning. We were also introduced to the concept of wormy
-            compost and received support with various techniques to improve our
-            gardening.
-            <br /><br />
-            My entire family has been actively involved in home gardening, which
-            has not only brought us closer together but also increased our
-            overall happiness. What was once unproductive land has now become
-            highly productive, providing a steady source of income for my
-            family. In our garden, we grow 20 varieties of fruits, 25 types of
-            vegetables, 15 kinds of leafy greens, 15 herbs, 15 spices, and 6
-            different grains. Additionally, I have completed training in
-            composting, worm composting and worm tea production, pest-repellent
-            creation, animal husbandry, and nursery management. These practices
-            have become integral to the success of my home garden.
-            <br /><br />
-            My garden has become a model farm for our village, and many people
-            come to visit and learn from it. Officials from the Department of
-            Agriculture and staff from National Caritas have also visited. Over
-            time, we have gained the confidence to voice our concerns on social
-            issues and advocate for our civil rights. As a result, we prepared
-            three proposals to present to religious leaders, government
-            officials, and the Provincial Director of the Department of
-            Agriculture. These proposals addressed local agricultural
-            challenges, the human-elephant conflict, and the economic
-            difficulties faced by our community.
-            <br /><br />
-            As a mother, I am truly happy because I can now feed my children and
-            husband nutritious, poison-free food that we grow together as a
-            family. I no longer need to buy these food items, and the money I
-            used to spend on food is now available for other family needs, such
-            as our children’s education and healthcare. I have saved money in
-            the bank and the community-based organization (CBO), and I am also
-            able to share my produce with others in the village.
-            <br /><br />
-            We are deeply grateful to Caritas Sri Lanka and Caritas Norway for
-            this transformative project in our village.
-          </p>
-        </div>
-      </div>
-
-      <!-- Image Gallery -->
-      <div class="gallery-section fade-in-up">
-        <h3 class="gallery-heading">Image Gallery</h3>
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="images/33 (1).jpg" alt="Caritas Event 1" />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="images/WhatsApp-Image-2023-11-21-at-16.11.29_1f4836a7.jpg"
-              alt="Caritas Event 2"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="images/WhatsApp-Image-2023-11-21-at-16.11.29_5f75ef67.jpg"
-              alt="Caritas Event 3"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="images/WhatsApp-Image-2024-01-10-at-16.28.40_01998a49.jpg"
-              alt="Caritas Event 4"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="images/WhatsApp-Image-2024-12-04-at-09.26.07_568c83d4.jpg"
-              alt="Caritas Event 5"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="images/WhatsApp-Image-2024-12-04-at-09.27.49_62490c6b.jpg"
-              alt="Caritas Event 6"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="images/WhatsApp-Image-2024-12-04-at-09.29.48_f48eb481.jpg"
-              alt="Caritas Event 7"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="images/WhatsApp-Image-2024-12-04-at-09.32.53_c91932fe.jpg"
-              alt="Caritas Event 8"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="images/WhatsApp-Image-2024-12-04-at-09.33.48_66844856.jpg"
-              alt="Caritas Event 9"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="images/WhatsApp-Image-2024-12-04-at-09.39.49_fb9c08c3.jpg"
-              alt="Caritas Event 10"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="images/WhatsApp-Image-2024-12-04-at-09.41.46_359b8fb1.jpg"
-              alt="Caritas Event 11"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="images/WhatsApp-Image-2024-12-04-at-09.45.42_3c275b75.jpg"
-              alt="Caritas Event 12"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Minimized Chatbot Button -->
-    <div class="chatbot-minimized" id="chatbotMinimized">
-      <div class="chatbot-icon">
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </div>
-      <span class="chatbot-text">Need help?</span>
+    <div class="logos">
+      <img src="images/logo3.png" alt="Logo" width="120" />
     </div>
 
-    <!-- Expanded Chatbot Panel -->
-    <div class="chatbot-expanded" id="chatbotExpanded">
-      <div class="chatbot-header">
-        <div class="header-left">
-          <div class="chatbot-avatar">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <div class="chatbot-info">
-            <h3>AI Assistant</h3>
-            <span class="status">Online</span>
-          </div>
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu" aria-controls="navMenu"
+      aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Main Nav -->
+    <ul id="navMenu" role="menubar">
+      <button class="close-menu" id="closeMenu" aria-label="Close Menu">
+        ✕
+      </button>
+
+      <li><a href="index.html">Home</a></li>
+
+      <!-- About Us Dropdown -->
+      <li class="dropdown">
+        <a href="aboutus.html" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          About Us
+          <span class="dropdown-arrow">▼</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <!-- About Us Submenu -->
+          <li class="dropdown-submenu">
+            <a href="#" class="submenu-toggle" aria-haspopup="true" aria-expanded="false">
+              Who we are
+              <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="submenu" role="menu">
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="policies.html">Our Policies</a></li>
+              <li><a href="pdf/CONSTITUION.pdf">Our Constitution</a></li>
+              <li><a href="ourhistory.html">Our History</a></li>
+              <li><a href="org.html">Organisation Structure</a></li>
+              <li><a href="faculty.html">Facilities &amp; Services</a></li>
+            </ul>
+          </li>
+
+          <!-- What We Do Submenu -->
+          <li class="dropdown-submenu">
+            <a href="#" class="submenu-toggle" aria-haspopup="true" aria-expanded="false">
+              What We Do
+              <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="submenu" role="menu">
+              <li><a href="whatwedo.html">What We Do Overview</a></li>
+              <li><a href="whatwedo.html#our-focus">Our Focus</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="whatwedo.html#guiding-prin">Guiding Principles</a></li>
+              <li><a href="whatwedo.html#Str-Prio">Strategic Priorities</a></li>
+              <li><a href="whatwedo.html#Intervention">Modes of Intervention</a></li>
+              <li><a href="whatwedo.html#Sec-Sep">Sector Specialization</a></li>
+              <li><a href="strplan.html">Strategic Plan</a></li>
+            </ul>
+          </li>
+
+          <!-- Vacancies/Careers Submenu -->
+          <li class="dropdown-submenu">
+            <a href="#" class="submenu-toggle" aria-haspopup="true" aria-expanded="false">
+              Vacancies/Careers
+              <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="submenu" role="menu">
+              <li><a href="internships.html">Internships</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="opportunities.html">Current Opportunities</a></li>
+              <li><a href="applications.html">Applications</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Get Involved Dropdown -->
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          Get involved
+          <span class="dropdown-arrow">▼</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="partnership.html">Partnership</a></li>
+          <li><a href="fundraise.html">Fund Raise</a></li>
+          <li><a href="advocates.html">Advocates</a></li>
+        </ul>
+      </li>
+
+      <!-- Stay Informed Dropdown -->
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          Stay Informed
+          <span class="dropdown-arrow">▼</span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="newsletters.html">Newsletters</a></li>
+          <!-- Our Impact Submenu -->
+          <li class="dropdown-submenu">
+            <a href="#" class="submenu-toggle" aria-haspopup="true" aria-expanded="false">
+              Our Impact
+              <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="submenu" role="menu">
+              <li><a href="annual-reports.html">Annual Reports</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact Us</a></li>
+      <li class="highlight"><a href="donate.html">DONATE</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<body>
+  <!-- ===== HERO IMAGE ===== -->
+  <section class="hero">
+    <img src="images/OIP.webp" alt="Contact" class="mainimg" />
+    <div class="hero-text">
+      <h1>
+        Kumari from Thalawa, Anuradhapura empowered through the Food Security
+        program of Caritas Sri Lanka.
+      </h1>
+    </div>
+  </section>
+
+  <section class="caritas-section">
+    <!-- Back Button (above the calendar & content section) -->
+    <div class="back-button fade-in-left">
+      <a href="javascript:history.back()" class="back-link">
+        <i class="fas fa-arrow-left"></i>
+        <span>
+          << Back</span>
+      </a>
+    </div>
+
+    <!-- Left: Calendar and Right: Content Wrapper -->
+    <div class="caritas-container">
+      <!-- Left: Calendar -->
+      <div class="calendar-box fade-in-left">
+        <div class="calendar-date">
+          <span class="day">Wednesday</span>
+          <span class="date">04 December 2024</span>
         </div>
-        <button class="close-btn" id="closeChatbot">
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+      </div>
+
+      <!-- Right: Content -->
+      <div class="content-box fade-in-right">
+        <h2 class="caritas-title">Caritas Sri Lanka</h2>
+        <p class="caritas-text">
+          Caritas Sri Lanka – SEDEC in collaboration with its network, is
+          implementing a Food Security program titled
+          <b><i>“Improving Rural Livelihoods, Enhancing Food Security, and
+              Building Climate Resilience in Sri Lanka.”</i></b>This initiative is spearheaded by Rev. Fr. Luke Nelson
+          Perera,
+          National Director of Caritas Sri Lanka – SEDEC, with support from
+          Caritas Norway. The program aims to improve food security for 26,200
+          subsistence farming households, including marginalized urban and
+          rural communities in select villages across Sri Lanka. It
+          specifically targets vulnerable groups such as war widows, women,
+          youth, persons with disabilities, and 32,500 schoolchildren,
+          equipping them with knowledge of sustainable agricultural practices
+          and home gardening. Additionally, the program focuses on 13,000
+          mothers of preschool children, working to safeguard their children
+          from malnutrition by 2028. Already, the program has fostered
+          significant positive change in rural communities across Sri Lanka.
+          Below, we share one such inspiring story of transformation.
+          <br /><br />
+          My name is R.A. Kumarika Ranaweera, and I am 48 years old. I live in
+          a village called Sumudugama, located in the Thalawa Divisional
+          Secretariat Division of Anuradhapura. I am a mother of two children,
+          and together with my husband, we lead a very happy family life.
+          <br /><br />
+          In 2023, Caritas Anuradhapura – Sethsaviya introduced the Food
+          Security Program to our village. This initiative, supported by
+          Caritas Norway, is being implemented by Caritas Sri Lanka’s network
+          across all 25 administrative districts in Sri Lanka. Through this
+          program, Caritas Anuradhapura provided us with valuable training in
+          sustainable home gardening practices, with a focus on composting
+          without chemical additives. The goal was to ensure a toxin-free and
+          sustainable food supply for our households. We learned how to
+          prepare compost using the “Jeewakotuwa” method and the Pit method,
+          as well as how to create natural pest repellents (such as Magoza
+          leaf extraction, Gliricidia leaf extraction, and garlic solution)
+          and liquid fertilizers. Additionally, we were taught how to select
+          and prepare a Home garden that is resilient to Sri Lanka’s changing
+          climate.
+          <br /><br />
+          As part of the program, we received traditional seeds, poly bags,
+          and micro-sprinkler irrigation systems from Caritas Anuradhapura.
+          Agronomists, agricultural instructors, and Caritas Food Security
+          staff provided expert guidance throughout the process. Exposure
+          visits to an agronomist’s home garden sparked great interest among
+          us, where we learned practical Home gardening techniques, such as
+          proper pruning. We were also introduced to the concept of wormy
+          compost and received support with various techniques to improve our
+          gardening.
+          <br /><br />
+          My entire family has been actively involved in home gardening, which
+          has not only brought us closer together but also increased our
+          overall happiness. What was once unproductive land has now become
+          highly productive, providing a steady source of income for my
+          family. In our garden, we grow 20 varieties of fruits, 25 types of
+          vegetables, 15 kinds of leafy greens, 15 herbs, 15 spices, and 6
+          different grains. Additionally, I have completed training in
+          composting, worm composting and worm tea production, pest-repellent
+          creation, animal husbandry, and nursery management. These practices
+          have become integral to the success of my home garden.
+          <br /><br />
+          My garden has become a model farm for our village, and many people
+          come to visit and learn from it. Officials from the Department of
+          Agriculture and staff from National Caritas have also visited. Over
+          time, we have gained the confidence to voice our concerns on social
+          issues and advocate for our civil rights. As a result, we prepared
+          three proposals to present to religious leaders, government
+          officials, and the Provincial Director of the Department of
+          Agriculture. These proposals addressed local agricultural
+          challenges, the human-elephant conflict, and the economic
+          difficulties faced by our community.
+          <br /><br />
+          As a mother, I am truly happy because I can now feed my children and
+          husband nutritious, poison-free food that we grow together as a
+          family. I no longer need to buy these food items, and the money I
+          used to spend on food is now available for other family needs, such
+          as our children’s education and healthcare. I have saved money in
+          the bank and the community-based organization (CBO), and I am also
+          able to share my produce with others in the village.
+          <br /><br />
+          We are deeply grateful to Caritas Sri Lanka and Caritas Norway for
+          this transformative project in our village.
+        </p>
+      </div>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery-section fade-in-up">
+      <h3 class="gallery-heading">Image Gallery</h3>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/33 (1).jpg" alt="Caritas Event 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/WhatsApp-Image-2023-11-21-at-16.11.29_1f4836a7.jpg" alt="Caritas Event 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/WhatsApp-Image-2023-11-21-at-16.11.29_5f75ef67.jpg" alt="Caritas Event 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/WhatsApp-Image-2024-01-10-at-16.28.40_01998a49.jpg" alt="Caritas Event 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/WhatsApp-Image-2024-12-04-at-09.26.07_568c83d4.jpg" alt="Caritas Event 5" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/WhatsApp-Image-2024-12-04-at-09.27.49_62490c6b.jpg" alt="Caritas Event 6" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/WhatsApp-Image-2024-12-04-at-09.29.48_f48eb481.jpg" alt="Caritas Event 7" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/WhatsApp-Image-2024-12-04-at-09.32.53_c91932fe.jpg" alt="Caritas Event 8" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/WhatsApp-Image-2024-12-04-at-09.33.48_66844856.jpg" alt="Caritas Event 9" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/WhatsApp-Image-2024-12-04-at-09.39.49_fb9c08c3.jpg" alt="Caritas Event 10" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/WhatsApp-Image-2024-12-04-at-09.41.46_359b8fb1.jpg" alt="Caritas Event 11" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/WhatsApp-Image-2024-12-04-at-09.45.42_3c275b75.jpg" alt="Caritas Event 12" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Minimized Chatbot Button -->
+  <div class="chatbot-minimized" id="chatbotMinimized">
+    <div class="chatbot-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+    <span class="chatbot-text">Need help?</span>
+  </div>
+
+  <!-- Expanded Chatbot Panel -->
+  <div class="chatbot-expanded" id="chatbotExpanded">
+    <div class="chatbot-header">
+      <div class="header-left">
+        <div class="chatbot-avatar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M18 6L6 18M6 6L18 18"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+              d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="chatbot-info">
+          <h3>AI Assistant</h3>
+          <span class="status">Online</span>
+        </div>
+      </div>
+      <button class="close-btn" id="closeChatbot">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="chatbot-body">
+      <div class="message bot-message">
+        <div class="message-avatar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="message-content">
+          <p>Hello there! 👋 How can I help you today?</p>
+          <span class="message-time">12:00 PM</span>
+        </div>
+      </div>
+
+      <div class="message bot-message">
+        <div class="message-avatar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="message-content">
+          <p>I can assist you with:</p>
+          <ul class="quick-options">
+            <li>Product information</li>
+            <li>Technical support</li>
+            <li>Account questions</li>
+            <li>General inquiries</li>
+          </ul>
+          <span class="message-time">12:01 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chatbot-footer">
+      <div class="input-container">
+        <input type="text" placeholder="Type your message..." class="message-input" />
+        <button class="send-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
       </div>
-
-      <div class="chatbot-body">
-        <div class="message bot-message">
-          <div class="message-avatar">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <div class="message-content">
-            <p>Hello there! 👋 How can I help you today?</p>
-            <span class="message-time">12:00 PM</span>
-          </div>
-        </div>
-
-        <div class="message bot-message">
-          <div class="message-avatar">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <div class="message-content">
-            <p>I can assist you with:</p>
-            <ul class="quick-options">
-              <li>Product information</li>
-              <li>Technical support</li>
-              <li>Account questions</li>
-              <li>General inquiries</li>
-            </ul>
-            <span class="message-time">12:01 PM</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="chatbot-footer">
-        <div class="input-container">
-          <input
-            type="text"
-            placeholder="Type your message..."
-            class="message-input"
-          />
-          <button class="send-btn">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
     </div>
-    <script>
-      // Chatbot functionality
-      const chatbotMinimized = document.getElementById("chatbotMinimized");
-      const chatbotExpanded = document.getElementById("chatbotExpanded");
-      const closeChatbot = document.getElementById("closeChatbot");
-      const messageInput = document.querySelector(".message-input");
-      const sendBtn = document.querySelector(".send-btn");
-      const chatBody = document.querySelector(".chatbot-body");
+  </div>
+  <script>
+    // Chatbot functionality
+    const chatbotMinimized = document.getElementById("chatbotMinimized");
+    const chatbotExpanded = document.getElementById("chatbotExpanded");
+    const closeChatbot = document.getElementById("closeChatbot");
+    const messageInput = document.querySelector(".message-input");
+    const sendBtn = document.querySelector(".send-btn");
+    const chatBody = document.querySelector(".chatbot-body");
 
-      // Toggle chatbot
-      chatbotMinimized.addEventListener("click", () => {
-        chatbotExpanded.classList.add("active");
-      });
+    // Toggle chatbot
+    chatbotMinimized.addEventListener("click", () => {
+      chatbotExpanded.classList.add("active");
+    });
 
-      closeChatbot.addEventListener("click", () => {
-        chatbotExpanded.classList.remove("active");
-      });
+    closeChatbot.addEventListener("click", () => {
+      chatbotExpanded.classList.remove("active");
+    });
 
-      // Send message function
-      function sendMessage() {
-        const message = messageInput.value.trim();
-        if (message) {
-          // Add user message
-          addUserMessage(message);
+    // Send message function
+    function sendMessage() {
+      const message = messageInput.value.trim();
+      if (message) {
+        // Add user message
+        addUserMessage(message);
 
-          // Clear input
-          messageInput.value = "";
+        // Clear input
+        messageInput.value = "";
 
-          // Simulate bot response
-          setTimeout(() => {
-            addBotMessage(getBotResponse(message));
-          }, 1000);
-        }
+        // Simulate bot response
+        setTimeout(() => {
+          addBotMessage(getBotResponse(message));
+        }, 1000);
       }
+    }
 
-      // Add user message to chat
-      function addUserMessage(text) {
-        const messageDiv = document.createElement("div");
-        messageDiv.className = "message user-message";
-        messageDiv.innerHTML = `
+    // Add user message to chat
+    function addUserMessage(text) {
+      const messageDiv = document.createElement("div");
+      messageDiv.className = "message user-message";
+      messageDiv.innerHTML = `
         <div class="message-content">
             <p>${text}</p>
             <span class="message-time">${getCurrentTime()}</span>
         </div>
     `;
-        chatBody.appendChild(messageDiv);
-        scrollToBottom();
-      }
+      chatBody.appendChild(messageDiv);
+      scrollToBottom();
+    }
 
-      // Add bot message to chat
-      function addBotMessage(text) {
-        const messageDiv = document.createElement("div");
-        messageDiv.className = "message bot-message";
-        messageDiv.innerHTML = `
+    // Add bot message to chat
+    function addBotMessage(text) {
+      const messageDiv = document.createElement("div");
+      messageDiv.className = "message bot-message";
+      messageDiv.innerHTML = `
         <div class="message-avatar">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -606,147 +467,138 @@
             <span class="message-time">${getCurrentTime()}</span>
         </div>
     `;
-        chatBody.appendChild(messageDiv);
-        scrollToBottom();
+      chatBody.appendChild(messageDiv);
+      scrollToBottom();
+    }
+
+    // Get bot response based on user input
+    function getBotResponse(input) {
+      const lowerInput = input.toLowerCase();
+
+      if (
+        lowerInput.includes("hello") ||
+        lowerInput.includes("hi") ||
+        lowerInput.includes("hey")
+      ) {
+        return "Hello! Nice to meet you! How can I assist you today?";
+      } else if (lowerInput.includes("help")) {
+        return "I'm here to help! You can ask me about our services, pricing, technical support, or anything else you'd like to know.";
+      } else if (
+        lowerInput.includes("price") ||
+        lowerInput.includes("cost")
+      ) {
+        return "Our pricing starts at $29/month for the basic plan. We also have professional and enterprise plans. Would you like more details?";
+      } else if (lowerInput.includes("thank")) {
+        return "You're welcome! Is there anything else I can help you with?";
+      } else {
+        return "Thanks for your message! I'm an AI assistant trained to help with general inquiries. For specific questions, our support team would be happy to assist you further.";
       }
+    }
 
-      // Get bot response based on user input
-      function getBotResponse(input) {
-        const lowerInput = input.toLowerCase();
-
-        if (
-          lowerInput.includes("hello") ||
-          lowerInput.includes("hi") ||
-          lowerInput.includes("hey")
-        ) {
-          return "Hello! Nice to meet you! How can I assist you today?";
-        } else if (lowerInput.includes("help")) {
-          return "I'm here to help! You can ask me about our services, pricing, technical support, or anything else you'd like to know.";
-        } else if (
-          lowerInput.includes("price") ||
-          lowerInput.includes("cost")
-        ) {
-          return "Our pricing starts at $29/month for the basic plan. We also have professional and enterprise plans. Would you like more details?";
-        } else if (lowerInput.includes("thank")) {
-          return "You're welcome! Is there anything else I can help you with?";
-        } else {
-          return "Thanks for your message! I'm an AI assistant trained to help with general inquiries. For specific questions, our support team would be happy to assist you further.";
-        }
-      }
-
-      // Get current time in HH:MM format
-      function getCurrentTime() {
-        const now = new Date();
-        return now.toLocaleTimeString("en-US", {
-          hour: "2-digit",
-          minute: "2-digit",
-          hour12: true,
-        });
-      }
-
-      // Scroll chat to bottom
-      function scrollToBottom() {
-        chatBody.scrollTop = chatBody.scrollHeight;
-      }
-
-      // Event listeners
-      sendBtn.addEventListener("click", sendMessage);
-      messageInput.addEventListener("keypress", (e) => {
-        if (e.key === "Enter") {
-          sendMessage();
-        }
+    // Get current time in HH:MM format
+    function getCurrentTime() {
+      const now = new Date();
+      return now.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true,
       });
+    }
 
-      // Close chatbot when clicking outside
-      document.addEventListener("click", (e) => {
-        if (
-          !chatbotExpanded.contains(e.target) &&
-          !chatbotMinimized.contains(e.target) &&
-          chatbotExpanded.classList.contains("active")
-        ) {
-          chatbotExpanded.classList.remove("active");
-        }
-      });
+    // Scroll chat to bottom
+    function scrollToBottom() {
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
 
-      // Add some initial bot messages when page loads
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          addBotMessage(
-            "Welcome! I'm your AI assistant. Feel free to ask me anything!"
-          );
-        }, 500);
-      });
-    </script>
-  </body>
+    // Event listeners
+    sendBtn.addEventListener("click", sendMessage);
+    messageInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        sendMessage();
+      }
+    });
 
-  <div class="footer">
-    <div class="lesftpanel">
-      <img class="logofooter" src="images/logo3.png" alt="The Logo" />
-      <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
-      <p>
-        Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
-        Conference of Sri Lanka and is affiliated to Caritas Internationalis,
-      </p>
-    </div>
+    // Close chatbot when clicking outside
+    document.addEventListener("click", (e) => {
+      if (
+        !chatbotExpanded.contains(e.target) &&
+        !chatbotMinimized.contains(e.target) &&
+        chatbotExpanded.classList.contains("active")
+      ) {
+        chatbotExpanded.classList.remove("active");
+      }
+    });
 
-    <div class="middlepanel">
-      <h1>Quick Links</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutus.html">Who We Are</a></li>
-        <li><a href="documentaries.html">Documentaries</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
+    // Add some initial bot messages when page loads
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        addBotMessage(
+          "Welcome! I'm your AI assistant. Feel free to ask me anything!"
+        );
+      }, 500);
+    });
+  </script>
+</body>
 
-    <div class="rightpanel">
-      <h1>Newsletter subscription</h1>
-      <div class="newsletter">
-        <input type="email" placeholder="Email Address" />
-        <button>Subscribe</button>
-      </div>
-
-      <h1>Follow us</h1>
-      <div class="social-icons">
-        <a href="https://www.youtube.com/@caritassrilanka5709"
-          ><img src="images/youtube.png" alt="YouTube Icon"
-        /></a>
-        <a href="https://www.youtube.com/@caritassrilanka5709"
-          ><img src="images/R.png" alt="YouTube Icon"
-        /></a>
-        <a href="https://www.youtube.com/@caritassrilanka5709"
-          ><img src="images/OIrrrrP.jpg" alt="YouTube Icon"
-        /></a>
-        <a
-          href="https://www.instagram.com/caritas_sri_lanka?igsh=MWdlcGFzanhtb3A0&utm_source=qr"
-          ><img src="images/instagram.png" alt="Instagram Icon"
-        /></a>
-        <a href="https://www.facebook.com/share/17ArcWYhqH/?mibextid=wwXIfr"
-          ><img src="images/facebook.png" alt="Facebook Icon"
-        /></a>
-        <a href="http://www.linkedin.com/in/caritas-sri-lanka-SEDEC"
-          ><img src="images/linkedin.png" alt="Linkedin Icon"
-        /></a>
-        <a
-          href=" https://www.tiktok.com/@caritassrilankasedec?_t=ZS-90arFvva1pc&_r=1"
-          ><img src="images/video.png" alt="Tiktok Icon"
-        /></a>
-      </div>
-
-      <p>Call us: sedec@caritaslk.org</p>
-
-      <p>
-        Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road 
-      </p>
-      <p>P.O box: 1681,
-        Colombo 08, 00800 Sri Lanka</p>
-    </div>
-
-    <div class="underpanel">
-      <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
-      <a href=""><p>Developed by: Ceylon Innovation Services (PVT) LTD</p></a>
-    </div>
+<div class="footer">
+  <div class="lesftpanel">
+    <img class="logofooter" src="images/logo3.png" alt="The Logo" />
+    <h1>Caritas<br /><span>SRI LANKA - SEDEC</span></h1>
+    <p>
+      Caritas Sri Lanka-SEDEC is the social arm of the Catholic Bishops'
+      Conference of Sri Lanka and is affiliated to Caritas Internationalis,
+    </p>
   </div>
+
+  <div class="middlepanel">
+    <h1>Quick Links</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">Who We Are</a></li>
+      <li><a href="documentaries.html">Documentaries</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div class="rightpanel">
+    <h1>Newsletter subscription</h1>
+    <div class="newsletter">
+      <input type="email" placeholder="Email Address" />
+      <button>Subscribe</button>
+    </div>
+
+    <h1>Follow us</h1>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@caritassrilanka5709"><img src="images/youtube.png" alt="YouTube Icon" /></a>
+      <a href="https://wa.me/+94704734322"><img src="images/R.png" alt="YouTube Icon" /></a>
+      <!-- <a href="https://www.youtube.com/@caritassrilanka5709"><img src="images/OIrrrrP.jpg" alt="YouTube Icon" /></a> -->
+      <a href="https://www.instagram.com/caritas_sri_lanka?igsh=MWdlcGFzanhtb3A0&utm_source=qr"><img
+          src="images/instagram.png" alt="Instagram Icon" /></a>
+      <a href="https://www.facebook.com/share/17ArcWYhqH/?mibextid=wwXIfr"><img src="images/facebook.png"
+          alt="Facebook Icon" /></a>
+      <a href="http://www.linkedin.com/in/caritas-sri-lanka-SEDEC"><img src="images/linkedin.png"
+          alt="Linkedin Icon" /></a>
+      <a href=" https://www.tiktok.com/@caritassrilankasedec?_t=ZS-90arFvva1pc&_r=1"><img src="images/video.png"
+          alt="Tiktok Icon" /></a>
+    </div>
+
+    <p>Call us: sedec@caritaslk.org</p>
+
+    <p>
+      Visit us: Caritas Sri Lanka - SEDEC ,133, Kynsey Road
+    </p>
+    <p>P.O box: 1681,
+      Colombo 08, 00800 Sri Lanka</p>
+  </div>
+
+</div>
+<div class="underpanel">
+  <p>Copyright © 2025 Caritas Sri Lanka - SEDEC. All right reserved.</p>
+  <a href="https://ceyloninnovation.com/">
+    <p>Developed by: Ceylon Innovation Services (PVT) LTD</p>
+  </a>
+</div>
+
 </html>
