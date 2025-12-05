@@ -133,7 +133,7 @@ body {
 }
 
 .language-selector .lang.active {
-  color: #d90429;
+  color: #881119;
   background: #ffffff;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
@@ -275,7 +275,7 @@ body {
 }
 
 .downsection ul li.dropdown .dropdown-menu li a:hover {
-  color: #d90429;
+  color: #881119;
   background: transparent;
   transform: none;
   text-shadow: none;
@@ -350,7 +350,7 @@ body {
 .dropdown-submenu:hover .dropdown-arrow,
 .dropdown-submenu.active .dropdown-arrow {
   transform: rotate(180deg);
-  color: #d90429;
+  color: #881119;
 }
 
 /* Submenu items */
@@ -379,7 +379,7 @@ body {
 }
 
 .dropdown-submenu .submenu li a:hover {
-  color: #d90429;
+  color: #881119;
   background: transparent;
   transform: none;
   text-shadow: none;
@@ -389,7 +389,7 @@ body {
 .downsection ul li.highlight a {
   font-weight: 700;
   background: linear-gradient(135deg, #ffffff 0%, #ffd6d6 100%);
-  color: #d90429;
+  color: #881119;
   padding: 12px 28px;
   border-radius: 25px;
   text-transform: uppercase;
@@ -425,7 +425,7 @@ body {
   background: linear-gradient(135deg, #ffd6d6 0%, #ffffff 100%);
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 12px 35px rgba(255, 255, 255, 0.4);
-  color: #c1121f;
+  color: #881119;
 }
 
 /* ================= MOBILE MENU TOGGLE ================= */
@@ -521,7 +521,7 @@ body {
 
   .downsection {
     padding: 8px 20px;
-    background: linear-gradient(135deg, #d90429 0%, #e63946 100%);
+    background: linear-gradient(135deg, #881119 0%, #881119 100%);
   }
 
   .mobile-menu-btn {
@@ -535,7 +535,7 @@ body {
     width: 85%;
     max-width: 320px;
     height: 100vh;
-    background: linear-gradient(135deg, #d90429 0%, #e63946 50%, #c1121f 100%);
+    background: linear-gradient(135deg, #881119 0%, #881119 50%, #881119 100%);
     backdrop-filter: blur(20px);
     flex-direction: column;
     gap: 0;
@@ -575,7 +575,7 @@ body {
     text-align: center;
     margin-top: 25px;
     background: linear-gradient(135deg, #ffffff 0%, #ffd6d6 100%);
-    color: #d90429;
+    color: #881119;
   }
 
   /* Remove hover areas on mobile */
@@ -734,7 +734,7 @@ body {
   top: 20px;
   right: 20px;
   z-index: 10000;
-  background: linear-gradient(135deg, #d90429 0%, #e63946 100%);
+  background: linear-gradient(135deg, #881119 0%, #e63946 100%);
   color: #ffffff;
   padding: 16px 24px;
   border-radius: 12px;
@@ -884,7 +884,7 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .navbar {
     animation: none;
-    background: #d90429;
+    background: #881119;
   }
 
   .navbar.scrolled {
@@ -3390,7 +3390,7 @@ body {
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: linear-gradient(90deg, #e63946, #d90429);
+  background: linear-gradient(90deg, #e63946, #881119);
   border-radius: 2px;
 }
 
