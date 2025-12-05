@@ -60,14 +60,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Toggle dropdown on mobile
   function toggleDropdown(dropdown) {
+      if (!dropdown) return;
+      
       const isActive = dropdown.classList.contains('active');
       
-      // Close all other dropdowns
-      document.querySelectorAll('.dropdown.active, .dropdown-submenu.active').forEach(item => {
-          if (item !== dropdown) {
-              item.classList.remove('active');
+      // For submenus, don't close sibling submenus in the same parent
+      // Only close submenus that are at the same level or in different parents
+      if (dropdown.classList.contains('dropdown-submenu')) {
+          // Close other submenus at the same level (siblings)
+          const parent = dropdown.parentElement;
+          if (parent) {
+              parent.querySelectorAll('.dropdown-submenu.active').forEach(item => {
+                  if (item !== dropdown && item.parentElement === parent) {
+                      item.classList.remove('active');
+                  }
+              });
           }
-      });
+      } else {
+          // For main dropdowns, close all other dropdowns and submenus
+          document.querySelectorAll('.dropdown.active, .dropdown-submenu.active').forEach(item => {
+              if (item !== dropdown) {
+                  item.classList.remove('active');
+              }
+          });
+      }
       
       // Toggle current dropdown
       if (!isActive) {
@@ -118,57 +134,71 @@ document.addEventListener('DOMContentLoaded', function () {
               const dropdown = this.closest('.dropdown');
               const isActive = dropdown && dropdown.classList.contains('active');
               
-              if (isToggleOnly) {
-                  // Only toggle, no navigation
+              // Always toggle on mobile for dropdowns
+              if (isToggleOnly || !isActive) {
+                  // Only toggle, no navigation - or first click to open
                   e.preventDefault();
                   e.stopPropagation();
                   if (dropdown) {
                       toggleDropdown(dropdown);
                   }
+                  return false;
               } else {
-                  // Has valid href
-                  if (!isActive) {
-                      // First click: toggle dropdown to show menu items
-                      e.preventDefault();
-                      e.stopPropagation();
-                      if (dropdown) {
-                          toggleDropdown(dropdown);
-                      }
-                  } else {
-                      // Dropdown already open: navigate to href and close menu
-                      closeMenuFn();
-                      // Allow default navigation behavior (don't prevent)
-                  }
+                  // Dropdown already open and has href: navigate to href and close menu
+                  closeMenuFn();
+                  // Allow default navigation behavior (don't prevent)
               }
           }
-      });
+      }, true); // Use capture phase for priority
+      
+      // Also handle clicks directly on the arrow
+      const arrow = toggle.querySelector('.dropdown-arrow');
+      if (arrow) {
+          arrow.addEventListener('click', function(e) {
+              if (isMobile()) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  e.stopImmediatePropagation();
+                  const dropdown = toggle.closest('.dropdown');
+                  if (dropdown) {
+                      toggleDropdown(dropdown);
+                  }
+                  return false;
+              }
+          }, true); // Use capture phase for priority
+      }
   });
 
   // SUBMENU TOGGLE FUNCTIONALITY - Improved for mobile
   document.querySelectorAll('.submenu-toggle').forEach(toggle => {
+      // Handle clicks on the entire toggle link (including arrow)
       toggle.addEventListener('click', function(e) {
           if (isMobile()) {
-              const href = this.getAttribute('href');
-              const isToggleOnly = !href || href === '#' || href === 'javascript:void(0)';
+              // Always prevent default for submenu toggles on mobile
+              e.preventDefault();
+              e.stopPropagation();
+              e.stopImmediatePropagation();
               
-              if (isToggleOnly) {
-                  // Only toggle, no navigation
-                  e.preventDefault();
-                  e.stopPropagation();
-                  const submenuParent = this.closest('.dropdown-submenu');
+              const submenuParent = this.closest('.dropdown-submenu');
+              if (submenuParent) {
+                  // Use the toggleDropdown function
                   toggleDropdown(submenuParent);
-              } else {
-                  // Has valid href - navigate and close menu
-                  closeMenuFn();
-                  // Allow default navigation behavior
               }
+              
+              return false;
           }
-      });
+      }, true); // Use capture phase for priority
   });
 
   // Handle all navigation links in dropdown menus and submenus (mobile)
+  // This should run AFTER toggle handlers, so we use bubble phase (default)
   document.querySelectorAll('.dropdown-menu a, .submenu a').forEach(link => {
       link.addEventListener('click', function(e) {
+          // Skip if already handled by toggle handlers
+          if (e.defaultPrevented) {
+              return;
+          }
+          
           if (isMobile()) {
               // Check if it's a toggle link
               const isToggle = this.classList.contains('dropdown-toggle') || this.classList.contains('submenu-toggle');
@@ -327,6 +357,112 @@ document.addEventListener('DOMContentLoaded', function () {
   
   // Initialize scroll state
   handleScroll();
+
+  // ================= COMING SOON NOTIFICATION SYSTEM =================
+  
+  // List of pages that don't exist yet (will show "Coming Soon")
+  const comingSoonPages = [
+    'partnership.html',
+    'fundraise.html',
+    'advocates.html',
+    'blogs.html',
+    'newsletters.html',
+    'internships.html',
+    'volunteer.html',
+    'opportunities.html',
+    'annual-reports.html'
+  ];
+
+  // Function to check if a page exists (synchronously check file list)
+  function isComingSoonPage(href) {
+    if (!href || href === '#' || href.startsWith('javascript:') || href.startsWith('mailto:') || href.startsWith('tel:')) {
+      return false;
+    }
+    
+    // Extract filename from href
+    const filename = href.split('/').pop().split('#')[0];
+    
+    // Check if it's in the coming soon list
+    return comingSoonPages.includes(filename);
+  }
+
+  // Function to show Coming Soon notification
+  function showComingSoonNotification() {
+    // Remove existing notification if any
+    const existingNotification = document.getElementById('comingSoonNotification');
+    if (existingNotification) {
+      existingNotification.remove();
+    }
+
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.id = 'comingSoonNotification';
+    notification.className = 'coming-soon-notification';
+    notification.innerHTML = `
+      <div class="coming-soon-content">
+        <svg class="coming-soon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+        <span class="coming-soon-text">Coming Soon</span>
+      </div>
+    `;
+
+    // Add to body
+    document.body.appendChild(notification);
+
+    // Trigger animation after a brief delay
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        notification.classList.add('show');
+      }, 10);
+    });
+
+    // Auto hide after 3 seconds
+    setTimeout(() => {
+      notification.classList.remove('show');
+      setTimeout(() => {
+        if (notification.parentNode) {
+          notification.remove();
+        }
+      }, 400);
+    }, 3000);
+  }
+
+  // Handle navigation links - check if page exists
+  document.querySelectorAll('#navMenu a, .navbar a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      
+      // Skip if it's a toggle link or anchor link
+      if (this.classList.contains('dropdown-toggle') || 
+          this.classList.contains('submenu-toggle') ||
+          !href ||
+          href === '#' ||
+          href.startsWith('#') ||
+          href.startsWith('javascript:') ||
+          href.startsWith('mailto:') ||
+          href.startsWith('tel:')) {
+        return;
+      }
+
+      // Check if it's a coming soon page
+      if (isComingSoonPage(href)) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // Close mobile menu if open
+        if (isMobile() && navMenu && navMenu.classList.contains("active")) {
+          closeMenuFn();
+        }
+        
+        // Show notification
+        showComingSoonNotification();
+        return false;
+      }
+    });
+  });
 });
 
 

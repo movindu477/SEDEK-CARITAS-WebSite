@@ -659,6 +659,22 @@ body {
   .submenu-toggle .dropdown-arrow {
     display: inline-block;
     color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    pointer-events: auto;
+    user-select: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  /* Rotate arrow when dropdown is active on mobile */
+  .dropdown.active > .dropdown-toggle .dropdown-arrow {
+    transform: rotate(180deg);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  /* Rotate arrow when submenu is active on mobile */
+  .dropdown-submenu.active > .submenu-toggle .dropdown-arrow {
+    transform: rotate(180deg);
+    color: rgba(255, 255, 255, 1);
   }
 
   .close-menu {
@@ -709,6 +725,111 @@ body {
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
     touch-action: manipulation;
+  }
+}
+
+/* ================= COMING SOON NOTIFICATION ================= */
+.coming-soon-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+  background: linear-gradient(135deg, #d90429 0%, #e63946 100%);
+  color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(217, 4, 41, 0.4);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transform: translateX(400px) scale(0.8);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  max-width: 300px;
+}
+
+.coming-soon-notification.show {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  pointer-events: auto;
+  animation: slideInNotification 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.coming-soon-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.coming-soon-icon {
+  flex-shrink: 0;
+  animation: pulseIcon 2s ease-in-out infinite;
+}
+
+.coming-soon-text {
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes slideInNotification {
+  0% {
+    opacity: 0;
+    transform: translateX(400px) scale(0.8);
+  }
+  60% {
+    transform: translateX(-10px) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes pulseIcon {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* Mobile responsive for notification */
+@media (max-width: 640px) {
+  .coming-soon-notification {
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    max-width: none;
+    padding: 14px 20px;
+    transform: translateY(-100px) scale(0.9);
+  }
+
+  .coming-soon-notification.show {
+    transform: translateY(0) scale(1);
+    animation: slideInNotificationMobile 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes slideInNotificationMobile {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px) scale(0.9);
+    }
+    60% {
+      transform: translateY(10px) scale(1.02);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .coming-soon-content {
+    font-size: 14px;
+    gap: 10px;
   }
 }
 
