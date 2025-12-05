@@ -666,13 +666,13 @@ body {
   }
 
   /* Rotate arrow when dropdown is active on mobile */
-  .dropdown.active > .dropdown-toggle .dropdown-arrow {
+  .dropdown.active>.dropdown-toggle .dropdown-arrow {
     transform: rotate(180deg);
     color: rgba(255, 255, 255, 1);
   }
 
   /* Rotate arrow when submenu is active on mobile */
-  .dropdown-submenu.active > .submenu-toggle .dropdown-arrow {
+  .dropdown-submenu.active>.submenu-toggle .dropdown-arrow {
     transform: rotate(180deg);
     color: rgba(255, 255, 255, 1);
   }
@@ -777,9 +777,11 @@ body {
     opacity: 0;
     transform: translateX(400px) scale(0.8);
   }
+
   60% {
     transform: translateX(-10px) scale(1.05);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0) scale(1);
@@ -787,10 +789,13 @@ body {
 }
 
 @keyframes pulseIcon {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
     opacity: 1;
   }
+
   50% {
     transform: scale(1.1);
     opacity: 0.8;
@@ -818,9 +823,11 @@ body {
       opacity: 0;
       transform: translateY(-100px) scale(0.9);
     }
+
     60% {
       transform: translateY(10px) scale(1.02);
     }
+
     100% {
       opacity: 1;
       transform: translateY(0) scale(1);
@@ -2359,6 +2366,7 @@ body {
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .recent-post::before {
@@ -2402,7 +2410,7 @@ body {
 
 .recent-post p {
   font-size: 1.05rem;
-  color: #e0e0e0;
+  color: #ffffff;
   /* Darker grey text */
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
   margin-bottom: 25px;
@@ -2414,7 +2422,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 28px;
+
   background: linear-gradient(135deg, #dc2626, #ef4444);
   color: white;
   text-decoration: none;
@@ -2426,7 +2434,7 @@ body {
   text-shadow: none;
   gap: 8px;
   width: 100%;
-  max-width: 200px;
+  max-width: 800px;
   box-shadow: 0 4px 16px rgba(220, 38, 38, 0.25);
 }
 
@@ -2523,8 +2531,7 @@ body {
 
   .recent-post p {
     font-size: 1rem;
-    color: #d0d0d0;
-    /* Darker grey text */
+    color: #ffffff;
   }
 
   .content-section {
@@ -2570,14 +2577,14 @@ body {
   .recent-post p {
     font-size: 0.95rem;
     margin-bottom: 20px;
-    color: #c0c0c0;
+    color: #ffffff;
     /* Darker grey text */
   }
 
   .read-more-btn {
     padding: 12px 24px;
     font-size: 0.95rem;
-    max-width: 180px;
+    max-width: 100%;
   }
 
   .content-section {
@@ -2615,14 +2622,14 @@ body {
 
   .recent-post p {
     font-size: 0.9rem;
-    color: #b0b0b0;
+    color: #ffffff;
     /* Darker grey text */
   }
 
   .read-more-btn {
     padding: 11px 20px;
     font-size: 0.9rem;
-    max-width: 160px;
+    max-width: 100%;
   }
 
   .content-section h2 {
@@ -2649,7 +2656,7 @@ body {
   }
 
   .recent-post p {
-    color: #a0a0a0;
+    color: #ffffff;
     /* Darker grey text */
   }
 
