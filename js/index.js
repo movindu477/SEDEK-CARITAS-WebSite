@@ -20,6 +20,14 @@ document.addEventListener('DOMContentLoaded', function () {
   function openMenu() {
       if (navMenu) {
           navMenu.classList.add("active");
+          // Add backdrop overlay
+          if (!document.getElementById('mobileMenuBackdrop')) {
+              const backdrop = document.createElement('div');
+              backdrop.id = 'mobileMenuBackdrop';
+              backdrop.className = 'mobile-menu-backdrop';
+              backdrop.addEventListener('click', closeMenuFn);
+              document.body.appendChild(backdrop);
+          }
       }
       if (mobileMenuBtn) {
           mobileMenuBtn.classList.add("active");
@@ -37,6 +45,12 @@ document.addEventListener('DOMContentLoaded', function () {
           mobileMenuBtn.setAttribute("aria-expanded", "false");
       }
       document.body.style.overflow = "";
+      
+      // Remove backdrop overlay
+      const backdrop = document.getElementById('mobileMenuBackdrop');
+      if (backdrop) {
+          backdrop.remove();
+      }
       
       // Close all dropdowns and submenus
       document.querySelectorAll('.dropdown.active, .dropdown-submenu.active').forEach(item => {
@@ -79,38 +93,95 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   });
 
-  // DROPDOWN TOGGLE FUNCTIONALITY
+  // ================= MOBILE NAVIGATION HANDLING =================
+  
+  // Handle regular navigation links (non-dropdown items) on mobile
+  document.querySelectorAll('#navMenu > li:not(.dropdown) > a').forEach(link => {
+      link.addEventListener('click', function(e) {
+          if (isMobile() && navMenu && navMenu.classList.contains("active")) {
+              // Allow navigation and close menu
+              const href = this.getAttribute('href');
+              if (href && href !== '#' && href !== 'javascript:void(0)') {
+                  // Close menu immediately for navigation
+                  closeMenuFn();
+              }
+          }
+      });
+  });
+
+  // DROPDOWN TOGGLE FUNCTIONALITY - Improved for mobile
   document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
       toggle.addEventListener('click', function(e) {
           if (isMobile()) {
-              e.preventDefault();
-              e.stopPropagation();
+              const href = this.getAttribute('href');
+              const isToggleOnly = !href || href === '#' || href === 'javascript:void(0)';
               const dropdown = this.closest('.dropdown');
-              toggleDropdown(dropdown);
+              const isActive = dropdown && dropdown.classList.contains('active');
+              
+              if (isToggleOnly) {
+                  // Only toggle, no navigation
+                  e.preventDefault();
+                  e.stopPropagation();
+                  if (dropdown) {
+                      toggleDropdown(dropdown);
+                  }
+              } else {
+                  // Has valid href
+                  if (!isActive) {
+                      // First click: toggle dropdown to show menu items
+                      e.preventDefault();
+                      e.stopPropagation();
+                      if (dropdown) {
+                          toggleDropdown(dropdown);
+                      }
+                  } else {
+                      // Dropdown already open: navigate to href and close menu
+                      closeMenuFn();
+                      // Allow default navigation behavior (don't prevent)
+                  }
+              }
           }
       });
   });
 
-  // SUBMENU TOGGLE FUNCTIONALITY
+  // SUBMENU TOGGLE FUNCTIONALITY - Improved for mobile
   document.querySelectorAll('.submenu-toggle').forEach(toggle => {
       toggle.addEventListener('click', function(e) {
           if (isMobile()) {
-              e.preventDefault();
-              e.stopPropagation();
-              const submenuParent = this.closest('.dropdown-submenu');
-              toggleDropdown(submenuParent);
+              const href = this.getAttribute('href');
+              const isToggleOnly = !href || href === '#' || href === 'javascript:void(0)';
+              
+              if (isToggleOnly) {
+                  // Only toggle, no navigation
+                  e.preventDefault();
+                  e.stopPropagation();
+                  const submenuParent = this.closest('.dropdown-submenu');
+                  toggleDropdown(submenuParent);
+              } else {
+                  // Has valid href - navigate and close menu
+                  closeMenuFn();
+                  // Allow default navigation behavior
+              }
           }
       });
   });
 
-  // Close submenu when clicking on submenu links (mobile)
+  // Handle all navigation links in dropdown menus and submenus (mobile)
   document.querySelectorAll('.dropdown-menu a, .submenu a').forEach(link => {
       link.addEventListener('click', function(e) {
-          if (isMobile() && !this.classList.contains('dropdown-toggle') && !this.classList.contains('submenu-toggle')) {
-              // If it's a regular link (not a toggle), close the menu
-              setTimeout(() => {
-                  closeMenuFn();
-              }, 100);
+          if (isMobile()) {
+              // Check if it's a toggle link
+              const isToggle = this.classList.contains('dropdown-toggle') || this.classList.contains('submenu-toggle');
+              
+              if (!isToggle) {
+                  // Regular navigation link - navigate and close menu
+                  const href = this.getAttribute('href');
+                  if (href && href !== '#' && href !== 'javascript:void(0)') {
+                      // Close menu before navigation
+                      closeMenuFn();
+                      // Allow default navigation behavior
+                  }
+              }
           }
       });
   });
@@ -228,7 +299,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // Close menu when clicking outside (mobile)
   document.addEventListener('click', function(e) {
       if (isMobile() && navMenu && navMenu.classList.contains("active")) {
-          if (!e.target.closest("#navMenu") && !e.target.closest("#mobileMenuBtn")) {
+          // Don't close if clicking inside menu, menu button, or backdrop (backdrop has its own handler)
+          if (!e.target.closest("#navMenu") && 
+              !e.target.closest("#mobileMenuBtn") && 
+              !e.target.closest("#mobileMenuBackdrop")) {
               closeMenuFn();
           }
       }
