@@ -4,11 +4,261 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Donate Us</title>
+  <title>Caritas Sri Lanka | Donate Us</title>
   <link rel="stylesheet" href="css/donate.css" />
   <link rel="stylesheet" href="css/index.css" />
   <script src="js/index.js" defer></script>
   <link rel="icon" href="favicon.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      filter: grayscale(80%);
+    }
+
+    .hero .mainimg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.6);
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 2;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-text h4 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    /* DONATION SECTION */
+    .donation-section {
+      padding: 80px 20px;
+      min-height: 100vh;
+    }
+
+    .donation-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .donation-header {
+      text-align: center;
+      color: rgb(0, 0, 0);
+      margin-bottom: 60px;
+    }
+
+    .donation-header h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .donation-header p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      opacity: 0.95;
+      color: black;
+    }
+
+    .donation-content {
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+
+    /* Bank Details Card */
+    .bank-details-card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .bank-details-card h3 {
+      font-size: 2rem;
+      color: #8B0000;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .bank-icon {
+      font-size: 2.5rem;
+    }
+
+    .account-detail {
+      margin-bottom: 25px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 12px;
+      border-left: 4px solid #8B0000;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .account-detail:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(139, 0, 0, 0.15);
+    }
+
+    .account-detail label {
+      display: block;
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .account-detail .value {
+      font-size: 1.1rem;
+      color: #333;
+      font-weight: 600;
+      font-family: 'Courier New', monospace;
+    }
+
+
+
+    /* Info Cards */
+    .info-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .info-card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .info-icon {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .info-card h4 {
+      font-size: 1.3rem;
+      color: #8B0000;
+      margin-bottom: 10px;
+    }
+
+    .info-card p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      margin-top: 40px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact-section h3 {
+      font-size: 1.5rem;
+      color: #8B0000;
+      margin-bottom: 15px;
+    }
+
+    .contact-section p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .contact-section a {
+      color: #8B0000;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-section a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-section strong {
+      color: #8B0000;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .hero-text h4 {
+        font-size: 1rem;
+      }
+
+      .donation-content {
+        max-width: 100%;
+      }
+
+      .info-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .donation-header h2 {
+        font-size: 2rem;
+      }
+
+      .bank-details-card,
+      .qr-code-card {
+        padding: 25px;
+      }
+
+      .qr-placeholder {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  </style>
 
   <!-- NAVBAR -->
   <div class="navbar" id="navbar">
@@ -147,11 +397,9 @@
       </ul>
     </div>
   </div>
-  </div>
 </head>
 
 <body>
-  <!-- HERO SECTION -->
   <section class="hero">
     <img src="images/donate.jpg" alt="Hero Image" class="mainimg" />
     <div class="hero-text">
@@ -160,93 +408,81 @@
     </div>
   </section>
 
-  <!-- APPLICATION FORM SECTION -->
-  <section class="application-section">
-    <div class="application-container">
-      <div class="application-header">
-        <h2>Volunteer Application Form</h2>
+  <!-- DONATION SECTION -->
+  <section class="donation-section">
+    <div class="donation-container">
+      <div class="donation-header">
+        <h2>Bank Account Details</h2>
         <p>
-          Ready to make a difference? Complete our application form to get
-          started with your donation process and join us in our mission to
-          create positive change.
+          Your generous contribution helps us continue our mission to create positive change in communities.
+          Please use the following bank details to make your donation.
         </p>
       </div>
 
-      <div class="application-content">
-        <div class="application-info">
-          <div class="info-card">
-            <div class="info-icon">📝</div>
-            <h3>Simple Process</h3>
-            <p>
-              Our application form is designed to be quick and easy to
-              complete. It should take only 5-10 minutes of your time.
-            </p>
+      <div class="donation-content">
+        <!-- Bank Details Card -->
+        <div class="bank-details-card">
+          <h3>
+            Transfer Details
+          </h3>
+
+          <div class="account-detail">
+            <label>Account Number</label>
+            <div class="value">145010018215</div>
           </div>
 
-          <div class="info-card">
-            <div class="info-icon">🔒</div>
-            <h3>Secure & Private</h3>
-            <p>
-              Your information is protected with bank-level security. We
-              respect your privacy and never share your data.
-            </p>
+          <div class="account-detail">
+            <label>Account Name</label>
+            <div class="value">CARITAS SRI LANKA-SOCIAL AND ECONOMIC DEVELOPMENT CENTRE</div>
           </div>
 
-          <div class="info-card">
-            <div class="info-icon">⏱️</div>
-            <h3>Quick Response</h3>
-            <p>
-              We process applications within 24-48 hours and will contact you
-              to confirm your donation details.
-            </p>
+          <div class="account-detail">
+            <label>Swift Code</label>
+            <div class="value">HBLILKLX</div>
           </div>
-        </div>
 
-        <div class="application-cta">
-          <div class="cta-card">
-            <h3>Start Your Donation Application Process Today</h3>
-            <p>
-              Begin your journey of making a positive impact by completing our
-              straightforward application form. We've designed the process to
-              be simple and efficient, guiding you through each step to ensure
-              your donation reaches those who need it most.
-            </p>
+          <div class="account-detail">
+            <label>Bank Code</label>
+            <div class="value">7083 - HNB Bank</div>
+          </div>
 
-            <div class="requirements">
-              <h4>What you'll need to complete the form:</h4>
-              <ul>
-                <li>Personal identification details</li>
-                <li>Contact information</li>
-                <li>Education details</li>
-                <li>Updated Resume</li>
-                <li>Skills and Experience</li>
-              </ul>
-            </div>
-
-            <!-- ===== PDF Download Button ===== -->
-            <div style="
-                  text-align: center;
-                  margin-top: 10px;
-                  margin-bottom: 20px;
-                ">
-              <a href="pdf/Volunteer application form.pdf" download class="application-btn">
-                <span>CLICK HERE TO DOWNLOAD</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </a>
-            </div>
-
-            <div class="support-info">
-              <p>
-                Need help?
-                <a href="contact.html">Contact our support team</a> or call
-                <strong>+94 764 007412</strong>
-              </p>
-            </div>
+          <div class="account-detail">
+            <label>Branch Code</label>
+            <div class="value">145 - Negombo Metro</div>
           </div>
         </div>
+      </div>
+
+      <!-- Info Cards -->
+      <!-- <div class="info-cards">
+        <div class="info-card">
+          <div class="info-icon">💳</div>
+          <h4>Secure Transfer</h4>
+          <p>All transactions are protected with bank-level security. Your donation is safe and secure.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">📧</div>
+          <h4>Confirmation</h4>
+          <p>You'll receive a confirmation email once your donation is processed within 24-48 hours.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">🌟</div>
+          <h4>Tax Deductible</h4>
+          <p>Your donation may be tax deductible. We'll provide all necessary documentation.</p>
+        </div>
+      </div> -->
+
+      <!-- Contact Section -->
+      <div class="contact-section">
+        <h3>Need Help with Your Donation?</h3>
+        <p>
+          Our team is here to assist you. <br><a href="contact.html">Contact our support team</a> or <br> call us
+          at
+          <strong><a href="tel:+94112691885">+94 112 691 885</a></strong>
+        </p>
+        <p>Email: <a href="mailto:sedec@caritaslk.org">sedec@caritaslk.org</a></p>
       </div>
     </div>
   </section>

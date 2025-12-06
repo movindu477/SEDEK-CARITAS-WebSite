@@ -1024,8 +1024,8 @@ body {
 /* Updated: box container for images */
 .image-container {
   position: relative;
-  width: 140px;
-  height: 140px;
+  width: 130px;
+  height: 150px;
   margin: 0 auto 20px;
   flex-shrink: 0;
   border-radius: 8px;
